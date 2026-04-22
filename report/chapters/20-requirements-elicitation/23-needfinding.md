@@ -84,3 +84,20 @@ El User Journey Map de Paco Pérez expone la ineficiencia operativa del especial
 \caption*{\textit{Nota.} El diagrama detalla las fases de interacción, estados emocionales y puntos de dolor identificados para el arquetipo del ingeniero fitosanitario. Elaboración propia.}
 \end{figure}
 
+### Empathy Mapping
+
+En esta sección se detalla el proceso de elaboración de los Empathy Maps, herramientas diseñadas para comprender el espectro emocional y cognitivo de nuestros segmentos objetivo. El proceso comenzó con el análisis de los User Persona (Pedro Huamán y Paco Pérez), situándolos en el centro del ejercicio para alinear la visión del equipo con su realidad cotidiana. A través de este análisis, se clasificaron las percepciones sobre su entorno, sus círculos de influencia, sus acciones habituales y las preocupaciones que manifiestan en su día a día.
+Se identificó los Pains (puntos de dolor y frustraciones) y los Gains (beneficios y resultados esperados) de cada perfil. De esta manera, se establece una base de conocimiento empático que justifica las funcionalidades de la plataforma Viora, asegurando que la solución responda a las necesidades humanas y operativas detectadas en el sector olivícola.
+
+El Empathy Map de Pedro Huamán sintetiza la experiencia de un productor que gestiona sus cultivos bajo una constante vulnerabilidad climática. El análisis resalta su preocupación por la seguridad de su patrimonio y la falta de soporte técnico oportuno, lo que motiva su deseo de contar con herramientas que le brinden mayor control y previsibilidad sobre su producción. Elaboración propia.
+
+<br>
+
+\begin{figure}[H]
+\caption{Empathy Map del segmento Productor Olivarero - Pedro Huamán.}
+\centering
+\includegraphics[width=0.3\textwidth]{report/assets/needfinding/Empathy_map_Pedro_Huaman.png}
+\caption*{\textit{Nota.} El mapa de empatía de Pedro Huamán describe su entorno y estado mental, identificando la incertidumbre climática como el principal motor de cambio tecnológico. Elaboración propia.}
+\end{figure}
+
+<br>
