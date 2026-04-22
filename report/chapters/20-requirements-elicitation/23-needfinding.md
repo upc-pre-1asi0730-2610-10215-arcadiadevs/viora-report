@@ -53,3 +53,34 @@ En esta sección se presenta la User Task Matrix, una herramienta estratégica q
 Al analizar la matriz, se observa que tareas como el monitoreo de variables climáticas y la identificación de plagas presentan la mayor frecuencia e importancia para ambos segmentos, consolidándose como los pilares de valor de la solución. Por otro lado, la mayor diferencia se encuentra en la gestión de reportes y análisis de datos históricos, una tarea de alta importancia para Pedro Huamán debido a su enfoque en la optimización técnica, mientras que para Paco Pérez representa una actividad de menor frecuencia, centrada más en la observación directa y la reacción inmediata ante cambios del entorno.
 
 \clearpage
+
+### User Journey Mapping
+
+En esta sección se presentan los User Journey Maps, herramientas que permiten visualizar la experiencia actual de los segmentos objetivo mediante una síntesis de los hallazgos obtenidos en las entrevistas y las fichas de User Persona. Estos artefactos diagraman el recorrido cronológico del usuario a través de cinco etapas fundamentales: Aware (descubrimiento), Join (búsqueda de soporte), Use (intervención), Develop (aplicación) y Leave (cierre). La estructura permite contrastar las acciones y metas del usuario con sus fluctuaciones emocionales, facilitando la identificación de puntos de dolor donde la plataforma Viora puede optimizar procesos que hoy son puramente manuales o reactivos.
+
+<br>
+
+El User Journey Map de Pedro Huamán revela una degradación crítica en la experiencia del productor durante las fases de contacto y diagnóstico. El análisis destaca que la dependencia de canales informales y la falta de datos climáticos locales generan una incertidumbre que impacta directamente en la rentabilidad de la cosecha, validando la necesidad de un sistema de alertas proactivas. Elaboración propia.
+
+<br>
+
+\begin{figure}[H]
+\caption{User Journey Map del segmento Productor Olivarero - Pedro Huamán.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/needfinding/Journey Map Pedro Huaman.png}
+\caption*{\textit{Nota.} El diagrama detalla las fases de interacción, estados emocionales y puntos de dolor identificados para el arquetipo del productor tecnificado. Elaboración propia.}
+\end{figure}
+
+<br>
+
+El User Journey Map de Paco Pérez expone la ineficiencia operativa del especialista debido a la fragmentación de la información y la captación pasiva de clientes. El diagrama evidencia una desconexión crítica entre el levantamiento de datos en campo y la gestión administrativa en gabinete, subrayando la urgencia de centralizar el historial técnico y georreferenciar la demanda para maximizar la productividad del profesional. Elaboración propia.
+
+<br>
+
+\begin{figure}[H]
+\caption{User Journey Map del segmento Profesional Especializado En Control De Plagas Agrícolas - Paco Pérez.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/needfinding/Journey Map Paco Perez.png}
+\caption*{\textit{Nota.} El diagrama detalla las fases de interacción, estados emocionales y puntos de dolor identificados para el arquetipo del ingeniero fitosanitario. Elaboración propia.}
+\end{figure}
+
