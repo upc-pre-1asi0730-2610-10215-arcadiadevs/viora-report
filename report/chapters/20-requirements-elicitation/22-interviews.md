@@ -107,7 +107,7 @@
 \textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{La Yarada los Palos, Tacna} \\
 \textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{Productor Olivarero e Ingeniero Civil} \\
 \textbf{Inicio} & 00:20 - 18:17 & \textbf{Enlace} & \url{https://youtu.be/4x0I_9DZ68M} \\ \hline
-\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} El entrevistado describió su jornada iniciando temprano en la mañana para monitorear plagas, abono y agua de forma presencial. Manifestó que actualmente no utiliza ninguna herramienta tecnológica para la gestión de su campo. Posee un celular Samsung A25, aunque expresó que para labores administrativas o de consulta prefiere conectarse a internet a través de una laptop. Cabe destacar que complementa su actividad agrícola con su profesión de ingeniero civil. Juan detalló que el clima en Tacna es el factor determinante de su producción, mencionando que en la campaña actual (2026) ha sufrido una caída drástica, produciendo solo el 10\% en comparación al año anterior debido al calor excesivo. Respecto a la vecería, confirmó que se encuentra en un "año que no da" y que mitiga este impacto económico gracias a sus ingresos como ingeniero civil. Sobre el control fitosanitario, indicó que aplica insecticidas dos veces al año y que, ante enfermedades, acude a tiendas de fertilizantes para buscar la "receta" de un agrónomo, proceso que puede tardar hasta un mes debido a la falta de disponibilidad inmediata de profesionales. El productor calificó como "muy útil" una aplicación que envíe alertas tempranas basadas en satélites, especialmente para prever problemas derivados del cambio de temperatura. Manifestó que la predicción de la vecería le permitiría planificar mejor el uso de hormonas y fertilizantes para estabilizar la producción. Afirmó no tener miedo de depender de tecnología satelital y se mostró dispuesto a invertir tiempo registrando manualmente su historial de campo a cambio de recomendaciones exactas. Finalmente, indicó que la funcionalidad de recomendación de agrofármacos sería la más importante para él y que preferiría que la plataforma le asigne un especialista automáticamente ante una alerta.} \\ [10pt]
+\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} El entrevistado describió su jornada iniciando temprano en la mañana para monitorear plagas, abono y agua de forma presencial. Manifestó que actualmente no utiliza ninguna herramienta tecnológica para la gestión de su campo. Posee un celular Samsung A25, aunque expresó que para labores administrativas o de consulta prefiere conectarse a internet a través de una laptop. Cabe destacar que complementa su actividad agrícola con su profesión de ingeniero civil. Juan detalló que el clima en Tacna es el factor determinante de su producción, mencionando que en la campaña actual (2026) ha sufrido una caída drástica, produciendo solo el 10\% en comparación al año anterior debido al calor excesivo. Respecto a la vecería, confirmó que se encuentra en un "año que no da" y que mitiga este impacto económico gracias a sus ingresos como ingeniero civil. Sobre el control fitosanitario, indicó que aplica insecticidas dos veces al año y que, ante enfermedades, acude a tiendas de fertilizantes para buscar la "receta" de un agrónomo, proceso que puede tardar hasta un mes debido a la falta de disponibilidad inmediata de profesionales. El productor calificó como "muy útil" una aplicación que envíe alertas tempranas basadas en satélites, especialmente para prever problemas derivados del cambio de temperatura. Manifestó que la predicción de la vecería le permitiría planificar mejor el uso de hormonas y fertilizantes para estabilizar la producción. Afirmó no tener miedo de depender de tecnología satelital y se mostró dispuesto a invertir tiempo registrando manualmente su historial de campo a cambio de recomendaciones exagitctas. Finalmente, indicó que la funcionalidad de recomendación de agrofármacos sería la más importante para él y que preferiría que la plataforma le asigne un especialista automáticamente ante una alerta.} \\ [10pt]
 \multicolumn{4}{c}{\includegraphics[width=0.5\textwidth]{report/assets/interview/interview1.png}} \\ \hline
 \end{tabular}
 
@@ -175,3 +175,53 @@
 
 
 \newpage
+### Análisis de entrevistas
+**Segmento: Productores olivareros de la región sur**
+A partir de estas 3 entrevistas, que fueron realizadas a productores de las provincias de Tacna y Caravelí (Arequipa), se consiguieron los siguientes datos:
+
+El rango de edad de los entrevistados va desde los 51 hasta los 55 años, evidenciando que este segmento está compuesto por adultos con amplia trayectoria y experiencia empírica en el sector agrícola.
+
+Distritos de residencia:
+- 66.6% (2 de 3) residen en La Yarada los Palos, Tacna.
+- 33.3% (1 de 3) reside en Jaquí, Caravelí, Arequipa.
+
+Ocupacion:
+- 100% (3 de 3) se desempeñan como Productores Olivareros de forma principal.
+- 33.3% (1 de 3) complementa su actividad como Ingeniero Civil.
+- 33.3% (1 de 3) se desempeña adicionalmente en el sector de seguridad.
+
+A partir del análisis cualitativo de los productores, se establecen los siguientes indicadores estadísticos:
+
+**Inspección física de parcelas (Plagas/Riego)**
+- 100% (3 de 3) de los productores basan su gestión en la intuición y la presencia física, realizando inspecciones "fila por fila" diariamente.
+- Identifican esta tarea como de frecuencia alta e importancia crítica, siendo su único método actual para detectar plagas o necesidades de riego, lo que evidencia una alta dependencia del esfuerzo físico.
+
+**Monitoreo de variables climáticas**
+- 100% de los entrevistados identifica al clima como el factor de riesgo determinante y fuera de su control.
+- 66.7% (2 de 3) reportan pérdidas extremas (caídas de hasta el 90% de la cosecha) en la campaña actual (2026) debido al excesivo calor.
+- 66.7% dependen de ahorros previos o de una segunda profesión para subsistir durante los años de "vecería" (años sin producción), validando la importancia crítica de herramientas de predicción financiera.
+  
+**Búsqueda de especialistas / recetas técnicas**
+- 100% de los productores manifiesta una frustración crítica por la lentitud en la búsqueda de soporte especializado.
+- Reportan una latencia de diagnóstico que oscila entre 15 y 30 días, tiempo en el cual la plaga se masifica. Esto justifica por qué esta tarea tiene una importancia crítica para el usuario aunque su frecuencia sea media.
+
+**Registro y análisis de trazabilidad histórica**
+- 0% utiliza actualmente herramientas digitales para el registro formal de datos (usan WhatsApp o YouTube solo para consultas rápidas).
+- Sin embargo, el 100% muestra una disposición total a realizar un registro manual si la plataforma les devuelve alertas tempranas precisas, recomendaciones exactas de agrofármacos y conexión inmediata con un ingeniero.
+
+**Evaluación fenológica (Predicción de vecería)**
+- El 100% califica la predicción de la vecería como una funcionalidad de importancia crítica.
+- Consideran que anticipar este fenómeno les permitiría planificar mejor el uso de hormonas y fertilizantes, transformando una incertidumbre económica en una variable gestionable.
+
+**Frecuencia de aplicación de agrofármacos**
+- 66.7% (2 de 3) de los productores aplica químicos con una frecuencia baja de 1 a 2 veces al año.
+- 33.3% (1 de 3) requiere una frecuencia alta de aplicación, llegando a realizarla de forma mensual o quincenal para salvar la producción.
+
+**Tipo de mercado objetivo**
+- 100% (3 de 3) de los entrevistados destina su producción a la aceituna de mesa.
+- 66.7% (2 de 3) diversifica su negocio destinando parte de la cosecha a la extracción de aceite.
+
+**Extensión del producto**
+- 100% (3 de 3) de los productores maneja fundos de pequeña y mediana escala, con una extensión que oscila entre 1 y 5 hectáreas.
+
+<br>
