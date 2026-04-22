@@ -31,3 +31,25 @@ El User Persona de Paco Perez personifica al segmento de productores tecnificado
 \end{figure}
 
 \clearpage
+
+### User Task Matrix
+
+En esta sección se presenta la User Task Matrix, una herramienta estratégica que consolida las actividades fundamentales realizadas por nuestros segmentos objetivo para alcanzar sus metas de producción. Para este análisis, se consideran los perfiles de Paco Pérez (Profesional Especializado En Control De Plagas Agrícolas) y Pedro Huamán (Productor Olivero). Es importante precisar que las tareas listadas corresponden a procesos críticos del ciclo agrícola que los usuarios ejecutan independientemente de la existencia de una solución digital. La matriz permite evaluar cada tarea bajo las dimensiones de frecuencia e importancia, facilitando la identificación de los flujos de trabajo donde la plataforma Viora puede generar un mayor impacto operativo.
+
+|**Tareas (Tasks)**|**Persona: Paco Perez (Asesor)**||**Persona: Pedro Huaman (Productor)**||
+|---|---|---|---|---|
+||**Frecuencia**|**Importancia**|**Frecuencia**|**Importancia**|
+|Monitoreo de variables climáticas|Alta|**Crítica**|Media|**Crítica**|
+|Inspección física de parcelas (Plagas/Riego)|Alta|**Crítica**|Alta|**Crítica**|
+|Registro y análisis de trazabilidad histórica|Alta|**Crítica**|Baja|**Alta**|
+|Búsqueda de especialistas|N/A|N/A|Media|**Crítica**|
+|Emisión de diagnósticos y recetas técnicas|**Alta**|**Crítica**|N/A|N/A|
+|Gestión de captación de nuevos clientes|**Baja**|**Alta**|N/A|N/A|
+|Evaluación fenológica (Predicción de vecería)|Media|Media|Alta|**Crítica**|
+|Aplicación de controles y fertilizantes|N/A|N/A|Media|**Alta**|
+
+<br>
+
+Al analizar la matriz, se observa que tareas como el monitoreo de variables climáticas y la identificación de plagas presentan la mayor frecuencia e importancia para ambos segmentos, consolidándose como los pilares de valor de la solución. Por otro lado, la mayor diferencia se encuentra en la gestión de reportes y análisis de datos históricos, una tarea de alta importancia para Pedro Huamán debido a su enfoque en la optimización técnica, mientras que para Paco Pérez representa una actividad de menor frecuencia, centrada más en la observación directa y la reacción inmediata ante cambios del entorno.
+
+\clearpage
