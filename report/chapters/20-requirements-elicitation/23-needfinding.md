@@ -101,3 +101,14 @@ El Empathy Map de Pedro Huamán sintetiza la experiencia de un productor que ges
 \end{figure}
 
 <br>
+
+El Empathy Map de Paco Pérez refleja la saturación de un especialista fitosanitario debido a la carga administrativa y la falta de herramientas para organizar su trabajo en campo. El mapa evidencia su necesidad de profesionalizar sus servicios mediante la digitalización, buscando eliminar la ineficiencia logística y recuperar el rigor técnico en sus recomendaciones. Elaboración propia.
+
+<br>
+
+\begin{figure}[H]
+\caption{Empathy Map del segmento Profesional Especializado En Control De Plagas Agrícolas - Paco Pérez.}
+\centering
+\includegraphics[width=0.3\textwidth]{report/assets/needfinding/Empathy_map_Paco_Perez.png}
+\caption*{\textit{Nota.} El mapa de empatía de Paco Pérez destaca el agotamiento por procesos manuales y su aspiración hacia una gestión técnica basada en datos precisos. Elaboración propia.}
+\end{figure}
