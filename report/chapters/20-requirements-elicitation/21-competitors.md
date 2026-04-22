@@ -69,3 +69,17 @@ Análisis competitivo para competidores **indirectos**
 <br />
 
 \newpage
+
+### Estrategias y tácticas frente a competidores
+
+| Competidor | Táctica diferenciadora | Fortaleza del rival que enfrentamos | Debilidad del rival que aprovechamos |
+|---|---|---|---|
+| ![Metos](report/assets/competitors/metos.png){width=80px} | **"Software-only escalable y predictivo"**: Ingesta de datos ambientales mediante APIs y algoritmos sin obligar al productor a comprar infraestructura. | Gran precisión de datos de campo y modelos matemáticos de enfermedades. Extraen datos de estaciones propias. | Altos costos de entrada y mantenimiento de hardware para el pequeño productor, así como exposición a vandalismo en campo. |
+| ![Agroptima](report/assets/competitors/agroptima.png){width=80px} | **"Motor predictivo vs. Registro pasivo"**: Viora procesa el clima y advierte automáticamente; no es solo una libreta digital de data-entry. | Usabilidad en campo líder europea y potente registro de costos operativos y trazabilidad. | Es un sistema pasivo; sin registro del agricultor, no emite alertas epidemiológicas predictivas autónomas ante crisis climáticas. |
+| ![Xarvio](report/assets/competitors/xarvio.png){width=80px} | **"Hiper-nicho olivarero + Marketplace humano"**: Foco en la vecería y enlace físico-tecnológico para la aplicación agronómica inmediata con un experto humano. | Profundidad técnica corporativa, excelente análisis algorítmico y UX simple (mapas de colores intuitivos). | Aislamiento corporativo: Solo te alertan y derivan a químicos propios sin asistencia técnica humana. Riesgo de mala calibración. |
+
+<br />
+
+<!-- Test markdown + latex -->
+
+\newpage
