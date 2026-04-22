@@ -20,7 +20,7 @@ nocite: '[@*]'
 
 \vspace{0.80cm}
 
-{\LARGE \textbf{DESARROLLO DE APLICACIONES OPEN SOURCE}\par}
+{\LARGE \textbf{APLICACIONES WEB}\par}
 \vspace{0.22cm}
 {\LARGE \textbf{AV1 INFORME DE TRABAJO}\par}
 
@@ -74,7 +74,7 @@ Trinidad Leon, Jahat Jassiel & U202412248 \tabularnewline
 
 {\large \textbf{Sección:}\par}
 \vspace{0.08cm}
-{\normalsize 11848\par}
+{\normalsize 10215\par}
 
 \vspace{0.24cm}
 

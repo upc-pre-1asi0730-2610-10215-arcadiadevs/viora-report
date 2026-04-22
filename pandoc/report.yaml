@@ -11,6 +11,9 @@ resource-path:
   - .
   - report
   - report/assets
+  
+variables:
+  graphics: true
 
 bibliography:
   - report/bibliography/references.bib

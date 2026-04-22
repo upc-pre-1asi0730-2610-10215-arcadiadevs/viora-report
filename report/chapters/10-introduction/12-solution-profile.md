@@ -16,7 +16,7 @@ La volatilidad reciente refuerza la necesidad de gestión basada en datos. En se
 
 **Influencia del clima, ENOS y horas de frío en producción, calidad y vecería** En el caso de Tacna, se ha documentado que la sostenibilidad del olivo depende críticamente del clima, destacando la temperatura como variable clave; se reportan rangos de tolerancia y óptimos (Pino y Ascencios, 2022). La evidencia local reciente asocia olas de calor con fallas fisiológicas: en Yarada Los Palos se reportó merma “hasta 90 %” y proyecciones de cosecha equivalente a 10 % a 20 % del año previo, vinculadas a ausencia de “golpe de frío” nocturno necesario para el cuajado (Andina, 2024). Además, se registraron señales de impacto económico (p. ej., alzas de precio minorista) coherentes con shock de oferta (Andina, 2024).
 
-La investigación aplicada también sustenta incorporar un rastreador de frío y un motor predictivo de vecería. En setos de olivo, un evento El Niño-Oscilación del Sur (ENSO) fuerte se asocia a aumento de temperaturas invernales (+2°C) y reducción de acumulación de frío (-23 %), con deterioro de productividad y alternancia; se reportan reducciones del frío en escenarios ENOS de -15 % a -23 % y, en campañas adversas, reducciones de rendimiento de aceite >85 % (Calvo et al., 2024). Estos hallazgos son consistentes con el patrón de alta variabilidad observado en Tacna (MIDAGRI, 2025) y justifican modelar vecería y requerimientos de frío como componentes de decisión.
+La investigación aplicada también sustenta incorporar un rastreador de frío y un motor predictivo de vecería. En setos de olivo, un evento El Niño-Oscilación del Sur (ENOS) fuerte se asocia a aumento de temperaturas invernales (+2°C) y reducción de acumulación de frío (-23 %), con deterioro de productividad y alternancia; se reportan reducciones del frío en escenarios ENOS de -15 % a -23 % y, en campañas adversas, reducciones de rendimiento de aceite >85 % (Calvo et al., 2024). Estos hallazgos son consistentes con el patrón de alta variabilidad observado en Tacna (MIDAGRI, 2025) y justifican modelar vecería y requerimientos de frío como componentes de decisión.
 
 
 \begin{figure}[H]
@@ -35,7 +35,7 @@ La investigación aplicada también sustenta incorporar un rastreador de frío y
 \end{figure}
 
 
-**Plagas, vigilancia fitosanitaria y riesgos regulatorios** La presión sanitaria constituye un riesgo productivo y regulatorio. SENASA informó acciones inmediatas y declaración de emergencia fitosanitaria ante Xylella fastidiosa, con medidas de vigilancia y contención (SENASA, 2024). Posteriormente, la Resolución Directoral que declara bajo control oficial Xylella fastidiosa subsp. pauca sustenta la dimensión del riesgo y la necesidad de intervención temprana: se reportan casos positivos en el país y se advierte impacto potencial de disminución productiva “hasta 25 %–30 %” en zonas vulnerables, así como pérdidas económicas potenciales superiores a US$ 3,245 millones anuales considerando varios cultivos (SENASA, 2025).
+**Plagas, vigilancia fitosanitaria y riesgos regulatorios** La presión sanitaria constituye un riesgo productivo y regulatorio. SENASA informó acciones inmediatas y declaración de emergencia fitosanitaria ante Xylella fastidiosa, con medidas de vigilancia y contención (SENASA, 2024). Posteriormente, la Resolución Directoral que declara bajo control oficial Xylella fastidiosa subsp. pauca sustenta la dimensión del riesgo y la necesidad de intervención temprana: se reportan casos positivos en el país y se advierte impacto potencial de disminución productiva “hasta 25 % –30 %” en zonas vulnerables, así como pérdidas económicas potenciales superiores a US$ 3,245 millones anuales considerando varios cultivos (SENASA, 2025).
 
 \begin{figure}[H]
 \caption{Declaran bajo control oficial la plaga Xylella fastidiosa subsp. pauca, a nivel nacional.}
@@ -65,7 +65,7 @@ La investigación aplicada también sustenta incorporar un rastreador de frío y
 Como soporte de escalabilidad, investigaciones recientes demuestran viabilidad de analítica avanzada: mapeo integrado UAV‑satélite con modelos de aprendizaje automático y métricas de calidad de clasificación (Pino et al., 2026), y detección/conteo de frutos con deep learning sobre dataset amplio y métricas de desempeño (Osco‑Mamami et al., 2025). Estas capacidades habilitan un roadmap progresivo: del monitoreo básico (clima/suelo) hacia modelos predictivos y visión computacional para estimar carga, anticipar alternancia y ajustar nutrición. Adicionalmente, la experiencia del Niño costero 2017 evidencia que los eventos extremos pueden intensificarse abruptamente y superar capacidades de respuesta si no existe preparación basada en información (Yglesias‑González et al., 2023), reforzando el valor de una solución preventiva y orientada a riesgo.
 
 \begin{figure}[H]
-\caption{( a ) UAV Matrice 350 integrado con el sensor Altum PT, ( b ) cámara Altum PT, ( c ) puntos de control terrestre (GCP) y ( d ) plan de vuelo para la imagen de estudio.}
+\caption{( a ) UAV Matrice 350 integrado con el sENOSr Altum PT, ( b ) cámara Altum PT, ( c ) puntos de control terrestre (GCP) y ( d ) plan de vuelo para la imagen de estudio.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/graphics/uso_drones_uav.png}
 \caption*{\textit{Nota.} Recuperado de Pino et al., 2026}
@@ -154,7 +154,7 @@ Objetivos específicos
 - **Fortalecer la red de respuesta ante plagas:** Firmar al menos 3 convenios de colaboración con asociaciones agrarias o consultoras fitosanitarias para el intercambio de datos en un plazo de 6 meses tras el lanzamiento.
 - **Asegurar la eficiencia en la comunicación técnica:** Garantizar que las alertas epidemiológicas lleguen a los especialistas y productores en menos de 10 minutos tras la detección de una anomalía térmica, métrica que será auditada mensualmente durante el primer semestre.
 - **Consolidar una base de usuarios especializada:** Alcanzar una meta de 150 productores registrados y 30 profesionales de control de plagas agrícolas interactuando en la plataforma en un periodo máximo de 4 meses.
-- **Asegurar la eficiencia en la comunicación técnica:** Mantener un registro de 0 brechas de seguridad en el manejo de información sensible de las parcelas, con reportes de cumplimiento técnico emitidos cada trimestre.
+- **Garantizar la seguridad de los datos del usuario:** Mantener un registro de 0 brechas de seguridad en el manejo de información sensible de las parcelas, con reportes de cumplimiento técnico emitidos cada trimestre.
 - **Optimizar la gestión operativa y toma de decisiones:** Lograr que al menos el 25% de los usuarios activos consulten el dashboard de finca un mínimo de 3 veces por semana para monitorear indicadores de clima, suelo y sanidad durante el primer trimestre de uso.
 
 ---
@@ -162,7 +162,7 @@ Objetivos específicos
 **Restricciones**
 
 - **Alcance tecnológico:** La solución debe estar conformada por un RESTful API de elaboración interna (Java/Spring Boot) y una Web Application integrada (Angular), con una interfaz adaptable a dispositivos.
-- **Exclusión de implementaciones físicas:** El proyecto se limita al desarrollo de software; no incluye la implementación de hardware, sensores físicos ni tecnologías de conectividad IoT de campo.
+- **Exclusión de implementaciones físicas:** El proyecto se limita al desarrollo de software; no incluye la implementación de hardware, sENOSres físicos ni tecnologías de conectividad IoT de campo.
 - **Estandarización de idioma:** Toda la experiencia de usuario, incluyendo mensajes, interfaces y la documentación técnica de los servicios, debe estar desarrollada exclusivamente en idioma inglés.
 - **Fidelidad arquitectónica:** El diseño de software debe seguir estrictamente el Modelo C4 (Context, Container, Component) y el patrón Domain-Driven Design (DDD).
 - **Disponibilidad en la nube:** Los productos finales deben estar desplegados en plataformas Server-Side o Cloud, permitiendo el acceso público mediante URL para validación.
@@ -175,8 +175,8 @@ Objetivos específicos
 
 - **Problem Statement 1: Gestión de la incertidumbre climática y fenológica**
 
-Nuestro servicio ofrece un ecosistema digital de agricultura de precisión enfocado en el monitoreo térmico y la predicción fenológica del olivo. A través de nuestra plataforma, los productores pueden visualizar la acumulación de "porciones de frío" y anticipar el impacto de la vecería en sus cosechas. A diferencia de soluciones basadas exclusivamente en hardware como Pessl Instruments (Metos), que se centran en la venta de sensores y entrega de datos meteorológicos brutos, Viora transforma dicha información en proyecciones de rendimiento y alertas de riesgo fenológico personalizadas por parcela.
-Hemos identificado que un factor crítico que desestabiliza la economía del sector es la incapacidad de predecir la alternancia productiva extrema causada por la variabilidad térmica. Según Calvo et al. (2024), los eventos de El Niño-Oscilación del Sur (ENSO) alteran significativamente la productividad y el crecimiento vegetativo de los setos de olivo. Esta situación afecta directamente a los productores olivareros de la región sur que dependen de cosechas constantes. Actualmente, existe un vacío tecnológico ya que los productores dependen de reportes de emergencia posteriores a la crisis (Andina, 2024), careciendo de una herramienta que organice datos climáticos para predecir ciclos de producción de forma anticipada.
+Nuestro servicio ofrece un ecosistema digital de agricultura de precisión enfocado en el monitoreo térmico y la predicción fenológica del olivo. A través de nuestra plataforma, los productores pueden visualizar la acumulación de "porciones de frío" y anticipar el impacto de la vecería en sus cosechas. A diferencia de soluciones basadas exclusivamente en hardware como Pessl Instruments (Metos), que se centran en la venta de sENOSres y entrega de datos meteorológicos brutos, Viora transforma dicha información en proyecciones de rendimiento y alertas de riesgo fenológico personalizadas por parcela.
+Hemos identificado que un factor crítico que desestabiliza la economía del sector es la incapacidad de predecir la alternancia productiva extrema causada por la variabilidad térmica. Según Calvo et al. (2024), los eventos de El Niño-Oscilación del Sur (ENOS) alteran significativamente la productividad y el crecimiento vegetativo de los setos de olivo. Esta situación afecta directamente a los productores olivareros de la región sur que dependen de cosechas constantes. Actualmente, existe un vacío tecnológico ya que los productores dependen de reportes de emergencia posteriores a la crisis (Andina, 2024), careciendo de una herramienta que organice datos climáticos para predecir ciclos de producción de forma anticipada.
 ¿Cómo reducir la incertidumbre económica de los productores olivareros de la región sur mediante la predicción temprana de los ciclos de vecería basada en datos climáticos?
 
 - **Problem Statement 2: Vigilancia epidemiológica y control de amenazas**
@@ -256,7 +256,7 @@ Creemos que nuestros clientes necesitan mayor previsibilidad y capacidad de resp
 - **Creemos que lograremos** firmar al menos 3 convenios de colaboración con asociaciones agrarias, **si** las agroindustrias y gestores agrícolas **alcanzan** una toma de decisiones optimizada gracias a datos procesados, con un dashboard interactivo que integre datos de clima, suelo y sanidad.
 
 - **Creemos que lograremos** que el 35% de los usuarios de prueba se conviertan en suscriptores de pago, **si** los productores tradicionales con aversión al riesgo **alcanzan** una reducción de la fricción tecnológica y financiera, con un modelo de suscripción que incluya periodos de prueba y garantía de devolución.
-  
+
 - **Creemos que lograremos** reducir el gasto operativo en insumos químicos en un 15%, **si** los productores olivareros **alcanzan** una optimización de recursos basada en evidencia técnica, con un módulo de recomendaciones y nutrición dinámica que cruza variables de suelo y clima.
   
 - **Creemos que lograremos** que al menos el 25% de los usuarios activos consulten el panel al menos 3 veces por semana durante el primer trimestre tras el lanzamiento, **si** los productores olivareros de la región sur **alcanzan** una toma de decisiones basada en evidencia con un dashboard centralizado que integre datos de clima, suelo y sanidad.
