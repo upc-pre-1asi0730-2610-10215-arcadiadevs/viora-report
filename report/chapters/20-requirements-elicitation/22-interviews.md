@@ -225,3 +225,51 @@ A partir del análisis cualitativo de los productores, se establecen los siguien
 - 100% (3 de 3) de los productores maneja fundos de pequeña y mediana escala, con una extensión que oscila entre 1 y 5 hectáreas.
 
 <br>
+
+**Profesionales especializados en control de plagas agrícolas**
+A partir de estas 3 entrevistas, realizadas a profesionales que operan principalmente en la zona de Pangoa, Satipo (Junín), se consiguieron los siguientes datos:
+
+El rango de edad de los entrevistados se sitúa entre los 42 y 46 años, representando a un segmento de profesionales con alta formación técnica y una carga operativa significativa que abarca desde 50 hasta 150 productores mensuales.
+
+Datos Demográficos:
+- Distrito: 100% residen y laboran en Pangoa, Satipo (Junín).
+- Ocupación: 100% son Ingenieros Agrónomos o especialistas en Ciencias Agrarias con enfoque en control fitosanitario.
+
+A partir del análisis cualitativo de los profesionales entrevistados en la zona de Satipo (Junín), se establecen los siguientes indicadores estadísticos:
+
+**Inspección física de parcelas (Plagas/Riego)**
+- 100% (3 de 3) de los especialistas (David Espada, Paul Ramos y Hugo Alanya) coinciden en que la inspección presencial es el eje central de su labor técnica.
+- Los ingenieros asignan a esta tarea una frecuencia alta y una importancia crítica dentro de su flujo de trabajo diario.
+- El 100% de los expertos utiliza actualmente métodos tradicionales (agendas físicas, cámaras digitales o fotos en el celular) para documentar hallazgos en campo, lo que genera una alta carga de trabajo posterior.
+- Existe un consenso unánime (100%) en que la inspección física debe ser complementada con datos de precisión (como índices de vegetación o historial térmico) para realizar diagnósticos antes de que la plaga sea visiblemente agresiva.
+
+**Registro y análisis de trazabilidad histórica**
+- 100% (3 de 3) de los especialistas utiliza actualmente herramientas digitales de gabinete, principalmente Excel, para el registro y análisis de datos históricos de las parcelas.
+- El 100% identifica una desconexión operativa crítica: la toma de datos en campo sigue siendo manual, lo que genera un "cuello de botella" administrativo al momento de tabular la información en la oficina.
+
+**Emisión de diagnósticos y recetas técnicas**
+- 100% de los ingenieros considera que la emisión de recetas es su tarea de mayor responsabilidad profesional, asignándole una importancia crítica.
+- El 66.7% (2 de 3) reporta que la efectividad de sus recetas se ve comprometida porque el productor suele contactarlos tardíamente, cuando la plaga ya está avanzada en el 80-85% de los casos.
+
+**Planificación de logística y rutas de visita**
+- 100% de los especialistas califica como "alta" la importancia de esta tarea para su productividad diaria.
+- Atienden un promedio de 92 productores mensuales (con rangos de entre 50 y 150), y el 100% manifiesta que podría aumentar este volumen si el sistema automatizara la georreferenciación y el flujo de clientes hacia sus rutas de inspección.
+
+**Gestión de captación de nuevos clientes**
+- 100% de los entrevistados muestra insatisfacción con sus métodos actuales de captación (principalmente "boca a boca" o reuniones comunales), calificándolos como poco agresivos o lentos.
+- El 100% expresa una clara disposición a pagar una suscripción digital siempre que la plataforma asegure un flujo constante de clientes nuevos y acceso a datos reales de campo.
+
+**Monitoreo de variables climáticas**
+- El 100% identifica variables como temperatura, humedad y altitud como factores críticos de riesgo que deben monitorear para garantizar la precisión de sus diagnósticos técnicos.
+- Consideran que el acceso a estos datos de forma digital es de importancia alta para reducir el margen de error en sus recomendaciones de agrofármacos.
+
+**Evaluación fenológica (Predicción de vecería)**
+- Los especialistas valoran esta tarea como un insumo de importancia media/alta dentro de su asesoría profesional.
+- El 100% coincide en que contar con una predicción de vecería es clave para planificar mejor la fertilización y el manejo agronómico preventivo con el productor.
+
+**Ingreso promedio por consultoría**
+- 66.7% (2 de 3) de los profesionales percibe ingresos por consultoría privada que oscilan entre 80 y 120 soles por visita.
+- 33.3% (1 de 3) percibe un sueldo fijo mensual de 3500 soles debido a su labor en instituciones públicas (Senasa).
+
+**Años de experiencia en el sector agropecuario**
+- 100% (3 de 3) de los especialistas cuenta con una trayectoria consolidada, situándose en un rango de entre 20 y 21 años de experiencia en el sector.
