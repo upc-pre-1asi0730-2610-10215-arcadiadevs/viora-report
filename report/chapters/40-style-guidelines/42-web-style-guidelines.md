@@ -12,7 +12,7 @@ Los diferentes marcos y elementos interactivos que definen la plataforma de Vior
 \begin{figure}[H]
 \caption{Sistema de retícula y grilla responsiva para Viora.}
 \centering
-\includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/01-Grid-System.jpg}
+\includegraphics[width=0.8\textwidth]{report/assets/product-backlog/01-Grid-System.jpg}
 \caption\*{\textit{Nota.} Configuración de columnas, márgenes y canales para Desktop HD, Desktop y Mobile. Elaboración propia.}
 \end{figure}
 
@@ -28,7 +28,7 @@ Los diferentes marcos y elementos interactivos que definen la plataforma de Vior
 \begin{figure}[H]
 \caption{Especificaciones de campos de entrada de texto de Viora.}
 \centering
-\includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/02-Textfields.jpg}
+\includegraphics[width=0.8\textwidth]{report/assets/product-backlog/02-Textfields.jpg}
 \caption\*{\textit{Nota.} Definición de variantes (con iconos, etiquetas) y estados del sistema (Focus, Error, Disabled). Elaboración propia.}
 \end{figure}
 
@@ -47,7 +47,7 @@ Los diferentes marcos y elementos interactivos que definen la plataforma de Vior
 \begin{figure}[H]
 \caption{Estilos de botones, enlaces y acciones interactivas de Viora.}
 \centering
-\includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/03-Button-&-Link.jpg}
+\includegraphics[width=0.8\textwidth]{report/assets/product-backlog/03-Button-&-Link.jpg}
 \caption\*{\textit{Nota.} Jerarquía de botones por tamaño (Small, Medium, Large) y estilos aplicados a dispositivos móviles. Elaboración propia.}
 \end{figure}
 
@@ -63,7 +63,7 @@ Los diferentes marcos y elementos interactivos que definen la plataforma de Vior
 \begin{figure}[H]
 \caption{Guía de elevación, sombras y efectos de transparencia de Viora.}
 \centering
-\includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/04-Shadows-&-Blurs.jpg}
+\includegraphics[width=0.8\textwidth]{report/assets/product-backlog/04-Shadows-&-Blurs.jpg}
 \caption\*{\textit{Nota.} Parámetros técnicos de Drop Shadows y efectos de Glassmorphism para la profundidad visual. Elaboración propia.}
 \end{figure}
 
@@ -79,7 +79,7 @@ Los diferentes marcos y elementos interactivos que definen la plataforma de Vior
 \begin{figure}[H]
 \caption{Componentes de selección y elementos de identidad de usuario de Viora.}
 \centering
-\includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/05-Components.jpg}
+\includegraphics[width=0.8\textwidth]{report/assets/product-backlog/05-Components.jpg}
 \caption\*{\textit{Nota.} Definición de estilos para herramientas de selección (Checkbox, Radio, Toggle) y variantes de avatares con estados activos. Elaboración propia.}
 \end{figure}
 
