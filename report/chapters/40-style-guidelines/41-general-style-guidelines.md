@@ -24,7 +24,7 @@ La siguiente guía se implementa operativamente bajo las directrices del lenguaj
 \caption{Imagen del Branding y logo de Viora.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/05-Logo.jpg}
-\caption\*{\textit{Nota.} Visualización correspondiente a la identidad visual y marca. Elaboración propia.}
+\caption*{\textit{Nota.} Visualización correspondiente a la identidad visual y marca. Elaboración propia.}
 \end{figure}
 
 <br>
@@ -43,9 +43,11 @@ La siguiente guía se implementa operativamente bajo las directrices del lenguaj
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/02-Typography-1.jpg}
 
+\newpage
+
 \vspace{1em}
 \includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/02-Typography-2.jpg}
-\caption\*{\textit{Nota.} Selección de fuentes para títulos y cuerpo de texto que garantizan legibilidad. Elaboración propia.}
+\caption*{\textit{Nota.} Selección de fuentes para títulos y cuerpo de texto que garantizan legibilidad. Elaboración propia.}
 \end{figure}
 
 <br>
@@ -63,7 +65,7 @@ La siguiente guía se implementa operativamente bajo las directrices del lenguaj
 \caption{Paleta de colores de Viora.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/01-Colors.jpg}
-\caption\*{\textit{Nota.} Definición de códigos hexadecimales y jerarquía cromática para la interfaz. Elaboración propia.}
+\caption*{\textit{Nota.} Definición de códigos hexadecimales y jerarquía cromática para la interfaz. Elaboración propia.}
 \end{figure}
 
 <br>
@@ -74,10 +76,10 @@ La siguiente guía se implementa operativamente bajo las directrices del lenguaj
   <br>
 
 \begin{figure}[H]
-\caption{Paleta de colores de Viora.}
+\caption{Espaciado de Viora.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/04-Spacing.jpg}
-\caption\*{\textit{Nota.} Guía de alineación y márgenes para la consistencia visual en web. Elaboración propia.}
+\caption*{\textit{Nota.} Guía de alineación y márgenes para la consistencia visual en web. Elaboración propia.}
 \end{figure}
 
 <br>
@@ -91,7 +93,7 @@ La siguiente guía se implementa operativamente bajo las directrices del lenguaj
 \caption{Sistema de iconografía para Viora.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/03-Iconography.jpg}
-\caption\*{\textit{Nota.} Conjunto de símbolos visuales para la navegación y estados del sistema. Elaboración propia.}
+\caption*{\textit{Nota.} Conjunto de símbolos visuales para la navegación y estados del sistema. Elaboración propia.}
 \end{figure}
 
 <br>
@@ -108,7 +110,7 @@ La siguiente guía se implementa operativamente bajo las directrices del lenguaj
 \caption{Definición del tono de voz y personalidad de Viora.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/style-guidelines/06-Communication-tone.jpg}
-\caption\*{\textit{Nota.} Atributos de comunicación que definen la personalidad de la marca: un equilibrio entre lo formal, serio, respetuoso y entusiasta. Elaboración propia.}
+\caption*{\textit{Nota.} Atributos de comunicación que definen la personalidad de la marca: un equilibrio entre lo formal, serio, respetuoso y entusiasta. Elaboración propia.}
 \end{figure}
 
 <br>
