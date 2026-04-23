@@ -11,7 +11,7 @@ El User Persona de Pedro Huaman representa al segmento de productores agrícolas
 <br>
 
 \begin{figure}[H]
-\caption{User Persona del segmento Profesional Especializado En Control De Plagas Agrícolas.}
+\caption{User Persona del segmento Productor Olivero.}
 \centering
 \includegraphics[width=0.4\textwidth]{report/assets/needfinding/Pedro Huaman.png}
 \caption*{\textit{Nota.} La ficha de User Persona de Pedro Huaman detalla el arquetipo del productor agrícola tradicional, integrando sus objetivos, frustraciones y necesidades tecnológicas clave identificadas durante la fase de investigación para el diseño de la plataforma Viora. Elaboración propia.}
@@ -24,7 +24,7 @@ El User Persona de Paco Perez personifica al segmento de productores tecnificado
 <br>
 
 \begin{figure}[H]
-\caption{User Persona del segmento Productor Olivero.}
+\caption{User Persona del segmento Profesional Especializado En Control De Plagas Agrícolas.}
 \centering
 \includegraphics[width=0.4\textwidth]{report/assets/needfinding/Paco Perez.png}
 \caption*{\textit{Nota.} La ficha de User Persona de Paco Perez detalla el arquetipo del agricultor tecnificado, integrando sus metas de optimización de recursos, frustraciones respecto a la precisión de datos y necesidades de integración tecnológica para la gestión avanzada en la plataforma Viora. Elaboración propia.}
