@@ -71,7 +71,7 @@ La siguiente guía se implementa operativamente bajo las directrices del lenguaj
 <br>
 
 4. **Espaciado:** El uso del espacio en blanco es fundamental para evitar la sobrecarga de información.
-   - **Sustento de diseño:** Hemos adoptado un sistema de espaciado basado en una cuadrícula base y apoyado en la librería de utilidades **PrimeFlex**. Esto asegura consistencia visual en todas las pantallas, proporcionando a Vue.js las clases necesarias para separar adecuadamente los paneles de monitoreo y lograr un alivio de la carga visual de manera responsiva, permitiendo que la interfaz mantenga el estricto orden de las directivas de Material Design.
+   - **Sustento de diseño:** Hemos adoptado un sistema de espaciado basado en una cuadrícula base y apoyado en la biblioteca de utilidades **PrimeFlex**. Esto asegura consistencia visual en todas las pantallas, proporcionando a Vue.js las clases necesarias para separar adecuadamente los paneles de monitoreo y lograr un alivio de la carga visual de manera responsiva, permitiendo que la interfaz mantenga el estricto orden de las directivas de Material Design.
 
   <br>
 

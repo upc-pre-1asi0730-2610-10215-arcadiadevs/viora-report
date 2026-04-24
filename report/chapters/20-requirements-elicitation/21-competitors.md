@@ -117,7 +117,7 @@ Análisis competitivo para competidores **indirectos**
 \textbullet\ Creciente urgencia por mitigar mermas asociadas al fenómeno ENOS y a la variabilidad climática en el cultivo de olivo (Calvo et al., 2024; Agencia Andina, 2024).\\[0.28cm]
 \textbullet\ Lentitud y enfoque reactivo de las alertas estatales frente a eventos climáticos y sanitarios, lo que abre espacio para soluciones preventivas más ágiles (Yglesias-González et al., 2023; Servicio Nacional de Sanidad Agraria del Perú, 2024).\\[0.28cm]
 \textbullet\ Potencial de alianzas con cooperativas y actores olivareros locales, dada la necesidad de fortalecer la resiliencia productiva y la gestión técnica del cultivo en Tacna (MIDAGRI, 2025).\\[0.28cm]
-\textbullet\ Competidores globales relativamente inaccesibles para pequeños productores debido a los requerimientos de analítica avanzada, teledetección e infraestructura tecnológica especializada (Pino et al., 2026; Osco-Mamani et al., 2025).
+\textbullet\ Competidores globales relativamente inaccesibles para pequeños productores debido a los requisitos de analítica avanzada, teledetección e infraestructura tecnológica especializada (Pino et al., 2026; Osco-Mamani et al., 2025).
 \end{minipage}
 &
 \cellcolor{fodaLight}

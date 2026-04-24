@@ -1,10 +1,10 @@
 ### Web Style Guidelines
 
-Los diferentes marcos y elementos interactivos que definen la plataforma de Viora se materializan operativamente mediante el uso extensivo de los componentes nativos de la librería **PrimeVue**, aprovechando el ecosistema reactivo de **Vue.js** y garantizando la modularidad técnica de todos nuestros diseños.
+Los diferentes marcos y elementos interactivos que definen la plataforma de Viora se materializan operativamente mediante el uso extensivo de los componentes nativos de la biblioteca **PrimeVue**, aprovechando el ecosistema reactivo de **Vue.js** y garantizando la modularidad técnica de todos nuestros diseños.
 
 1. **Grid System**
 
-   Para mantener la consistencia en el diseño de paneles complejos y dashboards de monitoreo, la interfaz adopta el sistema de retículas CSS de la librería **PrimeFlex** sobre una estructura central de **Vue Framework**.
+   Para mantener la consistencia en el diseño de paneles complejos y dashboards de monitoreo, la interfaz adopta el sistema de retículas CSS de la biblioteca **PrimeFlex** sobre una estructura central de **Vue Framework**.
    - **Sustento de diseño:** Se utiliza inherentemente una rejilla de _12 columnas_ sumamente flexible de la capa de PrimeFlex. Este estándar CSS adaptado agiliza el re-ordenamiento automatizado de los widgets de datos. Como resultado, gráficos de temperatura y umbrales de plagas no solo escalan, sino que previenen la sobrecarga visual.
 
   <br>

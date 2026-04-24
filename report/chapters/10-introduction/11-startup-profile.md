@@ -99,7 +99,7 @@ Soy Victor Paredes Maza, tengo 18 años, estudio Ingeniería de Software en la U
 \hfill
 \begin{minipage}[c]{0.74\textwidth}
 \raggedright
-Soy Fabrizio Santi Guerrero, tengo 19 años, soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas y CPO de Viora. Soy desarrollador enfocado en el backend y arquitectura de software. A nivel técnico, tengo conocimientos de SQL, C++, Python, JavaScript, librerías de Ciencia de Datos y conocimientos Full-Stack. Entre mis fortalezas se puede encontrar la perseverancia, pleno esfuerzo y la disciplina.
+Soy Fabrizio Santi Guerrero, tengo 19 años, soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas y CPO de Viora. Soy desarrollador enfocado en el backend y arquitectura de software. A nivel técnico, tengo conocimientos de SQL, C++, Python, JavaScript, bibliotecas de Ciencia de Datos y conocimientos Full-Stack. Entre mis fortalezas se puede encontrar la perseverancia, pleno esfuerzo y la disciplina.
 
 En ArcadiaDevs planificaré la arquitectura y estructura técnica del proyecto. También, colaboraré con vigilar el flujo de coordinación del grupo, y apoyar con respecto a la presentación e investigación de datos.
 \end{minipage}
