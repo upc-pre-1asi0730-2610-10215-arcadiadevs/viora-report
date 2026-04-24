@@ -136,15 +136,6 @@
 \caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
 \end{figure} 
 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/dashboard-e.png}
-\caption*{\textit{Nota.} Diseño visual del dashboardpara productor. Elaboración propia.}
-\end{figure} 
-
-
 \begin{figure}[H]
 \caption{Wireframe de la aplicación.}
 \centering
