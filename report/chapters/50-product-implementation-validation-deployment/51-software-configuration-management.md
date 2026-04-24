@@ -47,9 +47,9 @@ Para cumplir con el ciclo de desarrollo y despliegue de una solución distribuid
 
     - Microsoft Azure: Proveedor de servicios Cloud principal para la infraestructura operativa. (https://azure.microsoft.com/)
 
-        - Azure App Service: Hosteo del Web Service (Backend) de Spring Boot. Permite la ejecución de servicios Server-Side de Java en un entorno seguro y escalable. (https://azure.microsoft.com/es-es/products/app-service/)
+        - Azure App Service: Hosteo del Web Service (Backend) de ASP.NET Core. Permite la ejecución de servicios Server-Side de C# en un entorno seguro y escalable. (https://azure.microsoft.com/es-es/products/app-service/)
 
-        - Azure Static Web Apps: Se utilizará para el despliegue de la aplicación de Angular, optimizando la entrega del frontend mediante una red de distribución de contenido (CDN) global. (https://azure.microsoft.com/es-es/products/app-service/static/) 
+        - Azure Static Web Apps: Se utilizará para el despliegue de la aplicación de Vue.js, optimizando la entrega del frontend mediante una red de distribución de contenido (CDN) global. (https://azure.microsoft.com/es-es/products/app-service/static/) 
 
         - Azure Database for PostgreSQL: Servicio gestionado para la persistencia de datos. Se utilizará para el almacenamiento de polígonos de parcelas y datos agronómicos, aprovechando la extensión PostGIS para el procesamiento geográfico necesario en el proyecto. (https://azure.microsoft.com/es-es/products/postgresql/)
 
@@ -75,9 +75,9 @@ Se utiliza GitHub como plataforma principal para el almacenamiento y gestión de
 
     - Landing Page: Contiene los archivos de maquetación semántica y estilos para el sitio informativo. (https://github.com/upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-website)
 
-    - Frontend Web Application: Repositorio dedicado a la aplicación en Angular, incluyendo componentes de lógica de usuario y servicios de consumo de API. (https://github.com/upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp)
+    - Frontend Web Application: Repositorio dedicado a la aplicación en Vue.js, incluyendo componentes de lógica de usuario y servicios de consumo de API. (https://github.com/upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp)
 
-    - Web Services (Backend): Este repositorio centraliza la lógica de negocio desarrollada en Spring Boot. Incluye tanto el código del proyecto como la suite completa de pruebas unitarias, de integración y de aceptación (OpenAPI/Swagger). (https://github.com/upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-platform)
+    - Web Services (Backend): Este repositorio centraliza la lógica de negocio desarrollada en ASP.NET Core. Incluye tanto el código del proyecto como la suite completa de pruebas unitarias, de integración y de aceptación (OpenAPI/Swagger). (https://github.com/upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-platform)
 
 - Workflow de Control de Versiones: Gitflow
 Se adopta el modelo GitFlow propuesto por Driessen (2010) para gestionar el ciclo de vida del software, asegurando que la rama de producción se mantenga siempre estable y aislada de las versiones en desarrollo.
@@ -147,7 +147,7 @@ Para la redacción de criterios de aceptación y pruebas automatizadas, se sigue
     - Reutilización: Se prioriza el uso de Scenario Outline y tablas de Examples para agrupar pruebas basadas en datos, evitando la redundancia de código (Cucumber, s.f.).
 
 - HTML (Estructura Web):
-La maquetación de la Landing Page y los templates de Angular se rigen por la Google HTML/CSS Style Guide (Google, s.f.) y los estándares de W3Schools HTML5 Syntax (W3Schools, s.f.).
+La maquetación de la Landing Page y los templates de Vue.js se rigen por la Google HTML/CSS Style Guide (Google, s.f.) y los estándares de W3Schools HTML5 Syntax (W3Schools, s.f.).
 
     - Sintaxis: Se utiliza minúscula para todas las etiquetas y atributos. Los valores de los atributos deben estar encerrados en comillas dobles (W3Schools, s.f.).
 
