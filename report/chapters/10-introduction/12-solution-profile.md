@@ -6,34 +6,30 @@
 
 La volatilidad reciente refuerza la necesidad de gestión basada en datos. En septiembre de 2025, el sector agropecuario creció 12.1 % (subsector agrícola 18.4 %) a nivel nacional, y se reportó un incremento de 18,615 % en aceituna para Tacna, explicado como recuperación respecto a 2024 afectado por altas temperaturas asociadas a El Niño (MIDAGRI, 2025).
 
-
 \begin{table}[H]
 \caption{Variación del Valor de la Producción Agropecuaria según subsectores mes de setiembre 2019 - 2025 (\%)}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/graphics/valor_produccion_midagri.png}
-\caption*{\textit{Nota.} En el mes de setiembre el sector agropecuario registró un crecimiento de 12,1 \% comparado con similar mes del 2024. Tomado de MIDAGRI, 2025.}
+\caption\*{\textit{Nota.} En el mes de setiembre el sector agropecuario registró un crecimiento de 12,1 \% comparado con similar mes del 2024. Tomado de MIDAGRI, 2025.}
 \end{table}
 
 **Influencia del clima, ENOS y horas de frío en producción, calidad y vecería** En el caso de Tacna, se ha documentado que la sostenibilidad del olivo depende críticamente del clima, destacando la temperatura como variable clave; se reportan rangos de tolerancia y óptimos (Pino y Ascencios, 2022). La evidencia local reciente asocia olas de calor con fallas fisiológicas: en Yarada Los Palos se reportó merma “hasta 90 %” y proyecciones de cosecha equivalente a 10 % a 20 % del año previo, vinculadas a ausencia de “golpe de frío” nocturno necesario para el cuajado (Andina, 2024). Además, se registraron señales de impacto económico (p. ej., alzas de precio minorista) coherentes con shock de oferta (Andina, 2024).
 
 La investigación aplicada también sustenta incorporar un rastreador de frío y un motor predictivo de vecería. En setos de olivo, un evento El Niño-Oscilación del Sur (ENOS) fuerte se asocia a aumento de temperaturas invernales (+2°C) y reducción de acumulación de frío (-23 %), con deterioro de productividad y alternancia; se reportan reducciones del frío en escenarios ENOS de -15 % a -23 % y, en campañas adversas, reducciones de rendimiento de aceite >85 % (Calvo et al., 2024). Estos hallazgos son consistentes con el patrón de alta variabilidad observado en Tacna (MIDAGRI, 2025) y justifican modelar vecería y requerimientos de frío como componentes de decisión.
 
-
 \begin{figure}[H]
 \caption{Porciones acumuladas de frío, estimadas según el modelo dinámico entre el 1 de mayo y el 1 de septiembre para el período 2013-2023. Las porciones acumuladas de frío anuales promedio suavizadas desde 2013 hasta 2023 se destacan con una línea negra continua. (\%)}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/graphics/porciones_acumuladas_frio.png}
-\caption*{\textit{Nota.} ENOS, acumulación de frío y alternancia productiva — Calvo et al., 2024}
+\caption\*{\textit{Nota.} ENOS, acumulación de frío y alternancia productiva — Calvo et al., 2024}
 \end{figure}
-
 
 \begin{figure}[H]
 \caption{Rendimiento de aceite obtenido para cada tipo de poda durante el período experimental y reducciones en el rendimiento de aceite a lo largo de períodos de dos años (2020-2022 y 2022-2024). (\%)}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/graphics/calidad_aceite.png}
-\caption*{\textit{Nota.} Recuperado de Calvo et al., 2024}
+\caption\*{\textit{Nota.} Recuperado de Calvo et al., 2024}
 \end{figure}
-
 
 **Plagas, vigilancia fitosanitaria y riesgos regulatorios** La presión sanitaria constituye un riesgo productivo y regulatorio. SENASA informó acciones inmediatas y declaración de emergencia fitosanitaria ante Xylella fastidiosa, con medidas de vigilancia y contención (SENASA, 2024). Posteriormente, la Resolución Directoral que declara bajo control oficial Xylella fastidiosa subsp. pauca sustenta la dimensión del riesgo y la necesidad de intervención temprana: se reportan casos positivos en el país y se advierte impacto potencial de disminución productiva “hasta 25 % –30 %” en zonas vulnerables, así como pérdidas económicas potenciales superiores a US$ 3,245 millones anuales considerando varios cultivos (SENASA, 2025).
 
@@ -41,7 +37,7 @@ La investigación aplicada también sustenta incorporar un rastreador de frío y
 \caption{Declaran bajo control oficial la plaga Xylella fastidiosa subsp. pauca, a nivel nacional.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/graphics/medida_plaga_senasa.png}
-\caption*{\textit{Nota.} Recuperado de SENASA, 2024}
+\caption\*{\textit{Nota.} Recuperado de SENASA, 2024}
 \end{figure}
 
 **Problemas actuales del caso de estudio** El caso de estudio evidencia problemas de gestión y gobernanza que amplifican los impactos del clima y las plagas. Primero, la captura de información tiende a ser reactiva: ante eventos extremos se recurre a empadronamientos y levantamiento posterior de daños (Andina, 2024), lo que limita la prevención y la planeación de campañas. Segundo, existen riesgos asociados al recurso hídrico: se reportaron alertas por desvío de energía para extracción de agua subterránea en Yarada Los Palos, con valores de potencia contratada y condiciones que sugieren presión sobre acuíferos (Contraloría, 2023). Tercero, la afectación sanitaria puede evaluarse a escala espacial: en La Yarada se estimó que el área de plantas enfermas oscila entre 42 % y 68 %, proponiendo umbrales por índices de vegetación (p. ej., NDVI) para niveles de severidad (Pino y Huayna, 2022). La guía técnica regional complementa estos antecedentes al consolidar prácticas de manejo, riego y nutrición para el cultivo en Tacna (Casanova, 2022).
@@ -50,14 +46,14 @@ La investigación aplicada también sustenta incorporar un rastreador de frío y
 \caption{Severidad de ataque de las plagas en el olivo en la zona de estudio, desde un estado leve hasta un estado muy grave y en punto de marchitez permanente.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/graphics/ataque_plagas.png}
-\caption*{\textit{Nota.} Recuperado de Pino y Huayna, 2022}
+\caption\*{\textit{Nota.} Recuperado de Pino y Huayna, 2022}
 \end{figure}
 
 \begin{table}[H]
 \caption{Rango de afectación del cultivo del olivo, según índices de vegetación}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/graphics/umbrales_ndvi.png}
-\caption*{\textit{Nota.} (a) La afectación es leve. (b) Ataque de plagas moderado. (c) Severidad del ataque de las plagas sumado al déficit hídrico. (d) Ataque de plagas muy fuerte y estado de marchitez permanente. Recuperado de Pino y Huayna, 2022}
+\caption\*{\textit{Nota.} (a) La afectación es leve. (b) Ataque de plagas moderado. (c) Severidad del ataque de las plagas sumado al déficit hídrico. (d) Ataque de plagas muy fuerte y estado de marchitez permanente. Recuperado de Pino y Huayna, 2022}
 \end{table}
 
 **Sustentación de la solución SaaS y ampliaciones propuestas** La evidencia respalda una plataforma SaaS hiper‑especializada que convierta datos en decisiones: (i) Dashboard de finca con clima, suelo y sanidad para monitorear riesgo y desempeño (Andina, 2024; Pino y Huayna, 2022; MIDAGRI, 2025). (ii) Rastreador de horas/porciones de frío vs ENOS, para anticipar riesgo fenológico y productivo bajo escenarios ENOS (Calvo et al., 2024; Pino y Ascencios, 2022). (iii) Motor predictivo de vecería, apoyado en evidencia de alternancia asociada a variaciones de frío y en la volatilidad observada a nivel regional (Calvo et al., 2024; MIDAGRI, 2025). (iv) Motor de alertas epidemiológicas y trazabilidad de cumplimiento, alineado a vigilancia, control oficial y protocolos de contención (SENASA, 2024; SENASA, 2025). (v) Recomendaciones y nutrición dinámica, sustentadas en lineamientos técnicos regionales y variables edafológicas/ambientales relevantes para diagnóstico (Casanova, 2022; Pino y Huayna, 2022).
@@ -68,14 +64,14 @@ Como soporte de escalabilidad, investigaciones recientes demuestran viabilidad d
 \caption{( a ) UAV Matrice 350 integrado con el sENOSr Altum PT, ( b ) cámara Altum PT, ( c ) puntos de control terrestre (GCP) y ( d ) plan de vuelo para la imagen de estudio.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/graphics/uso_drones_uav.png}
-\caption*{\textit{Nota.} Recuperado de Pino et al., 2026}
+\caption\*{\textit{Nota.} Recuperado de Pino et al., 2026}
 \end{figure}
 
 \begin{figure}[H]
 \caption{Inferencia del mejor modelo YOLOv8m en una imagen recortada.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/graphics/uso_deep_learning.png}
-\caption*{\textit{Nota.} Osco‑Mamami et al., 2025}
+\caption\*{\textit{Nota.} Osco‑Mamami et al., 2025}
 \end{figure}
 
 ---
@@ -161,7 +157,7 @@ Objetivos específicos
 
 **Restricciones**
 
-- **Alcance tecnológico:** La solución debe estar conformada por un RESTful API de elaboración interna (Java/Spring Boot) y una Web Application integrada (Angular), con una interfaz adaptable a dispositivos.
+- **Alcance tecnológico:** La solución abarcará el desarrollo de software para el Frontend y Web Services. La _Landing Page_ utilizará HTML5, CSS3 y JavaScript. La aplicación web (_Frontend_) se desarrollará con Vue Framework, empleando PrimeVue como biblioteca de componentes UI bajo las directrices de Material Design. El servicio web (_Backend_) será un RESTful API desarrollado con ASP.NET Core Framework y C#, y su documentación se expondrá mediante OpenAPI Specification a través de Swagger.
 - **Exclusión de implementaciones físicas:** El proyecto se limita al desarrollo de software; no incluye la implementación de hardware, sENOSres físicos ni tecnologías de conectividad IoT de campo.
 - **Estandarización de idioma:** Toda la experiencia de usuario, incluyendo mensajes, interfaces y la documentación técnica de los servicios, debe estar desarrollada exclusivamente en idioma inglés.
 - **Fidelidad arquitectónica:** El diseño de software debe seguir estrictamente el Modelo C4 (Context, Container, Component) y el patrón Domain-Driven Design (DDD).
@@ -213,7 +209,7 @@ Creemos que nuestros clientes necesitan mayor previsibilidad y capacidad de resp
 
 - Alcanzar una adopción temprana de 150 productores y 30 profesionales especializados en control de plagas agrícola e interactuando en la plataforma en los primeros 4 meses de lanzamiento.
 
-- Lograr que al menos el 35% de los usuarios que inician el periodo de prueba (***trial***) se conviertan en suscriptores recurrentes de pago dentro de los primeros 3 meses de operación, validando que la garantía de devolución y el modelo de afiliados eliminan la fricción inicial.
+- Lograr que al menos el 35% de los usuarios que inician el periodo de prueba (**_trial_**) se conviertan en suscriptores recurrentes de pago dentro de los primeros 3 meses de operación, validando que la garantía de devolución y el modelo de afiliados eliminan la fricción inicial.
 
 - Firmar al menos 3 convenios de colaboración con asociaciones agrarias o consultoras fitosanitarias para el intercambio de datos en un plazo de 6 meses tras el lanzamiento.
 
@@ -258,7 +254,6 @@ Creemos que nuestros clientes necesitan mayor previsibilidad y capacidad de resp
 - **Creemos que lograremos** que el 35% de los usuarios de prueba se conviertan en suscriptores de pago, **si** los productores tradicionales con aversión al riesgo **alcanzan** una reducción de la fricción tecnológica y financiera, con un modelo de suscripción que incluya periodos de prueba y garantía de devolución.
 
 - **Creemos que lograremos** reducir el gasto operativo en insumos químicos en un 15%, **si** los productores olivareros **alcanzan** una optimización de recursos basada en evidencia técnica, con un módulo de recomendaciones y nutrición dinámica que cruza variables de suelo y clima.
-  
 - **Creemos que lograremos** que al menos el 25% de los usuarios activos consulten el panel al menos 3 veces por semana durante el primer trimestre tras el lanzamiento, **si** los productores olivareros de la región sur **alcanzan** una toma de decisiones basada en evidencia con un dashboard centralizado que integre datos de clima, suelo y sanidad.
 
 #### Lean UX Canvas
@@ -269,7 +264,7 @@ Creemos que nuestros clientes necesitan mayor previsibilidad y capacidad de resp
 \caption{Lean UX Canvas de la solución Viora.}
 \centering
 \includegraphics[width=0.8\textwidth]{report/assets/leanUX-canvas/Lean UX Canvas Viora.png}
-\caption*{\textit{Nota.} El Lean UX Canvas presenta la identificación del problema, segmentos de usuarios, propuestas de solución, hipótesis y el enfoque de producto mínimo viable (MVP) para la validación de la plataforma Viora. Elaboración propia.}
+\caption\*{\textit{Nota.} El Lean UX Canvas presenta la identificación del problema, segmentos de usuarios, propuestas de solución, hipótesis y el enfoque de producto mínimo viable (MVP) para la validación de la plataforma Viora. Elaboración propia.}
 \end{figure}
 
 \clearpage
