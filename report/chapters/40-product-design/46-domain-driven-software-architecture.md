@@ -328,4 +328,4 @@ Como nivel de mayor detalle, se presentan los Component Diagrams para cada uno d
     \caption*{\textit{Nota.} Componentes que conforman los servicios y controladores del backend principal. Elaboración propia.}
 \end{figure}
 
-\newpge
+\newpage
