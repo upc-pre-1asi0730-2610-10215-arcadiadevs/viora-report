@@ -280,3 +280,52 @@ Como resultado del proceso de Design-Level EventStorming, el equipo logró trans
 En términos de diseño estratégico, los tres bounded contexts trabajados —Agronomic Monitoring & Prediction, Epidemiological Surveillance e Intervention Marketplace— concentran el core domain de la propuesta de valor de Viora, mientras que los demás contextos identificados cumplen funciones de soporte o habilitación transversal. Esta separación mejora la integridad del modelo, reduce la ambigüedad semántica y facilita que cada parte de la solución evolucione con un lenguaje ubicuo consistente y una frontera de responsabilidades bien definida.
 
 \newpage
+
+### Software Architecture Context Diagram
+
+A continuación se presenta el Context Diagram del modelo C4 para la plataforma Viora. Este diagrama ofrece una vista de alto nivel del sistema, ilustrando cómo interactúa con sus principales usuarios (Productores, Especialistas y Visitantes) y con los sistemas externos de los que depende para su funcionamiento (AgroMonitoring API, Mercado Pago, Brevo, Mapbox, Cloudinary y fuentes de datos abiertos de SENASA).
+
+\begin{figure}[H]
+    \caption{System Context Diagram para Viora.}
+    \centering
+    \includegraphics[width=1\textwidth]{report/assets/design-level-eventstorming/c4-diagrams/VioraSystemContext.png}
+    \caption*{\textit{Nota.} Vista de nivel de contexto que muestra a Viora en el centro y los actores y sistemas externos a su alrededor. Elaboración propia.}
+\end{figure}
+
+### Software Architecture Container Diagrams
+
+En la siguiente figura se detalla el Container Diagram, el cual descompone el sistema Viora en contenedores ejecutables. Se observa la Landing Page y la Web Application operando en el lado del cliente, comunicándose mediante interfaces de red con la API Application. Esta última orquesta la lógica de negocio y se conecta de forma directa con la base de datos (Database), el almacenamiento de medios (Media Storage) y los diferentes sistemas externos presentados en el diagrama de contexto.
+
+\begin{figure}[H]
+    \caption{Container Diagram para Viora.}
+    \centering
+    \includegraphics[width=1\textwidth]{report/assets/design-level-eventstorming/c4-diagrams/VioraContainer.png}
+    \caption*{\textit{Nota.} Vista de contenedores que ilustra los elementos principales de la arquitectura (Landing Page, Web App, API y Storage) interconectados. Elaboración propia.}
+\end{figure}
+
+### Software Architecture Components Diagrams
+
+Como nivel de mayor detalle, se presentan los Component Diagrams para cada uno de los contenedores más relevantes del ecosistema. Estos diagramas muestran los componentes internos, sus responsabilidades, la forma en la que interactúan entre sí dentro del contenedor y cómo se integran con elementos externos u otros contenedores.
+
+\begin{figure}[H]
+    \caption{Component Diagram del contenedor Landing Page.}
+    \centering
+    \includegraphics[width=1\textwidth]{report/assets/design-level-eventstorming/c4-diagrams/VioraLandingComponents.png}
+    \caption*{\textit{Nota.} Estructura interna de los componentes encargados de renderizar la página de inicio y el contenido de marketing. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Component Diagram del contenedor Web Application.}
+    \centering
+    \includegraphics[width=1\textwidth]{report/assets/design-level-eventstorming/c4-diagrams/VioraWebAppComponents.png}
+    \caption*{\textit{Nota.} Componentes internos de la interfaz web que utilizan los productores y especialistas. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Component Diagram del contenedor API Application.}
+    \centering
+    \includegraphics[width=1\textwidth]{report/assets/design-level-eventstorming/c4-diagrams/VioraApiComponents.png}
+    \caption*{\textit{Nota.} Componentes que conforman los servicios y controladores del backend principal. Elaboración propia.}
+\end{figure}
+
+\newpge
