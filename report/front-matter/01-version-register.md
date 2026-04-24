@@ -41,7 +41,4 @@
 \end{tabular}
 \end{center}
 
-\end{tabular}
-\end{center}
-
 \clearpage
