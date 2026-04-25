@@ -24,7 +24,7 @@ Este diagrama modela la persistencia del módulo de Identity & Access Management
 \begin{figure}[H]
     \caption{Diagrama de base de datos para el bounded context IAM.}
     \centering
-    \includegraphics[width=0.45\textwidth]{report/assets/database-diagrams/iam-database-diagram.png}
+    \includegraphics[width=0.45\textwidth]{report/assets/datbase-design/iam-bounded-context-database-diagram.png}
     \caption*{\textit{Nota.} Esquema relacional correspondiente al módulo de Identity \& Access Management. Elaboración propia.}
 \end{figure}
 
@@ -35,7 +35,7 @@ Este diagrama cubre la gestión de perfiles de usuarios (productores y especiali
 \begin{figure}[H]
     \caption{Diagrama de base de datos para el bounded context Profile \& Asset Management.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/database-diagrams/profile-asset-management-database-diagram.png}
+    \includegraphics[width=1\textwidth]{report/assets/datbase-design/profile-and-asset-management-bounded-context-database-diagram.png}
     \caption*{\textit{Nota.} Esquema relacional correspondiente a la gestión de perfiles de productores y especialistas. Elaboración propia.}
 \end{figure}
 
@@ -46,7 +46,7 @@ Este bounded context concentra la mayor densidad de tablas del sistema, abarcand
 \begin{figure}[H]
     \caption{Diagrama de base de datos para el bounded context Agronomic Monitoring \& Prediction.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/database-diagrams/agronomic-monitoring-prediction-database-diagram.png}
+    \includegraphics[width=1\textwidth]{report/assets/datbase-design/agronomic-monitoring-and-prediction-bounded-context-database-diagram.png}
     \caption*{\textit{Nota.} Esquema relacional correspondiente al core domain de monitoreo agronómico y predicción. Elaboración propia.}
 \end{figure}
 
@@ -57,7 +57,7 @@ El bounded context de vigilancia epidemiológica gestiona el ciclo completo desd
 \begin{figure}[H]
     \caption{Diagrama de base de datos para el bounded context Epidemiological Surveillance.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/database-diagrams/epidemiological-surveillance-database-diagram.png}
+    \includegraphics[width=1\textwidth]{report/assets/datbase-design/epidemiological-surveillance-bounded-context-database-diagram.png}
     \caption*{\textit{Nota.} Esquema relacional correspondiente al core domain de vigilancia epidemiológica y prospección territorial. Elaboración propia.}
 \end{figure}
 
@@ -68,7 +68,7 @@ El marketplace de intervenciones modela el flujo transaccional completo entre pr
 \begin{figure}[H]
     \caption{Diagrama de base de datos para el bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/database-diagrams/intervention-marketplace-database-diagram.png}
+    \includegraphics[width=1\textwidth]{report/assets/datbase-design/intervention-marketplace-bounded-context-database-diagram.png}
     \caption*{\textit{Nota.} Esquema relacional correspondiente al core domain del marketplace de intervenciones especializadas. Elaboración propia.}
 \end{figure}
 
@@ -79,7 +79,7 @@ Este diagrama modela la lógica de suscripciones y facturación de la plataforma
 \begin{figure}[H]
     \caption{Diagrama de base de datos para el bounded context Subscription, Billing \& Referral.}
     \centering
-    \includegraphics[width=0.85\textwidth]{report/assets/database-diagrams/subscription-billing-database-diagram.png}
+    \includegraphics[width=0.85\textwidth]{report/assets/datbase-design/suscription-billing-and-referral-bounded-context-database-diagram.png}
     \caption*{\textit{Nota.} Esquema relacional correspondiente al módulo de suscripciones y facturación. Elaboración propia.}
 \end{figure}
 
@@ -90,7 +90,7 @@ El bounded context de gobernanza comunitaria modela el sistema de moderación y 
 \begin{figure}[H]
     \caption{Diagrama de base de datos para el bounded context Community Governance \& Reputation.}
     \centering
-    \includegraphics[width=0.55\textwidth]{report/assets/database-diagrams/community-governance-database-diagram.png}
+    \includegraphics[width=0.55\textwidth]{report/assets/datbase-design/community-governance-and-reputation-bounded-context-database-diagram.png}
     \caption*{\textit{Nota.} Esquema relacional correspondiente al módulo de moderación y sistema de penalizaciones. Elaboración propia.}
 \end{figure}
 
