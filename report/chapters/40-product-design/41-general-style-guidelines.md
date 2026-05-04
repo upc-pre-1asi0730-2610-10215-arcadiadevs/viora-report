@@ -33,7 +33,7 @@ La siguiente guía se implementa operativamente bajo las directrices del lenguaj
    La plataforma Viora presentará dashboards, por lo que la lectura rápida y la claridad en la densidad de datos son primordiales.
    - **Sustento de diseño:** Se ha definido un sistema tipográfico dual que combina estética y funcionalidad:
      - **Caros:** Utilizada principalmente para la identidad y encabezados de alto impacto. Sus variantes Bold y Regular aportan personalidad y estructura visual a la marca.
-     - **Inter:** Seleccionada como la fuente principal de la interfaz debido a su excepcional legibilidad en pantallas digitales. Al ser una fuente diseñada específicamente para UI, dictará la configuración principal tipográfica en toda la aplicación bajo Vue.js, garantizando que las métricas agrícolas sean fáciles de leer en diversos pesos (Regular y Semibold).
+    - **Poppins:** Seleccionada como la fuente principal de la interfaz por su apariencia moderna, limpia y altamente legible en pantallas digitales. Su geometría redondeada refuerza la personalidad visual de Viora y mantiene coherencia tipográfica tanto en la landing page como en la aplicación web bajo Vue.js, especialmente en encabezados, textos de apoyo y llamadas a la acción.
      - **Jerarquía Visual:** Se implementa una escala técnica estandarizada (desde tamaños Display a Body) que estructura todos los bloques de texto y componentes visuales dentro de PrimeVue, logrando una estética sin saturación visual.
 
   <br>
