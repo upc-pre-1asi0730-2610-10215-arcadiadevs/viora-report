@@ -2,6 +2,14 @@ OUTPUT_DIR=build
 PDF_DEFAULTS=pandoc/report.yaml
 REFERENCE_DOC=pandoc/templates/reference.docx
 
+ifeq ($(OS),Windows_NT)
+MKDIR_OUTPUT = powershell -NoProfile -Command "New-Item -ItemType Directory -Force -Path '$(OUTPUT_DIR)' | Out-Null"
+RMDIR_OUTPUT = powershell -NoProfile -Command "Remove-Item -Recurse -Force -ErrorAction SilentlyContinue '$(OUTPUT_DIR)'"
+else
+MKDIR_OUTPUT = mkdir -p $(OUTPUT_DIR)
+RMDIR_OUTPUT = rm -rf $(OUTPUT_DIR)
+endif
+
 PDF_FRONT = report/front-matter/00-cover-pandoc.md \
             report/front-matter/01-version-register.md \
             report/front-matter/02-collaboration-insights.md \
@@ -20,14 +28,12 @@ DOCX=$(OUTPUT_DIR)/report.docx
 all: pdf docx
 
 pdf:
-	if not exist $(OUTPUT_DIR) mkdir $(OUTPUT_DIR)
+	$(MKDIR_OUTPUT)
 	pandoc --defaults=$(PDF_DEFAULTS) $(PDF_FILES) -o $(PDF)
 
 docx:
-	if not exist $(OUTPUT_DIR) mkdir $(OUTPUT_DIR)
+	$(MKDIR_OUTPUT)
 	pandoc --defaults=$(PDF_DEFAULTS) --reference-doc=$(REFERENCE_DOC) $(PDF_FILES) -o $(DOCX)
 
 clean:
-	if exist $(OUTPUT_DIR) rmdir /s /q $(OUTPUT_DIR)
-
-rebuild: clean all
+	$(RMDIR_OUTPUT)
