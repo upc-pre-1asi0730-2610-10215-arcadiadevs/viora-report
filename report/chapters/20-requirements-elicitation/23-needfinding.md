@@ -81,7 +81,7 @@ En esta sección se presentan los User Journey Maps, herramientas que permiten v
 
 <br>
 
-El User Journey Map de Pedro Huamán revela una degradación crítica en la experiencia del productor durante las fases de contacto y diagnóstico. El análisis destaca que la dependencia de canales informales y la falta de datos climáticos locales generan una incertidumbre que impacta directamente en la rentabilidad de la cosecha, validando la necesidad de un sistema de alertas proactivas. Elaboración propia.
+El User Journey Map de Pedro Huamán expone una caída crítica en la experiencia del agricultor durante las etapas de primer contacto y diagnóstico. El análisis revela que la excesiva dependencia de recomendaciones 'boca a boca' y la carencia de datos climáticos precisos de su propia parcela sumergen al productor en un estado de alerta constante e inseguridad. Esta falta de visibilidad técnica impacta directamente en la rentabilidad de su cosecha, validando la urgencia de implementar un sistema de alertas proactivas que reduzca la frustración y el riesgo de pérdida del patrimonio familiar. Elaboración propia.
 
 <br>
 
@@ -94,7 +94,7 @@ El User Journey Map de Pedro Huamán revela una degradación crítica en la expe
 
 <br>
 
-El User Journey Map de Paco Pérez expone la ineficiencia operativa del especialista debido a la fragmentación de la información y la captación pasiva de clientes. El diagrama evidencia una desconexión crítica entre el levantamiento de datos en campo y la gestión administrativa en gabinete, subrayando la urgencia de centralizar el historial técnico y georreferenciar la demanda para maximizar la productividad del profesional. Elaboración propia.
+El User Journey Map de Paco Pérez evidencia una degradación en la eficiencia del servicio durante las fases de logística y prospección. El diagnóstico destaca que la gestión basada en canales informales y la recolección manual de datos ambientales dispersos limitan su capacidad de respuesta inmediata y la precisión de sus recetas fitosanitarias. Esta fragmentación de la información genera una carga administrativa que compromete su prestigio profesional, fundamentando la necesidad de una plataforma centralizada que automatice el monitoreo y permita una intervención técnica preventiva y basada en evidencia. Elaboración propia.
 
 <br>
 
