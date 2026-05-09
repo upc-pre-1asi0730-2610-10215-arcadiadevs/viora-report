@@ -2,24 +2,24 @@
 
 ### User Personas
 
-En la presente sección se detalla la elaboración de las fichas de User Persona, las cuales representan arquetipos fundamentales derivados de una síntesis exhaustiva entre el análisis de las entrevistas a profundidad y el estudio del panorama competitivo. Estos artefactos permiten humanizar los datos recolectados, transformando los hallazgos de campo en perfiles con metas, frustraciones y comportamientos específicos. Para su definición, se han considerado dimensiones críticas identificadas en la investigación, tales como el nivel de alfabetización digital en el entorno rural, los métodos actuales de control de plagas y la capacidad de respuesta ante la variabilidad climática del sector olivícola. Cada ficha se ha construido siguiendo las mejores prácticas de diseño centrado en el usuario, garantizando que el desarrollo del ecosistema digital responda directamente a las necesidades reales de los segmentos objetivos identificados.
+En la presente sección se elaboran dos fichas de User Persona, una por cada segmento objetivo definido en el capítulo anterior: productores olivareros de la región sur y profesionales especializados en control de plagas agrícolas. Estos arquetipos surgen de la síntesis entre las entrevistas a profundidad y el análisis competitivo, y condensan los rasgos que realmente hacen diferencia para el diseño: nivel de alfabetización digital, forma actual de registrar y consultar información, dependencia de observación manual, respuesta ante alertas climáticas y fitosanitarias, y necesidad de coordinar acciones en campo. Cada ficha reúne los elementos básicos del arquetipo -perfil, contexto, objetivos, necesidades, frustraciones y comportamientos- para asegurar que Viora responda a necesidades reales y no a supuestos genéricos.
 
 <br>
 
-El User Persona de Pedro Huaman representa al segmento de productores agrícolas tradicionales, cuya gestión se basa principalmente en la experiencia empírica y el legado familiar. Este arquetipo sintetiza la necesidad de una transición hacia la agricultura digital, priorizando la facilidad de uso y el acceso a alertas meteorológicas en tiempo real para mitigar la incertidumbre climática que afecta la rentabilidad del cultivo de olivo. Elaboración propia.
+El User Persona de Pedro Huamán representa al productor olivarero tradicional de la región sur. Su gestión se apoya en experiencia empírica, observación directa y apoyo familiar, por lo que prioriza simplicidad, acceso oportuno a alertas climáticas y una vista clara del riesgo de su parcela. Este arquetipo permite entender la transición desde una administración reactiva hacia una gestión más preventiva y basada en datos. Elaboración propia.
 
 <br>
 
 \begin{figure}[H]
-\caption{User Persona del segmento Productor Olivero.}
+\caption{User Persona del segmento Productor Olivarero.}
 \centering
 \includegraphics[width=0.4\textwidth]{report/assets/needfinding/Pedro Huaman.png}
-\caption*{\textit{Nota.} La ficha de User Persona de Pedro Huaman detalla el arquetipo del productor agrícola tradicional, integrando sus objetivos, frustraciones y necesidades tecnológicas clave identificadas durante la fase de investigación para el diseño de la plataforma Viora. Elaboración propia.}
+\caption*{\textit{Nota.} La ficha de User Persona de Pedro Huamán detalla el arquetipo del productor olivarero tradicional, integrando sus objetivos, frustraciones, comportamientos y necesidades tecnológicas clave identificadas durante la fase de investigación para el diseño de la plataforma Viora. Elaboración propia.}
 \end{figure}
 
 <br>
 
-El User Persona de Paco Perez personifica al segmento de productores tecnificados que ya emplean herramientas digitales básicas, pero buscan optimizar la precisión en el control de plagas y el uso de recursos. Este arquetipo se enfoca en la eficiencia operativa y la integración de datos avanzados para la toma de decisiones estratégicas, sirviendo como base para el diseño de las funcionalidades de análisis predictivo de la plataforma Viora. Elaboración propia.
+El User Persona de Paco Pérez representa al profesional especializado en control de plagas agrícolas de la región sur. Este arquetipo combina movilidad constante entre fundos, uso de herramientas digitales básicas y una necesidad alta de priorizar visitas, registrar hallazgos y coordinar el seguimiento técnico. Su perfil sirve para definir una experiencia orientada a la eficiencia operativa, la trazabilidad y la respuesta temprana ante alertas fitosanitarias. Elaboración propia.
 
 <br>
 
@@ -27,30 +27,51 @@ El User Persona de Paco Perez personifica al segmento de productores tecnificado
 \caption{User Persona del segmento Profesional Especializado En Control De Plagas Agrícolas.}
 \centering
 \includegraphics[width=0.4\textwidth]{report/assets/needfinding/Paco Perez.png}
-\caption*{\textit{Nota.} La ficha de User Persona de Paco Perez detalla el arquetipo del agricultor tecnificado, integrando sus metas de optimización de recursos, frustraciones respecto a la precisión de datos y necesidades de integración tecnológica para la gestión avanzada en la plataforma Viora. Elaboración propia.}
+\caption*{\textit{Nota.} La ficha de User Persona de Paco Pérez detalla el arquetipo del profesional especializado en control de plagas agrícolas, integrando sus objetivos, frustraciones, comportamientos y necesidades tecnológicas clave identificadas durante la fase de investigación para el diseño de la plataforma Viora. Elaboración propia.}
 \end{figure}
 
 \clearpage
 
 ### User Task Matrix
 
-En esta sección se presenta la User Task Matrix, una herramienta estratégica que consolida las actividades fundamentales realizadas por nuestros segmentos objetivo para alcanzar sus metas de producción. Para este análisis, se consideran los perfiles de Paco Pérez (Profesional Especializado En Control De Plagas Agrícolas) y Pedro Huamán (Productor Olivero). Es importante precisar que las tareas listadas corresponden a procesos críticos del ciclo agrícola que los usuarios ejecutan independientemente de la existencia de una solución digital. La matriz permite evaluar cada tarea bajo las dimensiones de frecuencia e importancia, facilitando la identificación de los flujos de trabajo donde la plataforma Viora puede generar un mayor impacto operativo.
+En esta sección se presenta la User Task Matrix, que concentra las tareas actuales que los User Persona realizan para cumplir sus objetivos. Para este análisis se consideran dos segmentos: Paco Pérez, profesional especializado en control de plagas agrícolas, y Pedro Huamán, productor olivarero. Es importante precisar que las tareas listadas corresponden a actividades del estado actual de cada usuario y que se ejecutan independientemente de la existencia de una solución de software; por tanto, no deben confundirse con funciones, opciones o características del sistema. La matriz organiza una columna por cada User Persona y, para cada una, sus subcolumnas de frecuencia e importancia, de modo que se identifiquen las tareas críticas, la frecuencia de ejecución y el nivel de atención que requieren. Después del cuadro se explica cuáles son las tareas más frecuentes y críticas, qué apoyo necesitan para completarlas y cuáles son las coincidencias y diferencias entre ambos perfiles.
 
-|**Tareas (Tasks)**|**Persona: Paco Perez (Asesor)**||**Persona: Pedro Huaman (Productor)**||
-|---|---|---|---|---|
-||**Frecuencia**|**Importancia**|**Frecuencia**|**Importancia**|
-|Monitoreo de variables climáticas|Alta|**Crítica**|Media|**Crítica**|
-|Inspección física de parcelas (Plagas/Riego)|Alta|**Crítica**|Alta|**Crítica**|
-|Registro y análisis de trazabilidad histórica|Alta|**Crítica**|Baja|**Alta**|
-|Búsqueda de especialistas|N/A|N/A|Media|**Crítica**|
-|Emisión de diagnósticos y recetas técnicas|**Alta**|**Crítica**|N/A|N/A|
-|Gestión de captación de nuevos clientes|**Baja**|**Alta**|N/A|N/A|
-|Evaluación fenológica (Predicción de vecería)|Media|Media|Alta|**Crítica**|
-|Aplicación de controles y fertilizantes|N/A|N/A|Media|**Alta**|
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{5.6cm}|c|c|c|c|}
+\hline
+\multirow{2}{*}{\textbf{Tarea (Task)}} & \multicolumn{2}{c|}{\textbf{Paco Pérez}} & \multicolumn{2}{c|}{\textbf{Pedro Huamán}} \\
+\cline{2-5}
+ & \textbf{Frecuencia} & \textbf{Importancia} & \textbf{Frecuencia} & \textbf{Importancia} \\
+\hline
+Monitoreo de variables climáticas & Alta & \textbf{Crítica} & Media & \textbf{Crítica} \\
+\hline
+Inspección física de parcelas (plagas/riego) & Alta & \textbf{Crítica} & Alta & \textbf{Crítica} \\
+\hline
+Registro y análisis de trazabilidad histórica & Alta & \textbf{Crítica} & Baja & \textbf{Alta} \\
+\hline
+Búsqueda de especialistas & N/A & N/A & Media & \textbf{Crítica} \\
+\hline
+Emisión de diagnósticos y recetas técnicas & Alta & \textbf{Crítica} & N/A & N/A \\
+\hline
+Gestión de captación de nuevos clientes & Baja & \textbf{Alta} & N/A & N/A \\
+\hline
+Evaluación fenológica (predicción de vecería) & Media & Media & Alta & \textbf{Crítica} \\
+\hline
+Aplicación de controles y fertilizantes & N/A & N/A & Media & \textbf{Alta} \\
+\hline
+\end{tabular}
+\caption{User Task Matrix de los segmentos considerados.}
+\end{table}
 
 <br>
 
-Al analizar la matriz, se observa que tareas como el monitoreo de variables climáticas y la identificación de plagas presentan la mayor frecuencia e importancia para ambos segmentos, consolidándose como los pilares de valor de la solución. Por otro lado, la mayor diferencia se encuentra en la gestión de reportes y análisis de datos históricos, una tarea de alta importancia para Pedro Huamán debido a su enfoque en la optimización técnica, mientras que para Paco Pérez representa una actividad de menor frecuencia, centrada más en la observación directa y la reacción inmediata ante cambios del entorno.
+La matriz muestra una coincidencia clara entre ambos perfiles en dos tareas del estado actual: el monitoreo de variables climáticas y la inspección física de parcelas, que concentran una frecuencia alta y una importancia crítica para la toma de decisiones. También comparten la necesidad de mantener trazabilidad histórica, aunque con distinto peso operativo: para Paco Pérez es clave porque sustenta sus diagnósticos técnicos, mientras que para Pedro Huamán funciona como apoyo para organizar el manejo del cultivo.
+
+En términos de apoyo para la ejecución, Paco Pérez requiere información consolidada, historial técnico, registros de campo y elementos que le permitan priorizar visitas y emitir recomendaciones con rapidez; Pedro Huamán necesita alertas oportunas, acceso simple a orientación especializada y referencias claras para decidir cuándo inspeccionar, corregir o escalar un problema. Esta lectura permite ver que la matriz no solo lista tareas, sino también el tipo de soporte que cada rol demanda para avanzar en su trabajo.
+
+Las diferencias más marcadas aparecen en el foco de trabajo. Paco Pérez concentra mayor frecuencia en la emisión de diagnósticos y recetas técnicas, así como en la captación y seguimiento de clientes, lo que refleja una rutina más orientada al servicio especializado y a la coordinación técnica. Pedro Huamán, en cambio, asigna mayor importancia a la búsqueda de especialistas, a la evaluación fenológica y a la aplicación de controles y fertilizantes, lo que evidencia una gestión más centrada en la producción y en la respuesta directa sobre la parcela. En conjunto, la matriz describe el estado actual de ambos usuarios y permite identificar dónde Viora debe reducir fricción sin convertir estas tareas reales en funcionalidades del software.
 
 \clearpage
 
