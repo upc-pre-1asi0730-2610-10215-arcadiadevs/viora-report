@@ -243,17 +243,16 @@ Creemos que la mayor amenaza de producto será la baja adopción tecnológica, p
 
 #### Lean UX Hypothesis Statements
 
-- **Creemos que lograremos** que al menos el 70% de los nuevos suscriptores registre su primera parcela y configure un umbral de riesgo en los primeros 7 días, **si** el productor olivarero recibe una incorporación guiada y una vista priorizada que le muestre el riesgo sin complejidad.
+- **Creemos que lograremos** una consulta semanal del 30% de usuarios activos. **Si** los productores olivareros de Tacna **logran** entender el estado real de sus parcelas sin complejidad **con** la vista priorizada de parcela que unifica clima, suelo y sanidad.
 
-- **Creemos que lograremos** que al menos el 30% de los usuarios activos consulte el dashboard de finca al menos una vez por semana durante 8 semanas consecutivas, **si** el productor encuentra en una sola pantalla los indicadores críticos de su parcela.
+- **Creemos que lograremos** una retención del 60% de las suscripciones al sexto mes. **Si** los productores olivareros **logran** reducir la incertidumbre económica causada por la alternancia productiva **con** el seguimiento de frío y vecería para proyectar escenarios ENOS.
 
-- **Creemos que lograremos** que al menos el 20% de los usuarios activos aplique al menos una recomendación preventiva antes del cierre de la campaña, **si** el especialista y el productor reciben una alerta que se traduce en una acción concreta de nutrición o control.
+- **Creemos que lograremos** la firma de al menos 2 convenios con asociaciones agrarias. **Si** los especialistas fitosanitarios de la macro-región sur **logran** priorizar sus visitas de campo y dejar evidencia trazable de su trabajo **con** las alertas epidemiológicas y el registro de seguimiento.
 
-- **Creemos que lograremos** alcanzar 50 suscripciones activas en 6 meses, **si** los productores y especialistas perciben un beneficio recurrente en la información priorizada y confían en que la plataforma les ayuda a decidir mejor.
+- **Creemos que lograremos** que el 20% de usuarios activos aplique medidas preventivas. **Si** los productores y técnicos especializados **logran** traducir señales ambientales en acciones de manejo concretas **con** las recomendaciones de nutrición y control basadas en guías regionales.
 
-- **Creemos que lograremos** firmar al menos 2 convenios de colaboración en 6 meses, **si** las asociaciones agrarias, cooperativas y consultoras fitosanitarias ven valor en coordinar seguimiento y alertas con la plataforma.
+- **Creemos que lograremos** que el 70% de nuevos suscriptores configure su umbral de riesgo en 7 días. **Si** los nuevos usuarios del sistema **logran** reducir la fricción inicial y acceder rápidamente a la utilidad del servicio **con** el panel de suscripción y el flujo de incorporación guiada.
 
-- **Creemos que lograremos** que al menos el 60% de las suscripciones activas renueven su segundo ciclo de cobro al cierre del sexto mes, **si** la experiencia mantiene utilidad durante la campaña y el usuario encuentra suficiente valor para volver.
 
 #### Lean UX Canvas
 
