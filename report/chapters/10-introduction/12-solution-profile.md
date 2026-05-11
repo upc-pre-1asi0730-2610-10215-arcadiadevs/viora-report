@@ -203,8 +203,6 @@ Creemos que la mayor amenaza de producto será la baja adopción tecnológica, p
 
 **Business Outcome Assumptions**
 
-- Alcanzar 50 suscripciones activas, al menos 40 de productores y 10 de especialistas fitosanitarios, en los primeros 6 meses.
-
 - Firmar al menos 2 convenios de colaboración con asociaciones agrarias, cooperativas o consultoras fitosanitarias de Tacna y la macro-región sur en un plazo de 6 meses tras el lanzamiento.
 
 - Lograr que al menos el 70% de los nuevos suscriptores registren su primera parcela y configuren al menos un umbral de riesgo durante los primeros 7 días de uso.
@@ -227,7 +225,11 @@ Creemos que la mayor amenaza de producto será la baja adopción tecnológica, p
 
 - **Priorización y trazabilidad de la intervención:** el especialista concentra su esfuerzo en las parcelas más críticas y deja evidencia de seguimiento sin duplicar trabajo.
 
-- **Lenguaje común entre usuarios:** ambos comparten una misma lectura del riesgo, reducen la dependencia de mensajes dispersos y coordinan mejor sus acciones.
+- **Sincronización operativa y ejecución directa:** unifica al productor y técnico en una hoja de ruta compartida, eliminando mensajes dispersos y permitiendo acciones de control precisas en el momento exacto.
+
+- **Validación técnica y control de campaña:** sustituye las suposiciones empíricas por un estándar técnico de riesgo, brindando al productor mayor respaldo y seguridad al planificar su inversión frente a escenarios climáticos.
+
+- **Activación y autonomía digital:** ambos reducen la fricción tecnológica mediante un flujo guiado que le permite configurar su entorno de riesgo rápidamente, percibiendo el valor del servicio desde el primer contacto sin sentirse abrumado.
 
 **Feature Assumptions**
 
