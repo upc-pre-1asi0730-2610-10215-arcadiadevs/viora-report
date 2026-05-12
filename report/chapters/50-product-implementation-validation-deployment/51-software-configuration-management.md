@@ -18,20 +18,20 @@ Para la gestión de requisitos el se dividió en tres herramientas que permitier
 
     - Miro: Se utilizó para la elaboración del Big Picture Event Storming, permitiendo explorar el dominio del negocio de forma visual. (https://miro.com/)
 
-    - Trello: Se utilizó para la gestión y mantenimiento del Product Backlog, asegurando que los requerimientos estén priorizados según el valor de negocio.(https://trello.com/)
+    - Trello: Se utilizó para la gestión y mantenimiento del Product Backlog y se usará para los Sprint Backlogs, asegurando que los requerimientos estén priorizados según el valor de negocio. (https://trello.com/)
 
 - Product UX/UI Design
 De acuerdo a la sección con relación al diseño del producto, se utilizaron 5 herramientas:
 
     - Figma: Para el diseño visual y de la interfaz, se centralizó el trabajo en Figma. Esta herramienta se usó para desarrollar los Wireframes y Mock-ups de la Landing Page; los Wireframes, Mock-ups y Prototypes de la aplicación web, asegurando el uso de Material Design como lenguaje de diseño. (https://www.figma.com/)
 
-    - LucidChart: Se empleó LucidChart para realizar las conexiones en los Wireflows y User Flows. Adicionalmente, se utilizó para los diagramas UML. (https://www.lucidchart.com/)
+    - LucidChart: Se empleó LucidChart para realizar las conexiones en los Wireflows y User Flows. (https://www.lucidchart.com/)
 
     - Structurizr: Se empleó para la representación gráfica y estructuración de la Arquitectura de Software utilizando el C4 Model. (https://structurizr.com/)
 
     - PlantUML: Se empleó para la representación gráfica de los diagramas de clase y bases de datos. (http://www.plantuml.com/)
 
-    - Miro: Se empleó para el desarrollo del Design-Level Event Storming y la Arquitectura de Información. (https://miro.com/)
+    - Miro: Se empleó para el desarrollo del Design-Level Event Storming, la Arquitectura de Información y de dominios. (https://miro.com/)
 
 - Software Development
 El entorno de desarrollo para la solución web distribuida se basará en un stack de tecnologías open-source, gestionado con las siguientes herramientas:
@@ -47,17 +47,11 @@ El entorno de desarrollo para la solución web distribuida se basará en un stac
 - Software Deployment
 Para cumplir con el ciclo de desarrollo y despliegue de una solución distribuida en la nube, se ha implementará una estrategia híbrida que separa la captación comercial de la lógica transaccional:
 
-    - Microsoft Azure: Proveedor de servicios Cloud principal para la infraestructura operativa. (https://azure.microsoft.com/)
+    - Vercel: Se utilizará para el despliegue del Landing Page. (https://vercel.com/)
 
-        - Azure App Service: Hosteo del Web Service (Backend) de ASP.NET Core. Permite la ejecución de servicios Server-Side de C# en un entorno seguro y escalable. (https://azure.microsoft.com/es-es/products/app-service/)
+    - Firebase: Se utilizará para el despliegue del frontend y backend de la plataforma. Para la capa de presentación, Firebase Hosting permitirá la distribución rápida y segura del contenido estático de la aplicación. Asimismo, se utilizará Cloud Functions for Firebase para la implementación de servicios backend serverless, permitiendo la exposición de APIs REST, ejecución de lógica de negocio y procesamiento de cálculos requeridos por la aplicación, sin necesidad de administrar infraestructura dedicada. (https://firebase.google.com/)
 
-        - Azure Static Web Apps: Se utilizará para el despliegue de la aplicación de Vue.js, optimizando la entrega del frontend mediante una red de distribución de contenido (CDN) global. (https://azure.microsoft.com/es-es/products/app-service/static/) 
-
-        - Azure Database for PostgreSQL: Servicio gestionado para la persistencia de datos. Se utilizará para el almacenamiento de polígonos de parcelas y datos agronómicos, aprovechando la extensión PostGIS para el procesamiento geográfico necesario en el proyecto. (https://azure.microsoft.com/es-es/products/postgresql/)
-
-    - Hostinger: Hosting para la Landing Page estática y gestor oficial del dominio y registros DNS del ecosistema
-
-    - GitHub Actions: Motor de CI/CD que automatiza la compilación y despliegue hacia Azure en cada push a las ramas principales.
+    - Azure Database for PostgreSQL: Servicio gestionado para la persistencia de datos. Se utilizará para el almacenamiento de polígonos de parcelas y datos agronómicos, aprovechando la extensión PostGIS para el procesamiento geográfico necesario en el proyecto. (https://azure.microsoft.com/es-es/products/postgresql/)
 
 - Software Documentation
 Para la documentación de la solución se considerará lo siguiente:
@@ -196,5 +190,13 @@ Se sigue la Vue Style Guide oficial (s.f.):
     - Directivas: Uso de la sintaxis abreviada (: para v-bind, @ para v-on y # para v-slot) para mantener la limpieza del template.
 
 ### Software Deployment Configuration
+
+Para garantizar un proceso de despliegue automatizado, escalable y alineado con la arquitectura distribuida de la solución, se implementará un pipeline de Integración y Despliegue Continuo (CI/CD) utilizando GitHub Actions como herramienta de automatización. Este pipeline permitirá detectar cambios integrados en las ramas principales de los repositorios, ejecutar procesos de validación, compilación y despliegue continuo, y asegurar la trazabilidad de cada versión liberada bajo el esquema GitFlow y Semantic Versioning adoptado por el equipo.
+
+- Landing Page: A partir del repositorio fuente, el sitio informativo será compilado y desplegado automáticamente en Vercel, optimizando la distribución del contenido estático y permitiendo una entrega continua orientada a alta disponibilidad.
+
+- Frontend Web Applications: La aplicación desarrollada en Vue.js será construida y publicada mediante Firebase Hosting, permitiendo una distribución rápida y segura de los recursos estáticos de la plataforma utilizando infraestructura administrada y escalable.
+
+- Web Services (Backend): Los servicios backend desarrollados en ASP.NET Core serán desplegados utilizando Cloud Functions for Firebase, permitiendo la ejecución serverless de APIs REST, lógica de negocio y procesamiento de cálculos requeridos por la plataforma. Estas funciones se integrarán con Azure Database for PostgreSQL para la persistencia de información agronómica y el procesamiento geoespacial mediante PostGIS.
 
 \newpage
