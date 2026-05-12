@@ -114,10 +114,10 @@ Análisis competitivo para competidores **indirectos**
 
 \vspace{0.35cm}
 \raggedright
-	extbullet\ Hiper-especialización en fenología del olivo (vecería, horas de frío).\\[0.28cm]
-	extbullet\ Coordinación con agrónomos locales para seguimiento de alertas.\\[0.28cm]
-	extbullet\ Alertas micro-locales específicas por parcela.\\[0.28cm]
-	extbullet\ Modelo SaaS predictivo, ágil y de bajo costo (sin hardware).
+\textbullet\ Hiper-especialización en fenología del olivo (vecería, horas de frío).\\[0.28cm]
+\textbullet\ Coordinación con agrónomos locales para seguimiento de alertas.\\[0.28cm]
+\textbullet\ Alertas micro-locales específicas por parcela.\\[0.28cm]
+\textbullet\ Modelo SaaS predictivo, ágil y de bajo costo (sin hardware).
 \end{minipage}
 &
 \cellcolor{fodaLight}
@@ -127,11 +127,11 @@ Análisis competitivo para competidores **indirectos**
 
 \vspace{0.35cm}
 \raggedright
-	extbf{FO1 – Cooperativas Preventivas:} Usar el bajo costo del modelo SaaS (F4) para cerrar convenios B2B masivos con cooperativas olivareras (O3) que urgen mitigar el ENOS (O1).\\[0.55cm]
-
-	extbf{FO2 – Alerta Temprana Ágil:} Aprovechar la lentitud del Estado (O2) emitiendo notificaciones predictivas por parcela (F3), ofreciendo la inmediatez que el agricultor no encuentra en canales públicos.\\[0.55cm]
-
-	extbf{FO3 – Red de Intervención Local:} Posicionar nuestra red de especialistas (F2) como el brazo ejecutor que convierte las alertas en seguimiento inmediato, algo que competidores globales solo reportan de forma pasiva (O4).
+\textbullet\ Resistencia tecnológica y brecha digital en la agricultura familiar.\\[0.28cm]
+\textbullet\ Limitada conectividad a internet y restricciones operativas en fundos rurales.\\[0.28cm]
+\textbullet\ Competidores consolidados como Xarvio o Agroptima con mayor capacidad de inversión, expansión e integración tecnológica.\\[0.28cm]
+\textbullet\ Anomalías climáticas impredecibles que desestabilicen algoritmos.
+\end{minipage}
 \\
 \hline
 \end{tabular}
@@ -149,23 +149,23 @@ Análisis competitivo para competidores **indirectos**
 \vspace{0.35cm}
 \raggedright
 \textbullet\ Hiper-especialización en fenología del olivo (vecería, horas de frío).\\[0.28cm]
-	extbullet\ Coordinación con agrónomos locales para seguimiento de alertas.\\[0.28cm]
-	extbullet\ Coordinación con agrónomos locales para seguimiento de alertas.\\[0.28cm]
-\textbullet\ Alertas micro-locales específicas por parcela.
+\textbullet\ Coordinación con agrónomos locales para seguimiento de alertas.\\[0.28cm]
+\textbullet\ Alertas micro-locales específicas por parcela.\\[0.28cm]
+\textbullet\ Modelo SaaS predictivo, ágil y de bajo costo (sin hardware).
 \end{minipage}
-	extbf{FO3 – Red de Intervención Local:} Posicionar nuestra red de especialistas (F2) como el brazo ejecutor que convierte las alertas en seguimiento inmediato, algo que competidores globales solo reportan de forma pasiva (O4).
+&
 \cellcolor{fodaWhite}
 \begin{minipage}[t][16cm][t]{\linewidth}
-	extbf{DO1 – Pilotos de Validación Local:} Vencer la baja confianza (D1) aliándonos con líderes de juntas de usuarios en Tacna (O3) para hacer pilotos acotados que generen "casos de éxito" rápidos y reales.\\[0.55cm]
+\centering
 {\bfseries\Large Estrategia Ofensiva}
 
-	extbf{DA3 – Protocolos "Fallback":} Ante fallos en la predicción por anomalías extremas (A4), asegurar que el sistema derive inmediatamente el caso al directorio de agrónomos locales para evaluación humana (minimizando la D2).
+\vspace{0.35cm}
 \raggedright
-\textbf{FO1 – Paquetes "Cooperativa Preventiva":} Usar el bajo costo del modelo SaaS (F3) para cerrar convenios B2B masivos con cooperativas olivareras (O3) que urgen mitigar el ENOS (O1).\\[0.55cm]
+\textbf{FO1 – Cooperativas Preventivas:} Usar el bajo costo del modelo SaaS (F4) para cerrar convenios B2B masivos con cooperativas olivareras (O3) que urgen mitigar el ENOS (O1).\\[0.55cm]
 
-\textbf{FO2 – Alerta Temprana Ágil:} Aprovechar la lentitud del Estado (O2) emitiendo notificaciones predictivas por parcela (F4), ofreciendo la inmediatez que el agricultor no encuentra en canales públicos.\\[0.55cm]
+\textbf{FO2 – Alerta Temprana Ágil:} Aprovechar la lentitud del Estado (O2) emitiendo notificaciones predictivas por parcela (F3), ofreciendo la inmediatez que el agricultor no encuentra en canales públicos.\\[0.55cm]
 
-	extbf{FO3 – Red de Intervención Local:} Posicionar nuestra red de especialistas (F2) como el brazo ejecutor que convierte las alertas en seguimiento inmediato, algo que competidores globales solo reportan de forma pasiva (O4).
+\textbf{FO3 – Red de Intervención Local:} Posicionar nuestra red de especialistas (F2) como el brazo ejecutor que convierte las alertas en seguimiento inmediato, algo que competidores globales solo reportan de forma pasiva (O4).
 \end{minipage}
 &
 \cellcolor{fodaWhite}
@@ -210,7 +210,7 @@ Análisis competitivo para competidores **indirectos**
 
 \vspace{0.35cm}
 \raggedright
-	extbf{DO1 – Pilotos de Validación Local:} Vencer la baja confianza (D1) aliándonos con líderes de juntas de usuarios en Tacna (O3) para hacer pilotos acotados que generen "casos de éxito" rápidos y reales.\\[0.55cm]
+\textbf{DO1 – Pilotos de Validación Local:} Vencer la baja confianza (D1) aliándonos con líderes de juntas de usuarios en Tacna (O3) para hacer pilotos acotados que generen "casos de éxito" rápidos y reales.\\[0.55cm]
 
 \textbf{DO2 – Data Colaborativa:} Ante la falta de data histórica propia (D2), aprovechar la urgencia del agricultor por digitalizarse (O1) para retroalimentar nuestros propios algoritmos climáticos según el comportamiento real reportado en la app.\\[0.55cm]
 
@@ -228,7 +228,7 @@ Análisis competitivo para competidores **indirectos**
 
 \textbf{DA2 – Onboarding Asistido:} Para combatir la resistencia tecnológica (A1) y nuestra falta de reconocimiento (D1), realizar talleres presenciales en campo con las cooperativas para instalar y configurar la app en los celulares de los usuarios.\\[0.55cm]
 
-	extbf{DA3 – Protocolos "Fallback":} Ante fallos en la predicción por anomalías extremas (A4), asegurar que el sistema derive inmediatamente el caso al directorio de agrónomos locales para evaluación humana (minimizando la D2).
+\textbf{DA3 – Protocolos "Fallback":} Ante fallos en la predicción por anomalías extremas (A4), asegurar que el sistema derive inmediatamente el caso al directorio de agrónomos locales para evaluación humana (minimizando la D2).
 \end{minipage}
 \\
 \hline
