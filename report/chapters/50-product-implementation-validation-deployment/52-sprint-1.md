@@ -85,3 +85,83 @@ El objetivo principal de este Sprint es establecer la presencia digital estraté
 
 &nbsp;
 
+#### Development Evidence for Sprint Review
+
+El Sprint 1 ha concluido con éxito, logrando establecer la base digital estratégica del ecosistema Viora. Durante este periodo, el equipo se centró en materializar una Landing Page que no solo sirve como carta de presentación institucional, sino como una herramienta de conversión diseñada específicamente para productores y especialistas del sector olivarero.
+
+**Logros Principales**
+
+- Arquitectura y Navegación: Se implementó una estructura de navegación robusta y responsive, garantizando una experiencia de usuario fluida tanto en dispositivos móviles como de escritorio a través de un encabezado dinámico y un pie de página funcional.
+- Experiencia Inmersiva (Hero Section): Se desarrolló una sección de impacto inicial que utiliza efectos de paralaje y sonido ambiental, diseñada para captar la atención inmediata del visitante y comunicar la conexión emocional entre la tecnología y el campo.
+- Propuesta de Valor Segmentada: Cumpliendo con el Sprint Goal, se integraron secciones específicas de beneficios para "Growers" (Productores) y "Specialists" (Especialistas), permitiendo una comunicación personalizada según el perfil del usuario.
+- Contexto y Solución: Se estructuraron módulos de "Contexto del Problema" y "Solución", utilizando tarjetas informativas y secciones introductorias que validan los desafíos climáticos actuales y presentan a Viora como la respuesta técnica necesaria.
+- Credibilidad y Conversión: Se consolidó la confianza mediante la sección de equipo ("About the Team") y testimonios ("Learning from the Best"). Asimismo, se habilitaron los flujos de conversión mediante componentes de precios (pricing panels) y un formulario de contacto funcional.
+- Internacionalización (i18n): Se desplegó un servicio de idiomas completo para asegurar que la plataforma sea accesible a un mercado global desde su lanzamiento inicial
+
+
+
+\begin{figure}[H]
+    \caption{Landing page - Parte 1.}
+    \centering
+    \includegraphics[width=0.8\textwidth]{report/assets/sprint-1/landing_1.png}
+    \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Landing page - Parte 2.}
+    \centering
+    \includegraphics[width=0.8\textwidth]{report/assets/sprint-1/landing_2.png}
+    \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Landing page - Parte 3.}
+    \centering
+    \includegraphics[width=0.8\textwidth]{report/assets/sprint-1/landing_3.png}
+    \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Landing page - Parte 4.}
+    \centering
+    \includegraphics[width=0.8\textwidth]{report/assets/sprint-1/landing_4.png}
+    \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Landing page - Parte 5.}
+    \centering
+    \includegraphics[width=0.8\textwidth]{report/assets/sprint-1/landing_5.png}
+    \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Landing page - Parte 6.}
+    \centering
+    \includegraphics[width=0.8\textwidth]{report/assets/sprint-1/landing_6.png}
+    \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Landing page - Parte 7.}
+    \centering
+    \includegraphics[width=0.8\textwidth]{report/assets/sprint-1/landing_7.png}
+    \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Landing page - Parte 8.}
+    \centering
+    \includegraphics[width=0.8\textwidth]{report/assets/sprint-1/landing_8.png}
+    \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+    \caption{Landing page - Parte 9.}
+    \centering
+    \includegraphics[width=0.8\textwidth]{report/assets/sprint-1/landing_9.png}
+    \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
+\end{figure}
+
+\textbf{Enlace al video:} \url{https://tinyurl.com/viora-sprint1}
+
