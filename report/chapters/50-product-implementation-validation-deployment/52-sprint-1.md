@@ -165,3 +165,45 @@ El Sprint 1 ha concluido con éxito, logrando establecer la base digital estrat�
 
 \textbf{Enlace al video:} \url{https://tinyurl.com/viora-sprint1}
 
+
+
+#### Services Documentation Evidence for Sprint Review
+
+
+
+#### Software Deployment Evidence for Sprint Review
+
+Durante el transcurso del Sprint 1, el equipo estableció la infraestructura base y los flujos de automatización necesarios para garantizar que la Landing Page, los Web Services y las Web Applications de Viora operen bajo un esquema de integración y despliegue continuo. El enfoque principal fue eliminar la fricción entre el desarrollo local y el entorno de producción, asegurando que cada incremento de software sea validado y desplegado de forma eficiente.
+
+**Evidencia de Implementación de Despliegue**
+A continuación, se presentan los pasos realizados y las capturas que validan el correcto funcionamiento del pipeline de despliegue:
+
+1. Configuración del Proyecto y Repositorio
+Se realizó la vinculación del repositorio oficial Viora-website con el proveedor cloud, definiendo los parámetros de construcción y las variables de entorno necesarias para el funcionamiento de la Landing Page.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-1/img-3.jpeg}
+\caption{Configuración inicial e importación del proyecto Viora-website.}
+\caption*{\textit{Nota.} Vinculación del repositorio de GitHub con el entorno de despliegue. Elaboración propia.}
+\end{figure}
+
+2. Automatización y Éxito de Compilación
+Una vez detectado el código, el sistema ejecutó las tareas de build y optimización de activos, resultando en un despliegue exitoso hacia los servidores de producción.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-1/img-1.jpeg}
+\caption{Confirmación de despliegue exitoso del nuevo proyecto.}
+\caption*{\textit{Nota.} Interfaz de confirmación tras la finalización del proceso de compilación. Elaboración propia.}
+\end{figure}
+
+3. Verificación de Disponibilidad y Estado del Servicio
+Finalmente, se accedió al panel de control para confirmar que la aplicación se encuentra en estado "Ready". Se validaron los dominios viora-website-flax.vercel.app para su acceso público inmediato.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-1/img-2.jpeg}
+\caption{Panel de control de producción (Production Deployment).}
+\caption*{\textit{Nota.} Vista detallada del estado del despliegue. Elaboración propia.}
+\end{figure}
