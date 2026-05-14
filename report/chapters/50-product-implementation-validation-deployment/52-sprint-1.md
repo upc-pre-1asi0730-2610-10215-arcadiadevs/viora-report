@@ -209,3 +209,16 @@ Finalmente, se accedió al panel de control para confirmar que la aplicación se
 \caption{Panel de control de producción (Production Deployment).}
 \caption*{\textit{Nota.} Vista detallada del estado del despliegue. Elaboración propia.}
 \end{figure}
+
+#### Team Collaboration Insights for Sprint Review
+
+La participación de los miembros del equipo se refleja en el volumen y la frecuencia de las contribuciones realizadas al repositorio. Durante este primer incremento, el esfuerzo se concentró en establecer la estructura base, el diseño visual y la interactividad de la plataforma. Como se observa en los analíticos de GitHub, el equipo mantuvo una actividad constante para cumplir con las historias de usuario comprometidas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-1/sprint-1-commit.png}
+\caption{Estadísticas de contribución (Top Committers) - Sprint 1.}
+\caption*{\textit{Nota.} La gráfica muestra la distribución de commits realizados por los miembros del equipo en el repositorio oficial. Elaboración propia a través de GitHub Insights.}
+\end{figure}
+
+Este nivel de interacción garantiza que el producto final no sea el resultado de esfuerzos aislados, sino de una implementación integrada donde cada componente de la Landing Page fue validado colectivamente.
