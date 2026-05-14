@@ -64,7 +64,7 @@ US12 & Visualización Satelital de Parcelas & TK03 & Mapbox SDK Setup & Configur
 & & TK04 & Polygon Data Mapping & Vinculación de coordenadas geográficas desde la FakeAPI para la representación dinámica en el mapa. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
 US08 & Gestión de Dispositivos IoT & TK05 & IoT Telemetry View & Maquetación de la tabla de dispositivos y visualización de métricas de humedad y temperatura en Vue. & 1.5 & Li, Diana & Done \\ \cline{3-8}
-& & TK06 & CRUD & FakeAPI Service & Implementación de servicios para la creación, edición y eliminación de sensores en MockAPI. & 1.5 & Li, Diana & Done \\ \cline{3-8}
+& & TK06 & CRUD \& FakeAPI Service & Implementación de servicios para la creación, edición y eliminación de sensores en MockAPI. & 1.5 & Li, Diana & Done \\ \cline{3-8}
 & & TK07 & Device Forms & Desarrollo de formularios reactivos para el registro y actualización de dispositivos con validaciones. & 1.0 & Li, Diana & Done \\ \hline
 
 US13 & Resumen General y Proyección de Cosecha & TK08 & KPI Cards Layout & Diseño y maquetación de las 4 tarjetas de resumen de medidas agregadas de todas las parcelas. & 1.5 & Paredes, Victor & Done \\ \cline{3-8}
@@ -195,7 +195,7 @@ El proceso inicia con la ejecución del comando npm run deploy, el cual dispara 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{report/assets/sprint-2/image1.jpg}
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-2/image1.png}
 \caption{Ejecución exitosa del comando de despliegue y build de producción.}
 \caption*{\textit{Nota.} La imagen muestra la transformación de módulos, la generación de la carpeta "dist" y la finalización del despliegue en la URL oficial. Elaboración propia.}
 \end{figure}
