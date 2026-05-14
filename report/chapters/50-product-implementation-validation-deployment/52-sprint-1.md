@@ -45,6 +45,50 @@ Trinidad, Jahat & trinity-bytes & C & C & C & C \\ \hline
 
 El objetivo principal de este Sprint es establecer la presencia digital estratégica de Viora mediante la construcción de una Landing Page funcional y persuasiva, diseñada para comunicar la propuesta de valor y facilitar la conversión directa de productores y especialistas hacia el ecosistema.
 
+\begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.08\textwidth}|p{0.12\textwidth}|p{0.07\textwidth}|} 
+\hline 
+\multicolumn{2}{|l|}{\textbf{Sprint \#}} & \multicolumn{6}{l|}{Sprint 1} \\ \hline 
+\multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task}} \\ \hline 
+\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation (Hours)} & \textbf{Assigned To} & \textbf{Status} \\ \hline 
+\endfirsthead
+
+\hline 
+\multicolumn{2}{|l|}{\textbf{User Story}} & \multicolumn{6}{l|}{\textbf{Work-Item / Task (Continuación)}} \\ \hline 
+\textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation} & \textbf{Assigned To} & \textbf{Status} \\ \hline 
+\endhead
+
+% US54
+US54 & Presentación de la propuesta de valor central & TK01 & Header Navigation & Maquetación, estilos y programación del comportamiento responsivo del encabezado principal. & 0.75 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK02 & Hero Layout & Estructuración visual de la sección de inicio con soporte para efectos de parallax. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK03 & Hero Ambient Sound & Implementación de la lógica de alternancia de sonido ambiental y Toggle UI. & 0.5 & Li, Diana & Done \\ \hline
+
+% US55
+US55 & Redirección hacia el ecosistema transaccional & TK04 & Problem Context UI & Diseño de las tarjetas de contexto de problemas y secciones de introducción About. & 0.5 & Li, Diana & Done \\ \cline{3-8} 
+& & TK05 & Conversion Logic & Implementación de botones de aterrizaje. & 0.5 & Li, Diana & Done \\ \hline
+
+% US56
+US56 & Exploración de beneficios para el Productor & TK06 & Grower Insights UI & Maquetación de la sección de beneficios con detalles específicos sobre acciones preventivas y NDVI. & 0.75 & Trinidad, Jahat & Done \\ \hline
+
+% US57
+US57 & Exploración de beneficios para el Especialista & TK07 & Specialist Benefits & Implementación del apartado de beneficios técnicos y acciones específicas para asesores. & 0.5 & Paredes, Victor & Done \\ \cline{3-8} 
+
+% US58
+US58 & Presentación del programa de referidos & TK08 & Pricing Panel & Desarrollo del componente de paneles de precios y secciones de planes de suscripción. & 0.75 & Li, Diana & Done \\ \cline{3-8} 
+& & TK09 & Referrals Section & Implementación de la sección de referidos y stubs iniciales de integración. & 0.5 & Li, Diana & Done \\ \hline
+
+% US59
+US59 & Validación de impacto mediante resultados esperados & TK10 & General Performance Logic & Implementación de scripts base para el manejo de métricas y lógica operativa del landing. & 0.75 & Espada, Piero & Done \\ \hline
+
+% US60
+US60 & Exploración del respaldo corporativo y humano & TK11 & Mission & Vision Display & Desarrollo del panel informativo "Learning from best" y sección de misión corporativa. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK12 & Team Members UI & Maquetación de la grilla de perfiles del equipo y estilos visuales asociados. & 0.75 & Santi, Fabrizio & Done \\ \hline
+
+% US61
+US61 & Políticas y contacto & TK13 & Contact System & Implementación de la plantilla, estilos y scripts para la sección de comunicación institucional. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK14 & Footer & i18n & Estructuración del pie de página e integración del servicio de internacionalización multi-idioma. & 0.75 & Santi, Fabrizio & Done \\ \hline
+
+\end{longtable}
+
 #### Deployment Evidence for Sprint Review
 
 Durante la primera iteración, el principal avance de implementación se centró en la construcción integral de la Landing Page oficial de Viora. Se logró codificar e integrar con éxito la interfaz de usuario, la lógica de navegación responsiva, la segmentación de la propuesta de valor y los módulos de conversión (CTAs).
@@ -166,7 +210,6 @@ El Sprint 1 ha concluido con éxito, logrando establecer la base digital estrat�
 \end{figure}
 
 \textbf{Enlace al video:} \url{https://tinyurl.com/viora-sprint1}
-
 
 
 #### Services Documentation Evidence for Sprint Review
