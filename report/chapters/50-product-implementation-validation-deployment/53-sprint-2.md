@@ -200,6 +200,9 @@ El proceso inicia con la ejecución del comando npm run deploy, el cual dispara 
 \caption*{\textit{Nota.} La imagen muestra la transformación de módulos, la generación de la carpeta "dist" y la finalización del despliegue en la URL oficial. Elaboración propia.}
 \end{figure}
 
+\textbf{Enlace la webapp:} \url{https://viora-release-001.web.app/dashboard}
+
+
 #### Team Collaboration Insights for Sprint Review
 
 Durante el Sprint 2, la dinámica de colaboración del equipo se intensificó significativamente debido a la complejidad técnica que supuso el desarrollo del Dashboard y la integración de analíticos complejos. El equipo mantuvo un flujo constante de contribuciones, asegurando que cada componente visual y lógico fuera revisado y fusionado correctamente en el repositorio oficial.
