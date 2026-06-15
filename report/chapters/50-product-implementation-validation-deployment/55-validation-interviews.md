@@ -225,3 +225,65 @@ Se solicitará al participante realizar las tareas definidas en los user flows c
 \multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} -----------} \\ [10pt]
 \multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/-----------}} \\ \hline
 \end{tabular}
+
+<br>
+
+### Evaluaciones según heurísticas
+
+Con el fin de identificar problemas de experiencia de usuario antes de la implementación final del producto, se realizará una evaluación heurística del MVP de Viora. La evaluación considerará aspectos relacionados con la usabilidad, arquitectura de información e inclusive design, tomando como referencia principios reconocidos de User Experience.
+
+| Campo | Valor |
+|---------|---------|
+| Carrera | Ingeniería de Software |
+| Curso | Aplicaciones Web |
+| Auditor | ArcadiaDevs |
+| Aplicación evaluada | Viora |
+| Participantes | Productores olivareros y especialistas fitosanitarios |
+| Fecha | 17/06/2026 |
+
+<br>
+
+#### Tareas evaluadas
+
+El alcance de esta evaluación incluye la revisión de la experiencia de usuario en las siguientes tareas:
+
+1. Visualización del Dashboard Overview.
+2. Consulta detallada de una parcela.
+3. Revisión de información climática.
+4. Creación de una parcela.
+5. Edición de una parcela.
+6. Eliminación de una parcela.
+7. Consulta del módulo Dynamic Nutrition.
+
+> **Nota:** No forman parte de esta evaluación las funcionalidades asociadas al módulo Surveillance, debido a que aún se encuentran en desarrollo.
+
+<br>
+
+#### Escala de Severidad
+
+| Nivel | Descripción |
+|---------|---------|
+| 1 | Problema superficial. No requiere corrección inmediata. |
+| 2 | Problema menor. Se recomienda corregir en futuras iteraciones. |
+| 3 | Problema mayor. Afecta significativamente la experiencia del usuario. |
+| 4 | Problema muy grave. Impide completar una tarea correctamente. |
+
+<br>
+
+#### Tabla Resumen
+| # | Problema | Escala de severidad | Heurística/Princio violada(o)|
+|---------|---------|---------|---------|
+| 1 | -- | -- | -- |
+
+#### Descripción de problemas
+
+- Problema #1: ---
+  - Severidad: --
+  - Problema: ----
+  - Recomendación: ----
+
+<br>
+
+
+
+\newpage
