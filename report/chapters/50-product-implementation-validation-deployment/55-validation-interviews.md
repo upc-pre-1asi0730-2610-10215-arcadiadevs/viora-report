@@ -192,3 +192,36 @@ Se solicitará al participante realizar las tareas definidas en los user flows c
 - ¿Estaría dispuesto a probar futuras versiones de la plataforma?
 - En caso de que la plataforma estuviera completamente desarrollada, ¿estaría dispuesto a pagar por su uso o recomendarla a sus clientes? ¿Por qué?
 - ¿Desea agregar algún comentario, sugerencia o recomendación para mejorar la plataforma?
+
+<br>
+
+### Registro de Entrevistas
+
+**Segmento: Productores olivareros de la región sur**
+
+\noindent
+\begin{tabular}{p{0.15\textwidth} p{0.30\textwidth} p{0.15\textwidth} p{0.30\textwidth}}
+\hline
+\multicolumn{4}{l}{\textbf{Entrevista \#1} \hfill \textbf{Detalles}} \\ \hline
+\textbf{Nombre} & -------- & \textbf{Edad} & 55 \\
+\textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{-----------} \\
+\textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{-----------} \\
+\textbf{Inicio} & ----------- & \textbf{Enlace} & \url{-----------} \\ \hline
+\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} -----------} \\ [10pt]
+\multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/-----------}} \\ \hline
+\end{tabular}
+
+
+**Segmento: Profesionales especializados en control de plagas agrícolas**
+
+\noindent
+\begin{tabular}{p{0.15\textwidth} p{0.30\textwidth} p{0.15\textwidth} p{0.30\textwidth}}
+\hline
+\multicolumn{4}{l}{\textbf{Entrevista \#1} \hfill \textbf{Detalles}} \\ \hline
+\textbf{Nombre} & -------- & \textbf{Edad} & 55 \\
+\textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{-----------} \\
+\textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{-----------} \\
+\textbf{Inicio} & ----------- & \textbf{Enlace} & \url{-----------} \\ \hline
+\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} -----------} \\ [10pt]
+\multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/-----------}} \\ \hline
+\end{tabular}
