@@ -96,49 +96,6 @@
 \begin{figure}[H]
 \caption{Wireframe de la aplicación.}
 \centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-13.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-14.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-15.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-16.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-17.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-18.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
 \includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-e-1.png}
 \caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de especialista. Elaboración propia.}
 \end{figure} 
