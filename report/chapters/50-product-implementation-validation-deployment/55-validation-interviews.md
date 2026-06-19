@@ -203,13 +203,14 @@ Se solicitará al participante realizar las tareas definidas en los user flows c
 \begin{tabular}{p{0.15\textwidth} p{0.30\textwidth} p{0.15\textwidth} p{0.30\textwidth}}
 \hline
 \multicolumn{4}{l}{\textbf{Entrevista \#1} \hfill \textbf{Detalles}} \\ \hline
-\textbf{Nombre} & -------- & \textbf{Edad} & 55 \\
-\textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{-----------} \\
-\textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{-----------} \\
-\textbf{Inicio} & ----------- & \textbf{Enlace} & \url{-----------} \\ \hline
-\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} -----------} \\ [10pt]
-\multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/-----------}} \\ \hline
+\textbf{Nombre} & Diego Alonso Diaz & \textbf{Edad} & 28 \\
+\textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{Sama, Tacna} \\
+\textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{Productor Olivarero y Administrador de Operaciones} \\
+\textbf{Inicio} & 00:00 & \textbf{Enlace} & \url{https://tinyurl.com/validation-interviews-1} \\ \hline
+\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} El entrevistado tiene 28 años y es el administrador de una empresa olivarera familiar de 45 topos en Sama, Tacna. Tras interactuar con la landing page, identificó que Viora es un software de monitoreo agrícola, alertas de plagas y conexión con especialistas que ayuda a centralizar datos y reducir el trabajo manual. Considera la herramienta una necesidad real para la región, aunque criticó que la página actual es demasiado técnica para los agricultores, tiene textos en inglés y tipografías muy pequeñas en escritorio. Lo que más le interesó fue el seguimiento del clima y el marketplace de profesionales. La navegación le pareció algo complicada y sugirió hacerla más práctica. En el Dashboard, recomendó dar mayor peso visual y colores llamativos a las secciones críticas (clima y salud del cultivo). Para la gestión de parcelas, pidió que el botón de "crear" sea gigante y visible, que el tipo de cultivo tenga una lista desplegable y que se permita dividir un terreno en subparcelas independientes. También sugirió etiquetar los sensores de humedad para identificar su ubicación exacta y hacer más visibles las alertas junto con sus planes de acción. Finalmente, afirmó que usaría la app a diario y estaría dispuesto a pagar por ella, pero solicitó un mes de prueba para verificar la correcta conexión de sus dispositivos y la veracidad de los datos antes de suscribirse.} \\ [10pt]
+\multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/validation-interview-1.png}} \\ \hline
 \end{tabular}
+
 
 
 **Segmento: Profesionales especializados en control de plagas agrícolas**
