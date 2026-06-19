@@ -1,0 +1,50 @@
+@startuml
+package "API Client Services" {
+    class AxiosHttpClient {
+        - baseUrl: string
+        + requestInterceptors()
+        + responseInterceptors()
+        + get(url: string, config: any): Promise<any>
+        + post(url: string, data: any): Promise<any>
+        + put(url: string, data: any): Promise<any>
+        + delete(url: string): Promise<any>
+    }
+
+    class BaseApiService {
+        # httpClient: AxiosHttpClient
+        + constructor(client: AxiosHttpClient)
+        # handleResponse(resp: any): any
+        # handleError(error: any): void
+    }
+}
+
+package "Shared UI Components" {
+    class BaseLayout <<Vue.js Component>> {
+        + isSidebarOpen: boolean
+        + toggleSidebar()
+    }
+
+    class DataTableWidget <<Vue.js Component>> {
+        + columns: Array
+        + rows: Array
+        + pageSize: int
+        + onSort(column: string)
+        + onPaginate(page: int)
+    }
+
+    class BaseModalWidget <<Vue.js Component>> {
+        + isVisible: boolean
+        + title: string
+        + open()
+        + close()
+        + emitConfirm()
+    }
+
+    class LoadingSpinnerWidget <<Vue.js Component>> {
+        + isActive: boolean
+        + message: string
+    }
+}
+
+BaseApiService --> AxiosHttpClient : uses
+@enduml

@@ -1,0 +1,77 @@
+@startuml
+package "Epidemiological Surveillance" {
+    class SurveillanceController {
+        - _surveillanceService: ISurveillanceService
+        + reportSymptom(dto: SymptomReportDTO): ResponseEntity<SymptomReportDTO>
+        + validateOutbreak(reportId: int): ResponseEntity<OutbreakValidationDTO>
+        + getZonalRiskMap(): ResponseEntity<List<ZonalRiskDTO>>
+        + getCommunityAlerts(): ResponseEntity<List<CommunityAlertDTO>>
+    }
+
+    interface ISurveillanceService {
+        + submitSymptomReport(dto: SymptomReportDTO): SymptomReport
+        + validateOutbreak(reportId: int): OutbreakValidation
+        + getZonalRiskAssessments(region: String): List<ZonalRiskDTO>
+        + getCommunityAlerts(region: String): List<CommunityAlertDTO>
+    }
+
+    class SurveillanceService {
+        - _reportRepo: IBaseRepository<SymptomReport>
+        - _outbreakRepo: IBaseRepository<OutbreakValidation>
+        - _senasaClient: ISenasaDataClient
+        - _brevoClient: IBrevoClient
+        + submitSymptomReport()
+        + validateOutbreak()
+        + getZonalRiskAssessments()
+        + getCommunityAlerts()
+    }
+
+    class SymptomReport <<Entity>> {
+        + Id: int
+        + PlotId: int
+        + ReporterId: int
+        + SymptomDescription: String
+        + AffectedArea: double
+        + SeverityLevel: SeverityEnum
+        + EvidenceMediaUrl: String
+        + ReportedAt: LocalDateTime
+    }
+
+    class OutbreakValidation <<Entity>> {
+        + Id: int
+        + SymptomReportId: int
+        + ValidatedBy: int
+        + ProbablePathogen: String
+        + ConfidenceLevel: double
+        + IsConfirmed: bool
+        + ValidatedAt: LocalDateTime
+    }
+
+    class QuarantineZone <<Entity>> {
+        + Id: int
+        + RegionName: String
+        + PolygonCoordinates: String
+        + ThreatAgent: String
+        + DeclaredAt: LocalDateTime
+        + IsActive: bool
+    }
+
+    class CommunityAlert <<Entity>> {
+        + Id: int
+        + QuarantineZoneId: int
+        + AlertType: String
+        + Message: String
+        + AffectedRadius: double
+        + IssuedAt: LocalDateTime
+    }
+
+    ISurveillanceService <|.. SurveillanceService
+    SurveillanceService --> IBaseRepository : uses
+    SurveillanceController --> ISurveillanceService : depends on
+    SymptomReport "*" -- "1" Plot : reported for
+    SymptomReport "*" -- "1" User : submitted by
+    OutbreakValidation "0..1" --* "1" SymptomReport : validates
+    CommunityAlert "*" -- "1" QuarantineZone : issued within
+    OutbreakValidation ..> QuarantineZone : may trigger
+}
+@enduml

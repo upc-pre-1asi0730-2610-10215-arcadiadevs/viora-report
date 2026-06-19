@@ -1,0 +1,77 @@
+@startuml
+package "Repository Components (Data Access)" {
+    class AppDbContext {
+        + Users: DbSet<User, Long>
+        + Profiles: DbSet<Profile, Long>
+        + Plots: DbSet<Plot, Long>
+        + AgronomicRecords: DbSet<AgronomicRecord, Long>
+        + Alerts: DbSet<Alert, Long>
+        + InterventionRequests: DbSet<InterventionRequest, Long>
+        + Subscriptions: DbSet<Subscription, Long>
+        + saveChanges(): int
+    }
+
+    interface IBaseRepository<T> {
+        + findById(id: Long): Optional<T>
+        + findAll(): List<T>
+        + save(entity: T): T
+        + Update(entity: T): void
+        + deleteById(id: Long): void
+    }
+
+    class BaseRepository<T> {
+        # _context: AppDbContext
+        + findById()
+        + findAll()
+        + save()
+        + Update()
+        + deleteById()
+    }
+
+    IBaseRepository <|.. BaseRepository
+    BaseRepository --> AppDbContext : uses
+}
+
+package "External Integrations Component" {
+    interface IAgroMonitoringClient {
+        + fetchNDVIData(polygon: String): NDVIResponseDTO
+        + fetchWeatherData(polygon: String): WeatherResponseDTO
+    }
+
+    interface IMercadoPagoClient {
+        + createPreference(paymentData: PaymentDTO): String
+        + verifyPayment(txId: String): PaymentStatusDTO
+    }
+
+    interface IMapboxClient {
+        + geocode(query: String): GeocodingResultDTO
+        + getStaticMap(polygon: String): byte[]
+    }
+
+    interface IBrevoClient {
+        + sendTransactionalEmail(email: EmailDTO): void
+        + sendAlertNotification(alert: AlertEmailDTO): void
+    }
+
+    interface ICloudinaryClient {
+        + uploadMedia(file: InputStream, folder: String): MediaUrlDTO
+        + deleteMedia(publicId: String): void
+    }
+
+    interface ISenasaDataClient {
+        + fetchQuarantineAlerts(region: String): List<SenasaAlertDTO>
+        + fetchPestRegistry(): List<PestRecordDTO>
+    }
+
+    class RestHttpClientWrapper {
+        + send(request: HttpEntity<?>): ResponseEntity<String>
+    }
+
+    IAgroMonitoringClient ..> RestHttpClientWrapper : uses
+    IMercadoPagoClient ..> RestHttpClientWrapper : uses
+    IMapboxClient ..> RestHttpClientWrapper : uses
+    IBrevoClient ..> RestHttpClientWrapper : uses
+    ICloudinaryClient ..> RestHttpClientWrapper : uses
+    ISenasaDataClient ..> RestHttpClientWrapper : uses
+}
+@enduml

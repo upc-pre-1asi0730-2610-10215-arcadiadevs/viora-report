@@ -1,0 +1,97 @@
+@startuml
+package "IAM Component" {
+    class AuthController {
+        - _authService: IAuthService
+        + login(dto: LoginDTO): ResponseEntity<TokenDTO>
+        + register(dto: RegisterDTO): ResponseEntity<User>
+        + refreshToken(dto: RefreshTokenDTO): ResponseEntity<TokenDTO>
+    }
+
+    interface IAuthService {
+        + authenticate(credentials: LoginDTO): TokenDTO
+        + register(data: RegisterDTO): User
+        + refreshToken(token: String): TokenDTO
+    }
+
+    class AuthService {
+        - _userRepo: IBaseRepository<User>
+        + authenticate()
+        + register()
+        + refreshToken()
+    }
+
+    class User <<Entity>> {
+        + Id: int
+        + Email: String
+        + PasswordHash: String
+        + Role: RoleEnum
+        + CreatedAt: LocalDateTime
+    }
+
+    enum RoleEnum {
+        Producer
+        Specialist
+        Admin
+    }
+
+    IAuthService <|.. AuthService
+    AuthService --> IBaseRepository : uses
+}
+
+package "Profile Component" {
+    class ProfileController {
+        - _profileService: IProfileService
+        + getProfile(userId: int): ResponseEntity<ProfileDTO>
+        + updateProfile(dto: UpdateProfileDTO): ResponseEntity<Void>
+        + uploadEvidence(dto: EvidenceUploadDTO): ResponseEntity<Void>
+    }
+
+    interface IProfileService {
+        + getProfile(userId: int): ProfileDTO
+        + updateProfile(userId: int, data: UpdateProfileDTO): void
+        + uploadEvidence(userId: int, files: EvidenceUploadDTO): void
+    }
+
+    class ProfileService {
+        - _profileRepo: IBaseRepository<Profile>
+        - _cloudinaryClient: ICloudinaryClient
+        + getProfile()
+        + updateProfile()
+        + uploadEvidence()
+    }
+
+    class Profile <<Entity>> {
+        + Id: int
+        + FirstName: String
+        + LastName: String
+        + PhoneNumber: String
+        + AvatarUrl: String
+        + Bio: String
+        + UserId: int
+    }
+
+    class SpecialistProfile <<Entity>> {
+        + ProfileId: int
+        + SpecializationArea: String
+        + Certifications: String
+        + AvailabilityStatus: AvailabilityEnum
+        + PortfolioUrl: String
+        + YearsOfExperience: int
+    }
+
+    enum AvailabilityEnum {
+        Available
+        Busy
+        OnRoute
+        Offline
+    }
+
+    IProfileService <|.. ProfileService
+    ProfileService --> IBaseRepository : uses
+    Profile "1" *-- "1" User : belongs to
+    SpecialistProfile "0..1" --* "1" Profile : extends
+}
+
+AuthController --> IAuthService : depends on
+ProfileController --> IProfileService : depends on
+@enduml
