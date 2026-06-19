@@ -2,19 +2,19 @@
 package "API Client Services" {
     class AxiosHttpClient {
         - baseUrl: string
-        + requestInterceptors()
-        + responseInterceptors()
-        + get(url: string, config: any): Promise<any>
-        + post(url: string, data: any): Promise<any>
-        + put(url: string, data: any): Promise<any>
-        + delete(url: string): Promise<any>
+        + addRequestInterceptors()
+        + addResponseInterceptors()
+        + get(url: string, config?: AxiosRequestConfig): Promise<AxiosResponse>
+        + post(url: string, data?: unknown): Promise<AxiosResponse>
+        + put(url: string, data?: unknown): Promise<AxiosResponse>
+        + delete(url: string): Promise<AxiosResponse>
     }
 
     class BaseApiService {
         # httpClient: AxiosHttpClient
         + constructor(client: AxiosHttpClient)
-        # handleResponse(resp: any): any
-        # handleError(error: any): void
+        # handleResponse<T>(resp: AxiosResponse<T>): T
+        # handleError(error: AxiosError): void
     }
 }
 
@@ -25,11 +25,11 @@ package "Shared UI Components" {
     }
 
     class DataTableWidget <<Vue.js Component>> {
-        + columns: Array
-        + rows: Array
-        + pageSize: int
+        + columns: Column[]
+        + rows: Row[]
+        + pageSize: number
         + onSort(column: string)
-        + onPaginate(page: int)
+        + onPaginate(page: number)
     }
 
     class BaseModalWidget <<Vue.js Component>> {

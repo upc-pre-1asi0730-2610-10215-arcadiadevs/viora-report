@@ -2,17 +2,17 @@
 package "Epidemiological Surveillance" {
     class SurveillanceController {
         - _surveillanceService: ISurveillanceService
-        + reportSymptom(dto: SymptomReportDTO): ResponseEntity<SymptomReportDTO>
-        + validateOutbreak(reportId: int): ResponseEntity<OutbreakValidationDTO>
-        + getZonalRiskMap(): ResponseEntity<List<ZonalRiskDTO>>
-        + getCommunityAlerts(): ResponseEntity<List<CommunityAlertDTO>>
+        + ReportSymptom(dto: SymptomReportDTO): ResponseEntity<SymptomReportDTO>
+        + ValidateOutbreak(reportId: int): ResponseEntity<OutbreakValidationDTO>
+        + GetZonalRiskMap(): ResponseEntity<List<ZonalRiskDTO>>
+        + GetCommunityAlerts(): ResponseEntity<List<CommunityAlertDTO>>
     }
 
     interface ISurveillanceService {
-        + submitSymptomReport(dto: SymptomReportDTO): SymptomReport
-        + validateOutbreak(reportId: int): OutbreakValidation
-        + getZonalRiskAssessments(region: String): List<ZonalRiskDTO>
-        + getCommunityAlerts(region: String): List<CommunityAlertDTO>
+        + SubmitSymptomReport(dto: SymptomReportDTO): SymptomReport
+        + ValidateOutbreak(reportId: int): OutbreakValidation
+        + GetZonalRiskAssessments(region: string): List<ZonalRiskDTO>
+        + GetCommunityAlerts(region: string): List<CommunityAlertDTO>
     }
 
     class SurveillanceService {
@@ -20,49 +20,49 @@ package "Epidemiological Surveillance" {
         - _outbreakRepo: IBaseRepository<OutbreakValidation>
         - _senasaClient: ISenasaDataClient
         - _brevoClient: IBrevoClient
-        + submitSymptomReport()
-        + validateOutbreak()
-        + getZonalRiskAssessments()
-        + getCommunityAlerts()
+        + SubmitSymptomReport()
+        + ValidateOutbreak()
+        + GetZonalRiskAssessments()
+        + GetCommunityAlerts()
     }
 
     class SymptomReport <<Entity>> {
         + Id: int
         + PlotId: int
         + ReporterId: int
-        + SymptomDescription: String
+        + SymptomDescription: string
         + AffectedArea: double
         + SeverityLevel: SeverityEnum
-        + EvidenceMediaUrl: String
-        + ReportedAt: LocalDateTime
+        + EvidenceMediaUrl: string
+        + ReportedAt: DateTime
     }
 
     class OutbreakValidation <<Entity>> {
         + Id: int
         + SymptomReportId: int
         + ValidatedBy: int
-        + ProbablePathogen: String
+        + ProbablePathogen: string
         + ConfidenceLevel: double
         + IsConfirmed: bool
-        + ValidatedAt: LocalDateTime
+        + ValidatedAt: DateTime
     }
 
     class QuarantineZone <<Entity>> {
         + Id: int
-        + RegionName: String
-        + PolygonCoordinates: String
-        + ThreatAgent: String
-        + DeclaredAt: LocalDateTime
+        + RegionName: string
+        + PolygonCoordinates: string
+        + ThreatAgent: string
+        + DeclaredAt: DateTime
         + IsActive: bool
     }
 
     class CommunityAlert <<Entity>> {
         + Id: int
         + QuarantineZoneId: int
-        + AlertType: String
-        + Message: String
+        + AlertType: string
+        + Message: string
         + AffectedRadius: double
-        + IssuedAt: LocalDateTime
+        + IssuedAt: DateTime
     }
 
     ISurveillanceService <|.. SurveillanceService

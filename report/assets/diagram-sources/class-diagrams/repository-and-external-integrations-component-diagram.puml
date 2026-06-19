@@ -1,31 +1,31 @@
 @startuml
 package "Repository Components (Data Access)" {
     class AppDbContext {
-        + Users: DbSet<User, Long>
-        + Profiles: DbSet<Profile, Long>
-        + Plots: DbSet<Plot, Long>
-        + AgronomicRecords: DbSet<AgronomicRecord, Long>
-        + Alerts: DbSet<Alert, Long>
-        + InterventionRequests: DbSet<InterventionRequest, Long>
-        + Subscriptions: DbSet<Subscription, Long>
-        + saveChanges(): int
+        + Users: DbSet<User>
+        + Profiles: DbSet<Profile>
+        + Plots: DbSet<Plot>
+        + AgronomicRecords: DbSet<AgronomicRecord>
+        + Alerts: DbSet<Alert>
+        + InterventionRequests: DbSet<InterventionRequest>
+        + Subscriptions: DbSet<Subscription>
+        + SaveChanges(): int
     }
 
     interface IBaseRepository<T> {
-        + findById(id: Long): Optional<T>
-        + findAll(): List<T>
-        + save(entity: T): T
+        + FindById(id: long): T?
+        + FindAll(): List<T>
+        + Save(entity: T): T
         + Update(entity: T): void
-        + deleteById(id: Long): void
+        + DeleteById(id: long): void
     }
 
     class BaseRepository<T> {
         # _context: AppDbContext
-        + findById()
-        + findAll()
-        + save()
+        + FindById()
+        + FindAll()
+        + Save()
         + Update()
-        + deleteById()
+        + DeleteById()
     }
 
     IBaseRepository <|.. BaseRepository
@@ -34,37 +34,37 @@ package "Repository Components (Data Access)" {
 
 package "External Integrations Component" {
     interface IAgroMonitoringClient {
-        + fetchNDVIData(polygon: String): NDVIResponseDTO
-        + fetchWeatherData(polygon: String): WeatherResponseDTO
+        + FetchNDVIData(polygon: string): NDVIResponseDTO
+        + FetchWeatherData(polygon: string): WeatherResponseDTO
     }
 
     interface IMercadoPagoClient {
-        + createPreference(paymentData: PaymentDTO): String
-        + verifyPayment(txId: String): PaymentStatusDTO
+        + CreatePreference(paymentData: PaymentDTO): string
+        + VerifyPayment(txId: string): PaymentStatusDTO
     }
 
     interface IMapboxClient {
-        + geocode(query: String): GeocodingResultDTO
-        + getStaticMap(polygon: String): byte[]
+        + Geocode(query: string): GeocodingResultDTO
+        + GetStaticMap(polygon: string): byte[]
     }
 
     interface IBrevoClient {
-        + sendTransactionalEmail(email: EmailDTO): void
-        + sendAlertNotification(alert: AlertEmailDTO): void
+        + SendTransactionalEmail(email: EmailDTO): void
+        + SendAlertNotification(alert: AlertEmailDTO): void
     }
 
     interface ICloudinaryClient {
-        + uploadMedia(file: InputStream, folder: String): MediaUrlDTO
-        + deleteMedia(publicId: String): void
+        + UploadMedia(file: Stream, folder: string): MediaUrlDTO
+        + DeleteMedia(publicId: string): void
     }
 
     interface ISenasaDataClient {
-        + fetchQuarantineAlerts(region: String): List<SenasaAlertDTO>
-        + fetchPestRegistry(): List<PestRecordDTO>
+        + FetchQuarantineAlerts(region: string): List<SenasaAlertDTO>
+        + FetchPestRegistry(): List<PestRecordDTO>
     }
 
     class RestHttpClientWrapper {
-        + send(request: HttpEntity<?>): ResponseEntity<String>
+        + Send(request: HttpRequestMessage): HttpResponseMessage
     }
 
     IAgroMonitoringClient ..> RestHttpClientWrapper : uses

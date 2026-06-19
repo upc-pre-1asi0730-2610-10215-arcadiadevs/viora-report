@@ -1,22 +1,22 @@
 @startuml
 package "Notification Center" {
     class NotificationDropdownWidget <<Vue.js Component>> {
-        - unreadCount: int
+        - unreadCount: number
         + toggleDropdown()
         + markAllAsRead()
     }
 
     class NotificationStateService {
-        + notifications: Alert[]
+        + notifications: Notification[]
         + unreadAlerts()
         + subscribeToAlerts()
-        + markAsRead(id: int)
+        + markAsRead(id: number)
     }
 
     class NotificationApiService {
-        + getNotifications(): Promise<Notification[]>
-        + markAsRead(id: int): Promise<void>
-        + markAllAsRead(): Promise<void>
+        + GetNotifications(): Promise<Notification[]>
+        + MarkAsRead(id: number): Promise<void>
+        + MarkAllAsRead(): Promise<void>
     }
 
     NotificationApiService --|> BaseApiService

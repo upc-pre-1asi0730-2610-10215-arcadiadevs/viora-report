@@ -1,7 +1,7 @@
 @startuml
 package "Profile Management" {
     class ProfileView <<Vue.js Component>> {
-        - userProfile: UserProfile
+        - userProfile: UserProfile | null
         - isEditing: boolean
         + toggleEditMode()
         + saveChanges()
@@ -14,16 +14,16 @@ package "Profile Management" {
     }
 
     class ProfileStateService {
-        + currentProfile: object
+        + currentProfile: Profile | null
         + fetchProfile()
-        + updateProfile(data)
-        + uploadSpecialistEvidence(files)
+        + updateProfile(data: UpdateProfileData)
+        + uploadSpecialistEvidence(files: File[])
     }
 
     class ProfileApiService {
-        + getProfile(userId: int): Promise<Profile>
-        + updateProfile(userId: int, data: object): Promise<void>
-        + uploadEvidence(userId: int, files: File[]): Promise<void>
+        + GetProfile(userId: number): Promise<Profile>
+        + UpdateProfile(userId: number, data: UpdateProfileData): Promise<void>
+        + UploadEvidence(userId: number, files: File[]): Promise<void>
     }
 
     ProfileApiService --|> BaseApiService

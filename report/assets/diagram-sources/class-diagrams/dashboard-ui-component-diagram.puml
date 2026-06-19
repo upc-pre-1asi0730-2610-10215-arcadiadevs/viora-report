@@ -6,7 +6,7 @@ package "Dashboard" {
     }
 
     class CropHealthSummaryWidget <<Vue.js Component>> {
-        - ndviSummary: object
+        - ndviSummary: NDVISummary | null
         + renderChart()
     }
 
@@ -16,14 +16,14 @@ package "Dashboard" {
     }
 
     class DashboardStateService {
-        + summaryData: object
+        + summaryData: DashboardSummary | null
         + isLoading: boolean
         + fetchDashboardStats()
     }
 
     class DashboardApiService {
-        + getDashboardStats(period: string): Promise<DashboardSummary>
-        + getCropHealthSummary(plotId: int): Promise<CropHealth>
+        + GetDashboardStats(period: string): Promise<DashboardSummary>
+        + GetCropHealthSummary(plotId: number): Promise<CropHealth>
     }
 
     DashboardApiService --|> BaseApiService

@@ -1,35 +1,35 @@
 @startuml
 package "Plot Management" {
     class PlotListView <<Vue.js Component>> {
-        - plotsList: array
-        + showPlotDetails(id: int)
+        - plotsList: Plot[]
+        + showPlotDetails(id: number)
         + addNewPlot()
     }
 
     class PlotMapWidget <<Vue.js Component>> {
         - mapInstance: MapboxGL
-        - mapCoordinates: array
-        - polygon: object
+        - mapCoordinates: LngLat[]
+        - polygon: MapboxPolygon
         + drawPolygon()
         + centerMap()
-        + highlightPlot(plotId: int)
+        + highlightPlot(plotId: number)
     }
 
     class PlotStateService {
-        + plots: array
-        + selectedPlot: object
-        + activeMetrics: array
+        + plots: Plot[]
+        + selectedPlot: Plot | null
+        + activeMetrics: AgronomicData[]
         + fetchPlots()
-        + savePlot(data)
-        + fetchAgronomicData(plotId: int)
+        + savePlot(data: PlotFormData)
+        + fetchAgronomicData(plotId: number)
     }
 
     class PlotApiService {
-        + getPlots(): Promise<Plot[]>
-        + getPlotDetails(id: int): Promise<PlotDetail>
-        + savePlot(data: object): Promise<Plot>
-        + updateBoundaries(id: int, polygon: any): Promise<void>
-        + getAgronomicData(plotId: int): Promise<AgronomicData[]>
+        + GetPlots(): Promise<Plot[]>
+        + GetPlotDetails(id: number): Promise<PlotDetail>
+        + SavePlot(data: PlotFormData): Promise<Plot>
+        + UpdateBoundaries(id: number, polygon: MapboxPolygon): Promise<void>
+        + GetAgronomicData(plotId: number): Promise<AgronomicData[]>
     }
 
     PlotApiService --|> BaseApiService

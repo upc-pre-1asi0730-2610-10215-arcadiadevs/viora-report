@@ -2,15 +2,23 @@
 package "Moderation & Strikes" {
     class ModerationController {
         - _modService: IModerationService
-        + reportUser(dto: ReportDTO): ResponseEntity<Void>
-        + applyStrike(userId: int, reason: String): ResponseEntity<Void>
-        + getStrikeHistory(userId: int): ResponseEntity<List<StrikeDTO>>
+        + ReportUser(dto: ReportDTO): ResponseEntity<Void>
+        + ApplyStrike(userId: int, reason: string): ResponseEntity<Void>
+        + GetStrikeHistory(userId: int): ResponseEntity<List<StrikeDTO>>
     }
 
     interface IModerationService {
-        + evaluateReports(): void
-        + applyStrike(userId: int, reason: String): void
-        + banUser(userId: int): void
+        + EvaluateReports(): void
+        + ApplyStrike(userId: int, reason: string): void
+        + BanUser(userId: int): void
+    }
+
+    class ModerationService {
+        - _strikeRepo: IBaseRepository<StrikeRecord>
+        - _brevoClient: IBrevoClient
+        + EvaluateReports()
+        + ApplyStrike()
+        + BanUser()
     }
 
     class ModerationService {
@@ -24,8 +32,8 @@ package "Moderation & Strikes" {
     class StrikeRecord <<Entity>> {
         + Id: int
         + UserId: int
-        + Reason: String
-        + Timestamp: LocalDateTime
+        + Reason: string
+        + Timestamp: DateTime
         + IsActive: bool
     }
 

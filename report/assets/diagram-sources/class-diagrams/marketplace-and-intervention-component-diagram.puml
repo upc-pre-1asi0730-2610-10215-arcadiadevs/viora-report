@@ -2,26 +2,26 @@
 package "Marketplace & Intervention" {
     class InterventionController {
         - _marketplaceService: IMarketplaceService
-        + requestIntervention(dto: RequestInterventionDTO): ResponseEntity<InterventionRequestDTO>
-        + acceptCase(requestId: int): ResponseEntity<Void>
-        + rejectCase(requestId: int): ResponseEntity<Void>
-        + getRequestDetails(requestId: int): ResponseEntity<InterventionDetailDTO>
+        + RequestIntervention(dto: RequestInterventionDTO): ResponseEntity<InterventionRequestDTO>
+        + AcceptCase(requestId: int): ResponseEntity<Void>
+        + RejectCase(requestId: int): ResponseEntity<Void>
+        + GetRequestDetails(requestId: int): ResponseEntity<InterventionDetailDTO>
     }
 
     interface IMarketplaceService {
-        + findSpecialists(criteria: FilterDTO): List<SpecialistDTO>
-        + createRequest(dto: RequestInterventionDTO): InterventionRequest
-        + updateRequestStatus(id: int, status: RequestStatus): void
-        + getRequestDetails(id: int): InterventionDetailDTO
+        + FindSpecialists(criteria: FilterDTO): List<SpecialistDTO>
+        + CreateRequest(dto: RequestInterventionDTO): InterventionRequest
+        + UpdateRequestStatus(id: int, status: RequestStatus): void
+        + GetRequestDetails(id: int): InterventionDetailDTO
     }
 
     class MarketplaceService {
         - _requestRepo: IBaseRepository<InterventionRequest>
         - _brevoClient: IBrevoClient
-        + findSpecialists()
-        + createRequest()
-        + updateRequestStatus()
-        + getRequestDetails()
+        + FindSpecialists()
+        + CreateRequest()
+        + UpdateRequestStatus()
+        + GetRequestDetails()
     }
 
     class InterventionRequest <<Entity>> {
@@ -30,25 +30,25 @@ package "Marketplace & Intervention" {
         + PlotId: int
         + SpecialistId: int
         + Status: RequestStatus
-        + Description: String
-        + ScheduledDate: LocalDateTime
-        + CreatedAt: LocalDateTime
+        + Description: string
+        + ScheduledDate: DateTime
+        + CreatedAt: DateTime
     }
 
     class Quotation <<Entity>> {
         + Id: int
         + InterventionRequestId: int
         + ProposedAmount: decimal
-        + Notes: String
+        + Notes: string
         + IsAccepted: bool
     }
 
     class TechnicalPrescription <<Entity>> {
         + Id: int
         + InterventionRequestId: int
-        + Diagnosis: String
-        + Recommendations: String
-        + IssuedAt: LocalDateTime
+        + Diagnosis: string
+        + Recommendations: string
+        + IssuedAt: DateTime
     }
 
     enum RequestStatus {
