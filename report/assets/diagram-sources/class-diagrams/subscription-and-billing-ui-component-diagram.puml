@@ -1,28 +1,28 @@
 @startuml
 package "Subscription & Billing" {
     class SubscriptionView <<Vue.js Component>> {
-        - currentPlan: object
+        - currentPlan: SubscriptionPlan | null
         + upgradePlan()
         + cancelSubscription()
     }
 
     class PaymentFormWidget <<Vue.js Component>> {
-        - cardDetails: object
+        - cardDetails: CardDetails
         - isProcessing: boolean
         + processCheckout()
     }
 
     class BillingStateService {
-        + subscriptionStatus: object
-        + paymentHistory: object
+        + subscriptionStatus: Subscription | null
+        + paymentHistory: PaymentTransaction[]
         + fetchPlanDetails()
         + executePayment()
     }
 
     class BillingApiService {
-        + getSubscriptionStatus(): Promise<Subscription>
-        + getPaymentHistory(): Promise<PaymentTransaction[]>
-        + processPayment(planId: int): Promise<PaymentResult>
+        + GetSubscriptionStatus(): Promise<Subscription>
+        + GetPaymentHistory(): Promise<PaymentTransaction[]>
+        + ProcessPayment(planId: number): Promise<PaymentResult>
     }
 
     BillingApiService --|> BaseApiService

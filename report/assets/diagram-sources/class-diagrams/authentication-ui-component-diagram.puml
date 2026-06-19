@@ -8,19 +8,19 @@ package "Authentication" {
     }
 
     class AuthStateService {
-        + token: string
-        + user: object
+        + token: string | null
+        + user: User | null
         + isAuthenticated: boolean
         + currentUserRole()
-        + login(credentials)
+        + login(credentials: LoginCredentials)
         + logout()
         + refreshToken()
     }
 
     class AuthApiService {
-        + authenticate(credentials: object): Promise<Token>
-        + register(userData: object): Promise<void>
-        + refreshToken(token: string): Promise<Token>
+        + Authenticate(credentials: LoginCredentials): Promise<Token>
+        + Register(userData: RegisterData): Promise<void>
+        + RefreshToken(token: string): Promise<Token>
     }
 
     AuthApiService --|> BaseApiService

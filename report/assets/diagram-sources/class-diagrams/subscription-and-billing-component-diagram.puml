@@ -2,30 +2,30 @@
 package "Subscription & Billing" {
     class BillingController {
         - _billingService: IBillingService
-        + getSubscriptionStatus(): ResponseEntity<SubscriptionDTO>
-        + processPaymentWebhook(payload: WebhookDTO): ResponseEntity<Void>
-        + getPaymentHistory(): ResponseEntity<List<PaymentTransactionDTO>>
+        + GetSubscriptionStatus(): ResponseEntity<SubscriptionDTO>
+        + ProcessPaymentWebhook(payload: WebhookDTO): ResponseEntity<Void>
+        + GetPaymentHistory(): ResponseEntity<List<PaymentTransactionDTO>>
     }
 
     interface IBillingService {
-        + renewSubscription(userId: int, planId: int): void
-        + getSubscriptionStatus(userId: int): SubscriptionDTO
-        + getPaymentHistory(userId: int): List<PaymentTransactionDTO>
+        + RenewSubscription(userId: int, planId: int): void
+        + GetSubscriptionStatus(userId: int): SubscriptionDTO
+        + GetPaymentHistory(userId: int): List<PaymentTransactionDTO>
     }
 
     class BillingService {
         - _subscriptionRepo: IBaseRepository<Subscription>
         - _mercadoPagoClient: IMercadoPagoClient
-        + renewSubscription()
-        + getSubscriptionStatus()
-        + getPaymentHistory()
+        + RenewSubscription()
+        + GetSubscriptionStatus()
+        + GetPaymentHistory()
     }
 
     class Subscription <<Entity>> {
         + Id: int
         + UserId: int
         + PlanType: PlanTypeEnum
-        + ValidUntil: LocalDateTime
+        + ValidUntil: DateTime
         + IsActive: bool
         + IsTrial: bool
     }
@@ -34,9 +34,9 @@ package "Subscription & Billing" {
         + Id: int
         + SubscriptionId: int
         + Amount: decimal
-        + ExternalTxId: String
-        + Status: String
-        + ProcessedAt: LocalDateTime
+        + ExternalTxId: string
+        + Status: string
+        + ProcessedAt: DateTime
     }
 
     enum PlanTypeEnum {
