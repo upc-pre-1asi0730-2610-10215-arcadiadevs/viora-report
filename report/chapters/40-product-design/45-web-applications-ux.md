@@ -96,49 +96,6 @@
 \begin{figure}[H]
 \caption{Wireframe de la aplicación.}
 \centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-13.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-14.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-15.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-16.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-17.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-18.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
 \includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-e-1.png}
 \caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de especialista. Elaboración propia.}
 \end{figure} 
@@ -431,6 +388,76 @@ Wireflow: Gestión de nutrición dinámica ante riesgo climático
 \caption{Mockups de la aplicación.}
 \centering
 \includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-20.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-21.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-22.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-23.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-24.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-25.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-26.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-27.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-28.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-29.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-30.png}
 \caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
 \end{figure} 
 
