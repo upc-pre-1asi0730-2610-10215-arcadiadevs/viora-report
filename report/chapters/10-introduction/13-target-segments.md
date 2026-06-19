@@ -1,4 +1,4 @@
-## Segmentos objetivo.
+## Segmentos objetivo
 
 **Viora** orienta su propuesta de valor a dos macro-segmentos fundamentales dentro del ecosistema olivarero del sur del Perú, los cuales interactúan de manera simbiótica para sostener y proteger la cadena productiva y fitosanitaria.
 
@@ -11,7 +11,7 @@
 2. **Profesionales especializados en control de plagas agrícolas**
     - **Características demográficas y perfil:** Ingenieros agrónomos, técnicos agropecuarios y consultores fitosanitarios independientes. Demográficamente, abarcan un rango de edad más joven a intermedio (25 a 60 años), son nativos digitales o heavy users de herramientas tecnológicas móviles, y se movilizan constantemente a través de los diferentes valles y fundos productivos ofreciendo servicios de diagnóstico, poda y control de plagas.
     - **Información estadística de sustento:** Su participación técnica es estadísticamente vital para evitar catástrofes económicas a nivel país. La presencia inminente de plagas cuarentenarias como la Xylella fastidiosa obliga a intervenciones inmediatas y focalizadas, dado que su descontrol puede generar pérdidas multisectoriales estimadas en más de US$ 3,245 millones anuales a nivel nacional (SENASA, 2025). El marco normativo y técnico actual exige un control oficial y estricto de estas amenazas (Casanova, 2022; SENASA, 2024), lo que dispara la demanda de sus servicios.
-    - **Relación con el problema:** A pesar de la altísima necesidad de sus conocimientos, sufren de una prospección ineficiente. Necesitan un marketplace o plataforma unificada que cruce las alertas epidemiológicas de los campos con su disponibilidad, convirtiendo la necesidad del agricultor en oportunidades de servicio directo.
+    - **Relación con el problema:** A pesar de la altísima necesidad de sus conocimientos, sufren de una prospección ineficiente. Necesitan un canal que les permita recibir alertas epidemiológicas oportunas, priorizar visitas de campo y coordinar seguimiento con los productores afectados.
 
 ### Definición Estadística de la Población y Muestra de Estudio
 
@@ -35,10 +35,10 @@ A continuación, se detallan las matrices de organización de datos para el dise
 | Concepto Estadístico | Aplicación al Proyecto Viora | Descripción y Justificación Metodológica |
 | --- | --- | --- |
 | Población (N) | Ingenieros agrónomos y técnicos fitosanitarios que laboran en la macro-región sur del Perú. | Representa el universo de profesionales habilitados que brindan servicios de contención de plagas (ej. contra la *Xylella fastidiosa*). |
-| Muestra (n) | Subconjunto no probabilístico de 3 a 5 profesionales en control de plagas agrícolas. | Es el segmento experto al que se le aplicará la entrevista para validar la viabilidad del canal de prospección y marketplace de la plataforma. |
+| Muestra (n) | Subconjunto no probabilístico de 3 a 5 profesionales en control de plagas agrícolas. | Es el segmento experto al que se le aplicará la entrevista para validar las necesidades, barreras de adopción y disposición de uso de un canal de alertas y coordinación. |
 | Unidad de Análisis | Un (1) profesional o consultor técnico agropecuario. | Representa el individuo experto del cual extraeremos datos sobre fricciones comerciales y protocolos de intervención. |
 | Dato / Variable Cualitativa | Canal actual de captación de clientes (Boca a boca, redes sociales, etc.). | Variable categórica nominal. Permite identificar las deficiencias actuales en la forma en que prospectan fundos afectados. |
 | Dato / Variable Cuantitativa Discreta | Cantidad de fundos o clientes asesorados mensualmente. | Toma valores enteros. Ayuda a dimensionar la carga laboral y la capacidad de atención que tendrían al recibir alertas automatizadas desde la plataforma. |
-| Dato / Variable Cuantitativa Continua | Años de experiencia en el sector agropecuario / Ingreso promedio por consultoría (S/). | Toma valores reales. Nos sirve para perfilar la madurez del experto y entender la viabilidad financiera del modelo de negocio (ej. cobro de comisiones). |
+| Dato / Variable Cuantitativa Continua | Años de experiencia en el sector agropecuario / Ingreso promedio por consultoría (S/). | Toma valores reales. Nos sirve para perfilar la madurez del experto y entender la viabilidad financiera del modelo de suscripción y la disposición de pago por el servicio. |
 
 \newpage

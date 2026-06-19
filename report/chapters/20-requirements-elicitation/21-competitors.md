@@ -1,7 +1,7 @@
 \newpage
 # Capítulo II: Requirements Elicitation & Analysis
 
-## Competidores.
+## Competidores
 
 | Tipo | Competidor | Descripción | Características | Website |
 |---|---|---|---|---|
@@ -25,14 +25,14 @@ Análisis competitivo para competidores **directos**
 | Criterio |  ![Viora](report/assets/viora-brand/viora-isologotipo-green.png){width=60px} |  ![Metos](report/assets/competitors/metos.png){width=60px} |  ![Agroptima](report/assets/competitors/agroptima.png){width=60px} |  ![Xarvio](report/assets/competitors/xarvio.png){width=60px} |
 |---|---|---|---|---|
 | **PERFIL** | | | | |
-| Overview | Plataforma SaaS B2B hiper-especializada en el ciclo de producción del olivo, que integra datos ambientales para emitir alertas y conecta a productores con agrónomos. | Plataforma global que integra hardware IoT (estaciones meteorológicas) con software predictivo de enfermedades (FieldClimate). | Software líder de gestión agrícola enfocado en el cuaderno de campo, trazabilidad de operaciones y control de costos. | Plataforma de agricultura digital de BASF especializada en modelos de riesgo sanitario y apoyo a decisiones fitosanitarias. |
-| Ventaja competitiva | Alertas predictivas hiper-locales exclusivas para la fenología del olivo y un marketplace integrado para contratar la solución inmediata. | Precisión extrema al basar sus predicciones en datos extraídos por sus propios sensores físicos instalados en la parcela del cliente. | Usabilidad superior para el agricultor en el campo (funciona 100% offline) y simplificación del cumplimiento legal. | Algoritmos respaldados por años de I+D de BASF, con alta precisión en la recomendación del momento exacto para aplicar fungicidas. |
+| Overview | Plataforma SaaS B2B hiper-especializada en el ciclo de producción del olivo, que integra datos ambientales para emitir alertas y coordinar seguimiento con agrónomos locales. | Plataforma global que integra hardware IoT (estaciones meteorológicas) con software predictivo de enfermedades (FieldClimate). | Software líder de gestión agrícola enfocado en el cuaderno de campo, trazabilidad de operaciones y control de costos. | Plataforma de agricultura digital de BASF especializada en modelos de riesgo sanitario y apoyo a decisiones fitosanitarias. |
+| Ventaja competitiva | Alertas predictivas hiper-locales exclusivas para la fenología del olivo y coordinación directa con especialistas locales para seguimiento de campo. | Precisión extrema al basar sus predicciones en datos extraídos por sus propios sensores físicos instalados en la parcela del cliente. | Usabilidad superior para el agricultor en el campo (funciona 100% offline) y simplificación del cumplimiento legal. | Algoritmos respaldados por años de I+D de BASF, con alta precisión en la recomendación del momento exacto para aplicar fungicidas. |
 | **MARKETING** | | | | |
 | Mercado Objetivo | Pequeños/medianos productores de olivo del sur del Perú y especialistas técnicos en control de plagas agrícolas. | Grandes corporaciones agroindustriales y fundos de cultivos de alto valor que pueden permitirse invertir en infraestructura (hardware). | Agricultores profesionales, cooperativas y gerentes de fundos de todos los tamaños, principalmente en España y LATAM. | Productores agrícolas que buscan optimizar su inversión en agroquímicos y proteger el rendimiento de sus cultivos intensivos/extensivos. |
-| Estrategias de Marketing | Growth Loop basado en referidos/afiliados, alianzas estratégicas con cooperativas locales y asociaciones de productores. | Venta consultiva corporativa B2B y asociaciones con distribuidores locales de maquinaria y hardware agrícola. | Fuerte Content Marketing, prueba gratuita (Trial) de 15 días, embajadores de marca y presencia en ferias agrícolas. | Inbound Marketing, Product-Led Growth (versión freemium) e integraciones con productos químicos de su empresa matriz (BASF). |
+| Estrategias de Marketing | Venta consultiva B2B, alianzas estratégicas con cooperativas locales, asociaciones de productores y consultoras fitosanitarias. | Venta consultiva corporativa B2B y asociaciones con distribuidores locales de maquinaria y hardware agrícola. | Fuerte Content Marketing, embajadores de marca y presencia en ferias agrícolas. | Inbound Marketing y alianzas con productos químicos de su empresa matriz (BASF). |
 | **PRODUCTO** | | | | |
 | Servicios | - Dashboard de finca<br />- Motor predictivo de vecería/clima<br />- Alertas fitosanitarias<br />- Directorio de especialistas | - Hardware meteorológico<br />- FieldClimate app<br />- Suscripciones matemáticas | - Cuaderno de campo digital<br />- Registro geolocalizado<br />- Reportes de costos | - Mapas de riesgo de enfermedades<br />- Alertas de protección de cultivos |
-| Precios | Modelo SaaS puro con periodo de prueba de riesgo cero. | Alto costo de entrada (hardware) + suscripción anual al software. | Modelo SaaS con suscripción anual basada en módulos según tamaño. | Modelo Freemium; funciones gratuitas y versiones PRO de pago. |
+| Precios | Modelo SaaS con suscripción mensual/anual activa. | Alto costo de entrada (hardware) + suscripción anual al software. | Modelo SaaS con suscripción anual basada en módulos según tamaño. | Modelo de suscripción con funciones PRO de pago. |
 | Distribución | Web App responsiva y Landing Page orientada a conversión. | Distribuidores físicos exclusivos, Web App y App Móvil. | Web Application y App Móvil nativa. | Web Application y App Móvil nativa. |
 | **SWOT** | | | | |
 | Fortalezas | Especialización en el olivo. Resuelve el problema completo conectando la alerta con el técnico. | Datos hiper-precisos reales. Modelos matemáticos de enfermedades muy maduros. | Interfaz offline a prueba de fallos. Liderazgo en registro de costos operativos. | Fuerte respaldo corporativo. Modelos ampliamente entrenados. |
@@ -52,16 +52,16 @@ Análisis competitivo para competidores **indirectos**
 |---|---|---|---|---|
 | **PERFIL** | | | | |
 | Overview | Plataforma SaaS B2B hiper-especializada en el ciclo de producción del olivo, que integra datos ambientales para emitir alertas tempranas y conecta a productores con agrónomos locales. | Sistema público oficial del Estado Peruano encargado de monitorear, alertar y ejecutar el control oficial de plagas cuarentenarias a nivel nacional. | App global gratuita de agricultura de precisión basada en imágenes satelitales (NDVI). | Plataforma integral "todo en uno" para agricultura digital, diseñada para maximizar el rendimiento mediante zonificación y prescripciones variables. |
-| Ventaja competitiva |Alertas predictivas hiper-locales específicas para la fenología del olivo y conexión directa e instantánea con un marketplace de especialistas agrícolas. | Autoridad normativa oficial, respaldo estatal e infraestructura física de respuesta ante emergencias nacionales (ej. Xylella fastidiosa). | Acceso masivo, gratuito y de usabilidad extremadamente simple a mapas de vigor (NDVI) satelitales actualizados constantemente. | Ecosistema robusto y altamente escalable con integraciones y algoritmos potentes para agrónomos y corporaciones agroindustriales. |
+| Ventaja competitiva |Alertas predictivas hiper-locales específicas para la fenología del olivo y coordinación directa e instantánea con especialistas agrícolas locales. | Autoridad normativa oficial, respaldo estatal e infraestructura física de respuesta ante emergencias nacionales (ej. Xylella fastidiosa). | Acceso masivo, gratuito y de usabilidad extremadamente simple a mapas de vigor (NDVI) satelitales actualizados constantemente. | Ecosistema robusto y altamente escalable con integraciones y algoritmos potentes para agrónomos y corporaciones agroindustriales. |
 | **MARKETING** | | | | |
 | Mercado Objetivo | Pequeños/medianos productores olivareros y especialistas técnicos en control de plagas agrícolas del sur del Perú (ej. Tacna). | Todo el sector agropecuario nacional (productores de todos los rubros, importadores y exportadores). | Agricultores y técnicos agrícolas de todo el mundo, orientada fuertemente a cultivos de áreas extensivas. | Ingenieros agrónomos, asesores técnicos y empresas agrícolas en LATAM. |
-| Estrategias de Marketing | Growth Loop basado en referidos/afiliados, alianzas estratégicas con cooperativas locales y juntas de usuarios de agua. | Difusión pública mediante resoluciones directorales, campañas de prensa del Estado, y capacitaciones en campo. | Crecimiento orgánico apalancado por su modelo 100% gratuito (PLG - Product-Led Growth), SEO y redes sociales. | Ventas B2B consultivas (Outbound), webinars especializados, certificaciones para agrónomos y casos de éxito corporativos. |
+| Estrategias de Marketing | Venta consultiva B2B, alianzas estratégicas con cooperativas locales, juntas de usuarios de agua y consultoras fitosanitarias. | Difusión pública mediante resoluciones directorales, campañas de prensa del Estado, y capacitaciones en campo. | Crecimiento orgánico apalancado por contenido, SEO y redes sociales. | Ventas B2B consultivas (Outbound), webinars especializados, certificaciones para agrónomos y casos de éxito corporativos. |
 | **PRODUCTO** | | | | |
 | Servicios | - Dashboard de finca<br>- Motor predictivo de vecería/clima.<br>- Sistema de alertas fitosanitarias tempranas.<br>- Directorio de especialistas. | - Alertas epidemiológicas regionales.<br>- Inspecciones físicas de campo.<br>- Emisión de certificados fitosanitarios y guías técnicas. | - Mapas de vigor del cultivo<br>- Notas de campo geolocalizadas<br>- Análisis de parcelas | - Mapas de productividad<br>- Pescripciones de insumos<br>- Reportes de ambientación |
-| Precios | Modelo SaaS (Suscripciones mensuales/anuales escalonadas) con periodo Trial y garantía de devolución. | Gratuito (servicio público financiado por el Estado), aunque ciertos certificados tienen tasas administrativas. | 100% Gratuito para el usuario final (monetizan mediante la venta de datos agregados y macro a corporaciones). | Modelo Freemium con límites; planes premium cobrados mensualmente por cantidad de hectáreas analizadas. |
+| Precios | Modelo SaaS con suscripciones mensuales/anuales escalonadas. | Gratuito (servicio público financiado por el Estado), aunque ciertos certificados tienen tasas administrativas. | Modelo gratuito para el usuario final, monetizado mediante la venta de datos agregados y servicios corporativos. | Modelo de suscripción con límites; planes premium cobrados mensualmente por cantidad de hectáreas analizadas. |
 | Distribución | Web Application responsiva y Landing Page informativa. | Portal institucional (gob.pe), oficinas desconcentradas regionales y canales telefónicos. | Aplicación Móvil (Android/iOS) y Web Application. | Web Application (principal) y App Móvil de soporte para campo. |
 | **SWOT** | | | | |
-| Fortalezas | - Hiper-especialización en la problemática del olivo (vecería, horas de frío).<br>- Resuelve el problema End-to-End al incluir el servicio del agrónomo. | - Poder coercitivo y legal para cuarentenas.<br>- Información oficial irrefutable.<br>- Alcance nacional gratuito.  | - UX/UI impecable y curva de aprendizaje nula.<br>- Acceso inmediato a data satelital sin costo para el agricultor. | - Análisis de datos sumamente profundo y científico.<br>- Integración con maquinaria agrícola avanzada.|
+| Fortalezas | - Hiper-especialización en la problemática del olivo (vecería, horas de frío).<br>- Coordina el seguimiento con agrónomos locales. | - Poder coercitivo y legal para cuarentenas.<br>- Información oficial irrefutable.<br>- Alcance nacional gratuito.  | - UX/UI impecable y curva de aprendizaje nula.<br>- Acceso inmediato a data satelital sin costo para el agricultor. | - Análisis de datos sumamente profundo y científico.<br>- Integración con maquinaria agrícola avanzada.|
 | Debilidades | - Startup nueva sin base de datos histórica propia.<br>- Dependencia de adopción de dos frentes (productor y especialista).  | - Alertas regionales (no por parcela específica).<br>- Lentitud en la gestión altamente reactiva. | El NDVI satelital es genérico; avisa que hay un problema, pero no te dice qué plaga exacta es hasta que vas al campo. | Curva de aprendizaje alta e interfaz muy compleja ("Overkill"). |
 | Oportunidades | - Mercado olivarero altamente golpeado por ENOS buscando digitalizarse (Andina, 2024; Yglesias-González et al., 2023).<br>- Absorber la lentitud del Estado mediante alertas más rápidas frente a brotes fitosanitarios (SENASA, 2024; SENASA, 2025). | - Colaborar con startups AgTech (como Viora) para masificar sus protocolos oficiales de contención (SENASA, 2024; SENASA, 2025). | - Implementar modelos de IA para detectar plagas específicas desde imágenes (Osco-Mamani et al., 2025; Pino et al., 2026). | - Expandir su alcance hacia cultivos intensivos de menor escala sustentados por la agricultura familiar si simplifican su interfaz (MIDAGRI, 2025). |
 | Amenazas | - Limitaciones de conectividad a internet en zonas rurales (Casanova Núñez-Melgar, 2022).| - Recortes o limitaciones de capacidad operativa estatal que reduzcan el monitoreo presencial ante nuevos brotes (SENASA, 2024; SENASA, 2025). | - AgTechs de nicho (como Viora) que ofrezcan un valor mucho más específico, localizado y adaptado al enfoque climatológico árido que un simple mapa de colores (Pino y Ascencios, 2022; Andina, 2024). | - Plataformas gratuitas (como OneSoil) que eduquen al usuario base y le quiten mercado en la base de la pirámide (MIDAGRI, 2025). |
@@ -76,7 +76,7 @@ Análisis competitivo para competidores **indirectos**
 |---|---|---|---|
 | ![Metos](report/assets/competitors/metos.png){width=80px} | **"Software-only escalable y predictivo"**: Ingesta de datos ambientales mediante APIs y algoritmos sin obligar al productor a comprar infraestructura. | Gran precisión de datos de campo y modelos matemáticos de enfermedades. Extraen datos de estaciones propias. | Altos costos de entrada y mantenimiento de hardware para el pequeño productor, así como exposición a vandalismo en campo. |
 | ![Agroptima](report/assets/competitors/agroptima.png){width=80px} | **"Motor predictivo vs. Registro pasivo"**: Viora procesa el clima y advierte automáticamente; no es solo una libreta digital de data-entry. | Usabilidad en campo líder europea y potente registro de costos operativos y trazabilidad. | Es un sistema pasivo; sin registro del agricultor, no emite alertas epidemiológicas predictivas autónomas ante crisis climáticas. |
-| ![Xarvio](report/assets/competitors/xarvio.png){width=80px} | **"Hiper-nicho olivarero + Marketplace humano"**: Foco en la vecería y enlace físico-tecnológico para la aplicación agronómica inmediata con un experto humano. | Profundidad técnica corporativa, excelente análisis algorítmico y UX simple (mapas de colores intuitivos). | Aislamiento corporativo: Solo te alertan y derivan a químicos propios sin asistencia técnica humana. Riesgo de mala calibración. |
+| ![Xarvio](report/assets/competitors/xarvio.png){width=80px} | **"Hiper-nicho olivarero + Coordinación humana"**: Foco en la vecería y enlace técnico inmediato con un especialista humano local. | Profundidad técnica corporativa, excelente análisis algorítmico y UX simple (mapas de colores intuitivos). | Aislamiento corporativo: Solo te alertan y derivan a químicos propios sin asistencia técnica humana. Riesgo de mala calibración. |
 
 <br />
 
@@ -114,10 +114,10 @@ Análisis competitivo para competidores **indirectos**
 
 \vspace{0.35cm}
 \raggedright
-\textbullet\ Creciente urgencia por mitigar mermas asociadas al fenómeno ENOS y a la variabilidad climática en el cultivo de olivo (Calvo et al., 2024; Agencia Andina, 2024).\\[0.28cm]
-\textbullet\ Lentitud y enfoque reactivo de las alertas estatales frente a eventos climáticos y sanitarios, lo que abre espacio para soluciones preventivas más ágiles (Yglesias-González et al., 2023; Servicio Nacional de Sanidad Agraria del Perú, 2024).\\[0.28cm]
-\textbullet\ Potencial de alianzas con cooperativas y actores olivareros locales, dada la necesidad de fortalecer la resiliencia productiva y la gestión técnica del cultivo en Tacna (MIDAGRI, 2025).\\[0.28cm]
-\textbullet\ Competidores globales relativamente inaccesibles para pequeños productores debido a los requisitos de analítica avanzada, teledetección e infraestructura tecnológica especializada (Pino et al., 2026; Osco-Mamani et al., 2025).
+\textbullet\ Hiper-especialización en fenología del olivo (vecería, horas de frío).\\[0.28cm]
+\textbullet\ Coordinación con agrónomos locales para seguimiento de alertas.\\[0.28cm]
+\textbullet\ Alertas micro-locales específicas por parcela.\\[0.28cm]
+\textbullet\ Modelo SaaS predictivo, ágil y de bajo costo (sin hardware).
 \end{minipage}
 &
 \cellcolor{fodaLight}
@@ -127,10 +127,10 @@ Análisis competitivo para competidores **indirectos**
 
 \vspace{0.35cm}
 \raggedright
-\textbullet\ Resistencia tecnológica y brecha digital en la agricultura familiar (MIDAGRI, 2025).\\[0.28cm]
-\textbullet\ Limitada conectividad a internet y restricciones operativas en fundos rurales, lo que puede afectar el uso continuo de soluciones digitales en campo (Casanova Núñez-Melgar, 2022).\\[0.28cm]
-\textbullet\ Competidores consolidados como Xarvio o Agroptima con mayor capacidad de inversión, expansión e integración tecnológica en mercados agrícolas digitalizados (Ministerio de Desarrollo Agrario y Riego, 2025).\\[0.28cm]
-\textbullet\ Anomalías climáticas impredecibles que desestabilicen algoritmos (Pino y Ascencios, 2022; Calvo et al., 2024).
+\textbullet\ Resistencia tecnológica y brecha digital en la agricultura familiar.\\[0.28cm]
+\textbullet\ Limitada conectividad a internet y restricciones operativas en fundos rurales.\\[0.28cm]
+\textbullet\ Competidores consolidados como Xarvio o Agroptima con mayor capacidad de inversión, expansión e integración tecnológica.\\[0.28cm]
+\textbullet\ Anomalías climáticas impredecibles que desestabilicen algoritmos.
 \end{minipage}
 \\
 \hline
@@ -149,9 +149,9 @@ Análisis competitivo para competidores **indirectos**
 \vspace{0.35cm}
 \raggedright
 \textbullet\ Hiper-especialización en fenología del olivo (vecería, horas de frío).\\[0.28cm]
-\textbullet\ Marketplace integrado (conecta la alerta con el agrónomo).\\[0.28cm]
-\textbullet\ Modelo SaaS predictivo, ágil y de bajo costo (sin hardware).\\[0.28cm]
-\textbullet\ Alertas micro-locales específicas por parcela.
+\textbullet\ Coordinación con agrónomos locales para seguimiento de alertas.\\[0.28cm]
+\textbullet\ Alertas micro-locales específicas por parcela.\\[0.28cm]
+\textbullet\ Modelo SaaS predictivo, ágil y de bajo costo (sin hardware).
 \end{minipage}
 &
 \cellcolor{fodaWhite}
@@ -161,11 +161,11 @@ Análisis competitivo para competidores **indirectos**
 
 \vspace{0.35cm}
 \raggedright
-\textbf{FO1 – Paquetes "Cooperativa Preventiva":} Usar el bajo costo del modelo SaaS (F3) para cerrar convenios B2B masivos con cooperativas olivareras (O3) que urgen mitigar el ENOS (O1).\\[0.55cm]
+\textbf{FO1 – Cooperativas Preventivas:} Usar el bajo costo del modelo SaaS (F4) para cerrar convenios B2B masivos con cooperativas olivareras (O3) que urgen mitigar el ENOS (O1).\\[0.55cm]
 
-\textbf{FO2 – Alerta Temprana Ágil:} Aprovechar la lentitud del Estado (O2) emitiendo notificaciones predictivas por parcela (F4), ofreciendo la inmediatez que el agricultor no encuentra en canales públicos.\\[0.55cm]
+\textbf{FO2 – Alerta Temprana Ágil:} Aprovechar la lentitud del Estado (O2) emitiendo notificaciones predictivas por parcela (F3), ofreciendo la inmediatez que el agricultor no encuentra en canales públicos.\\[0.55cm]
 
-\textbf{FO3 – Marketplace de Intervención:} Posicionar nuestra red de especialistas (F2) como el "brazo ejecutor" que soluciona inmediatamente las alertas que competidores globales solo reportan de forma pasiva (O4).
+\textbf{FO3 – Red de Intervención Local:} Posicionar nuestra red de especialistas (F2) como el brazo ejecutor que convierte las alertas en seguimiento inmediato, algo que competidores globales solo reportan de forma pasiva (O4).
 \end{minipage}
 &
 \cellcolor{fodaWhite}
@@ -210,7 +210,7 @@ Análisis competitivo para competidores **indirectos**
 
 \vspace{0.35cm}
 \raggedright
-\textbf{DO1 – Pilotos de Validación Local:} Vencer la baja confianza (D1) aliándonos con líderes de juntas de usuarios en Tacna (O3) para hacer pilotos gratuitos que generen "casos de éxito" rápidos y reales.\\[0.55cm]
+\textbf{DO1 – Pilotos de Validación Local:} Vencer la baja confianza (D1) aliándonos con líderes de juntas de usuarios en Tacna (O3) para hacer pilotos acotados que generen "casos de éxito" rápidos y reales.\\[0.55cm]
 
 \textbf{DO2 – Data Colaborativa:} Ante la falta de data histórica propia (D2), aprovechar la urgencia del agricultor por digitalizarse (O1) para retroalimentar nuestros propios algoritmos climáticos según el comportamiento real reportado en la app.\\[0.55cm]
 
@@ -228,7 +228,7 @@ Análisis competitivo para competidores **indirectos**
 
 \textbf{DA2 – Onboarding Asistido:} Para combatir la resistencia tecnológica (A1) y nuestra falta de reconocimiento (D1), realizar talleres presenciales en campo con las cooperativas para instalar y configurar la app en los celulares de los usuarios.\\[0.55cm]
 
-\textbf{DA3 – Protocolos "Fallback":} Ante fallos en la predicción por anomalías extremas (A4), asegurar que el sistema derive inmediatamente el caso al directorio de agrónomos locales (Marketplace) para evaluación humana (minimizando la D2).
+\textbf{DA3 – Protocolos "Fallback":} Ante fallos en la predicción por anomalías extremas (A4), asegurar que el sistema derive inmediatamente el caso al directorio de agrónomos locales para evaluación humana (minimizando la D2).
 \end{minipage}
 \\
 \hline
