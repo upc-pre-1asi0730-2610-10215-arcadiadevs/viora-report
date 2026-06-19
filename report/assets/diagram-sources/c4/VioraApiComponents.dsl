@@ -120,7 +120,7 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
             include *
             include vioraPlatform.database
             include vioraPlatform.mediaStorage
-            autoLayout
+            autoLayout tb
         }
 
         styles {
