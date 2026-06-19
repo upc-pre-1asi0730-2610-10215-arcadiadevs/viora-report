@@ -1,0 +1,31 @@
+@startuml VioraSystemContext
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4/master/C4_Context.puml
+
+title System Context Diagram - Viora Platform
+
+Person(visitor, "Visitor", "Explores Viora's landing page, plans, testimonials and calls to action.")
+Person(oliveProducer, "Olive Producer", "Monitors plots, receives alerts, requests technical interventions and manages subscription.")
+Person(agriSpecialist, "Agricultural Specialist", "Publishes professional portfolio, receives cases, evaluates plots and manages interventions.")
+
+System(vioraPlatform, "Viora Platform", "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management.")
+
+System_Ext(agroMonitoring, "AgroMonitoring API", "External provider of satellite imagery, vegetation indices and agro-weather data.")
+System_Ext(mercadoPago, "Mercado Pago", "External payment gateway for subscriptions, renewals, refunds and payment status updates.")
+System_Ext(brevo, "Brevo", "Transactional email service for password recovery and account notifications.")
+System_Ext(mapbox, "Mapbox", "Maps and geocoding service used for plot delimitation and location-based features.")
+System_Ext(cloudinary, "Cloudinary", "Cloud media storage and delivery service for profile images and field evidence.")
+System_Ext(senasa, "SENASA Official/Open Data Source", "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context.")
+
+Rel(visitor, vioraPlatform, "Explores the landing page, plans and value proposition")
+Rel(oliveProducer, vioraPlatform, "Monitors plots, receives alerts, requests services and manages subscription")
+Rel(agriSpecialist, vioraPlatform, "Publishes portfolio, receives alerts, evaluates cases and manages interventions")
+
+Rel(vioraPlatform, agroMonitoring, "Retrieves satellite imagery, vegetation indices and agro-weather data", "HTTPS/JSON")
+Rel(vioraPlatform, mercadoPago, "Processes subscriptions, renewals and refunds", "HTTPS/JSON + Webhooks")
+Rel(vioraPlatform, brevo, "Sends password recovery and transactional emails", "HTTPS/API")
+Rel(vioraPlatform, mapbox, "Uses maps and geocoding services", "HTTPS/JSON")
+Rel(vioraPlatform, cloudinary, "Uploads and delivers profile/evidence media", "HTTPS/API")
+Rel(vioraPlatform, senasa, "Consults official phytosanitary information and reference data", "HTTPS/Open data")
+
+SHOW_LEGEND()
+@enduml
