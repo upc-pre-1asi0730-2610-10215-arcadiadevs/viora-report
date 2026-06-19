@@ -7,8 +7,8 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
 
         vioraPlatform = softwareSystem "Viora Platform" {
             landingPage = container "Landing Page" "HTML, CSS, TypeScript" "Static website that presents Viora's value proposition, plans, testimonials and calls to action."
-            webApplication = container "Web Application" "Angular" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions."
-            apiApplication = container "API Application" "Java, Spring Boot" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions."
+            webApplication = container "Web Application" "Vue.js" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions."
+            apiApplication = container "API Application" "ASP.NET Core" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions."
             database = container "Database" "MySQL" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data."
             mediaStorage = container "Media Storage" "Cloudinary-backed media storage" "Stores field evidence images, profile images and related media assets."
         }
@@ -40,7 +40,7 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
         # Internal container relationships
         landingPage -> webApplication "Redirects authenticated users to"
         webApplication -> apiApplication "Makes API requests to" "JSON/HTTPS"
-        apiApplication -> database "Reads from and writes to" "JDBC"
+        apiApplication -> database "Reads from and writes to" "ADO.NET"
         apiApplication -> mediaStorage "Stores and retrieves media assets" "HTTPS/API"
 
         # External system relationships

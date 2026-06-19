@@ -7,20 +7,20 @@ workspace "Viora Platform" "Container and Component diagrams for the Viora Platf
 
         vioraPlatform = softwareSystem "Viora Platform" {
             landingPage = container "Landing Page" "HTML, CSS, TypeScript" "Static website that presents Viora's value proposition, plans, testimonials and calls to action."
-            webApplication = container "Web Application" "Angular" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions."
+            webApplication = container "Web Application" "Vue.js" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions."
 
-            apiApplication = container "API Application" "Java, Spring Boot" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." {
-                externalIntegrationsComponent = component "External Integrations Component" "Spring Component" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources."
-                plotManagementComponent = component "Plot Management Component" "Spring Component" "Registers productive areas, validates polygons and manages plot traceability."
-                agrometeorologicalMonitoringComponent = component "Agrometeorological Monitoring Component" "Spring Component" "Synchronizes weather, satellite and vegetation index data for registered plots."
-                moderationStrikesComponent = component "Moderation & Strikes Component" "Spring Component" "Evaluates misconduct reports and applies strikes, suspensions or account blocking."
-                predictionRiskEngine = component "Prediction & Risk Engine" "Spring Component" "Calculates chill portions, crop health, yield projections and phenological risk."
-                marketplaceInterventionComponent = component "Marketplace & Intervention Component" "Spring Component" "Matches producers with specialists and manages technical intervention workflows."
-                iamComponent = component "IAM Component" "Spring MVC / Spring Security" "Handles authentication, authorization, JWT validation and password recovery."
-                alertNotificationComponent = component "Alert & Notification Component" "Spring Component" "Generates phytosanitary, phenological and community preventive alerts."
-                subscriptionBillingComponent = component "Subscription & Billing Component" "Spring Component" "Manages trials, subscriptions, payments, renewals and refunds."
-                profileComponent = component "Profile Component" "Spring Component" "Manages producer and specialist profile information."
-                repositoryComponents = component "Repository Components" "Spring Data JPA" "Persist and retrieve domain data from the relational database."
+            apiApplication = container "API Application" "ASP.NET Core" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." {
+                externalIntegrationsComponent = component "External Integrations Component" "ASP.NET Core Service" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources."
+                plotManagementComponent = component "Plot Management Component" "ASP.NET Core Service" "Registers productive areas, validates polygons and manages plot traceability."
+                agrometeorologicalMonitoringComponent = component "Agrometeorological Monitoring Component" "ASP.NET Core Service" "Synchronizes weather, satellite and vegetation index data for registered plots."
+                moderationStrikesComponent = component "Moderation & Strikes Component" "ASP.NET Core Service" "Evaluates misconduct reports and applies strikes, suspensions or account blocking."
+                predictionRiskEngine = component "Prediction & Risk Engine" "ASP.NET Core Service" "Calculates chill portions, crop health, yield projections and phenological risk."
+                marketplaceInterventionComponent = component "Marketplace & Intervention Component" "ASP.NET Core Service" "Matches producers with specialists and manages technical intervention workflows."
+                iamComponent = component "IAM Component" "ASP.NET Core / Identity" "Handles authentication, authorization, JWT validation and password recovery."
+                alertNotificationComponent = component "Alert & Notification Component" "ASP.NET Core Service" "Generates phytosanitary, phenological and community preventive alerts."
+                subscriptionBillingComponent = component "Subscription & Billing Component" "ASP.NET Core Service" "Manages trials, subscriptions, payments, renewals and refunds."
+                profileComponent = component "Profile Component" "ASP.NET Core Service" "Manages producer and specialist profile information."
+                repositoryComponents = component "Repository Components" "Entity Framework Core" "Persist and retrieve domain data from the relational database."
             }
 
             database = container "Database" "MySQL" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data."
@@ -54,7 +54,7 @@ workspace "Viora Platform" "Container and Component diagrams for the Viora Platf
         # Container-level relationships
         landingPage -> webApplication "Redirects authenticated users to"
         webApplication -> apiApplication "Makes API requests to" "JSON/HTTPS"
-        apiApplication -> database "Reads from and writes to" "JDBC"
+        apiApplication -> database "Reads from and writes to" "ADO.NET"
         apiApplication -> mediaStorage "Stores and retrieves media assets" "HTTPS/API"
 
         # Web Application to component relationships
@@ -88,7 +88,7 @@ workspace "Viora Platform" "Container and Component diagrams for the Viora Platf
 
         moderationStrikesComponent -> repositoryComponents "Stores reports and strikes"
 
-        repositoryComponents -> database "Persists and retrieves relational domain data" "JDBC"
+        repositoryComponents -> database "Persists and retrieves relational domain data" "ADO.NET"
         repositoryComponents -> mediaStorage "Stores media references and asset metadata" "HTTPS/API"
 
         # External Integrations to external systems
