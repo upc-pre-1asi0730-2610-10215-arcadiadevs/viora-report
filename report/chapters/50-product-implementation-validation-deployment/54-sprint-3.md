@@ -528,6 +528,388 @@ US09 & Publicación de perfil profesional & TK01 & Formulario de perfil profesio
 
 &nbsp;
 
+#### Deployment Evidence for Sprint Review
+
+Durante la tercera iteración, hubieron avances en el Web Service, Web Application y Website. Para garantizar la centralización, trazabilidad y correcta auditoría del código fuente, todas las contribuciones técnicas de este incremento fueron registradas e integradas.
+
+A continuación, se presenta la matriz de control de versiones, la cual detalla el historial cronológico de commits realizados en el repositorio del proyecto.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 00d8620 | feat(assets): enhance general icons. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 5cfe813 | feat(assets): add effects sound for cards and about section. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | cc05465 | feat(assets): add angel teacher for learning of the best. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 9e845db | feat(assets): add ico for viora website. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 1cb4579 | feat(assets): add assets from pricing section. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 14d03f0 | feat(assets): enhance icons for feature section. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | f612bd8 | Merge pull request #15 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/refactor/about-us-layout | Refactor/about us layout | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 07e2581 | feat(about): add ambient sound functionality for about us section. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | fab3f5b | feat(about): enhance team members panel with improved images and interactive carousel. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 09b90bb | feat(assets) add images of members for about us section. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 28c39ae | Merge pull request #14 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/segment-summary | feat(segment-summary): add segment summary section with drag and soun | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 289e7c4 | feat(segment-summary): add segment summary section with drag and sound effects. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 1cbfb9b | Merge pull request #13 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/cta-section | feat(cta): add cta section component as contact replacement. | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 8ce5c31 | feat(cta): add cta section component as contact replacement. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 1424e09 | Merge pull request #12 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/chore/remove-contact-section | Chore/remove contact section | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 6a5adb1 | chore(contact): remove contact section component. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 15549e8 | chore(routes): remove contact anchor and dead references. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | a3fb604 | feat(weather-summary): update data for fake api. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | cd53d57 | feat(weather-summay): update data for fake api. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 4fbe831 | feat(weather-summary): add assets for background image and logo. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | e22b9aa | feat(weather-summary): update entity, assembler and card. | | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 14b8906 | merge pull request #24 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/release/1.0.0 | Release/1.0.0 | 22/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 0c4f4c2 | Merge pull request #22 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/chore/code-cleanup | chore(cleanup): remove unused imports, dead code and leftover comments. | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 9e82d52 | chore(cleanup): remove unused imports, dead code and leftover comments. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 7de0a0a | Merge pull request #21 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/ui-general-animations | feat(ui) update ui using the new behavior elements and styles. | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | dd6a3fc | feat(ui) update ui using the new behavior elements and styles. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | cdaf5c3 | Merge pull request #20 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/add-new-i18n | Feature/add new i18n | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 543afb4 | feat(effects) update main and sound. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 36af66b | feat(i18n) add i18n for internationalization. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 4de8620 | Merge pull request #19 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/add-new-effects | Feature/add new effects | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 092bf81 | feat(effects) enhance existing effects. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 384a8cd | feat(effects) add section ambient sound effect for hero and about. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 8566a27 | Merge pull request #18 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/improved-behavior-js | Feature/improved behavior js | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | be03e73 | feat(footer) recreate matter js physics with vanilla js. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | f9cccff | feat(hero) add sound ambient for hero section. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 0b289e8 | feat(hero) increase bottom depth. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 044311a | feat(parallax) add smooth scroll behavior to nav links. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 39ef7b2 | feat(parallax) add parallax effect to hero background. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | a021807 | refactor(ui) delete plan trials affiliate js. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | e652765 | feat(role-benefits): add behavior for scrollytelling. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 1b8bcaa | Merge pull request #17 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/improved-styles | Feature/improved styles | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 0db5609 | style(styles): enhance general styles for sections | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 4bdc504 | rafactor(styles): delete styles for landing button. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 30e973c | feat(styles): add magnetic target class and simplify button box shadows. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | eb76a12 | Merge pull request #16 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/enhanced-assets | Feature/enhanced assets | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 00a43f6 | feat(assets): add images of growers and specialist. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 12b47a9 | feat(assets): add video placeholder for about us section. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | e7ac543 | feat(assets): add images for scrollytelling. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | e68ac62 | merge pull request #26 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/iot-devices | feat(iot-devices): add cards, update fake api and change dashboard. | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 0d8f81e | Merge branch 'develop' of https://github.com/upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp into feature/iot-devices | # Conflicts:#\t.env.development#\tsrc/shared/presentation/components/layout.vue | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 238d1a8 | feat(iot-devices): add endpoint for iot device summaries. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 424f7a6 | feat: update plot overview widget height and create dashboard-toolbar. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 999aa53 | feat(i18n): update spanish and english files. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 8c3da09 | feat(iot-devices): update layout and dashboard producer. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 8fd7440 | feat(iot-devices): add cards for iot sensor and devices. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 2e89e43 | feat(iot-devices): update store and api for iot devices summary. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | a6bf82d | feat(iot-devices): add assembler for iot device summary. | | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 049d415 | merge pull request #25 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/weather-summary | feat: add background image, update infrastructure and presentation for weather-summary. | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1364d94 | Merge remote-tracking branch 'origin/feature/shared' into feature/shared | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 73cd0e6 | feat(shared): add iunitofwork contract for database commits. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 257cbb4 | feat(shared): add generic ibaserepository with basic async crud operations. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 66a901e | feat(shared): add iauditableentity contract for auditing. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e98c21b | Merge remote-tracking branch 'origin/feature/shared' into feature/shared | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c0d9f92 | feat(shared) add initial auditableentityinterceptor for automatic audit fields tracking. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | dcf545a | feat(shared) add appdbcontext with initial ef core configuration. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f284776 | feat(shared): create abstract record for result. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b109649 | chore: initialize viora platform backend project structure. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 2bba1a6 | chore: initial commit. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | b5101e6 | Merge pull request #23 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/chore/code-cleanup | Chore/code cleanup | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 3bed699 | chore(cta) update dashboard links. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 413b230 | style(team) start about text reveal earlier. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | c98b51c | fix(outcomes) scope parallax to media videos. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | c725d17 | chore(i18n) clean hardcoded landing copy. | | 26/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6281c5b | feat(shared) update shared infrastructure namespaces. | | 28/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 3324347 | feat(shared) add db context. | | 28/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4e6fb63 | fix(shared) fix import name. | | 28/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 9b1bdbd | feat(shared): introduce generic base repository for common ef core crud operations. | | 28/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8b56eda | feat(shared): add unitofwork implementation for ef core transaction management. | | 28/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5d659c8 | feat(shared): add stringextensions. | | 28/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | af9b2f5 | feat(index) add feature product video card markup. | | 29/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 46c5c8a | feat(i18n) add feature product copy. | | 29/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 74a9e60 | feat(js) add feature product video interactions. | | 29/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | fffc030 | feat(js) add feature product video interactions. | | 29/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | d4c8c29 | feat(css) style feature product video card layout. | | 29/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 15d23e4 | feat(assets) add product video and carousel media. | | 29/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | abe3e23 | feat(assets) add video controls and chevron icons. | | 29/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4059446 | fix: update routes to shared. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 28934d6 | feat(shared): add english localization strings for error messages. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f59ae20 | feat(shared): add spanish localization strings for error messages. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 07b68da | feat(shared): introduce error messages class for specific error localization. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1e91f35 | feat(shared): add base localization strings to common messages resource file. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 249b31b | feat(shared): introduce common messages class for shared resource localization. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8c60782 | fix(shared): delete unnecessary methods. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 7de9df4 | build: add dependencies for documentation, database management and efc. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8b4d3c7 | feat(shared): update using route to entities. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 0d97642 | feat(shared): update using route for i-auditable-entity. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | fd0174f | Merge remote-tracking branch 'origin/feature/shared' into feature/shared | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 680da87 | feat(shared): implement unit-of-work with app-db-context. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 129be60 | feat(shared): implement inteface for unit-of-work. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 0ed19d0 | feat(shared): implement base-repositoru with ef-core. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | fee49de | feat(shared): update interface for base-repository. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 269e7fc | feat(shared): add extension method to register global exception handler. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 67dab45 | feat(shared): implement custom problem details factory with localization. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6d39a4b | refactor(shared): update namespaces to arcadiadevs.viora in global exception handler. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4f050a0 | feat(shared): implement global exception handling middleware. | | 02/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 93080a8 | Merge pull request #1 from upc-pre-1asi0730-2610-10215-arcadiadevs/feature/shared | feat: merge with shared. | 04/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | f3ff8cc | Merge pull request #26 from upc-pre-1asi0730-2610-10215-arcadiadevs/refactor/i18n | refactor(i18n): remove hardcoded text in index.html. | 05/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 837e603 | refactor(i18n): remove hardcoded text in index.html. | | 05/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | f5e40bd | Merge pull request #24 from upc-pre-1asi0730-2610-10215-arcadiadevs/feature/about-product-placeholder | Feature/about product placeholder | 05/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 7ffa6d0 | Merge branch 'feature/agronomic/create-plot' into develop. | Related to TS08. | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 2618b48 | chore: update .gitignore to exclude additional ide and build artifacts. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 32d4a1e | feat(agronomic): add dockerfile, global.json, and initial documentation files. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b6862d8 | feat(agronomic): refactor app-db-context for improved entity configuration. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4591fc8 | feat(agronomic): map plot entities to REST resources. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b1feb69 | feat(agronomic): map create plot resources to commands. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b7497e2 | feat(agronomic): add REST resource for plot responses. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 63d36c2 | feat(agronomic): add validated resource for plot creation. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 30e12d8 | feat(agronomic): implement entity framework plot repository. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 376145f | feat(agronomic): configure plot persistence mapping. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | dc4eb78 | feat(agronomic): add domain command for plot creation. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f08eac5 | feat(agronomic): add validated plot aggregate root. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 97158c7 | feat(agronomic): implement plot creation command service. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 183f095 | feat(agronomic): add plot command service contract. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | a803722 | feat(agronomic): configure in-memory database provider. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | ae90a52 | feat(agronomic): remove default weather forecast model. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d5d721a | feat(agronomic): configure agronomic services and database providers. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 11842f3 | feat(agronomic): remove default weather forecast controller. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | af80797 | feat(agronomic): add HTTP request for plot creation. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 7a0ec98 | feat(agronomic): align entity framework dependencies and add in-memory provider. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 96eeee6 | feat(agronomic): remove legacy create plot response DTO. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 547b918 | feat(agronomic): remove legacy create plot request DTO. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | fd74efa | feat(agronomic): remove mediator-based plots controller. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e3d3c88 | feat(agronomic): remove legacy plot response mapper. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 0f3fa1b | feat(agronomic): remove legacy create plot request mapper. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f70c7fa | feat(agronomic): remove legacy plot entity configuration. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 0838c04 | feat(agronomic): update plot repository aggregate reference. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | bb878f5 | feat(agronomic): strengthen polygon coordinate validation. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c9c5db9 | feat(agronomic): remove legacy plot aggregate location. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c3f1fcc | feat(agronomic): remove mediator-based plot command handler. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | ef21c5c | feat(agronomic): remove legacy plot creation command. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 014d8cd | feat(agronomic): add plots rest endpoint with dtos and assemblers. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b4831cd | feat(agronomic): add plotrepository ef core implementation and di. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | fba5223 | feat(agronomic): add createplotcommand and handler. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1c7065a | feat(agronomic): add plot aggregate root and iplotrepository interface. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 33e8057 | feat(agronomic): add geopoint and polygoncoordinates value objects. | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 382037e | chore: update gitignore | | 09/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 7806814 | Merge branch 'release/0.7.0' | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d592128 | Merge branch 'feature/agronomic/agronomic-statistics' into develop. | Related to TS016 and TS017. | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 213dc60 | chore:  update gitignore. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | ae3a5d2 | feat(agronomic): register query services in di container | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e50432e | feat(agronomic): add rest controllers for agronomic statistics endpoints. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f11b977 | feat(agronomic): implement monitoring summary, statistics, and nutrition query services. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 01054ae | feat(agronomic): add query service interfaces for agronomic statistics. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b254a82 | feat(agronomic): add dtos for monitoring summary, statistics, and nutrition. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 714694b | feat(agronomic): add bulk query methods to plot and iotdevice repositories. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8ffd73b | feat(agronomic): add monitoring summary, statistics, and nutrition query records. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e2b1f47 | Merge branch 'release/0.6.0' into main | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 40caa4c | feat(agronomic): implement delete iot device functionality with validation. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6ae6544 | feat(agronomic): add authenticateduserid value object for user validation. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4f3cde3 | Merge branch 'feature/agronomic/delete-iot-device' into develop. | Related to TS015. | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e3d0c84 | feat(agronomic): implement delete iot device functionality with validation. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 559d548 | feat(agronomic): add authenticateduserid value object for user validation. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | bbdf449 | Merge branch 'release/0.5.0' into main | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | a611e5d | feat(agronomic): add patch endpoint to update iot device metadata. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 9bfe33c | feat(agronomic): add updateiotdeviceresource record for patch request body. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5a8bcec | feat(agronomic): add assembler for transforming updateiotdeviceresource to updateiotdevicecommand. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | efea791 | feat(agronomic): add devicename value object for iot device naming validation. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | a292999 | feat(agronomic): refactor updateiotdevicecommand for improved validation and structure. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 847ce99 | feat(agronomic): update iotdeviceresource mapping to use current utc time. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 9247709 | feat(agronomic): enhance iotdvicedommandservice with validation and update logic. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6a291fc | feat(agronomic): refactor iotdevice class for improved constructor and update method. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 3fb2054 | feat(agronomic): update handle method signature for updateiotdevicecommand in iiotdevicecommandservice. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b3e3f29 | Merge branch 'feature/agronomic/update-iot-device' into develop. | Related to TS014. | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 36aa9f6 | feat(agronomic): add patch endpoint to update iot device metadata. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c86b1ed | feat(agronomic): add updateiotdeviceresource record for patch request body. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e4d36ee | feat(agronomic): add assembler for transforming updateiotdeviceresource to updateiotdevicecommand. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 02a310c | feat(agronomic): add devicename value object for iot device naming validation. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b90e0c6 | feat(agronomic): refactor updateiotdevicecommand for improved validation and structure. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d1d86c0 | feat(agronomic): update iotdeviceresource mapping to use current utc time. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 3e295da | feat(agronomic): enhance iotdvicedommandservice with validation and update logic. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1407b29 | feat(agronomic): refactor iotdevice class for improved constructor and update method. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | a2eb271 | feat(agronomic): update handle method signature for updateiotdevicecommand in iiotdevicecommandservice. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 450c59e | Merge branch 'release/0.4.0' into main | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c4aaa01 | feat(agronomic): add post endpoint for creating iot devices in plotiotdevicescontroller. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | eca198f | feat(agronomic): implement iotdevicecommandservice for iot device operations. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 0a28d15 | feat(agronomic): define application command service interface for iot devices. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 916bd70 | feat(agronomic): add createiotdeviceresource for creating new iot devices. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | aa19312 | feat(agronomic): add assembler for converting createiotdeviceresource to createiotdevicecommand. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d9998e0 | feat(agronomic): add commands for deleting and updating iot devices. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 7db0d3a | feat(agronomic): add createiotdevicecommand for registering new iot devices. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 2ca4c48 | Merge branch 'feature/agronomic/create-iot-device' into develop. | Reladed to TS013. | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f5e487f | feat(agronomic): add post endpoint for creating iot devices in plotiotdevicescontroller. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d6304fe | feat(agronomic): implement iotdevicecommandservice for iot device operations. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4e169f8 | feat(agronomic): define application command service interface for iot devices. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | eaaef63 | feat(agronomic): add createiotdeviceresource for creating new iot devices. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 23c5a62 | feat(agronomic): add assembler for converting createiotdeviceresource to createiotdevicecommand. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c8d0fe2 | feat(agronomic): add commands for deleting and updating iot devices. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6a90fb6 | feat(agronomic): add createiotdevicecommand for registering new iot devices. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 7519e0d | Merge branch 'release/0.3.0' into main | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 3a92b02 | Merge branch 'feature/agronomic/list-iot-devices' into develop. | Related to TS012. | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6ca0602 | feat(agronomic): add iotdevicerepository to service container. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c7969db | feat(agronomic): refactor iotdevicequeryservice to define interface for device queries. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d36c4a2 | feat(agronomic): update namespace for plotiotdevicesController and add iotdevice tag. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 3b0e3d1 | feat(agronomic): delete iotdevicecommandservice. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 9097816 | feat(agronomic): refactor iotdevice constructor for improved validation. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4877664 | feat(agronomic): enhance iotdevice model with devicename and createdat properties. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b9096da | feat(agronomic): add iotdeviceresource dto for iot device response. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 78a52f4 | feat(agronomic): add iotdeviceresourcefromentityassembler for mapping iotdevice aggregates to rest response dtos. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 29008b1 | feat(agronomic): add plotiotdevicescontroller for managing iot device endpoints by plot. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8724a67 | feat(agronomic): implement iotdevicequeryservice for querying devices by plot ownership. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b541392 | feat(agronomic): add getiotdevicesbyplotidquery for querying iot devices by plot id. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 15abf4b | feat(agronomic): add iotdeviceconfiguration for entity mapping and indexing. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | de57184 | feat(agronomic): implement iotdeviceRepository for managing iotdevice aggregates. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 12f415d | feat(agronomic): add modelbuilderextensions to apply agronomic entity configurations. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5eb8b05 | feat(agronomic): add iotdevice aggregate root with properties and constructor. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b0a5f24 | feat(agronomic): add iiotdevicerepository interface for iotdevice aggregate. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4a117e3 | feat(agronomic): add iotdeviceId and iotdevicestatus value objects. | | 10/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6637898 | Merge branch 'release/0.9.0' | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 82f737b | Merge branch 'feature/agronomic/agronomic-statistics' into develop. | Related to TS016 and TS017. | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5806886 | ci(deployment): add agromonitoring api key configuration for development environment. no public key is here. trust me. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | cfabae4 | feat(agronomic): integrate agromonitoring polygon registration in plot creation. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | eb47fad | feat(agronomic): implement monitoring summary, statistics, and nutrition query services. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f897e54 | feat(agronomic): add agromonitoring api client integration. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 08b00eb | feat(agronomic): register query services in di container. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 0ff68c6 | Merge branch 'release/0.8.0' into main | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1bff838 | Merge branch 'feature/agronomic/current-monitoring-summary' into develop. | Related to TS016. | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d0b44d1 | feat(agronomic): configure postgresql environment variables for deployment. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 24dd909 | feat(agronomic): add yield projection value object for yield data representation. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8710c0d | feat(agronomic): add weather-snapshot value object for weather data representation. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 9b530da | feat(agronomic): add user-id value object for user identification. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 92cbfbe | feat(agronomic): add assembler for converting monitoring-summary-dto to monitoring-summary-resource. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f1e99bf | feat(agronomic): add monitoring-summary-resource for kpi metrics representation. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1cda1b5 | feat(agronomic): add monitoring-summary-id value object for unique identification. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f5fde05 | feat(agronomic): add monitoring-summary aggregate for user agronomic data. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1b625c0 | feat(agronomic): add mitigation recommendation value object for climate risk management. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d7b821f | feat(agronomic): add last-synchronization-at value object for tracking synchronization timestamps. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 456de8b | feat(agronomic): add general-health-status enum and extension methods for monitoring summary. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 78d8ced | feat(agronomic): add climate risk evaluator service for mitigation recommendations. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b329c73 | feat(agronomic): add average-ndvi value object for ndvi calculations. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4a1211d | feat(agronomic): add accumulated-chill-hours value object for chill hour calculations. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | ce0c3b4 | feat(agronomic): enhance current monitoring summary with simulated metrics and climate risk evaluation. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f27a61f | feat(agronomic): extend monitoring-summary-dto. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6626d9b | feat(agronomic): update current monitoring summary endpoint to use monitoring-summaryResource. | | 11/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 9c6808a | feat(surveillance): add interface for external agronomic and implementation. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e8cbb65 | feature(surveillance): update pest sighting evaluated event and event handler. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | cc65b73 | feat(surveillance): add model builder for surveillance. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 44f2d32 | feat(surveillance): add assemblers for create pest sighting, pest sighting report and symptom resource. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 32c47c5 | feat(surveillance): update controllers and action result assembler | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 29d2edd | feat(surveillance): add create pest sighting report, pest sigthing report and sympton resources. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c78d411 | feat(surveillance): add pest sighting and symptom dictionary controllers. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 74bc302 | feat(surveillance): add alert, pest sighting, and symptom dictionary item repositories por efc. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 138e585 | feat(surveillance): add external agronomic service. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 2d1c895 | feat(surveillance): add threat inference service with common threats. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5ec3878 | feat(surveillance): add repositories for alert, pest sigthing and sympton dictionary item. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | cafcf17 | feat(surveillance): add get all symptoms query. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c5f6ea4 | feat(surveillance): add pest sighting event and event handler. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 38ccca6 | feat(surveillance): add seed symptoms command and entity. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8fc87e5 | feat(surveillance): add alert aggregate. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d6cd4e2 | feat(surveillance): add symptom query service. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 9789519 | feat(surveillance): add command service for alert, pest sighting and symptom. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 56dc9bc | feat(surveillance): add alert, pest sighting and symptom command services. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | ceaf195 | feat(surveillance): create commands for create alert and create pest sighting report. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 129cbd1 | feat(surveillance): add aggregate for pest sighting report. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5fe72f1 | feat(surveillance): add symptom, symptoms and symptom types value objects. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 20d71db | feat(surveillance): add report status, risk zone, and threat type enums. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1f63faf | feat(surveillance): add value object for pest sighting report, plot and reporter user ids. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 950f935 | feat(surveillance): add alert id value object and alert sevirity, alert source, and alert status enums. | | 16/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | f2a4c68 | Merge branch 'feature/agronomic/plots' into develop | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 204647b | feat(agronomic): update db context and program. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | fbca440 | feat(agronomic): add external agronomic service. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | eed3512 | feat(agronomic): add deletion policy and query. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 9408b30 | feat(agronomic): update plot aggregate. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 7b715b5 | feat(agronomic): update plot repository and assemblers. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8e89725 | feat(agronomic): update agronomic statistics, monitoring summaries and plots controllers. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e0cd0a9 | feat(agronomic): separate resources and delete dtos. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 51d0707 | feat(surveillance): add agromonitoring service, response, and integration. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 46e2e6c | feat(agronomic): separata queries. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | db9c4e9 | feat(agronomic): add command services and query service for monitoring summary. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | b1b8ce2 | feat(surveillance): separata query services. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d770094 | Merge branch 'feature/agronomic/chill-requirement' into develop | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d2fe104 | feat(surveillance): add command service, configuration and documentation for controller. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 3ae3113 | feat(a) | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 091a967 | feat(agronomic): add chill metric model enum and chill requirement source enum. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8cb0e58 | feat(agronomic): add chill requirement resource and assembler. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6514b79 | feat(agronomic): add chille requirement policy, resolver and chill portions. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6d5d538 | Merge pull request #5 from upc-pre-1asi0730-2610-10215-arcadiadevs/feature/surveillance/get-recent-alerts | Feature/surveillance/get recent alerts | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1b95e95 | Merge branch 'feature/surveillance/get-recent-alerts' into develop | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 28d5757 | feat(surveillance): update al | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 61089ed | feat(surveillance): update external agronomic service with resources. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 36fe52b | feat(surveillance): update query service, repository and interfaces. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 52b97af | feat(surveillance): add query service and update repository for alert. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 2c19b72 | Merge pull request #4 from upc-pre-1asi0730-2610-10215-arcadiadevs/feature/surveillance/review-alert | Feature/surveillance/review alert | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 2df4656 | Merge branch 'feature/surveillance/review-alert' into develop | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 0ea14fa | feat(surveillance): update alert and reviewed command. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5a66971 | feat(surveillance): create command service and exception for alert. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 06aeef4 | Merge pull request #3 from upc-pre-1asi0730-2610-10215-arcadiadevs/feature/surveillance/get-alert-detail | Feature/surveillance/get alert detail | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1935f17 | Merge branch 'feature/surveillance/get-alert-detail' into develop | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8f0d4d2 | feat(surveillance): add alert configuration and modify resource. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 0936105 | feat(surveillance): create controller and resources for alert. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4600e2b | feat(surveillance): create command and event handler for alert. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 0bd2955 | feat(surveillance): create query service and get alert by id. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e54ccd0 | feat(surveillance): update alert and create alert timeline record. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 304b7bb | feat(agronomic): create recommend command. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | db511c1 | feat(agronomic): create dynamic nutrition command. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5af825f | Merge pull request #2 from upc-pre-1asi0730-2610-10215-arcadiadevs/feature/surveillance/create-pest-sighting | Feature/surveillance/create pest sighting | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6189996 | Merge branch 'feature/surveillance/create-pest-sighting' into develop | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 584c0a3 | feat(surveillance): add alert, pest sighting report and symptom dictionary configurations. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | dc232fa | feat(surveillance): update documentation and attributes. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 3a70472 | feat(surveillance): update model and add namespaces. | | 17/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 2e3eea6 | Merge branch 'feature/agronomic/statistics' into develop | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 19dfdb7 | feat(agronomic): update resource and controller for agronomic statistics. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 92641f2 | feat(agronomic): update progam for statistics. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | e5fad8a | feat(agronomic): update query service, repository, resource for agronomic statistics seroes. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 87576ab | feat(agornomic): add repository and controller. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 471b1a2 | feat(agronomic): add resources, adapters and assemblers. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 30e44fd | feat(agronomic): add service for agronomic statististics. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | ca49afd | feat(agronomic): add agronomic statistics aggregate. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 58741c5 | feat(agronomic): add query service and queries for agronomic statistics. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4a3cffe | feat(agronomic): add value objects for data range, weather history, weather reading, chill model and data source metadata. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c425d0a | feat(agronomic): add services for ingestion and interface for weather data. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | eff7d71 | feat(agronomic): add query service for agronomis statistics and agronomic statistics series. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d82ef70 | feat(agronomic): add time range and trend direction enums. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 82bc41b | Merge branch 'release/1.1.0' | # Conflicts:#\tpackage.json#\tsrc/surveillance/application/surveillance.store.js | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | e1345b8 | Merge branch 'feature/agronomic/ui-foundation' into develop. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | f37b2ec | feat(agronomic): align dashboard overview header and card layout. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 5a08c4c | feat(agronomic): map weather summary visuals from the condition. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 3566a22 | feat(shared): redesign the dashboard toolbar controls. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 7c0721d | feat(shared): add coming soon view and workspace placeholder routes. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | c22b4ac | feat(shared): add coming soon and dashboard overview translations. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 2e50e69 | feat(shared): remove the in-memory mock resources. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 8c1461d | feat(surveillance): route alerts to the mock api target. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | dca94a8 | feat(agronomic): consume platform endpoints directly via the api gateway. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | e30a2e5 | feat(shared): serve mock data through json-server with platform routes. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | b9c290b | feat(agronomic): align local platform contracts. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 31225ef | feat(agronomic): add dashboard ui foundation. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 4a8307c | Merge pull request #28 from upc-pre-1asi0730-2610-10215-arcadiadevs/release/2.0.0 | Release/2.0.0 | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | c7689f7 | Merge pull request #27 from upc-pre-1asi0730-2610-10215-arcadiadevs/feature/add-video-about-the-product | feat(video) add about the product section and team video playback con | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 76c7545 | feat(video) add about the product section and team video playback controls. | | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | a5ff088 | Merge branch 'feature/agronomic/plot-registration-contract-fix' into develop. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 71db886 | feat(agronomic): enhance create-plotCommand with additional fields and area calculation. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8384b58 | Merge branch 'release/0.21.0' | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 238ca17 | Merge branch 'feature/hot-fix-to-database' into develop. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 677c218 | feat(database): update default schema handling and connection string for flexibility. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4edaecd | Merge branch 'release/0.20.0' | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 305c69d | feat(database): set default schema to 'public' and update connection string for postgre sql. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 162d83e | Merge branch 'release/0.19.0' | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 4a3ec16 | Merge branch 'feature/correct-environments' into develop | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 8540281 | fix: update environment variables. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 7540a2b | Merge branch 'release/0.18.0' | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | a9b2e70 | Merge branch 'feature/setup-deploy' into develop | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 6a7d290 | feat(database): update app setting and configurations. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d0f61bf | Merge branch 'release/0.17.0' into main | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | dbe97ff | Merge branch 'feature/agronomic/dynamic-health' into develop | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 27c88c4 | feat(agronomic): update db context and program for dynamic nutrition. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 89edd5d | feat(agronomic): add controller, resources and assembler for dynamic nutrition. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 79890bb | feat(agronomic): add repository for dynamic nutrition. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 1eb2ad4 | feat(agronomic): add aggregate and value objects for dynamic nutrition. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | dcb1c95 | feat(agronomic): add query services and command for dynamic nutrition. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5a34c4d | feat(agronomic): add dynamic nutrition event handler and events. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 96a6062 | feat(agronomic): add command services for dynamic nutrition. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | ed32cde | feat(agronomic: add climate risk level, dose confirmation, nutrition input status, and nutrition plan status enums. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | b72921d | Merge branch 'release/1.3.0' | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 490b208 | Merge branch 'feature/agronomic/my-plots-management' into develop. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | a119191 | feat(agronomic): add my plots management flow. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 2d3f473 | Merge branch 'release/1.2.0' | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | d150df5 | Merge branch 'feature/agronomic/dashboard-weather-plot-overview' into develop. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 77b4d06 | feat(agronomic): add weather and plot overview views. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | a9aeaf6 | Merge pull request #32 from upc-pre-1asi0730-2610-10215-arcadiadevs/release/2.0.2 | release/2.0.2 | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 4c28e20 | Merge pull request #31 from upc-pre-1asi0730-2610-10215-arcadiadevs/feature/image-team | fix(presentationslides): correct images. | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 1186fee | fix(presentationslides): correct images. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | be645c4 | Merge pull request #30 from upc-pre-1asi0730-2610-10215-arcadiadevs/release/2.0.1 | Release/2.0.1 | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 2383213 | Merge pull request #29 from upc-pre-1asi0730-2610-10215-arcadiadevs/feature/members | fix(members): change team members panel. | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 0949da0 | fix(members): change team members panel. | | 19/06/2026 |
+
 #### Execution Evidence for Sprint Review
 
 &nbsp;
@@ -569,4 +951,4 @@ Como se evidencia en los analíticos de GitHub, la participación activa de todo
 \caption*{\textit{Nota.} La gráfica muestra el incremento en la frecuencia de commits realizados por el equipo durante el desarrollo del núcleo operativo de la plataforma. Elaboración propia a través de GitHub Insights.}
 \end{figure}
 
-\newpage
+ewpage
