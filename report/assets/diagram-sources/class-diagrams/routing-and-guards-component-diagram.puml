@@ -1,0 +1,21 @@
+@startuml
+package "Routing & Guards" {
+    class AppRouter {
+        - routes: RouteRecord[]
+        + push(location: string)
+        + replace(location: string)
+    }
+
+    class AuthGuard {
+        + beforeEach(to: Route, from: Route, next: Function)
+        - verifyTokenValidity()
+    }
+
+    class RoleGuard {
+        + validateRole(requiredRoles: string[])
+    }
+
+    AppRouter --> AuthGuard : executes
+    AppRouter --> RoleGuard : executes
+}
+@enduml

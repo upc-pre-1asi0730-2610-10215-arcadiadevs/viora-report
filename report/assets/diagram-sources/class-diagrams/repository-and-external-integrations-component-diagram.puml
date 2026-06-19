@@ -1,0 +1,77 @@
+@startuml
+package "Repository Components (Data Access)" {
+    class AppDbContext {
+        + Users: DbSet<User>
+        + Profiles: DbSet<Profile>
+        + Plots: DbSet<Plot>
+        + AgronomicRecords: DbSet<AgronomicRecord>
+        + Alerts: DbSet<Alert>
+        + InterventionRequests: DbSet<InterventionRequest>
+        + Subscriptions: DbSet<Subscription>
+        + SaveChanges(): int
+    }
+
+    interface IBaseRepository<T> {
+        + FindById(id: long): T?
+        + FindAll(): List<T>
+        + Save(entity: T): T
+        + Update(entity: T): void
+        + DeleteById(id: long): void
+    }
+
+    class BaseRepository<T> {
+        # _context: AppDbContext
+        + FindById()
+        + FindAll()
+        + Save()
+        + Update()
+        + DeleteById()
+    }
+
+    IBaseRepository <|.. BaseRepository
+    BaseRepository --> AppDbContext : uses
+}
+
+package "External Integrations Component" {
+    interface IAgroMonitoringClient {
+        + FetchNDVIData(polygon: string): NDVIResponseDTO
+        + FetchWeatherData(polygon: string): WeatherResponseDTO
+    }
+
+    interface IMercadoPagoClient {
+        + CreatePreference(paymentData: PaymentDTO): string
+        + VerifyPayment(txId: string): PaymentStatusDTO
+    }
+
+    interface IMapboxClient {
+        + Geocode(query: string): GeocodingResultDTO
+        + GetStaticMap(polygon: string): byte[]
+    }
+
+    interface IBrevoClient {
+        + SendTransactionalEmail(email: EmailDTO): void
+        + SendAlertNotification(alert: AlertEmailDTO): void
+    }
+
+    interface ICloudinaryClient {
+        + UploadMedia(file: Stream, folder: string): MediaUrlDTO
+        + DeleteMedia(publicId: string): void
+    }
+
+    interface ISenasaDataClient {
+        + FetchQuarantineAlerts(region: string): List<SenasaAlertDTO>
+        + FetchPestRegistry(): List<PestRecordDTO>
+    }
+
+    class RestHttpClientWrapper {
+        + Send(request: HttpRequestMessage): HttpResponseMessage
+    }
+
+    IAgroMonitoringClient ..> RestHttpClientWrapper : uses
+    IMercadoPagoClient ..> RestHttpClientWrapper : uses
+    IMapboxClient ..> RestHttpClientWrapper : uses
+    IBrevoClient ..> RestHttpClientWrapper : uses
+    ICloudinaryClient ..> RestHttpClientWrapper : uses
+    ISenasaDataClient ..> RestHttpClientWrapper : uses
+}
+@enduml

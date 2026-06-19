@@ -1,0 +1,36 @@
+@startuml
+package "Marketplace" {
+    class MarketplaceView <<Vue.js Component>> {
+        - specialists: Specialist[]
+        - filters: FilterCriteria
+        + applyFilters()
+        + selectSpecialist(id: number)
+    }
+
+    class InterventionRequestWidget <<Vue.js Component>> {
+        - requestData: InterventionRequestData
+        + acceptRequest()
+        + rejectRequest()
+    }
+
+    class InterventionStateService {
+        + activeRequests: InterventionRequest[]
+        + availableSpecialists: Specialist[]
+        + fetchSpecialists()
+        + createRequest()
+        + updateRequestStatus()
+    }
+
+    class MarketplaceApiService {
+        + GetSpecialists(filters: FilterCriteria): Promise<Specialist[]>
+        + CreateInterventionRequest(data: InterventionRequestData): Promise<InterventionRequest>
+        + UpdateRequestStatus(id: number, status: string): Promise<void>
+        + GetRequestDetails(id: number): Promise<InterventionDetail>
+    }
+
+    MarketplaceApiService --|> BaseApiService
+    MarketplaceView *-- InterventionRequestWidget : renders list of
+    MarketplaceView --> InterventionStateService : dispatches actions to
+    InterventionStateService --> MarketplaceApiService : calls
+}
+@enduml

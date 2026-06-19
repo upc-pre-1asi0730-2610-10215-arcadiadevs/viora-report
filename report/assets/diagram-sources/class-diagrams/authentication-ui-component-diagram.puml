@@ -1,0 +1,30 @@
+@startuml
+package "Authentication" {
+    class AuthView <<Vue.js Component>> {
+        # email: string
+        # password: string
+        + submitLogin()
+        + redirectToRegister()
+    }
+
+    class AuthStateService {
+        + token: string | null
+        + user: User | null
+        + isAuthenticated: boolean
+        + currentUserRole()
+        + login(credentials: LoginCredentials)
+        + logout()
+        + refreshToken()
+    }
+
+    class AuthApiService {
+        + Authenticate(credentials: LoginCredentials): Promise<Token>
+        + Register(userData: RegisterData): Promise<void>
+        + RefreshToken(token: string): Promise<Token>
+    }
+
+    AuthApiService --|> BaseApiService
+    AuthView --> AuthStateService : dispatches
+    AuthStateService --> AuthApiService : calls
+}
+@enduml

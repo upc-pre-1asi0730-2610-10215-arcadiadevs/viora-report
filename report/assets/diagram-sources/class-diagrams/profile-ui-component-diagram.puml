@@ -1,0 +1,34 @@
+@startuml
+package "Profile Management" {
+    class ProfileView <<Vue.js Component>> {
+        - userProfile: UserProfile | null
+        - isEditing: boolean
+        + toggleEditMode()
+        + saveChanges()
+    }
+
+    class EvidenceUploadWidget <<Vue.js Component>> {
+        - selectedFiles: File[]
+        + handleFileUpload()
+        + uploadEvidence()
+    }
+
+    class ProfileStateService {
+        + currentProfile: Profile | null
+        + fetchProfile()
+        + updateProfile(data: UpdateProfileData)
+        + uploadSpecialistEvidence(files: File[])
+    }
+
+    class ProfileApiService {
+        + GetProfile(userId: number): Promise<Profile>
+        + UpdateProfile(userId: number, data: UpdateProfileData): Promise<void>
+        + UploadEvidence(userId: number, files: File[]): Promise<void>
+    }
+
+    ProfileApiService --|> BaseApiService
+    ProfileView *-- EvidenceUploadWidget : contains
+    ProfileView --> ProfileStateService : uses
+    ProfileStateService --> ProfileApiService : calls
+}
+@enduml
