@@ -256,7 +256,6 @@ El alcance de esta evaluación incluye la revisión de la experiencia de usuario
 6. Eliminación de una parcela.
 7. Consulta del módulo Dynamic Nutrition.
 
-> **Nota:** No forman parte de esta evaluación las funcionalidades asociadas al módulo Surveillance, debido a que aún se encuentran en desarrollo.
 
 <br>
 
@@ -272,16 +271,51 @@ El alcance de esta evaluación incluye la revisión de la experiencia de usuario
 <br>
 
 #### Tabla Resumen
-| # | Problema | Escala de severidad | Heurística/Princio violada(o)|
-|---------|---------|---------|---------|
-| 1 | -- | -- | -- |
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|---|---|---|
+| 1 | El botón para registrar/crear una parcela es poco visible debido a su color y diseño. | 3 | #6: Reconocimiento antes que recuerdo / Visibilidad |
+| 2 | El Dashboard no tiene jerarquía visual; las alertas críticas se confunden con el resto. | 3 | #8: Estética y diseño minimalista (Jerarquía) |
+| 3 | El flujo de Nutrición Dinámica no indica de forma clara que se debe pre-seleccionar una parcela. | 3 | #5: Prevención de errores |
+| 4 | Los indicadores de humedad son genéricos y no especifican a qué sensor o zona pertenecen. | 2 | #2: Relación entre el sistema y el mundo real |
+| 5 | El campo "Tipo de cultivo" obliga a escribir texto libre en vez de dar opciones fijas. | 2 | #5: Prevención de errores |
+| 6 | Presencia de textos sin traducir (inglés) y fuentes con tamaños excesivamente pequeños. | 2 | #4: Consistencia y estándares |
 
 #### Descripción de problemas
 
-- Problema #1: ---
-  - Severidad: --
-  - Problema: ----
-  - Recomendación: ----
+- **Problema #1: Botón de creación de parcela oculto visualmente**
+  - **Severidad:** 3
+  - **Problema:** Al intentar registrar una nueva parcela, el usuario no lograba encontrar el botón porque era de color blanco y estaba integrado de forma muy sutil con el texto de la sección, obligando al entrevistador a guiarlo.
+  - **Recomendación:** Rediseñar el botón de creación para que sea un elemento destacado (Call to Action principal), idealmente más grande y con un color de contraste llamativo.
+<br>
+
+- **Problema #2: Falta de jerarquía visual y peso de alertas en el Dashboard**
+  - **Severidad:** 3
+  - **Problema:** Las 7 secciones evaluadas del Dashboard Overview tienen exactamente el mismo peso visual. El usuario reporta que las advertencias de salud del cultivo o clima (que deberían captar la atención inmediata) se pierden en la interfaz.
+  - **Recomendación:** Reestructurar el Dashboard para que la salud de la parcela y el clima estén en la parte superior. Usar códigos de color dinámicos (como un banner o tarjetas naranjas/rojas para alertas críticas) que cambien de estado visual ante una amenaza.
+<br>
+
+- **Problema #3: Bloqueo en el módulo de Nutrición Dinámica por falta de instrucciones**
+  - **Severidad:** 3
+  - **Problema:** El usuario se confundió al interactuar con las alertas de nutrición porque la aplicación no indicaba de manera explícita que era obligatorio seleccionar primero una parcela específica en el menú desplegable de la derecha para poder desplegar el plan de acción.
+  - **Recomendación:** Incorporar un estado vacío (*empty state*) o una instrucción clara que guíe al usuario a seleccionar una parcela, o en su defecto, automatizar la carga mostrando por defecto la parcela que tiene el estado crítico. Además, hacer que el plan de acción y la amenaza se muestren de forma mucho más grande y legible.
+<br>
+
+- **Problema #4: Ambigüedad en los datos de los sensores de humedad**
+  - **Severidad:** 2
+  - **Problema:** La plataforma muestra un porcentaje global de la humedad del suelo, pero el usuario señala que cuenta con múltiples medidores instalados en diferentes puntos de sus parcelas, por lo que un dato generalizado no le es útil para saber dónde actuar.
+  - **Recomendación:** Permitir el etiquetado, listado o mapeo independiente de cada sensor para que el usuario pueda visualizar de forma clara a qué punto exacto del terreno corresponde cada medición de humedad.
+<br>
+
+- **Problema #5: Campo de texto libre ineficiente en el registro de cultivos**
+  - **Severidad:** 2
+  - **Problema:** En el formulario de creación de parcelas, el campo "Tipo de cultivo" obliga al usuario a escribir manualmente el nombre, lo cual incrementa las chances de errores tipográficos y ralentiza el proceso.
+  - **Recomendación:** Implementar una lista desplegable (*dropdown*) con categorías predefinidas de cultivos para agilizar el llenado, dejando la opción de texto libre solo si el cultivo no figura en la lista.
+<br>
+
+- **Problema #6: Inconsistencia idiomática y problemas de accesibilidad tipográfica**
+  - **Severidad:** 2
+  - **Problema:** Varias secciones e indicaciones de la landing page y la plataforma se encuentran en inglés. Asimismo, el usuario experimentó fatiga visual en su laptop debido a que algunas tipografías eran excesivamente pequeñas o estaban cortadas por la fuente utilizada.
+  - **Recomendación:** Asegurar la traducción completa de todos los módulos al español y revisar las hojas de estilo (CSS) para garantizar que los tamaños de fuente cumplan con los estándares de accesibilidad para su lectura en computadoras portátiles.
 
 <br>
 
