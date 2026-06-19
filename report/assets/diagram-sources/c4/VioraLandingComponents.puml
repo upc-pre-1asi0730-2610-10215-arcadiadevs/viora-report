@@ -1,0 +1,51 @@
+@startuml VioraLandingComponents
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4/master/C4_Component.puml
+
+title Component Diagram - Landing Page
+
+Person(visitor, "Visitor", "Explores Viora's landing page, plans, testimonials and calls to action.")
+
+Container_Boundary(landingPage, "Landing Page") {
+    Component(heroSection, "Hero Section Component", "Angular Standalone Component", "Presents the core value proposition, segmented CTA and primary conversion actions.")
+    Component(problemSolution, "Problem & Solution Section Component", "Angular Standalone Component", "Explains the climatic and phytosanitary problem and Viora's proposed solution.")
+    Component(roleBenefits, "Role Benefits Section Component", "Angular Standalone Component", "Shows segmented benefits for olive producers and agricultural specialists.")
+    Component(testimonials, "Testimonials & About Section Component", "Angular Standalone Component", "Presents testimonials, team information and trust-building content.")
+    Component(plansAffiliates, "Plans, Trial & Affiliates Section Component", "Angular Standalone Component", "Presents pricing plans, free trial and affiliate/referral program.")
+    Component(contactFooter, "Contact & Footer Section Component", "Angular Standalone Component", "Presents contact data, legal links, navigation links and footer content.")
+    Component(ctaRouting, "CTA Routing Component", "Angular Router / Navigation Service", "Handles navigation from landing CTAs toward sign in, sign up and trial flows in the Web Application.")
+    Component(landingViewModel, "Landing ViewModel Assembler", "TypeScript Assembler", "Builds section view models from static content/models for presentation components.")
+    Component(landingContentModels, "Landing Content Models", "TypeScript Models / Interfaces", "Defines models for hero content, benefits, plans, testimonials, FAQ and CTA content.")
+    Component(sharedLandingUI, "Shared Landing UI Components", "Angular Shared Components", "Reusable buttons, cards, badges, section headers and layout primitives for the landing page.")
+}
+
+Container(webApp, "Web Application", "Angular", "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions.")
+
+Rel(visitor, heroSection, "Views the primary value proposition and CTA")
+Rel(visitor, testimonials, "Reviews testimonials and team information")
+Rel(visitor, contactFooter, "Reviews contact, footer and legal links")
+Rel(visitor, roleBenefits, "Explores role-specific benefits")
+Rel(visitor, plansAffiliates, "Reviews plans, free trial and affiliate program")
+
+Rel(heroSection, ctaRouting, "Uses CTA navigation from")
+Rel(roleBenefits, ctaRouting, "Uses CTA navigation from")
+Rel(plansAffiliates, ctaRouting, "Uses CTA navigation from")
+Rel(ctaRouting, webApp, "Redirects visitors to")
+
+Rel(heroSection, landingViewModel, "Consumes hero view model from")
+Rel(roleBenefits, landingViewModel, "Consumes benefits view model from")
+Rel(plansAffiliates, landingViewModel, "Consumes plans and affiliate view model from")
+Rel(contactFooter, landingViewModel, "Consumes contact/footer view model from")
+Rel(testimonials, landingViewModel, "Consumes testimonial/about view model from")
+Rel(problemSolution, landingViewModel, "Consumes problem/solution view model from")
+
+Rel(landingViewModel, landingContentModels, "Builds section view models from")
+
+Rel(heroSection, sharedLandingUI, "Uses reusable hero and CTA widgets")
+Rel(roleBenefits, sharedLandingUI, "Uses reusable cards and section blocks")
+Rel(plansAffiliates, sharedLandingUI, "Uses reusable pricing and CTA widgets")
+Rel(contactFooter, sharedLandingUI, "Uses reusable footer and link widgets")
+Rel(testimonials, sharedLandingUI, "Uses reusable cards and section blocks")
+Rel(problemSolution, sharedLandingUI, "Uses reusable layout and content blocks")
+
+SHOW_LEGEND()
+@enduml
