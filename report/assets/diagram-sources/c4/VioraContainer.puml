@@ -1,0 +1,43 @@
+@startuml VioraContainer
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4/master/C4_Container.puml
+
+title Container Diagram - Viora Platform
+
+Person(visitor, "Visitor", "Explores Viora's landing page, plans, testimonials and calls to action.")
+Person(oliveProducer, "Olive Producer", "Monitors plots, receives alerts, requests technical interventions and manages subscription.")
+Person(agriSpecialist, "Agricultural Specialist", "Publishes professional portfolio, receives cases, evaluates plots and manages interventions.")
+
+System_Boundary(vioraPlatform, "Viora Platform") {
+    Container(landingPage, "Landing Page", "HTML, CSS, TypeScript", "Static website that presents Viora's value proposition, plans, testimonials and calls to action.")
+    Container(webApp, "Web Application", "Angular", "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions.")
+    Container(apiApp, "API Application", "Java, Spring Boot", "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions.")
+    ContainerDb(database, "Database", "MySQL", "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data.")
+    ContainerDb(mediaStorage, "Media Storage", "Cloudinary-backed media storage", "Stores field evidence images, profile images and related media assets.")
+}
+
+System_Ext(agroMonitoring, "AgroMonitoring API", "External provider of satellite imagery, vegetation indices and agro-weather data.")
+System_Ext(mercadoPago, "Mercado Pago", "External payment gateway for subscriptions, renewals, refunds and payment status updates.")
+System_Ext(brevo, "Brevo", "Transactional email service for password recovery and account notifications.")
+System_Ext(mapbox, "Mapbox", "Maps and geocoding service used for plot delimitation and location-based features.")
+System_Ext(cloudinary, "Cloudinary", "Cloud media storage and delivery service for profile images and field evidence.")
+System_Ext(senasa, "SENASA Official/Open Data Source", "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context.")
+
+Rel(visitor, landingPage, "Explores content and calls to action")
+Rel(oliveProducer, webApp, "Uses")
+Rel(agriSpecialist, webApp, "Uses")
+
+Rel(landingPage, webApp, "Redirects authenticated users to")
+
+Rel(webApp, apiApp, "Makes API requests to", "JSON/HTTPS")
+Rel(apiApp, database, "Reads from and writes to", "JDBC")
+Rel(apiApp, mediaStorage, "Stores and retrieves media assets", "HTTPS/API")
+
+Rel(apiApp, agroMonitoring, "Retrieves satellite imagery, vegetation indices and agro-weather data", "HTTPS/JSON")
+Rel(apiApp, mercadoPago, "Processes subscriptions, renewals and refunds", "HTTPS/JSON + Webhooks")
+Rel(apiApp, brevo, "Sends password recovery and transactional emails", "HTTPS/API")
+Rel(apiApp, mapbox, "Uses maps and geocoding services", "HTTPS/JSON")
+Rel(apiApp, cloudinary, "Uploads and delivers profile/evidence media", "HTTPS/API")
+Rel(apiApp, senasa, "Consults official phytosanitary information and reference data", "HTTPS/Open data")
+
+SHOW_LEGEND()
+@enduml
