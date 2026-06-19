@@ -489,6 +489,62 @@ Wireflow: Gestión de nutrición dinámica ante riesgo climático
 \caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
 \end{figure} 
 
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-4.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-5.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-6.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-7.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-8.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-9.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-10.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-11.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
 <br>
 
 A continuación, se presentan los mock-ups de alta fidelidad de la aplicación Viora, los cuales ilustran el aspecto visual y la interfaz final del producto. En esta etapa, la propuesta materializa los principios y elementos de diseño mediante el uso de una jerarquía visual clara, proporciones armónicas y un uso efectivo de la paleta de colores y la tipografía. La coherencia de todos estos elementos se logra mediante la implementación estricta del Design System establecido por el equipo, el cual estandariza los componentes interactivos, las variables y los estilos visuales a lo largo de todas las pantallas. Además, el desarrollo de estas interfaces evidencia la aplicación del diseño inclusivo, garantizando contrastes cromáticos adecuados que cumplen con los estándares de accesibilidad, tamaños de fuente legibles y áreas de toque (botones) ergonómicas para la diversidad de usuarios. Por último, la estructuración visual y la navegación obedecen a la arquitectura de la información definida, asegurando que el usuario pueda comprender y recorrer el flujo de la aplicación de manera intuitiva y sin carga cognitiva adicional.
