@@ -70,7 +70,7 @@ US55 & Redirección hacia el ecosistema transaccional & TK04 & Problem Context U
 US56 & Exploración de beneficios para el Productor & TK06 & Grower Insights UI & Maquetación de la sección de beneficios con detalles específicos sobre acciones preventivas y NDVI. & 0.75 & Trinidad, Jahat & Done \\ \hline
 
 % US57
-US57 & Exploración de beneficios para el Especialista & TK07 & Specialist Benefits & Implementación del apartado de beneficios técnicos y acciones específicas para asesores. & 0.5 & Paredes, Victor & Done \\ \cline{3-8} 
+US57 & Exploración de beneficios para el Especialista & TK07 & Specialist Benefits & Implementación del apartado de beneficios técnicos y acciones específicas para asesores. & 0.5 & Paredes, Victor & Done \\ \hline
 
 % US58
 US58 & Presentación del programa de referidos & TK08 & Pricing Panel & Desarrollo del componente de paneles de precios y secciones de planes de suscripción. & 0.75 & Li, Diana & Done \\ \cline{3-8} 
@@ -80,12 +80,12 @@ US58 & Presentación del programa de referidos & TK08 & Pricing Panel & Desarrol
 US59 & Validación de impacto mediante resultados esperados & TK10 & General Performance Logic & Implementación de scripts base para el manejo de métricas y lógica operativa del landing. & 0.75 & Espada, Piero & Done \\ \hline
 
 % US60
-US60 & Exploración del respaldo corporativo y humano & TK11 & Mission & Vision Display & Desarrollo del panel informativo "Learning from best" y sección de misión corporativa. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
+US60 & Exploración del respaldo corporativo y humano & TK11 & Mission \& Vision Display & Desarrollo del panel informativo "Learning from best" y sección de misión corporativa. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
 & & TK12 & Team Members UI & Maquetación de la grilla de perfiles del equipo y estilos visuales asociados. & 0.75 & Santi, Fabrizio & Done \\ \hline
 
 % US61
 US61 & Políticas y contacto & TK13 & Contact System & Implementación de la plantilla, estilos y scripts para la sección de comunicación institucional. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
-& & TK14 & Footer & i18n & Estructuración del pie de página e integración del servicio de internacionalización multi-idioma. & 0.75 & Santi, Fabrizio & Done \\ \hline
+& & TK14 & Footer \& i18n & Estructuración del pie de página e integración del servicio de internacionalización multi-idioma. & 0.75 & Santi, Fabrizio & Done \\ \hline
 
 \end{longtable}
 

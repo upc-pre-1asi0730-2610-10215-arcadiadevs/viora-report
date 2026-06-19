@@ -8,7 +8,7 @@
 
 - Exposicion AV1: [https://tinyurl.com/arcadiadevs-wa-expo-av1](https://tinyurl.com/arcadiadevs-wa-expo-av1)
 
-- Exposicion TB1: [11848-ArcadiaDevs-expo-tb1]()
+- Exposicion TB1: [11848-ArcadiaDevs-expo-tb1 https://tinyurl.com/2srmuura](https://tinyurl.com/2srmuura)
 
 ## Video de Entrevistas
 

@@ -96,49 +96,6 @@
 \begin{figure}[H]
 \caption{Wireframe de la aplicación.}
 \centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-13.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-14.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-15.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-16.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-17.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-18.png}
-\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
-\end{figure} 
-
-\begin{figure}[H]
-\caption{Wireframe de la aplicación.}
-\centering
 \includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-e-1.png}
 \caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de especialista. Elaboración propia.}
 \end{figure} 
@@ -437,6 +394,76 @@ Wireflow: Gestión de nutrición dinámica ante riesgo climático
 \begin{figure}[H]
 \caption{Mockups de la aplicación.}
 \centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-21.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-22.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-23.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-24.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-25.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-26.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-27.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-28.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-29.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-p-30.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
 \includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/dashboard-mu-e.png}
 \caption*{\textit{Nota.} Diseño visual del mockups del dashboard de especialista. Elaboración propia.}
 \end{figure} 
@@ -459,6 +486,62 @@ Wireflow: Gestión de nutrición dinámica ante riesgo climático
 \caption{Mockups de la aplicación.}
 \centering
 \includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-3.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-4.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-5.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-6.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-7.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-8.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-9.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-10.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Mockups de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/mockups/mu-e-11.png}
 \caption*{\textit{Nota.} Diseño visual de una pantalla del mockups de especialista. Elaboración propia.}
 \end{figure} 
 
@@ -514,6 +597,6 @@ En esta sección se presenta el video del prototype interactivo de la aplicació
 
 \textbf{Enlace} & \url{https://upcedupe-my.sharepoint.com/:v:/g/personal/u202415749_upc_edu_pe/IQABpYfy0jFRRbMPD-SXxf4uATcff6mvigmhmEJ1ZTX8K50?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=w6F7aQ} 
 
-
+\newpage
 
 

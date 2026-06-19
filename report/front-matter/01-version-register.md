@@ -38,6 +38,18 @@
 
 \textbf{v1.12.0} & 24/04/26 & Santi Guerrero, Fabrizio Alonso & AV1 entrega \tabularnewline \hline
 
+\textbf{v1.12.1} & 08/05/26 & Li Gayoso, Diana Carolina & Corrección de imagen e hipótesis del Lean UX Canvas (Capítulo 1) \tabularnewline \hline
+
+\textbf{v1.13.0} & 08/05/26 & Trinidad Leon, Jahat Jassiel & Añadido de Needfinding y Entrevistas (Capítulo 2) \tabularnewline \hline
+
+\textbf{v1.14.0} & 11/05/26 & Trinidad Leon, Jahat Jassiel & Ajuste y mejora de redacción en Historias de Usuario (Capítulo 3) \tabularnewline \hline
+
+\textbf{v1.15.0} & 12/05/26 & Santi Guerrero, Fabrizio Alonso & Añadido de la configuración de despliegue de software \tabularnewline \hline
+
+\textbf{v1.16.0} & 13/05/26 & Santi Guerrero, Fabrizio Alonso & Añadido de evidencias, backlog y planificación del Sprint 1 (Capítulo 5) \tabularnewline \hline
+
+\textbf{v1.17.0} & 13/05/26 & Li Gayoso, Diana Carolina & Añadido de evidencias y funcionalidades core del Sprint 2 (Capítulo 5) \tabularnewline \hline
+
 \end{tabular}
 \end{center}
 
