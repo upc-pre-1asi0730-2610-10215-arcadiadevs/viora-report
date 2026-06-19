@@ -211,7 +211,35 @@ Se solicitará al participante realizar las tareas definidas en los user flows c
 \multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/validation-interview-1.png}} \\ \hline
 \end{tabular}
 
+\noindent
+\begin{tabular}{p{0.15\textwidth} p{0.30\textwidth} p{0.15\textwidth} p{0.30\textwidth}}
+\hline
+\multicolumn{4}{l}{\textbf{Entrevista \#2} \hfill \textbf{Detalles}} \\ \hline
+\textbf{Nombre} & Diego Alonso Alcantara & \textbf{Edad} & 27 \\
+\textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{Ica, Pisco} \\
+\textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{Recolección de cultivos y administrador} \\
+\textbf{Inicio} & 00:00 & \textbf{Enlace} & \url{https://tinyurl.com/validation-interviews-2} \\ \hline
+\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} Diego Alonso Alcantara es un productor olivarero de 27 años de edad, dedicado principalmente a la administración y recolección de cultivos en el sector del olivo, abarcando tanto la gestión en zonas de producción como la articulación comercial hacia la capital.
+El evaluador identificó a Viora como un software enfocado en el monitoreo del terreno de cultivo que permite verificar el estado de las parcelas, recibir alertas sobre plagas, obtener recomendaciones según factores como la temperatura o el clima, y contactar con especialistas del rubro. Considera que la plataforma resuelve la centralización de los datos del campo y automatiza tareas manuales (como el control del clima y la temperatura del suelo) que quitan tiempo y personal. Afirmó que, ante la situación agrícola actual, una herramienta así es una necesidad real para no perder producción. No obstante, criticó que la landing page es demasiado técnica, compleja en diseño y transiciones para los agricultores locales, y reportó textos sin traducir (en inglés) junto con tipografías muy pequeñas en escritorio. Valoró enormemente el seguimiento del clima y el Marketplace de especialistas por la dificultad de hallar ingenieros de confianza en la zona, manifestando dudas sobre el monitoreo satelital NDVI.
+Manifestó que la navegación inicial le resultó un poco complicada y sugirió hacerla más práctica y directa. Al revisar el Dashboard, criticó que sus siete secciones comparten el mismo peso visual, dificultando la priorización; por ello, recomendó destacar las alertas críticas fitosanitarias o hídricas con colores vivos (como naranja o rojo), priorizando los bloques de salud de la parcela y el clima. En "Mis Parcelas", experimentó severas dificultades para localizar el botón de registro debido a su color blanco y nulo contraste con el fondo. Para optimizar el formulario, sugirió usar listas desplegables de cultivos en lugar de la digitación manual. Además, catalogó la métrica de humedad del suelo como un promedio global ineficiente y solicitó la capacidad de listar e identificar por separado cada sensor instalado en el campo para ubicar con exactitud el déficit hídrico. Finalmente, propuso habilitar subdivisiones en parcelas extensas y reportó un bloqueo en Nutrición Dinámica por la falta de indicaciones para pre-seleccionar la parcela antes de cargar el plan de acción, sugiriendo ampliar el tamaño visual de las amenazas y protocolos de emergencia.
+Calificó la utilidad global con un 4 de 5, destacando su valor analítico para optimizar los tiempos del personal, reducir paseos ciegos al campo y permitir una gestión puramente preventiva para salvar las campañas. Expresó una intención de compra favorable bajo la condición obligatoria de contar con un mes de prueba gratuito. Este periodo es indispensable para introducir sus datos reales, conectar sus sensores y comprobar de manera efectiva la veracidad y estabilidad de la plataforma antes de invertir económicamente.} \\ [10pt]
+\multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/validation-interview-2.png}} \\ \hline
+\end{tabular}
 
+\noindent
+\begin{tabular}{p{0.15\textwidth} p{0.30\textwidth} p{0.15\textwidth} p{0.30\textwidth}}
+\hline
+\multicolumn{4}{l}{\textbf{Entrevista \#3} \hfill \textbf{Detalles}} \\ \hline
+\textbf{Nombre} & Jared Nieto & \textbf{Edad} & 22 \\
+\textbf{Distrito} & \multicolumn{3}{p{0.75\textwidth}}{Samegua, Moquegua} \\
+\textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{Productor y agroexportador} \\
+\textbf{Inicio} & 00:00 & \textbf{Enlace} & \url{https://tinyurl.com/validation-interviews-3} \\ \hline
+\multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} Jaret es un productor y agroexportador olivarero de 22 años residente en Samegua, Moquegua. Con 6 años de experiencia en el sector adquirida junto a sus padres, actualmente administra de forma directa 6 hectáreas (lotes de cultivo de olivo) orientadas a la exportación.
+Identificó a Viora como una plataforma para el monitoreo agronómico y gestión fitosanitaria de olivares. Considera que centraliza el registro agrícola y mitiga la carga operativa de las evaluaciones manuales cotidianas en el fundo, siendo una necesidad crítica ante la variabilidad climática que afecta las fases fenológicas del olivo. No obstante, criticó que la página posee un enfoque comercial muy abstracto para el productor tradicional, alta densidad de interfaz, transiciones complejas, textos sin traducir y fuentes reducidas en escritorio. Destacó el valor predictivo del clima y el Marketplace de especialistas debido a la dificultad de hallar asesores técnicos de confianza en la región. Manifestó dudas sobre el funcionamiento del monitoreo satelital NDVI.
+Reportó restricciones de fluidez iniciales y sugirió simplificar los accesos para mayor pragmatismo. En el Dashboard Overview, criticó que sus siete secciones compiten por el mismo peso visual y solicitó un patrón cromático restrictivo (tonalidades naranja o rojo) para identificar al instante emergencias por estrés hídrico o vectores de plagas, priorizando la salud vegetal y el clima. En "Mis Parcelas", tuvo fricciones severas para localizar el botón de registro por su nulo contraste (color blanco) y recomendó sustituir la digitación manual por un menú desplegable con variedades preestablecidas de olivo. Calificó el indicador de humedad del suelo como un promedio global ineficiente, exigiendo la capacidad de listar y etiquetar de forma independiente cada tensiómetro en sus 6 hectáreas para ubicar el déficit hídrico por sector. Finalmente, propuso permitir la creación de subparcelas y reportó un bloqueo en Nutrición Dinámica por la falta de una indicación explícita para pre-seleccionar la parcela antes de cargar el plan de acción, solicitando además ampliar la escala visual de los protocolos de enmienda.
+Calificó la utilidad global con un 4 de 5, resaltando el valor de la plataforma para optimizar las jornadas del personal y permitir una gestión predictiva en el fundo. Expresó una intención de pago favorable bajo la condición obligatoria de contar con un periodo de prueba de un mes sin costo para enlazar sus propios dispositivos de medición en Moquegua, registrar su cartografía real y validar la veracidad y estabilidad de la telemetría antes de invertir económicamente.} \\ [10pt]
+\multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/validation-interview-3.png}} \\ \hline
+\end{tabular}
 
 **Segmento: Profesionales especializados en control de plagas agrícolas**
 
@@ -273,12 +301,12 @@ El alcance de esta evaluación incluye la revisión de la experiencia de usuario
 #### Tabla Resumen
 | # | Problema | Escala de severidad | Heurística/Principio violada(o) |
 |---|---|---|---|
-| 1 | El botón para registrar/crear una parcela es poco visible debido a su color y diseño. | 3 | #6: Reconocimiento antes que recuerdo / Visibilidad |
-| 2 | El Dashboard no tiene jerarquía visual; las alertas críticas se confunden con el resto. | 3 | #8: Estética y diseño minimalista (Jerarquía) |
-| 3 | El flujo de Nutrición Dinámica no indica de forma clara que se debe pre-seleccionar una parcela. | 3 | #5: Prevención de errores |
-| 4 | Los indicadores de humedad son genéricos y no especifican a qué sensor o zona pertenecen. | 2 | #2: Relación entre el sistema y el mundo real |
-| 5 | El campo "Tipo de cultivo" obliga a escribir texto libre en vez de dar opciones fijas. | 2 | #5: Prevención de errores |
-| 6 | Presencia de textos sin traducir (inglés) y fuentes con tamaños excesivamente pequeños. | 2 | #4: Consistencia y estándares |
+| 1 | El botón para registrar/crear una parcela es poco visible debido a su color y diseño. | 3 | Reconocimiento antes que recuerdo / Visibilidad |
+| 2 | El Dashboard no tiene jerarquía visual; las alertas críticas se confunden con el resto. | 3 | Estética y diseño minimalista (Jerarquía) |
+| 3 | El flujo de Nutrición Dinámica no indica de forma clara que se debe pre-seleccionar una parcela. | 3 | Prevención de errores |
+| 4 | Los indicadores de humedad son genéricos y no especifican a qué sensor o zona pertenecen. | 2 | Relación entre el sistema y el mundo real |
+| 5 | El campo "Tipo de cultivo" obliga a escribir texto libre en vez de dar opciones fijas. | 2 | Prevención de errores |
+| 6 | Presencia de textos sin traducir (inglés) y fuentes con tamaños excesivamente pequeños. | 2 | Consistencia y estándares |
 
 #### Descripción de problemas
 
