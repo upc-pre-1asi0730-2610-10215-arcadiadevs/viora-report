@@ -583,7 +583,7 @@ A continuación, se presenta la matriz de control de versiones, la cual detalla 
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | 12b47a9 | feat(assets): add video placeholder for about us section. | | 23/05/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-website | | e7ac543 | feat(assets): add images for scrollytelling. | | 23/05/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | e68ac62 | merge pull request #26 from upc-pre-1asi0730-2610-10215-ArcadiaDevs/feature/iot-devices | feat(iot-devices): add cards, update fake api and change dashboard. | 23/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 0d8f81e | Merge branch 'develop' of https://github.com/upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp into feature/iot-devices | # Conflicts:#\t.env.development#\tsrc/shared/presentation/components/layout.vue | 23/05/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 0d8f81e | Merge branch 'develop' of https://github.com/upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp into feature/iot-devices | # Conflicts:#.env.development#src/shared/presentation/components/layout.vue | 23/05/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 238d1a8 | feat(iot-devices): add endpoint for iot device summaries. | | 23/05/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 424f7a6 | feat: update plot overview widget height and create dashboard-toolbar. | | 23/05/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 999aa53 | feat(i18n): update spanish and english files. | | 23/05/2026 |
@@ -856,7 +856,7 @@ A continuación, se presenta la matriz de control de versiones, la cual detalla 
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | c425d0a | feat(agronomic): add services for ingestion and interface for weather data. | | 18/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | eff7d71 | feat(agronomic): add query service for agronomis statistics and agronomic statistics series. | | 18/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | d82ef70 | feat(agronomic): add time range and trend direction enums. | | 18/06/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 82bc41b | Merge branch 'release/1.1.0' | # Conflicts:#\tpackage.json#\tsrc/surveillance/application/surveillance.store.js | 18/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 82bc41b | Merge branch 'release/1.1.0' | # Conflicts:#package.json#src/surveillance/application/surveillance.store.js | 18/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | e1345b8 | Merge branch 'feature/agronomic/ui-foundation' into develop. | | 18/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | f37b2ec | feat(agronomic): align dashboard overview header and card layout. | | 18/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 5a08c4c | feat(agronomic): map weather summary visuals from the condition. | | 18/06/2026 |
@@ -894,7 +894,7 @@ A continuación, se presenta la matriz de control de versiones, la cual detalla 
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | dcb1c95 | feat(agronomic): add query services and command for dynamic nutrition. | | 19/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 5a34c4d | feat(agronomic): add dynamic nutrition event handler and events. | | 19/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | 96a6062 | feat(agronomic): add command services for dynamic nutrition. | | 19/06/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | ed32cde | feat(agronomic: add climate risk level, dose confirmation, nutrition input status, and nutrition plan status enums. | | 19/06/2026 |
+| upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-platform | | ed32cde | feat(agronomic): add climate risk level, dose confirmation, nutrition input status, and nutrition plan status enums. | | 19/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | b72921d | Merge branch 'release/1.3.0' | | 19/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | 490b208 | Merge branch 'feature/agronomic/my-plots-management' into develop. | | 19/06/2026 |
 | upc-pre-1asi0730-2610-10215-ArcadiaDevs/viora-webapp | | a119191 | feat(agronomic): add my plots management flow. | | 19/06/2026 |
