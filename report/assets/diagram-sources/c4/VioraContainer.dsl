@@ -49,23 +49,23 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
         }
 
         // Relaciones de personas
-        visitor    -> landing  "Explores content and calls to action"
-        producer   -> webapp   "Uses"
-        specialist -> webapp   "Uses"
+        visitor    -> viora.landing  "Explores content and calls to action"
+        producer   -> viora.webapp   "Uses"
+        specialist -> viora.webapp   "Uses"
 
         // Relaciones internas de containers
-        landing -> webapp  "Redirects authenticated users to"
-        webapp  -> api     "Makes API requests to" "JSON/HTTPS"
-        api     -> db      "Reads from and writes to" "ADO.NET"
-        api     -> media   "Stores and retrieves media assets" "HTTPS/API"
+        viora.landing -> viora.webapp  "Redirects authenticated users to"
+        viora.webapp  -> viora.api     "Makes API requests to" "JSON/HTTPS"
+        viora.api     -> viora.db      "Reads from and writes to" "ADO.NET"
+        viora.api     -> viora.media   "Stores and retrieves media assets" "HTTPS/API"
 
         // Relaciones con servicios externos
-        api -> agromonitoring "Retrieves satellite imagery, vegetation indices and agro-weather data" "HTTPS/JSON"
-        api -> mercadopago    "Processes subscriptions, renewals and refunds" "HTTPS + Webhooks"
-        api -> brevo          "Sends password recovery and transactional emails" "HTTPS/API"
-        api -> mapbox         "Uses maps and geocoding services" "HTTPS/JSON"
-        api -> cloudinary     "Uploads and delivers profile/evidence media" "HTTPS/API"
-        api -> senasa         "Consults official phytosanitary information and reference data" "HTTPS/Open data"
+        viora.api -> agromonitoring "Retrieves satellite imagery, vegetation indices and agro-weather data" "HTTPS/JSON"
+        viora.api -> mercadopago    "Processes subscriptions, renewals and refunds" "HTTPS + Webhooks"
+        viora.api -> brevo          "Sends password recovery and transactional emails" "HTTPS/API"
+        viora.api -> mapbox         "Uses maps and geocoding services" "HTTPS/JSON"
+        viora.api -> cloudinary     "Uploads and delivers profile/evidence media" "HTTPS/API"
+        viora.api -> senasa         "Consults official phytosanitary information and reference data" "HTTPS/Open data"
     }
 
     views {
