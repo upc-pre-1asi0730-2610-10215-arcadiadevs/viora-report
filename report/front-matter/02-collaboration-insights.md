@@ -1,4 +1,4 @@
-# Project Report Collaboration Insights {-}
+# Project Report Collaboration Insights {#collaboration-insights}
 
 ## Enlaces {-}
 

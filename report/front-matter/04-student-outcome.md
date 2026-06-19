@@ -1,4 +1,4 @@
-# Student Outcome {-}
+# Student Outcome {#student-outcome}
 
 El curso contribuye significativamente a lograr el **Student Outcome 5: "La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumple objetivos"**. Durante el desarrollo del proyecto **Viora**, el equipo ha demostrado esta competencia mediante la coordinación de roles técnicos y de gestión, asegurando que cada integrante aporte desde su especialidad para alcanzar los hitos establecidos en cada entrega, promoviendo un ambiente de respeto y cumplimiento de metas comunes.
 

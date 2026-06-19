@@ -208,7 +208,8 @@ Se solicitará al participante realizar las tareas definidas en los user flows c
 \textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{-----------} \\
 \textbf{Inicio} & ----------- & \textbf{Enlace} & \url{-----------} \\ \hline
 \multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} -----------} \\ [10pt]
-\multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/-----------}} \\ \hline
+% TODO: replace with actual screenshot
+% \multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/-----------}} \\ \hline
 \end{tabular}
 
 
@@ -223,7 +224,8 @@ Se solicitará al participante realizar las tareas definidas en los user flows c
 \textbf{Ocupación} & \multicolumn{3}{p{0.75\textwidth}}{-----------} \\
 \textbf{Inicio} & ----------- & \textbf{Enlace} & \url{-----------} \\ \hline
 \multicolumn{4}{p{0.95\textwidth}}{\textbf{Resumen:} -----------} \\ [10pt]
-\multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/-----------}} \\ \hline
+% TODO: replace with actual screenshot
+% \multicolumn{4}{c}{\includegraphics[width=0.4\textwidth]{report/assets/interview/-----------}} \\ \hline
 \end{tabular}
 
 <br>

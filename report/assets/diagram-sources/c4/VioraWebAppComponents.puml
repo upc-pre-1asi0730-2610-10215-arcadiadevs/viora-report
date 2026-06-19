@@ -1,0 +1,64 @@
+@startuml VioraWebAppComponents
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4/master/C4_Component.puml
+
+title Component Diagram - Web Application
+
+Person(oliveProducer, "Olive Producer", "Monitors plots, receives alerts, requests technical interventions and manages subscription.")
+Person(agriSpecialist, "Agricultural Specialist", "Publishes professional portfolio, receives cases, evaluates plots and manages interventions.")
+
+Container_Boundary(webApp, "Web Application") {
+    Component(authUI, "Authentication UI Component", "Angular Standalone Components / Services", "Handles sign in, password recovery and session entry flows.")
+    Component(profileUI, "Profile UI Component", "Angular Standalone Components", "Allows producer and specialist profile visualization and update.")
+    Component(dashboardUI, "Dashboard UI Component", "Angular Standalone Components", "Displays crop health, climate, NDVI, risk status and alert summaries.")
+    Component(plotManagementUI, "Plot Management UI Component", "Angular Standalone Components", "Allows plot registration, polygon delimitation and agronomic traceability input.")
+    Component(subscriptionBillingUI, "Subscription & Billing UI Component", "Angular Standalone Components", "Allows users to manage trial, subscription, payments and renewals.")
+    Component(marketplaceInterventionUI, "Marketplace & Intervention UI Component", "Angular Standalone Components", "Shows specialists, critical cases and intervention workflows.")
+    Component(notificationCenterUI, "Notification Center Component", "Angular Standalone Components", "Displays alerts, warnings and notification summaries in the UI.")
+    Component(routingGuards, "Routing & Guards Component", "Angular Router / Route Guards", "Protects routes and redirects users according to authentication state and role.")
+    Component(sharedUI, "Shared UI Components", "Angular Shared Components", "Reusable layout, navbar, sidebar, cards, dialogs, tables and common widgets.")
+    Component(apiClientServices, "API Client Services", "Angular Services / HttpClient", "Encapsulates HTTP communication with the API Application.")
+}
+
+Container(landingPage, "Landing Page", "HTML, CSS, TypeScript", "Static website that presents Viora's value proposition, plans, testimonials and calls to action.")
+Container(apiApp, "API Application", "Java, Spring Boot", "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions.")
+
+Rel(oliveProducer, authUI, "Signs in and recovers account access")
+Rel(agriSpecialist, authUI, "Signs in and recovers account access")
+Rel(oliveProducer, profileUI, "Updates producer profile")
+Rel(agriSpecialist, profileUI, "Updates specialist profile")
+Rel(oliveProducer, dashboardUI, "Views farm dashboard, monitoring and alerts")
+Rel(agriSpecialist, dashboardUI, "Views cases, monitoring insights and alerts")
+Rel(landingPage, webApp, "Redirects authenticated users to")
+
+Rel(routingGuards, authUI, "Protects access to")
+Rel(routingGuards, dashboardUI, "Routes authenticated users to")
+Rel(routingGuards, profileUI, "Routes users to")
+Rel(routingGuards, plotManagementUI, "Routes users to")
+Rel(routingGuards, subscriptionBillingUI, "Routes users to")
+Rel(routingGuards, marketplaceInterventionUI, "Routes users to")
+Rel(routingGuards, notificationCenterUI, "Routes users to")
+
+Rel(authUI, apiClientServices, "Sends sign-in and recovery requests")
+Rel(profileUI, apiClientServices, "Requests and updates profile data")
+Rel(dashboardUI, apiClientServices, "Requests climate and alert data")
+Rel(plotManagementUI, apiClientServices, "Sends plot and agronomic traceability data")
+Rel(subscriptionBillingUI, apiClientServices, "Requests subscription and payment data")
+Rel(marketplaceInterventionUI, apiClientServices, "Requests specialist and intervention data")
+Rel(notificationCenterUI, apiClientServices, "Loads alert notifications")
+
+Rel(authUI, sharedUI, "Uses authentication forms and dialogs")
+Rel(profileUI, sharedUI, "Uses profile forms and reusable widgets")
+Rel(dashboardUI, sharedUI, "Uses charts, cards and layout")
+Rel(plotManagementUI, sharedUI, "Uses lists, dialogs and reusable widgets")
+Rel(subscriptionBillingUI, sharedUI, "Uses payment and plan widgets")
+Rel(marketplaceInterventionUI, sharedUI, "Uses lists, dialogs and reusable widgets")
+Rel(notificationCenterUI, sharedUI, "Uses reusable notification widgets")
+
+Rel(dashboardUI, plotManagementUI, "Registers plots and agronomic traceability")
+Rel(dashboardUI, marketplaceInterventionUI, "Manages interventions and technical cases")
+Rel(authUI, profileUI, "Manages subscription, trial and payments")
+
+Rel(apiClientServices, apiApp, "Makes API requests to", "JSON/HTTPS")
+
+SHOW_LEGEND()
+@enduml

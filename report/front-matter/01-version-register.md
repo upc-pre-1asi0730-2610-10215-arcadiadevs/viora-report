@@ -1,4 +1,4 @@
-# Registro de Versiones del Informe {-}
+# Registro de Versiones del Informe {#registro-de-versiones}
 
 \vspace{0.3cm}
 
@@ -49,6 +49,34 @@
 \textbf{v1.16.0} & 13/05/26 & Santi Guerrero, Fabrizio Alonso & Añadido de evidencias, backlog y planificación del Sprint 1 (Capítulo 5) \tabularnewline \hline
 
 \textbf{v1.17.0} & 13/05/26 & Li Gayoso, Diana Carolina & Añadido de evidencias y funcionalidades core del Sprint 2 (Capítulo 5) \tabularnewline \hline
+
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\begin{center}
+\begin{tabular}{|p{2cm}|p{2.2cm}|p{4.5cm}|p{6cm}|}
+\hline
+\centering \textbf{Versión} & \centering \textbf{Fecha} & \centering \textbf{Autores} & \centering \textbf{Descripción de Modificación} \tabularnewline \hline
+
+\textbf{v2.0.0} & 24/05/26 & Espada Lazo, Piero Anthony & Corrección de historias de usuario y product backlog \tabularnewline \hline
+
+\textbf{v2.0.1} & 27/05/26 & Santi Guerrero, Fabrizio Alonso & Actualización de user stories y formato del product backlog \tabularnewline \hline
+
+\textbf{v2.0.2} & 11/06/26 & Li Gayoso, Diana Carolina & Actualización del Big Picture Event Storming a metodología de 6 fases \tabularnewline \hline
+
+\textbf{v2.0.3} & 12/06/26 & Li Gayoso, Diana Carolina & Refactorización de user stories, integración de API TypeScript y actualización del product backlog \tabularnewline \hline
+
+\textbf{v2.0.4} & 15/06/26 & Li Gayoso, Diana Carolina & Diseño de entrevistas de validación, logs y evaluación heurística \tabularnewline \hline
+
+\textbf{v2.0.5} & 18/06/26 & Li Gayoso, Diana Carolina & Actualización de wireframes, mockups del productor y bounded contexts (agronomic monitoring, epidemiological surveillance, intervention marketplace) \tabularnewline \hline
+
+\textbf{v2.0.6} & 19/06/26 & Trinidad Leon, Jahat Jassiel & Migración de diagramas C4 a Structurizr DSL y corrección de formato del project statement \tabularnewline \hline
+
+\textbf{v2.0.7} & 19/06/26 & Trinidad Leon, Jahat Jassiel & Separación de diagramas de clases en archivos PlantUML individuales con stack correcto \tabularnewline \hline
+
+\textbf{v2.1.0} & 19/06/26 & Trinidad Leon, Jahat Jassiel & Aplicación de convenciones de nombres de la industria (C\#/TypeScript) y automatización de generación de diagramas con PlantUML \tabularnewline \hline
 
 \end{tabular}
 \end{center}
