@@ -1,250 +1,228 @@
-workspace "Viora Platform" "Container and Component diagrams for the Viora Platform" {
+workspace "Viora - Software Architecture" "Landing Page Component Diagrams for Viora Platform" {
+
+    !identifiers hierarchical
 
     model {
-        oliveProducer = person "Olive Producer" "Monitors plots, receives alerts, requests technical interventions and manages subscription."
+        // Personas
         visitor = person "Visitor" "Explores Viora's landing page, plans, testimonials and calls to action."
-        agriculturalSpecialist = person "Agricultural Specialist" "Publishes professional portfolio, receives cases, evaluates plots and manages interventions."
+        producer = person "Olive Producer" "Monitors plots, receives alerts, requests technical interventions and manages subscription."
+        specialist = person "Agricultural Specialist" "Publishes professional portfolio, receives cases, evaluates plots and manages interventions."
 
-        vioraPlatform = softwareSystem "Viora Platform" {
-            landingPage = container "Landing Page" "HTML, CSS, TypeScript" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." {
-                heroSection = component "Hero Section Component" "Vue.js Component" "Presents the core value proposition, segmented CTA and primary conversion actions."
-                testimonialsAboutSection = component "Testimonials & About Section Component" "Vue.js Component" "Presents testimonials, team information and trust-building content."
-                roleBenefitsSection = component "Role Benefits Section Component" "Vue.js Component" "Shows segmented benefits for olive producers and agricultural specialists."
-                plansTrialAffiliatesSection = component "Plans, Trial & Affiliates Section Component" "Vue.js Component" "Presents pricing plans, free trial and affiliate/referral program."
-                contactFooterSection = component "Contact & Footer Section Component" "Vue.js Component" "Presents contact data, legal links, navigation links and footer content."
-                problemSolutionSection = component "Problem & Solution Section Component" "Vue.js Component" "Explains the climatic and phytosanitary problem and Viora's proposed solution."
-                ctaRoutingComponent = component "CTA Routing Component" "Vue Router / Navigation Service" "Handles navigation from landing CTAs toward sign in, sign up and trial flows in the Web Application."
-                landingViewModelAssembler = component "Landing ViewModel Assembler" "TypeScript Assembler" "Builds section view models from static content/models for presentation components."
-                landingContentModels = component "Landing Content Models" "TypeScript Models / Interfaces" "Defines models for hero content, benefits, plans, testimonials, FAQ and CTA content."
-                sharedLandingUI = component "Shared Landing UI Components" "Vue.js Shared Components" "Reusable buttons, cards, badges, section headers and layout primitives for the landing page."
+        viora = softwareSystem "Viora Platform" "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management." {
+            tags "CoreSystem"
+
+            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "Vue.js" {
+                tags "Browser"
+
+                hero = component "Hero Section Component" "Presents the core value proposition, segmented CTA and primary conversion actions." "Vue.js Component" {
+                    tags "Component"
+                }
+                problem = component "Problem & Solution Section Component" "Explains the climatic and phytosanitary problem and Viora's proposed solution." "Vue.js Component" {
+                    tags "Component"
+                }
+                roles = component "Role Benefits Section Component" "Shows segmented benefits for olive producers and agricultural specialists." "Vue.js Component" {
+                    tags "Component"
+                }
+                plans = component "Plans, Trial & Affiliates Section Component" "Presents pricing plans, free trial and affiliate/referral program." "Vue.js Component" {
+                    tags "Component"
+                }
+                trust = component "Testimonials & About Section Component" "Presents testimonials, team information and trust-building content." "Vue.js Component" {
+                    tags "Component"
+                }
+                contact = component "Contact & Footer Section Component" "Presents contact data, legal links, navigation links and footer content." "Vue.js Component" {
+                    tags "Component"
+                }
+                cta = component "CTA Routing Component" "Handles navigation from landing CTAs toward sign in, sign up and trial flows in the Web Application." "Vue Router / Navigation Service" {
+                    tags "Component"
+                }
+                landingshared = component "Shared Landing UI Components" "Reusable buttons, cards, badges, section headers and layout primitives for the landing page." "Vue.js Shared Components" {
+                    tags "Component"
+                }
+                contentmodels = component "Landing Content Models" "Defines models for hero content, benefits, plans, testimonials, FAQ and CTA content." "TypeScript Models / Interfaces" {
+                    tags "Component"
+                }
+                assembler = component "Landing ViewModel Assembler" "Builds section view models from static content/models for presentation components." "TypeScript Assembler" {
+                    tags "Component"
+                }
             }
 
-            webApplication = container "Web Application" "Vue.js" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." {
-                routingGuards = component "Routing & Guards Component" "Vue Router / Navigation Guards" "Protects routes and redirects users according to authentication state and role."
-                profileUI = component "Profile UI Component" "Vue.js Component" "Allows producer and specialist profile visualization and update."
-                authUI = component "Authentication UI Component" "Vue.js Component / Services" "Handles sign in, password recovery and session entry flows."
-                dashboardUI = component "Dashboard UI Component" "Vue.js Component" "Displays crop health, climate, NDVI, risk status and alert summaries."
-                notificationCenter = component "Notification Center Component" "Vue.js Component" "Displays alerts, warnings and notification summaries in the UI."
-                subscriptionUI = component "Subscription & Billing UI Component" "Vue.js Component" "Allows users to manage trial, subscription, payments and renewals."
-                plotManagementUI = component "Plot Management UI Component" "Vue.js Component" "Allows plot registration, polygon delimitation and agronomic traceability input."
-                marketplaceUI = component "Marketplace & Intervention UI Component" "Vue.js Component" "Shows specialists, critical cases and intervention workflows."
-                sharedUI = component "Shared UI Components" "Vue.js Shared Components" "Reusable layout, navbar, sidebar, cards, dialogs, tables and common widgets."
-                apiClientServices = component "API Client Services" "Vue.js Services / Axios" "Encapsulates HTTP communication with the API Application."
+            webapp = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Vue.js" {
+                tags "Browser"
             }
 
-            apiApplication = container "API Application" "ASP.NET Core" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." {
-                externalIntegrationsComponent = component "External Integrations Component" "ASP.NET Core Service" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources."
-                plotManagementComponent = component "Plot Management Component" "ASP.NET Core Service" "Registers productive areas, validates polygons and manages plot traceability."
-                agrometeorologicalMonitoringComponent = component "Agrometeorological Monitoring Component" "ASP.NET Core Service" "Synchronizes weather, satellite and vegetation index data for registered plots."
-                moderationStrikesComponent = component "Moderation & Strikes Component" "ASP.NET Core Service" "Evaluates misconduct reports and applies strikes, suspensions or account blocking."
-                predictionRiskEngine = component "Prediction & Risk Engine" "ASP.NET Core Service" "Calculates chill portions, crop health, yield projections and phenological risk."
-                marketplaceInterventionComponent = component "Marketplace & Intervention Component" "ASP.NET Core Service" "Matches producers with specialists and manages technical intervention workflows."
-                iamComponent = component "IAM Component" "ASP.NET Core / Identity" "Handles authentication, authorization, JWT validation and password recovery."
-                alertNotificationComponent = component "Alert & Notification Component" "ASP.NET Core Service" "Generates phytosanitary, phenological and community preventive alerts."
-                subscriptionBillingComponent = component "Subscription & Billing Component" "ASP.NET Core Service" "Manages trials, subscriptions, payments, renewals and refunds."
-                profileComponent = component "Profile Component" "ASP.NET Core Service" "Manages producer and specialist profile information."
-                repositoryComponents = component "Repository Components" "Entity Framework Core" "Persist and retrieve domain data from the relational database."
+            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+                tags "RoundedBox" "CodeSystem"
             }
 
-            database = container "Database" "MySQL" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data."
-            mediaStorage = container "Media Storage" "Cloudinary-backed media storage" "Stores field evidence images, profile images and related media assets."
+            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+                tags "Container" "Database"
+            }
+            media = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-backed media storage" {
+                tags "Bucket"
+            }
         }
 
-        agroMonitoringAPI = softwareSystem "AgroMonitoring API" "External provider of satellite imagery, vegetation indices and agro-weather data." {
-            tags "External System"
+        // Servicios externos
+        agromonitoring = softwareSystem "AgroMonitoring API" "External provider of satellite imagery, vegetation indices and agro-weather data." {
+            tags "ExternalSystem"
         }
-        mercadoPago = softwareSystem "Mercado Pago" "External payment gateway for subscriptions, renewals, refunds and payment status updates." {
-            tags "External System"
+        mercadopago = softwareSystem "Mercado Pago" "External payment gateway for subscriptions, renewals, refunds and payment status updates." {
+            tags "ExternalSystem"
         }
         brevo = softwareSystem "Brevo" "Transactional email service for password recovery and account notifications." {
-            tags "External System"
+            tags "ExternalSystem"
         }
         mapbox = softwareSystem "Mapbox" "Maps and geocoding service used for plot delimitation and location-based features." {
-            tags "External System"
+            tags "ExternalSystem"
         }
         cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images and field evidence." {
-            tags "External System"
+            tags "ExternalSystem"
         }
         senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "External System"
+            tags "ExternalSystem"
         }
 
-        # === Container-level relationships ===
-        oliveProducer -> webApplication "Uses"
-        visitor -> landingPage "Explores content and calls to action"
-        agriculturalSpecialist -> webApplication "Uses"
+        // Relaciones de personas
+        visitor    -> landing  "Explores content and calls to action"
+        producer   -> webapp   "Uses"
+        specialist -> webapp   "Uses"
 
-        landingPage -> webApplication "Redirects authenticated users to"
-        webApplication -> apiApplication "Makes API requests to" "JSON/HTTPS"
-        apiApplication -> database "Reads from and writes to" "ADO.NET"
-        apiApplication -> mediaStorage "Stores and retrieves media assets" "HTTPS/API"
+        // Relaciones internas de containers
+        landing -> webapp  "Redirects authenticated users to"
+        webapp  -> api     "Makes API requests to" "JSON/HTTPS"
+        api     -> db      "Reads from and writes to" "ADO.NET"
+        api     -> media   "Stores and retrieves media assets" "HTTPS/API"
 
-        # === Landing Page component relationships ===
-        visitor -> heroSection "Views the primary value proposition and CTA"
-        visitor -> testimonialsAboutSection "Reviews testimonials and team information"
-        visitor -> roleBenefitsSection "Explores role-specific benefits"
-        visitor -> plansTrialAffiliatesSection "Reviews plans, free trial and affiliate program"
-        visitor -> contactFooterSection "Reviews contact, footer and legal links"
+        // Relaciones de Landing Page Components
+        visitor -> landing.hero    "Views the primary value proposition and CTA"
+        visitor -> landing.roles   "Explores role-specific benefits"
+        visitor -> landing.plans   "Reviews plans, free trial and affiliate program"
+        visitor -> landing.trust   "Reviews testimonials and team information"
+        visitor -> landing.contact "Reviews contact, footer and legal links"
 
-        heroSection -> ctaRoutingComponent "Uses CTA navigation from"
-        heroSection -> sharedLandingUI "Uses reusable hero and CTA widgets"
+        landing.hero    -> landing.landingshared "Uses reusable hero and CTA UI"
+        landing.problem -> landing.landingshared "Uses reusable layout and content blocks"
+        landing.roles   -> landing.landingshared "Uses reusable cards and section blocks"
+        landing.plans   -> landing.landingshared "Uses reusable pricing and CTA widgets"
+        landing.trust   -> landing.landingshared "Uses reusable testimonial and team widgets"
+        landing.contact -> landing.landingshared "Uses reusable footer and link widgets"
 
-        testimonialsAboutSection -> landingViewModelAssembler "Consumes testimonial/about view model from"
-        testimonialsAboutSection -> ctaRoutingComponent "Uses CTA navigation from"
-        testimonialsAboutSection -> sharedLandingUI "Uses reusable cards and section blocks"
+        landing.hero    -> landing.assembler "Consumes hero view model from"
+        landing.problem -> landing.assembler "Consumes problem/solution view model from"
+        landing.roles   -> landing.assembler "Consumes benefits view model from"
+        landing.plans   -> landing.assembler "Consumes plans and affiliate view model from"
+        landing.trust   -> landing.assembler "Consumes testimonial/about view model from"
+        landing.contact -> landing.assembler "Consumes contact/footer view model from"
 
-        roleBenefitsSection -> landingViewModelAssembler "Consumes benefits view model from"
-        roleBenefitsSection -> ctaRoutingComponent "Uses CTA navigation from"
-        roleBenefitsSection -> sharedLandingUI "Uses reusable pricing and CTA widgets"
+        landing.assembler -> landing.contentmodels "Builds section view models from"
 
-        plansTrialAffiliatesSection -> landingViewModelAssembler "Consumes plans and affiliate view model from"
-        plansTrialAffiliatesSection -> landingViewModelAssembler "Consumes contact/footer view model from"
-        plansTrialAffiliatesSection -> ctaRoutingComponent "Uses CTA navigation from"
-        plansTrialAffiliatesSection -> sharedLandingUI "Uses reusable footer and link widgets"
-
-        contactFooterSection -> landingViewModelAssembler "Consumes contact/footer view model from"
-
-        problemSolutionSection -> landingViewModelAssembler "Consumes problem/solution view model from"
-        problemSolutionSection -> sharedLandingUI "Uses reusable layout and content blocks"
-
-        landingViewModelAssembler -> landingContentModels "Builds section view models from"
-
-        ctaRoutingComponent -> webApplication "Redirects visitors to"
-
-        # === Web Application component relationships ===
-        oliveProducer -> authUI "Signs in and recovers account access"
-        oliveProducer -> profileUI "Updates producer profile"
-        oliveProducer -> dashboardUI "Views farm dashboard, monitoring and alerts"
-        oliveProducer -> subscriptionUI "Manages subscription, trial and payments"
-        oliveProducer -> plotManagementUI "Registers plots and agronomic traceability"
-
-        agriculturalSpecialist -> authUI "Signs in and recovers account access"
-        agriculturalSpecialist -> profileUI "Updates specialist profile"
-        agriculturalSpecialist -> dashboardUI "Views cases, monitoring insights and alerts"
-        agriculturalSpecialist -> marketplaceUI "Manages interventions and technical cases"
-
-        authUI -> sharedUI "Uses authentication forms and dialogs"
-        authUI -> apiClientServices "Sends sign-in and recovery requests"
-        authUI -> subscriptionUI "Uses payment and plan widgets"
-        authUI -> profileUI "Requests and updates profile data"
-
-        profileUI -> sharedUI "Uses profile forms and reusable widgets"
-        profileUI -> apiClientServices "Requests and updates profile data"
-        profileUI -> plotManagementUI "Uses reusable notification widgets"
-        profileUI -> dashboardUI "Protects access to"
-
-        routingGuards -> authUI "Routes authenticated users to"
-        routingGuards -> dashboardUI "Routes users to"
-        routingGuards -> marketplaceUI "Routes users to"
-        routingGuards -> notificationCenter "Routes users to"
-        routingGuards -> profileUI "Routes users to"
-
-        dashboardUI -> plotManagementUI "Uses charts, cards and layout"
-        dashboardUI -> apiClientServices "Requests and updates profile data"
-        dashboardUI -> notificationCenter "Displays alert summaries from"
-        dashboardUI -> marketplaceUI "Routes users to"
-
-        plotManagementUI -> sharedUI "Uses lists, dialogs and reusable widgets"
-        plotManagementUI -> apiClientServices "Sends plot and climate and alert data"
-        plotManagementUI -> marketplaceUI "Uses reusable notification widgets"
-
-        subscriptionUI -> sharedUI "Uses forms, dialogs and reusable widgets"
-        subscriptionUI -> apiClientServices "Requests subscription and payment data"
-
-        marketplaceUI -> apiClientServices "Requests specialist and intervention data"
-        marketplaceUI -> notificationCenter "Loads alert notifications"
-
-        notificationCenter -> apiClientServices "Loads alert notifications"
-
-        sharedUI -> apiClientServices "Makes API requests to" "JSON/HTTPS"
-
-        apiClientServices -> apiApplication "Makes API requests to" "JSON/HTTPS"
-
-        # === API Application component relationships ===
-        webApplication -> plotManagementComponent "Registers plots and traceability records" "JSON/HTTPS"
-        webApplication -> iamComponent "Authenticates, user manages profile validates" "JSON/HTTPS"
-        webApplication -> agrometeorologicalMonitoringComponent "Requests dashboard climate and satellite data" "JSON/HTTPS"
-        webApplication -> marketplaceInterventionComponent "Manages specialist search and coordinates plot polygons"
-        webApplication -> subscriptionBillingComponent "Manages subscriptions and payments"
-
-        plotManagementComponent -> repositoryComponents "Reads/writes plot data"
-        plotManagementComponent -> agrometeorologicalMonitoringComponent "Provides plot coordinates and polygons"
-
-        agrometeorologicalMonitoringComponent -> predictionRiskEngine "Provides climate, NDVI and historical agronomic data"
-        agrometeorologicalMonitoringComponent -> repositoryComponents "Stores synchronized climate and satellite data"
-
-        predictionRiskEngine -> alertNotificationComponent "Triggers risk alerts"
-        predictionRiskEngine -> marketplaceInterventionComponent "Publishes critical cases for specialist response"
-        predictionRiskEngine -> repositoryComponents "Stores risk and yield projections"
-
-        marketplaceInterventionComponent -> repositoryComponents "Stores service and intervention records"
-
-        alertNotificationComponent -> repositoryComponents "Stores alert records"
-
-        subscriptionBillingComponent -> repositoryComponents "Stores subscription data"
-
-        profileComponent -> repositoryComponents "Reads/writes profile data"
-
-        iamComponent -> moderationStrikesComponent "Requests account suspension or blocking"
-        iamComponent -> repositoryComponents "Reads/writes identity data"
-
-        moderationStrikesComponent -> repositoryComponents "Stores reports and strikes"
-
-        repositoryComponents -> database "Persists and retrieves relational domain data" "ADO.NET"
-        repositoryComponents -> mediaStorage "Stores media references and asset metadata" "HTTPS/API"
-
-        externalIntegrationsComponent -> agroMonitoringAPI "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
-        externalIntegrationsComponent -> mapbox "Uses maps and geocoding for plot location" "HTTPS/JSON"
-        externalIntegrationsComponent -> cloudinary "Uploads and retrieves media assets" "HTTPS/API"
-        externalIntegrationsComponent -> brevo "Sends transactional email notifications" "HTTPS/API"
-        externalIntegrationsComponent -> senasa "Consults official phytosanitary reference data" "HTTPS/Open data"
-        externalIntegrationsComponent -> mercadoPago "Processes payments and receives payment webhooks" "HTTPS/JSON"
+        landing.hero  -> landing.cta "Uses CTA navigation from"
+        landing.roles -> landing.cta "Uses CTA navigation from"
+        landing.plans -> landing.cta "Uses CTA navigation from"
+        landing.cta   -> webapp      "Redirects visitors to"
     }
 
     views {
-        container vioraPlatform "Container" "Container diagram for the Viora Platform" {
+        container viora "VioraContainer" {
             include *
-            autoLayout lr
         }
 
-        component apiApplication "APIComponents" "Component diagram for the API Application" {
+        component landing "VioraLandingComponents" {
             include *
-            autoLayout lr
-        }
-
-        component webApplication "WebAppComponents" "Component diagram for the Web Application" {
-            include *
-            autoLayout lr
-        }
-
-        component landingPage "LandingComponents" "Component diagram for the Landing Page" {
-            include *
-            autoLayout lr
+            include visitor
+            include viora.webapp
         }
 
         styles {
+            element "Element" {
+                background #ffffff
+                shape roundedbox
+            }
+
             element "Person" {
-                background #84c26d
-                color #000000
+                color #55aa55
+                stroke #55aa55
+                strokeWidth 7
                 shape person
+                background #ffffff
             }
+
             element "Software System" {
-                background #5b9bd5
-                color #ffffff
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
             }
+
             element "Container" {
-                background #2e75b5
-                color #ffffff
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
             }
+
+            element "RoundedBox" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+            }
+
+            element "Browser" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape WebBrowser
+            }
+
+            element "CoreSystem" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+            }
+
+            element "ExternalSystem" {
+                color #bf101d
+                stroke #bf101d
+                strokeWidth 7
+                background #ffffff
+            }
+
+            element "Database" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape cylinder
+            }
+
+            element "Bucket" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape Bucket
+            }
+
             element "Component" {
-                background #2e75b5
-                color #ffffff
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape Component
             }
-            element "External System" {
-                background #c00000
-                color #ffffff
+
+            relationship "Relationship" {
+                color #4a4a4a
+                thickness 3
+                dashed true
             }
         }
     }
 
+    configuration {
+        scope softwaresystem
+    }
 }

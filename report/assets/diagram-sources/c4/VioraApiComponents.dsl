@@ -1,139 +1,241 @@
-workspace "Viora Platform" "Container and Component diagrams for the Viora Platform" {
+workspace "Viora - Software Architecture" "API Application Component Diagrams for Viora Platform" {
+
+    !identifiers hierarchical
 
     model {
-        oliveProducer = person "Olive Producer" "Monitors plots, receives alerts, requests technical interventions and manages subscription."
+        // Personas
         visitor = person "Visitor" "Explores Viora's landing page, plans, testimonials and calls to action."
-        agriculturalSpecialist = person "Agricultural Specialist" "Publishes professional portfolio, receives cases, evaluates plots and manages interventions."
+        producer = person "Olive Producer" "Monitors plots, receives alerts, requests technical interventions and manages subscription."
+        specialist = person "Agricultural Specialist" "Publishes professional portfolio, receives cases, evaluates plots and manages interventions."
 
-        vioraPlatform = softwareSystem "Viora Platform" {
-            landingPage = container "Landing Page" "HTML, CSS, TypeScript" "Static website that presents Viora's value proposition, plans, testimonials and calls to action."
-            webApplication = container "Web Application" "Vue.js" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions."
+        viora = softwareSystem "Viora Platform" "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management." {
+            tags "CoreSystem"
 
-            apiApplication = container "API Application" "ASP.NET Core" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." {
-                externalIntegrationsComponent = component "External Integrations Component" "ASP.NET Core Service" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources."
-                plotManagementComponent = component "Plot Management Component" "ASP.NET Core Service" "Registers productive areas, validates polygons and manages plot traceability."
-                agrometeorologicalMonitoringComponent = component "Agrometeorological Monitoring Component" "ASP.NET Core Service" "Synchronizes weather, satellite and vegetation index data for registered plots."
-                moderationStrikesComponent = component "Moderation & Strikes Component" "ASP.NET Core Service" "Evaluates misconduct reports and applies strikes, suspensions or account blocking."
-                predictionRiskEngine = component "Prediction & Risk Engine" "ASP.NET Core Service" "Calculates chill portions, crop health, yield projections and phenological risk."
-                marketplaceInterventionComponent = component "Marketplace & Intervention Component" "ASP.NET Core Service" "Matches producers with specialists and manages technical intervention workflows."
-                iamComponent = component "IAM Component" "ASP.NET Core / Identity" "Handles authentication, authorization, JWT validation and password recovery."
-                alertNotificationComponent = component "Alert & Notification Component" "ASP.NET Core Service" "Generates phytosanitary, phenological and community preventive alerts."
-                subscriptionBillingComponent = component "Subscription & Billing Component" "ASP.NET Core Service" "Manages trials, subscriptions, payments, renewals and refunds."
-                profileComponent = component "Profile Component" "ASP.NET Core Service" "Manages producer and specialist profile information."
-                repositoryComponents = component "Repository Components" "Entity Framework Core" "Persist and retrieve domain data from the relational database."
+            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "Vue.js" {
+                tags "Browser"
+            }
+            webapp = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Vue.js" {
+                tags "Browser"
             }
 
-            database = container "Database" "MySQL" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data."
-            mediaStorage = container "Media Storage" "Cloudinary-backed media storage" "Stores field evidence images, profile images and related media assets."
+            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+                tags "RoundedBox" "CodeSystem"
+
+                iam = component "IAM Component" "Handles authentication, authorization, JWT validation and password recovery." "ASP.NET Core / Identity" {
+                    tags "Component"
+                }
+                profile = component "Profile Component" "Manages producer and specialist profile information." "ASP.NET Core Service" {
+                    tags "Component"
+                }
+                plots = component "Plot Management Component" "Registers productive areas, validates polygons and manages plot traceability." "ASP.NET Core Service" {
+                    tags "Component"
+                }
+                monitoring = component "Agrometeorological Monitoring Component" "Synchronizes weather, satellite and vegetation index data for registered plots." "ASP.NET Core Service" {
+                    tags "Component"
+                }
+                prediction = component "Prediction & Risk Engine" "Calculates chill portions, crop health, yield projections and phenological risk." "ASP.NET Core Service" {
+                    tags "Component"
+                }
+                alerts = component "Alert & Notification Component" "Generates phytosanitary, phenological and community preventive alerts." "ASP.NET Core Service" {
+                    tags "Component"
+                }
+                marketplace = component "Marketplace & Intervention Component" "Matches producers with specialists and manages technical intervention workflows." "ASP.NET Core Service" {
+                    tags "Component"
+                }
+                billing = component "Subscription & Billing Component" "Manages trials, subscriptions, payments, renewals and refunds." "ASP.NET Core Service" {
+                    tags "Component"
+                }
+                moderation = component "Moderation & Strikes Component" "Evaluates misconduct reports and applies strikes, suspensions or account blocking." "ASP.NET Core Service" {
+                    tags "Component"
+                }
+                integrations = component "External Integrations Component" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources." "ASP.NET Core Service" {
+                    tags "Component"
+                }
+                repositories = component "Repository Components" "Persist and retrieve domain data from the relational database." "Entity Framework Core" {
+                    tags "Component"
+                }
+            }
+
+            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+                tags "Container" "Database"
+            }
+            media = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-backed media storage" {
+                tags "Bucket"
+            }
         }
 
-        agroMonitoringAPI = softwareSystem "AgroMonitoring API" "External provider of satellite imagery, vegetation indices and agro-weather data." {
-            tags "External System"
+        // Servicios externos
+        agromonitoring = softwareSystem "AgroMonitoring API" "External provider of satellite imagery, vegetation indices and agro-weather data." {
+            tags "ExternalSystem"
         }
-        mercadoPago = softwareSystem "Mercado Pago" "External payment gateway for subscriptions, renewals, refunds and payment status updates." {
-            tags "External System"
+        mercadopago = softwareSystem "Mercado Pago" "External payment gateway for subscriptions, renewals, refunds and payment status updates." {
+            tags "ExternalSystem"
         }
         brevo = softwareSystem "Brevo" "Transactional email service for password recovery and account notifications." {
-            tags "External System"
+            tags "ExternalSystem"
         }
         mapbox = softwareSystem "Mapbox" "Maps and geocoding service used for plot delimitation and location-based features." {
-            tags "External System"
+            tags "ExternalSystem"
         }
         cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images and field evidence." {
-            tags "External System"
+            tags "ExternalSystem"
         }
         senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "External System"
+            tags "ExternalSystem"
         }
 
-        # Person to container relationships
-        oliveProducer -> webApplication "Uses"
-        visitor -> landingPage "Explores content and calls to action"
-        agriculturalSpecialist -> webApplication "Uses"
+        // Relaciones de personas
+        visitor    -> landing  "Explores content and calls to action"
+        producer   -> webapp   "Uses"
+        specialist -> webapp   "Uses"
 
-        # Container-level relationships
-        landingPage -> webApplication "Redirects authenticated users to"
-        webApplication -> apiApplication "Makes API requests to" "JSON/HTTPS"
-        apiApplication -> database "Reads from and writes to" "ADO.NET"
-        apiApplication -> mediaStorage "Stores and retrieves media assets" "HTTPS/API"
+        // Relaciones internas de containers
+        landing -> webapp  "Redirects authenticated users to"
+        webapp  -> api     "Makes API requests to" "JSON/HTTPS"
+        api     -> db      "Reads from and writes to" "ADO.NET"
+        api     -> media   "Stores and retrieves media assets" "HTTPS/API"
 
-        # Web Application to component relationships
-        webApplication -> plotManagementComponent "Registers plots and traceability records" "JSON/HTTPS"
-        webApplication -> iamComponent "Authenticates, user manages profile validates" "JSON/HTTPS"
-        webApplication -> agrometeorologicalMonitoringComponent "Requests dashboard climate and satellite data" "JSON/HTTPS"
-        webApplication -> marketplaceInterventionComponent "Manages specialist search and coordinates plot polygons"
-        webApplication -> subscriptionBillingComponent "Manages subscriptions and payments"
+        // Web Application a componentes de API
+        webapp -> api.iam         "Authenticates users and validates sessions" "JSON/HTTPS"
+        webapp -> api.profile     "Manages profile data" "JSON/HTTPS"
+        webapp -> api.plots       "Registers plots and traceability records" "JSON/HTTPS"
+        webapp -> api.monitoring  "Requests dashboard climate and satellite data" "JSON/HTTPS"
+        webapp -> api.marketplace "Manages specialist search and interventions" "JSON/HTTPS"
+        webapp -> api.billing     "Manages subscriptions and payments" "JSON/HTTPS"
 
-        # Internal component relationships
-        plotManagementComponent -> repositoryComponents "Reads/writes plot data"
-        plotManagementComponent -> agrometeorologicalMonitoringComponent "Provides plot coordinates and polygons"
+        // Relaciones internas de componentes de API
+        api.plots      -> api.monitoring  "Provides plot coordinates and polygons"
+        api.monitoring -> api.prediction  "Provides climate, NDVI and historical agronomic data"
+        api.prediction -> api.alerts      "Triggers risk alerts"
+        api.alerts     -> api.marketplace "Publishes critical cases for specialist response"
+        api.moderation -> api.iam         "Requests account suspension or blocking"
 
-        agrometeorologicalMonitoringComponent -> predictionRiskEngine "Provides climate, NDVI and historical agronomic data"
-        agrometeorologicalMonitoringComponent -> repositoryComponents "Stores synchronized climate and satellite data"
+        api.iam         -> api.repositories "Reads/writes identity data"
+        api.profile     -> api.repositories "Reads/writes profile data"
+        api.plots       -> api.repositories "Reads/writes plot data"
+        api.monitoring  -> api.repositories "Stores synchronized climate and satellite data"
+        api.prediction  -> api.repositories "Stores risk and yield projections"
+        api.alerts      -> api.repositories "Stores alert records"
+        api.marketplace -> api.repositories "Stores service and intervention records"
+        api.billing     -> api.repositories "Stores subscription data"
+        api.moderation  -> api.repositories "Stores reports and strikes"
 
-        predictionRiskEngine -> alertNotificationComponent "Triggers risk alerts"
-        predictionRiskEngine -> marketplaceInterventionComponent "Publishes critical cases for specialist response"
-        predictionRiskEngine -> repositoryComponents "Stores risk and yield projections"
+        // Componentes de API a servicios externos
+        api.monitoring   -> agromonitoring "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
+        api.plots        -> mapbox         "Uses maps and geocoding for plot location" "HTTPS/JSON"
+        api.billing      -> mercadopago    "Processes payments and receives payment webhooks" "HTTPS/JSON"
+        api.alerts       -> brevo          "Sends transactional email notifications" "HTTPS/API"
+        api.integrations -> cloudinary     "Uploads and retrieves media assets" "HTTPS/API"
+        api.alerts       -> senasa         "Consults official phytosanitary reference data" "HTTPS/Open data"
 
-        marketplaceInterventionComponent -> repositoryComponents "Stores service and intervention records"
-
-        alertNotificationComponent -> repositoryComponents "Stores alert records"
-
-        subscriptionBillingComponent -> repositoryComponents "Stores subscription data"
-
-        profileComponent -> repositoryComponents "Reads/writes profile data"
-
-        iamComponent -> moderationStrikesComponent "Requests account suspension or blocking"
-        iamComponent -> repositoryComponents "Reads/writes identity data"
-
-        moderationStrikesComponent -> repositoryComponents "Stores reports and strikes"
-
-        repositoryComponents -> database "Persists and retrieves relational domain data" "ADO.NET"
-        repositoryComponents -> mediaStorage "Stores media references and asset metadata" "HTTPS/API"
-
-        # External Integrations to external systems
-        externalIntegrationsComponent -> agroMonitoringAPI "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
-        externalIntegrationsComponent -> mapbox "Uses maps and geocoding for plot location" "HTTPS/JSON"
-        externalIntegrationsComponent -> cloudinary "Uploads and retrieves media assets" "HTTPS/API"
-        externalIntegrationsComponent -> brevo "Sends transactional email notifications" "HTTPS/API"
-        externalIntegrationsComponent -> senasa "Consults official phytosanitary reference data" "HTTPS/Open data"
-        externalIntegrationsComponent -> mercadoPago "Processes payments and receives payment webhooks" "HTTPS/JSON"
+        // Repositorios a almacenamiento
+        api.repositories -> db    "Persists and retrieves relational domain data" "ADO.NET"
+        api.repositories -> media "Stores media references and asset metadata" "HTTPS/API"
+        api.integrations -> media "Stores and retrieves field evidence and profile media" "HTTPS/API"
+        media             -> cloudinary "Delegates media storage and delivery" "HTTPS/API"
     }
 
     views {
-        container vioraPlatform "Container" "Container diagram for the Viora Platform" {
+        container viora "VioraContainer" {
             include *
-            autoLayout lr
         }
 
-        component apiApplication "Components" "Component diagram for the API Application" {
+        component api "VioraApiComponents" {
             include *
-            autoLayout lr
+            include viora.db
+            include viora.media
         }
 
         styles {
+            element "Element" {
+                background #ffffff
+                shape roundedbox
+            }
+
             element "Person" {
-                background #84c26d
-                color #000000
+                color #55aa55
+                stroke #55aa55
+                strokeWidth 7
                 shape person
+                background #ffffff
             }
+
             element "Software System" {
-                background #5b9bd5
-                color #ffffff
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
             }
+
             element "Container" {
-                background #2e75b5
-                color #ffffff
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
             }
+
+            element "RoundedBox" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+            }
+
+            element "Browser" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape WebBrowser
+            }
+
+            element "CoreSystem" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+            }
+
+            element "ExternalSystem" {
+                color #bf101d
+                stroke #bf101d
+                strokeWidth 7
+                background #ffffff
+            }
+
+            element "Database" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape cylinder
+            }
+
+            element "Bucket" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape Bucket
+            }
+
             element "Component" {
-                background #2e75b5
-                color #ffffff
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape Component
             }
-            element "External System" {
-                background #c00000
-                color #ffffff
+
+            relationship "Relationship" {
+                color #4a4a4a
+                thickness 3
+                dashed true
             }
         }
     }
 
+    configuration {
+        scope softwaresystem
+    }
 }

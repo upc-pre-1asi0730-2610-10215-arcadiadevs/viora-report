@@ -1,82 +1,169 @@
 workspace "Viora Platform" "Container diagram for the Viora Platform" {
 
+    !identifiers hierarchical
+
     model {
-        oliveProducer = person "Olive Producer" "Monitors plots, receives alerts, requests technical interventions and manages subscription."
+        // Personas
         visitor = person "Visitor" "Explores Viora's landing page, plans, testimonials and calls to action."
-        agriculturalSpecialist = person "Agricultural Specialist" "Publishes professional portfolio, receives cases, evaluates plots and manages interventions."
+        producer = person "Olive Producer" "Monitors plots, receives alerts, requests technical interventions and manages subscription."
+        specialist = person "Agricultural Specialist" "Publishes professional portfolio, receives cases, evaluates plots and manages interventions."
 
-        vioraPlatform = softwareSystem "Viora Platform" {
-            landingPage = container "Landing Page" "HTML, CSS, TypeScript" "Static website that presents Viora's value proposition, plans, testimonials and calls to action."
-            webApplication = container "Web Application" "Vue.js" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions."
-            apiApplication = container "API Application" "ASP.NET Core" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions."
-            database = container "Database" "MySQL" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data."
-            mediaStorage = container "Media Storage" "Cloudinary-backed media storage" "Stores field evidence images, profile images and related media assets."
+        viora = softwareSystem "Viora Platform" "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management." {
+            tags "CoreSystem"
+
+            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "Vue.js" {
+                tags "Browser"
+            }
+            webapp = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Vue.js" {
+                tags "Browser"
+            }
+            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+                tags "RoundedBox" "CodeSystem"
+            }
+            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+                tags "Container" "Database"
+            }
+            media = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-backed media storage" {
+                tags "Bucket"
+            }
         }
 
-        agroMonitoringAPI = softwareSystem "AgroMonitoring API" "External provider of satellite imagery, vegetation indices and agro-weather data." {
-            tags "External System"
+        // Servicios externos
+        agromonitoring = softwareSystem "AgroMonitoring API" "External provider of satellite imagery, vegetation indices and agro-weather data." {
+            tags "ExternalSystem"
         }
-        mercadoPago = softwareSystem "Mercado Pago" "External payment gateway for subscriptions, renewals, refunds and payment status updates." {
-            tags "External System"
+        mercadopago = softwareSystem "Mercado Pago" "External payment gateway for subscriptions, renewals, refunds and payment status updates." {
+            tags "ExternalSystem"
         }
         brevo = softwareSystem "Brevo" "Transactional email service for password recovery and account notifications." {
-            tags "External System"
+            tags "ExternalSystem"
         }
         mapbox = softwareSystem "Mapbox" "Maps and geocoding service used for plot delimitation and location-based features." {
-            tags "External System"
+            tags "ExternalSystem"
         }
         cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images and field evidence." {
-            tags "External System"
+            tags "ExternalSystem"
         }
         senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "External System"
+            tags "ExternalSystem"
         }
 
-        # Person relationships
-        oliveProducer -> webApplication "Uses"
-        visitor -> landingPage "Explores content and calls to action"
-        agriculturalSpecialist -> webApplication "Uses"
+        // Relaciones de personas
+        visitor    -> landing  "Explores content and calls to action"
+        producer   -> webapp   "Uses"
+        specialist -> webapp   "Uses"
 
-        # Internal container relationships
-        landingPage -> webApplication "Redirects authenticated users to"
-        webApplication -> apiApplication "Makes API requests to" "JSON/HTTPS"
-        apiApplication -> database "Reads from and writes to" "ADO.NET"
-        apiApplication -> mediaStorage "Stores and retrieves media assets" "HTTPS/API"
+        // Relaciones internas de containers
+        landing -> webapp  "Redirects authenticated users to"
+        webapp  -> api     "Makes API requests to" "JSON/HTTPS"
+        api     -> db      "Reads from and writes to" "ADO.NET"
+        api     -> media   "Stores and retrieves media assets" "HTTPS/API"
 
-        # External system relationships
-        apiApplication -> agroMonitoringAPI "Retrieves satellite imagery, vegetation indices and agro-weather data" "HTTPS/JSON"
-        apiApplication -> mercadoPago "Processes subscriptions, renewals and refunds" "HTTPS + Webhooks"
-        apiApplication -> brevo "Sends password recovery and transactional emails" "HTTPS/API"
-        apiApplication -> mapbox "Uses maps and geocoding services" "HTTPS/JSON"
-        apiApplication -> cloudinary "Uploads and delivers profile/evidence media" "HTTPS/API"
-        apiApplication -> senasa "Consults official phytosanitary information and reference data" "HTTPS/Open data"
+        // Relaciones con servicios externos
+        api -> agromonitoring "Retrieves satellite imagery, vegetation indices and agro-weather data" "HTTPS/JSON"
+        api -> mercadopago    "Processes subscriptions, renewals and refunds" "HTTPS + Webhooks"
+        api -> brevo          "Sends password recovery and transactional emails" "HTTPS/API"
+        api -> mapbox         "Uses maps and geocoding services" "HTTPS/JSON"
+        api -> cloudinary     "Uploads and delivers profile/evidence media" "HTTPS/API"
+        api -> senasa         "Consults official phytosanitary information and reference data" "HTTPS/Open data"
     }
 
     views {
-        container vioraPlatform "Container" "Container diagram for the Viora Platform" {
+        container viora "VioraContainer" "Container diagram for the Viora Platform" {
             include *
             autoLayout lr
         }
 
         styles {
+            element "Element" {
+                background #ffffff
+                shape roundedbox
+            }
+
             element "Person" {
-                background #84c26d
-                color #000000
+                color #55aa55
+                stroke #55aa55
+                strokeWidth 7
                 shape person
+                background #ffffff
             }
+
             element "Software System" {
-                background #5b9bd5
-                color #ffffff
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
             }
+
             element "Container" {
-                background #2e75b5
-                color #ffffff
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
             }
-            element "External System" {
-                background #c00000
-                color #ffffff
+
+            element "RoundedBox" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+            }
+
+            element "Browser" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape WebBrowser
+            }
+
+            element "CoreSystem" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+            }
+
+            element "ExternalSystem" {
+                color #bf101d
+                stroke #bf101d
+                strokeWidth 7
+                background #ffffff
+            }
+
+            element "Database" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape cylinder
+            }
+
+            element "Bucket" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape Bucket
+            }
+
+            element "Component" {
+                color #1168bd
+                stroke #1168bd
+                strokeWidth 7
+                background #ffffff
+                shape Component
+            }
+
+            relationship "Relationship" {
+                color #4a4a4a
+                thickness 3
+                dashed true
             }
         }
     }
 
+    configuration {
+        scope softwaresystem
+    }
 }
