@@ -193,70 +193,63 @@ Durante el Design-Level EventStorming de este contexto, se refinó un flujo más
 \begin{figure}[H]
     \caption{Domain events del bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/2-domain-events.png}
+    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/2-domain-events.jpg}
     \caption*{\textit{Nota.} Vista correspondiente a los domain events identificados en el bounded context Intervention Marketplace. Elaboración propia.}
-\end{figure}
-
-\begin{figure}[H]
-    \caption{Timeline del bounded context Intervention Marketplace.}
-    \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/2-1-timeline.png}
-    \caption*{\textit{Nota.} Secuencia temporal de eventos refinados dentro del bounded context Intervention Marketplace. Elaboración propia.}
 \end{figure}
 
 \begin{figure}[H]
     \caption{Commands del bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/3-commands.png}
+    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/3-commands.jpg}
     \caption*{\textit{Nota.} Comandos identificados para iniciar y controlar el flujo del bounded context Intervention Marketplace. Elaboración propia.}
 \end{figure}
 
 \begin{figure}[H]
     \caption{Actors del bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/4-actors.png}
+    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/4-actors.jpg}
     \caption*{\textit{Nota.} Actores involucrados en la ejecución de procesos dentro del bounded context Intervention Marketplace. Elaboración propia.}
 \end{figure}
 
 \begin{figure}[H]
     \caption{Policies del bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/5-policies.png}
+    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/5-policies.jpg}
     \caption*{\textit{Nota.} Policies derivadas del refinamiento del flujo de negocio en el bounded context Intervention Marketplace. Elaboración propia.}
 \end{figure}
 
 \begin{figure}[H]
     \caption{Read models del bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/6-read-models.png}
+    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/6-read-models.jpg}
     \caption*{\textit{Nota.} Modelos de lectura definidos para la consulta de información dentro del bounded context Intervention Marketplace. Elaboración propia.}
 \end{figure}
 
 \begin{figure}[H]
     \caption{External systems del bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/7-external-systems.png}
+    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/7-external-systems.jpg}
     \caption*{\textit{Nota.} Sistemas externos relacionados con el bounded context Intervention Marketplace durante el flujo refinado del dominio. Elaboración propia.}
 \end{figure}
 
 \begin{figure}[H]
     \caption{Business rules del bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/8-business-rules.png}
+    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/8-business-rules.jpg}
     \caption*{\textit{Nota.} Reglas de negocio identificadas para garantizar consistencia dentro del bounded context Intervention Marketplace. Elaboración propia.}
 \end{figure}
 
 \begin{figure}[H]
     \caption{Aggregates del bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/9-aggregates.png}
+    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/9-aggregates.jpg}
     \caption*{\textit{Nota.} Aggregates reconocidos como fronteras de consistencia en el bounded context Intervention Marketplace. Elaboración propia.}
 \end{figure}
 
 \begin{figure}[H]
     \caption{Queries del bounded context Intervention Marketplace.}
     \centering
-    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/10-queries.png}
+    \includegraphics[width=0.82\textwidth]{report/assets/design-level-eventstorming/bounded-context-3/10-queries.jpg}
     \caption*{\textit{Nota.} Queries asociadas a la recuperación de información en el bounded context Intervention Marketplace. Elaboración propia.}
 \end{figure}
 
