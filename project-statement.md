@@ -74,15 +74,13 @@ Cada grupo debe entregar un informe detallando cada una de las secciones que se 
 Logo de la Universidad Nombre de la Universidad, carrera, ciclo Código del Curso y Nombre del curso NRC Nombre del profesor
 "Informe de Trabajo Final"
 Nombre del startup Nombre del producto Relación de integrantes (Incluyendo en cada caso Código, Apellidos y Nombres)
-
-
 Mes y año
 **Registro de Versiones del Informe Project Report Collaboration Insights Contenido** Tabla de contenidos
 **Student Outcome Capítulo I: Introducción**
-_1.1. Startup Profile_
+1.1. Startup Profile
 1.1.1. Descripción de la Startup
 1.1.2. Perfiles de integrantes del equipo
-_1.2. Solution Profile_
+1.2. Solution Profile
 1.2.1 Antecedentes y problemática
 1.2.2 Lean UX Process.
 1.2.2.1. Lean UX Problem Statements.
@@ -106,16 +104,11 @@ _1.2. Solution Profile_
 2.4. Big Picture EventStorming.
 2.5. Ubiquitous Language.
 **Capítulo III: Requirements Specification**
-
 3.1. User Stories.
 3.2. Impact Mapping.
 3.3. Product Backlog.
-
 **Capítulo IV: Product Design**
 4.1. Style Guidelines.
-
-
-
 4.1.1. General Style Guidelines.
 4.1.2. Web Style Guidelines.
 4.2. Information Architecture.
@@ -142,10 +135,8 @@ _1.2. Solution Profile_
 4.7.1. Class Diagrams.
 4.8. Database Design.
 4.8.1. Database Diagrams.
-
 **Capítulo V: Product Implementation, Validation & Deployment**
 5.1. Software Configuration Management.
-
 5.1.1. Software Development Environment Configuration.
 5.1.2. Source Code Management.
 5.1.3. Source Code Style Guide & Conventions.
@@ -164,8 +155,6 @@ _1.2. Solution Profile_
 5.3.1. Diseño de Entrevistas.
 5.3.2. Registro de Entrevistas.
 5.3.3. Evaluaciones según heurísticas.
-
-
 5.4. Video About-the-Product.
 **Conclusiones**
 Conclusiones y recomendaciones.
@@ -178,9 +167,10 @@ Video About-the-Team.
 El objetivo de esta sección es resumir las modificaciones relevantes que se realizan al informe durante el ciclo de vida del proyecto.
 Esta sección inicia en una página nueva y se incluye un cuadro con la siguiente estructura:
 
+```text
+Versión | Fecha | Autor | Descripción de modificación
 ```
-Versión Fecha Autor Descripción de modificación
-```
+
 Como primera línea de la tabla se incluye la primera versión del informe. A partir de ello, se considera modificaciones relevantes la adición de secciones, eliminación de secciones, correcciones o mejoras producto de retroalimentación recibida del docente o producto de la autocrítica del equipo. Esto quiere decir que, entre una entrega y otra, pueden irse generando varias versiones del informe. Todo ello debe quedar reflejado en este cuadro de Registro.
 
 **Project Report Collaboration Insights**
@@ -188,8 +178,6 @@ En esta sección el equipo indica el URL del repositorio para el Project Report 
 
 **Contenido**
 La sección inicia en una nueva página. Para esta sección **utilice hipervínculos de Markdown para construir la tabla de contenido**. Considere en la elaboración 4 niveles de esquema. Recuerde actualizar y verificar la tabla de contenidos antes de cada entrega.
-
-
 
 **Student Outcome**
 Cada participante del equipo debe colaborar a fin de que se redacte como grupo los sustentos y evidencias de las actividades realizadas en el trabajo final han ayudado a desarrollar cómo las dimensiones del student outcome. Por ello en esta sección debe quedar descrito por escrito, la relación entre el outcome, sus dimensiones y el trabajo que han realizado. Esto se complementa con lo reflejado en los testimonios expuestos que forman parte del video _About The Team_.
@@ -212,7 +200,6 @@ Aquí se aplica Lean UX Process y abarca la visión del modelo de negocio que se
 escalable y su crecimiento puede ser exponencial. En su traducción del inglés, el término start-up significa “puesta en marcha”.
 Y, efectivamente, podemos definirlo como el periodo inicial de una empresa, el comienzo o arranque de un nuevo negocio.
 
-
 Finalizando esta sección se incluye el Lean UX Canvas.
 **Segmentos objetivo**
 Esta sección incluye la descripción de los segmentos asociados al dominio del problema, incluyendo características demográficas e información estadística de sustento.
@@ -230,8 +217,6 @@ Escriba en el recuadro la pregunta que busca responder o el objetivo de este an�
 Su startup Competidor 1 Competidor 2 Competidor 3 Perfil Overview Ventaja competitiva
 ¿Qué valor ofrece a los clientes?
 Perfil de Marketing Mercado objetivo^ Estrategias de marketing
-
-
 
 ```
 Perfil de Producto
@@ -286,8 +271,6 @@ En esta sección se incluye la elaboración de las fichas de User Persona. La se
 **User Task Matrix**
 En esta sección se presenta el User Task Matrix, que concentra las tareas que los User Persona (que representan a cada segmento) realizan para cumplir sus objetivos. No confundir tareas (tasks) con opciones o características de software, pues las tareas deben ser realizadas por los segmentos independientemente de la existencia de su solución de software. Esta sección inicia con una introducción donde se establece los segmentos que se están considerando. El cuadro debe incluir como columna cada User Persona y para cada una como sub-columnas, la Frecuencia y la Importancia de cada tarea (task). Como filas se colocan las tareas identificadas.
 
-
-
 Luego del cuadro se realiza una explicación resaltando las tareas con mayor frecuencia e importancia, principales diferencias y coincidencias entre lo realizado por los User Personas.
 
 **User Journey Mapping**
@@ -317,9 +300,6 @@ La elaboración incluye la identificación de los _Business Goals_ (los business
 (^2) En el libro Eric Evans establece “Ubiquitous Language is modeled within a Limited context, where
 the terms and concepts of the business domain are identified, and there should be no ambiguity”.
 (^3) Vea el artículo “Why are SMART Goals Necessary In Business?” en la sección de Referencias.
-
-
-
 suscritos al plan A en el lapso de 8 meses.”). Debe considerar varios _Business Goals_.
 Debe incluir como _Actors/Personas_ a los User Personas previamente identificados, según relaciones con los Business Goals, buscando responder la pregunta ¿Quiénes me ayudarán a lograr la meta? La columna _Impact_ debe incluir los enunciados de cómo desea que los User Persona cambien o se comporten ¿Qué tendría él/ella que hacer para ayudar a que se logre la meta? La columna _Deliverables_ debe incluir los elementos que respondan la pregunta ¿Qué puedo hacer como negocio digital para provocar esos _Impacts_? La columna User Stories debe incluir la descripción de los User Stories (en el formato “Como... deseo... para...”) que permitirán obtener los features que ayudarán a producir los _Deliverables_ identificados.
 
