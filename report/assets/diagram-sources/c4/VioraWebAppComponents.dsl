@@ -117,97 +117,97 @@ workspace "Viora - Software Architecture" "Web Application Component Diagrams fo
         }
 
         // Relaciones de personas
-        visitor    -> landing  "Explores content and calls to action"
-        producer   -> webapp   "Uses"
-        specialist -> webapp   "Uses"
+        visitor    -> viora.landing  "Explores content and calls to action"
+        producer   -> viora.webapp   "Uses"
+        specialist -> viora.webapp   "Uses"
 
         // Relaciones internas de containers
-        landing -> webapp  "Redirects authenticated users to"
-        webapp  -> api     "Makes API requests to" "JSON/HTTPS"
-        api     -> db      "Reads from and writes to" "ADO.NET"
-        api     -> media   "Stores and retrieves media assets" "HTTPS/API"
+        viora.landing -> viora.webapp  "Redirects authenticated users to"
+        viora.webapp  -> viora.api     "Makes API requests to" "JSON/HTTPS"
+        viora.api     -> viora.db      "Reads from and writes to" "ADO.NET"
+        viora.api     -> viora.media   "Stores and retrieves media assets" "HTTPS/API"
 
         // Web Application a componentes de API
-        webapp -> api.iam         "Authenticates users and validates sessions" "JSON/HTTPS"
-        webapp -> api.profile     "Manages profile data" "JSON/HTTPS"
-        webapp -> api.plots       "Registers plots and traceability records" "JSON/HTTPS"
-        webapp -> api.monitoring  "Requests dashboard climate and satellite data" "JSON/HTTPS"
-        webapp -> api.marketplace "Manages specialist search and interventions" "JSON/HTTPS"
-        webapp -> api.billing     "Manages subscriptions and payments" "JSON/HTTPS"
+        viora.webapp -> viora.api.iam         "Authenticates users and validates sessions" "JSON/HTTPS"
+        viora.webapp -> viora.api.profile     "Manages profile data" "JSON/HTTPS"
+        viora.webapp -> viora.api.plots       "Registers plots and traceability records" "JSON/HTTPS"
+        viora.webapp -> viora.api.monitoring  "Requests dashboard climate and satellite data" "JSON/HTTPS"
+        viora.webapp -> viora.api.marketplace "Manages specialist search and interventions" "JSON/HTTPS"
+        viora.webapp -> viora.api.billing     "Manages subscriptions and payments" "JSON/HTTPS"
 
         // Relaciones internas de componentes de API
-        api.plots      -> api.monitoring  "Provides plot coordinates and polygons"
-        api.monitoring -> api.prediction  "Provides climate, NDVI and historical agronomic data"
-        api.prediction -> api.alerts      "Triggers risk alerts"
-        api.alerts     -> api.marketplace "Publishes critical cases for specialist response"
-        api.moderation -> api.iam         "Requests account suspension or blocking"
+        viora.api.plots      -> viora.api.monitoring  "Provides plot coordinates and polygons"
+        viora.api.monitoring -> viora.api.prediction  "Provides climate, NDVI and historical agronomic data"
+        viora.api.prediction -> viora.api.alerts      "Triggers risk alerts"
+        viora.api.alerts     -> viora.api.marketplace "Publishes critical cases for specialist response"
+        viora.api.moderation -> viora.api.iam         "Requests account suspension or blocking"
 
-        api.iam         -> api.repositories "Reads/writes identity data"
-        api.profile     -> api.repositories "Reads/writes profile data"
-        api.plots       -> api.repositories "Reads/writes plot data"
-        api.monitoring  -> api.repositories "Stores synchronized climate and satellite data"
-        api.prediction  -> api.repositories "Stores risk and yield projections"
-        api.alerts      -> api.repositories "Stores alert records"
-        api.marketplace -> api.repositories "Stores service and intervention records"
-        api.billing     -> api.repositories "Stores subscription data"
-        api.moderation  -> api.repositories "Stores reports and strikes"
+        viora.api.iam         -> viora.api.repositories "Reads/writes identity data"
+        viora.api.profile     -> viora.api.repositories "Reads/writes profile data"
+        viora.api.plots       -> viora.api.repositories "Reads/writes plot data"
+        viora.api.monitoring  -> viora.api.repositories "Stores synchronized climate and satellite data"
+        viora.api.prediction  -> viora.api.repositories "Stores risk and yield projections"
+        viora.api.alerts      -> viora.api.repositories "Stores alert records"
+        viora.api.marketplace -> viora.api.repositories "Stores service and intervention records"
+        viora.api.billing     -> viora.api.repositories "Stores subscription data"
+        viora.api.moderation  -> viora.api.repositories "Stores reports and strikes"
 
         // Componentes de API a servicios externos
-        api.monitoring   -> agromonitoring "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
-        api.plots        -> mapbox         "Uses maps and geocoding for plot location" "HTTPS/JSON"
-        api.billing      -> mercadopago    "Processes payments and receives payment webhooks" "HTTPS/JSON"
-        api.alerts       -> brevo          "Sends transactional email notifications" "HTTPS/API"
-        api.integrations -> cloudinary     "Uploads and retrieves media assets" "HTTPS/API"
-        api.alerts       -> senasa         "Consults official phytosanitary reference data" "HTTPS/Open data"
+        viora.api.monitoring   -> agromonitoring "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
+        viora.api.plots        -> mapbox         "Uses maps and geocoding for plot location" "HTTPS/JSON"
+        viora.api.billing      -> mercadopago    "Processes payments and receives payment webhooks" "HTTPS/JSON"
+        viora.api.alerts       -> brevo          "Sends transactional email notifications" "HTTPS/API"
+        viora.api.integrations -> cloudinary     "Uploads and retrieves media assets" "HTTPS/API"
+        viora.api.alerts       -> senasa         "Consults official phytosanitary reference data" "HTTPS/Open data"
 
         // Repositorios a almacenamiento
-        api.repositories -> db    "Persists and retrieves relational domain data" "ADO.NET"
-        api.repositories -> media "Stores media references and asset metadata" "HTTPS/API"
-        api.integrations -> media "Stores and retrieves field evidence and profile media" "HTTPS/API"
-        media             -> cloudinary "Delegates media storage and delivery" "HTTPS/API"
+        viora.api.repositories -> viora.db    "Persists and retrieves relational domain data" "ADO.NET"
+        viora.api.repositories -> viora.media "Stores media references and asset metadata" "HTTPS/API"
+        viora.api.integrations -> viora.media "Stores and retrieves field evidence and profile media" "HTTPS/API"
+        viora.media             -> cloudinary "Delegates media storage and delivery" "HTTPS/API"
 
         // Relaciones de Web Application Components
-        producer   -> webapp.authui        "Signs in and recovers account access"
-        specialist -> webapp.authui        "Signs in and recovers account access"
+        producer   -> viora.webapp.authui        "Signs in and recovers account access"
+        specialist -> viora.webapp.authui        "Signs in and recovers account access"
 
-        producer   -> webapp.dashboardui   "Views farm dashboard, monitoring and alerts"
-        specialist -> webapp.dashboardui   "Views cases, monitoring insights and alerts"
+        producer   -> viora.webapp.dashboardui   "Views farm dashboard, monitoring and alerts"
+        specialist -> viora.webapp.dashboardui   "Views cases, monitoring insights and alerts"
 
-        producer   -> webapp.plotsui       "Registers plots and agronomic traceability"
-        specialist -> webapp.marketplaceui "Manages interventions and technical cases"
+        producer   -> viora.webapp.plotsui       "Registers plots and agronomic traceability"
+        specialist -> viora.webapp.marketplaceui "Manages interventions and technical cases"
 
-        producer   -> webapp.billingui     "Manages subscription, trial and payments"
-        producer   -> webapp.profileui     "Updates producer profile"
-        specialist -> webapp.profileui     "Updates specialist profile"
+        producer   -> viora.webapp.billingui     "Manages subscription, trial and payments"
+        producer   -> viora.webapp.profileui     "Updates producer profile"
+        specialist -> viora.webapp.profileui     "Updates specialist profile"
 
-        landing -> webapp.routing "Redirects authenticated users to"
+        viora.landing -> viora.webapp.routing "Redirects authenticated users to"
 
-        webapp.routing       -> webapp.authui         "Protects access to"
-        webapp.routing       -> webapp.dashboardui    "Routes authenticated users to"
-        webapp.routing       -> webapp.plotsui        "Routes users to"
-        webapp.routing       -> webapp.marketplaceui  "Routes users to"
-        webapp.routing       -> webapp.billingui      "Routes users to"
-        webapp.routing       -> webapp.profileui      "Routes users to"
+        viora.webapp.routing       -> viora.webapp.authui         "Protects access to"
+        viora.webapp.routing       -> viora.webapp.dashboardui    "Routes authenticated users to"
+        viora.webapp.routing       -> viora.webapp.plotsui        "Routes users to"
+        viora.webapp.routing       -> viora.webapp.marketplaceui  "Routes users to"
+        viora.webapp.routing       -> viora.webapp.billingui      "Routes users to"
+        viora.webapp.routing       -> viora.webapp.profileui      "Routes users to"
 
-        webapp.authui         -> webapp.apiclient "Sends sign-in and recovery requests"
-        webapp.dashboardui    -> webapp.apiclient "Requests dashboard, climate and alert data"
-        webapp.plotsui        -> webapp.apiclient "Sends plot and traceability data"
-        webapp.marketplaceui  -> webapp.apiclient "Requests specialist and intervention data"
-        webapp.billingui      -> webapp.apiclient "Requests subscription and payment data"
-        webapp.profileui      -> webapp.apiclient "Requests and updates profile data"
-        webapp.notificationsui -> webapp.apiclient "Loads alert notifications"
+        viora.webapp.authui         -> viora.webapp.apiclient "Sends sign-in and recovery requests"
+        viora.webapp.dashboardui    -> viora.webapp.apiclient "Requests dashboard, climate and alert data"
+        viora.webapp.plotsui        -> viora.webapp.apiclient "Sends plot and traceability data"
+        viora.webapp.marketplaceui  -> viora.webapp.apiclient "Requests specialist and intervention data"
+        viora.webapp.billingui      -> viora.webapp.apiclient "Requests subscription and payment data"
+        viora.webapp.profileui      -> viora.webapp.apiclient "Requests and updates profile data"
+        viora.webapp.notificationsui -> viora.webapp.apiclient "Loads alert notifications"
 
-        webapp.dashboardui    -> webapp.notificationsui "Displays alert summaries from"
+        viora.webapp.dashboardui    -> viora.webapp.notificationsui "Displays alert summaries from"
 
-        webapp.authui         -> webapp.sharedui "Uses authentication forms and dialogs"
-        webapp.dashboardui    -> webapp.sharedui "Uses charts, cards and layout"
-        webapp.plotsui        -> webapp.sharedui "Uses forms, dialogs and reusable widgets"
-        webapp.marketplaceui  -> webapp.sharedui "Uses lists, dialogs and reusable widgets"
-        webapp.billingui      -> webapp.sharedui "Uses payment and plan widgets"
-        webapp.profileui      -> webapp.sharedui "Uses profile forms and reusable widgets"
-        webapp.notificationsui -> webapp.sharedui "Uses reusable notification widgets"
+        viora.webapp.authui         -> viora.webapp.sharedui "Uses authentication forms and dialogs"
+        viora.webapp.dashboardui    -> viora.webapp.sharedui "Uses charts, cards and layout"
+        viora.webapp.plotsui        -> viora.webapp.sharedui "Uses forms, dialogs and reusable widgets"
+        viora.webapp.marketplaceui  -> viora.webapp.sharedui "Uses lists, dialogs and reusable widgets"
+        viora.webapp.billingui      -> viora.webapp.sharedui "Uses payment and plan widgets"
+        viora.webapp.profileui      -> viora.webapp.sharedui "Uses profile forms and reusable widgets"
+        viora.webapp.notificationsui -> viora.webapp.sharedui "Uses reusable notification widgets"
 
-        webapp.apiclient -> api "Makes API requests to" "JSON/HTTPS"
+        viora.webapp.apiclient -> viora.api "Makes API requests to" "JSON/HTTPS"
     }
 
     views {
@@ -215,13 +215,13 @@ workspace "Viora - Software Architecture" "Web Application Component Diagrams fo
             include *
         }
 
-        component api "VioraApiComponents" {
+        component viora.api "VioraApiComponents" {
             include *
             include viora.db
             include viora.media
         }
 
-        component webapp "VioraWebAppComponents" {
+        component viora.webapp "VioraWebAppComponents" {
             include *
         }
 

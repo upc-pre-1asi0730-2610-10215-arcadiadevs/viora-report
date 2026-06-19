@@ -83,43 +83,43 @@ workspace "Viora - Software Architecture" "Landing Page Component Diagrams for V
         }
 
         // Relaciones de personas
-        visitor    -> landing  "Explores content and calls to action"
-        producer   -> webapp   "Uses"
-        specialist -> webapp   "Uses"
+        visitor    -> viora.landing  "Explores content and calls to action"
+        producer   -> viora.webapp   "Uses"
+        specialist -> viora.webapp   "Uses"
 
         // Relaciones internas de containers
-        landing -> webapp  "Redirects authenticated users to"
-        webapp  -> api     "Makes API requests to" "JSON/HTTPS"
-        api     -> db      "Reads from and writes to" "ADO.NET"
-        api     -> media   "Stores and retrieves media assets" "HTTPS/API"
+        viora.landing -> viora.webapp  "Redirects authenticated users to"
+        viora.webapp  -> viora.api     "Makes API requests to" "JSON/HTTPS"
+        viora.api     -> viora.db      "Reads from and writes to" "ADO.NET"
+        viora.api     -> viora.media   "Stores and retrieves media assets" "HTTPS/API"
 
         // Relaciones de Landing Page Components
-        visitor -> landing.hero    "Views the primary value proposition and CTA"
-        visitor -> landing.roles   "Explores role-specific benefits"
-        visitor -> landing.plans   "Reviews plans, free trial and affiliate program"
-        visitor -> landing.trust   "Reviews testimonials and team information"
-        visitor -> landing.contact "Reviews contact, footer and legal links"
+        visitor -> viora.landing.hero    "Views the primary value proposition and CTA"
+        visitor -> viora.landing.roles   "Explores role-specific benefits"
+        visitor -> viora.landing.plans   "Reviews plans, free trial and affiliate program"
+        visitor -> viora.landing.trust   "Reviews testimonials and team information"
+        visitor -> viora.landing.contact "Reviews contact, footer and legal links"
 
-        landing.hero    -> landing.landingshared "Uses reusable hero and CTA UI"
-        landing.problem -> landing.landingshared "Uses reusable layout and content blocks"
-        landing.roles   -> landing.landingshared "Uses reusable cards and section blocks"
-        landing.plans   -> landing.landingshared "Uses reusable pricing and CTA widgets"
-        landing.trust   -> landing.landingshared "Uses reusable testimonial and team widgets"
-        landing.contact -> landing.landingshared "Uses reusable footer and link widgets"
+        viora.landing.hero    -> viora.landing.landingshared "Uses reusable hero and CTA UI"
+        viora.landing.problem -> viora.landing.landingshared "Uses reusable layout and content blocks"
+        viora.landing.roles   -> viora.landing.landingshared "Uses reusable cards and section blocks"
+        viora.landing.plans   -> viora.landing.landingshared "Uses reusable pricing and CTA widgets"
+        viora.landing.trust   -> viora.landing.landingshared "Uses reusable testimonial and team widgets"
+        viora.landing.contact -> viora.landing.landingshared "Uses reusable footer and link widgets"
 
-        landing.hero    -> landing.assembler "Consumes hero view model from"
-        landing.problem -> landing.assembler "Consumes problem/solution view model from"
-        landing.roles   -> landing.assembler "Consumes benefits view model from"
-        landing.plans   -> landing.assembler "Consumes plans and affiliate view model from"
-        landing.trust   -> landing.assembler "Consumes testimonial/about view model from"
-        landing.contact -> landing.assembler "Consumes contact/footer view model from"
+        viora.landing.hero    -> viora.landing.assembler "Consumes hero view model from"
+        viora.landing.problem -> viora.landing.assembler "Consumes problem/solution view model from"
+        viora.landing.roles   -> viora.landing.assembler "Consumes benefits view model from"
+        viora.landing.plans   -> viora.landing.assembler "Consumes plans and affiliate view model from"
+        viora.landing.trust   -> viora.landing.assembler "Consumes testimonial/about view model from"
+        viora.landing.contact -> viora.landing.assembler "Consumes contact/footer view model from"
 
-        landing.assembler -> landing.contentmodels "Builds section view models from"
+        viora.landing.assembler -> viora.landing.contentmodels "Builds section view models from"
 
-        landing.hero  -> landing.cta "Uses CTA navigation from"
-        landing.roles -> landing.cta "Uses CTA navigation from"
-        landing.plans -> landing.cta "Uses CTA navigation from"
-        landing.cta   -> webapp      "Redirects visitors to"
+        viora.landing.hero  -> viora.landing.cta "Uses CTA navigation from"
+        viora.landing.roles -> viora.landing.cta "Uses CTA navigation from"
+        viora.landing.plans -> viora.landing.cta "Uses CTA navigation from"
+        viora.landing.cta   -> viora.webapp      "Redirects visitors to"
     }
 
     views {
@@ -127,7 +127,7 @@ workspace "Viora - Software Architecture" "Landing Page Component Diagrams for V
             include *
         }
 
-        component landing "VioraLandingComponents" {
+        component viora.landing "VioraLandingComponents" {
             include *
             include visitor
             include viora.webapp

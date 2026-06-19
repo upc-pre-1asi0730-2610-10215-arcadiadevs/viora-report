@@ -85,54 +85,54 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
         }
 
         // Relaciones de personas
-        visitor    -> landing  "Explores content and calls to action"
-        producer   -> webapp   "Uses"
-        specialist -> webapp   "Uses"
+        visitor    -> viora.landing  "Explores content and calls to action"
+        producer   -> viora.webapp   "Uses"
+        specialist -> viora.webapp   "Uses"
 
         // Relaciones internas de containers
-        landing -> webapp  "Redirects authenticated users to"
-        webapp  -> api     "Makes API requests to" "JSON/HTTPS"
-        api     -> db      "Reads from and writes to" "ADO.NET"
-        api     -> media   "Stores and retrieves media assets" "HTTPS/API"
+        viora.landing -> viora.webapp  "Redirects authenticated users to"
+        viora.webapp  -> viora.api     "Makes API requests to" "JSON/HTTPS"
+        viora.api     -> viora.db      "Reads from and writes to" "ADO.NET"
+        viora.api     -> viora.media   "Stores and retrieves media assets" "HTTPS/API"
 
         // Web Application a componentes de API
-        webapp -> api.iam         "Authenticates users and validates sessions" "JSON/HTTPS"
-        webapp -> api.profile     "Manages profile data" "JSON/HTTPS"
-        webapp -> api.plots       "Registers plots and traceability records" "JSON/HTTPS"
-        webapp -> api.monitoring  "Requests dashboard climate and satellite data" "JSON/HTTPS"
-        webapp -> api.marketplace "Manages specialist search and interventions" "JSON/HTTPS"
-        webapp -> api.billing     "Manages subscriptions and payments" "JSON/HTTPS"
+        viora.webapp -> viora.api.iam         "Authenticates users and validates sessions" "JSON/HTTPS"
+        viora.webapp -> viora.api.profile     "Manages profile data" "JSON/HTTPS"
+        viora.webapp -> viora.api.plots       "Registers plots and traceability records" "JSON/HTTPS"
+        viora.webapp -> viora.api.monitoring  "Requests dashboard climate and satellite data" "JSON/HTTPS"
+        viora.webapp -> viora.api.marketplace "Manages specialist search and interventions" "JSON/HTTPS"
+        viora.webapp -> viora.api.billing     "Manages subscriptions and payments" "JSON/HTTPS"
 
         // Relaciones internas de componentes de API
-        api.plots      -> api.monitoring  "Provides plot coordinates and polygons"
-        api.monitoring -> api.prediction  "Provides climate, NDVI and historical agronomic data"
-        api.prediction -> api.alerts      "Triggers risk alerts"
-        api.alerts     -> api.marketplace "Publishes critical cases for specialist response"
-        api.moderation -> api.iam         "Requests account suspension or blocking"
+        viora.api.plots      -> viora.api.monitoring  "Provides plot coordinates and polygons"
+        viora.api.monitoring -> viora.api.prediction  "Provides climate, NDVI and historical agronomic data"
+        viora.api.prediction -> viora.api.alerts      "Triggers risk alerts"
+        viora.api.alerts     -> viora.api.marketplace "Publishes critical cases for specialist response"
+        viora.api.moderation -> viora.api.iam         "Requests account suspension or blocking"
 
-        api.iam         -> api.repositories "Reads/writes identity data"
-        api.profile     -> api.repositories "Reads/writes profile data"
-        api.plots       -> api.repositories "Reads/writes plot data"
-        api.monitoring  -> api.repositories "Stores synchronized climate and satellite data"
-        api.prediction  -> api.repositories "Stores risk and yield projections"
-        api.alerts      -> api.repositories "Stores alert records"
-        api.marketplace -> api.repositories "Stores service and intervention records"
-        api.billing     -> api.repositories "Stores subscription data"
-        api.moderation  -> api.repositories "Stores reports and strikes"
+        viora.api.iam         -> viora.api.repositories "Reads/writes identity data"
+        viora.api.profile     -> viora.api.repositories "Reads/writes profile data"
+        viora.api.plots       -> viora.api.repositories "Reads/writes plot data"
+        viora.api.monitoring  -> viora.api.repositories "Stores synchronized climate and satellite data"
+        viora.api.prediction  -> viora.api.repositories "Stores risk and yield projections"
+        viora.api.alerts      -> viora.api.repositories "Stores alert records"
+        viora.api.marketplace -> viora.api.repositories "Stores service and intervention records"
+        viora.api.billing     -> viora.api.repositories "Stores subscription data"
+        viora.api.moderation  -> viora.api.repositories "Stores reports and strikes"
 
         // Componentes de API a servicios externos
-        api.monitoring   -> agromonitoring "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
-        api.plots        -> mapbox         "Uses maps and geocoding for plot location" "HTTPS/JSON"
-        api.billing      -> mercadopago    "Processes payments and receives payment webhooks" "HTTPS/JSON"
-        api.alerts       -> brevo          "Sends transactional email notifications" "HTTPS/API"
-        api.integrations -> cloudinary     "Uploads and retrieves media assets" "HTTPS/API"
-        api.alerts       -> senasa         "Consults official phytosanitary reference data" "HTTPS/Open data"
+        viora.api.monitoring   -> agromonitoring "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
+        viora.api.plots        -> mapbox         "Uses maps and geocoding for plot location" "HTTPS/JSON"
+        viora.api.billing      -> mercadopago    "Processes payments and receives payment webhooks" "HTTPS/JSON"
+        viora.api.alerts       -> brevo          "Sends transactional email notifications" "HTTPS/API"
+        viora.api.integrations -> cloudinary     "Uploads and retrieves media assets" "HTTPS/API"
+        viora.api.alerts       -> senasa         "Consults official phytosanitary reference data" "HTTPS/Open data"
 
         // Repositorios a almacenamiento
-        api.repositories -> db    "Persists and retrieves relational domain data" "ADO.NET"
-        api.repositories -> media "Stores media references and asset metadata" "HTTPS/API"
-        api.integrations -> media "Stores and retrieves field evidence and profile media" "HTTPS/API"
-        media             -> cloudinary "Delegates media storage and delivery" "HTTPS/API"
+        viora.api.repositories -> viora.db    "Persists and retrieves relational domain data" "ADO.NET"
+        viora.api.repositories -> viora.media "Stores media references and asset metadata" "HTTPS/API"
+        viora.api.integrations -> viora.media "Stores and retrieves field evidence and profile media" "HTTPS/API"
+        viora.media             -> cloudinary "Delegates media storage and delivery" "HTTPS/API"
     }
 
     views {
@@ -140,7 +140,7 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
             include *
         }
 
-        component api "VioraApiComponents" {
+        component viora.api "VioraApiComponents" {
             include *
             include viora.db
             include viora.media
