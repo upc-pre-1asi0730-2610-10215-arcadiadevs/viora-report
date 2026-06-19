@@ -1,0 +1,72 @@
+@startuml
+package "Marketplace & Intervention" {
+    class InterventionController {
+        - _marketplaceService: IMarketplaceService
+        + RequestIntervention(dto: RequestInterventionDTO): ResponseEntity<InterventionRequestDTO>
+        + AcceptCase(requestId: int): ResponseEntity<Void>
+        + RejectCase(requestId: int): ResponseEntity<Void>
+        + GetRequestDetails(requestId: int): ResponseEntity<InterventionDetailDTO>
+    }
+
+    interface IMarketplaceService {
+        + FindSpecialists(criteria: FilterDTO): List<SpecialistDTO>
+        + CreateRequest(dto: RequestInterventionDTO): InterventionRequest
+        + UpdateRequestStatus(id: int, status: RequestStatus): void
+        + GetRequestDetails(id: int): InterventionDetailDTO
+    }
+
+    class MarketplaceService {
+        - _requestRepo: IBaseRepository<InterventionRequest>
+        - _brevoClient: IBrevoClient
+        + FindSpecialists()
+        + CreateRequest()
+        + UpdateRequestStatus()
+        + GetRequestDetails()
+    }
+
+    class InterventionRequest <<Entity>> {
+        + Id: int
+        + ProducerId: int
+        + PlotId: int
+        + SpecialistId: int
+        + Status: RequestStatus
+        + Description: string
+        + ScheduledDate: DateTime
+        + CreatedAt: DateTime
+    }
+
+    class Quotation <<Entity>> {
+        + Id: int
+        + InterventionRequestId: int
+        + ProposedAmount: decimal
+        + Notes: string
+        + IsAccepted: bool
+    }
+
+    class TechnicalPrescription <<Entity>> {
+        + Id: int
+        + InterventionRequestId: int
+        + Diagnosis: string
+        + Recommendations: string
+        + IssuedAt: DateTime
+    }
+
+    enum RequestStatus {
+        Pending
+        Accepted
+        Rejected
+        InProgress
+        Completed
+        Cancelled
+    }
+
+    IMarketplaceService <|.. MarketplaceService
+    MarketplaceService --> IBaseRepository : uses
+    InterventionController --> IMarketplaceService : depends on
+    InterventionRequest "*" -- "1" Plot : targets
+    InterventionRequest "*" -- "1" User : requested by (Producer)
+    InterventionRequest "*" -- "1" User : assigned to (Specialist)
+    Quotation "0..1" --* "1" InterventionRequest : belongs to
+    TechnicalPrescription "0..1" --* "1" InterventionRequest : issued for
+}
+@enduml

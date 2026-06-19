@@ -1,0 +1,35 @@
+@startuml
+package "Dashboard" {
+    class DashboardView <<Vue.js Component>> {
+        + period: string
+        + loadSummaries()
+    }
+
+    class CropHealthSummaryWidget <<Vue.js Component>> {
+        - ndviSummary: NDVISummary | null
+        + renderChart()
+    }
+
+    class AlertSummaryWidget <<Vue.js Component>> {
+        - recentAlerts: Alert[]
+        + navigateToNotifications()
+    }
+
+    class DashboardStateService {
+        + summaryData: DashboardSummary | null
+        + isLoading: boolean
+        + fetchDashboardStats()
+    }
+
+    class DashboardApiService {
+        + GetDashboardStats(period: string): Promise<DashboardSummary>
+        + GetCropHealthSummary(plotId: number): Promise<CropHealth>
+    }
+
+    DashboardApiService --|> BaseApiService
+    DashboardView *-- CropHealthSummaryWidget : contains
+    DashboardView *-- AlertSummaryWidget : contains
+    DashboardView --> DashboardStateService : uses
+    DashboardStateService --> DashboardApiService : calls
+}
+@enduml

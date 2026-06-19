@@ -1,0 +1,54 @@
+@startuml
+package "Subscription & Billing" {
+    class BillingController {
+        - _billingService: IBillingService
+        + GetSubscriptionStatus(): ResponseEntity<SubscriptionDTO>
+        + ProcessPaymentWebhook(payload: WebhookDTO): ResponseEntity<Void>
+        + GetPaymentHistory(): ResponseEntity<List<PaymentTransactionDTO>>
+    }
+
+    interface IBillingService {
+        + RenewSubscription(userId: int, planId: int): void
+        + GetSubscriptionStatus(userId: int): SubscriptionDTO
+        + GetPaymentHistory(userId: int): List<PaymentTransactionDTO>
+    }
+
+    class BillingService {
+        - _subscriptionRepo: IBaseRepository<Subscription>
+        - _mercadoPagoClient: IMercadoPagoClient
+        + RenewSubscription()
+        + GetSubscriptionStatus()
+        + GetPaymentHistory()
+    }
+
+    class Subscription <<Entity>> {
+        + Id: int
+        + UserId: int
+        + PlanType: PlanTypeEnum
+        + ValidUntil: DateTime
+        + IsActive: bool
+        + IsTrial: bool
+    }
+
+    class PaymentTransaction <<Entity>> {
+        + Id: int
+        + SubscriptionId: int
+        + Amount: decimal
+        + ExternalTxId: string
+        + Status: string
+        + ProcessedAt: DateTime
+    }
+
+    enum PlanTypeEnum {
+        Trial
+        Basic
+        Premium
+    }
+
+    IBillingService <|.. BillingService
+    BillingService --> IBaseRepository : uses
+    Subscription "1" *-- "*" PaymentTransaction : contains
+    Subscription "*" -- "1" User : belongs to
+    BillingController --> IBillingService : depends on
+}
+@enduml

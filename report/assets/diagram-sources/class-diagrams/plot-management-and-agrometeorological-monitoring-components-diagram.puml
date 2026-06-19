@@ -1,0 +1,60 @@
+@startuml
+package "Plot Management Component" {
+    class PlotController {
+        - _plotService: IPlotService
+        + CreatePlot(dto: PlotDTO): ResponseEntity<PlotDTO>
+        + GetUserPlots(): ResponseEntity<List<PlotDTO>>
+        + GetPlotDetails(plotId: int): ResponseEntity<PlotDetailDTO>
+        + DeletePlot(plotId: int): ResponseEntity<Void>
+    }
+
+    interface IPlotService {
+        + RegisterArea(dto: PlotDTO): Plot
+        + GetPlotsByUser(userId: int): List<Plot>
+        + GetPlotDetails(plotId: int): PlotDetailDTO
+    }
+
+    class PlotService {
+        - _plotRepo: IBaseRepository<Plot>
+        - _mapboxClient: IMapboxClient
+        + RegisterArea()
+        + GetPlotsByUser()
+        + GetPlotDetails()
+    }
+
+    class Plot <<Entity>> {
+        + Id: int
+        + Name: string
+        + PolygonCoordinates: string
+        + AreaSize: double
+        + CropType: string
+        + UserId: int
+    }
+
+    IPlotService <|.. PlotService
+    PlotService --> IBaseRepository : uses
+}
+
+package "Agrometeorological Component" {
+    class AgroDataSyncWorker <<BackgroundService>> {
+        - _agroClient: IAgroMonitoringClient
+        - _recordRepo: IBaseRepository<AgronomicRecord>
+        + Execute(cancellationToken: CancellationToken)
+    }
+
+    class AgronomicRecord <<Entity>> {
+        + Id: int
+        + PlotId: int
+        + Date: DateTime
+        + NdviIndex: double
+        + Temp: double
+        + Humidity: double
+        + SoilMoisture: double
+    }
+
+    AgronomicRecord "*" -- "1" Plot : relates to
+    AgroDataSyncWorker --> IBaseRepository : persists
+}
+
+PlotController --> IPlotService : depends on
+@enduml

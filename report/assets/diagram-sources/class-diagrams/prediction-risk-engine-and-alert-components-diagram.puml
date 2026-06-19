@@ -1,0 +1,108 @@
+@startuml
+package "Prediction & Risk Engine" {
+    class RiskAnalysisWorker <<BackgroundService>> {
+        - _plotRepo: IBaseRepository<Plot>
+        - _recordRepo: IBaseRepository<AgronomicRecord>
+        - _chillRepo: IBaseRepository<ChillHourRecord>
+        + EvaluateRisks()
+        + RunAlternancePrediction()
+    }
+
+    class ChillHourRecord <<Entity>> {
+        + Id: int
+        + PlotId: int
+        + Date: DateTime
+        + AccumulatedChillPortions: double
+        + MinTemp: double
+        + MaxTemp: double
+        + EnosPhase: string
+    }
+
+    class AlternancePrediction <<Entity>> {
+        + Id: int
+        + PlotId: int
+        + PredictedSeason: string
+        + AlternanceRisk: double
+        + ExpectedYieldReduction: double
+        + GeneratedAt: DateTime
+    }
+
+    class YieldForecast <<Entity>> {
+        + Id: int
+        + PlotId: int
+        + Season: string
+        + EstimatedYieldKg: double
+        + ConfidenceLevel: double
+        + BasedOnChillHours: bool
+    }
+
+    class RiskAssessment <<Entity>> {
+        + Id: int
+        + PlotId: int
+        + ProbabilityFactor: double
+        + ThreatType: string
+        + Severity: SeverityEnum
+        + EvaluatedAt: DateTime
+    }
+
+    enum SeverityEnum {
+        Low
+        Medium
+        High
+        Critical
+    }
+
+    ChillHourRecord "*" -- "1" Plot : tracked for
+    AlternancePrediction "*" -- "1" Plot : forecasts
+    YieldForecast "*" -- "1" Plot : estimates for
+    RiskAssessment "*" -- "1" Plot : evaluates
+    RiskAssessment ..> AgronomicRecord : based on
+}
+
+package "Alert & Notification Component" {
+    class AlertController {
+        - _alertService: IAlertService
+        + GetActiveAlerts(): ResponseEntity<List<AlertDTO>>
+        + GetAlertsByPlot(plotId: int): ResponseEntity<List<AlertDTO>>
+        + MarkAlertAsRead(alertId: int): ResponseEntity<Void>
+    }
+
+    interface IAlertService {
+        + GenerateAlert(riskId: int): void
+        + GetActiveAlerts(userId: int): List<AlertDTO>
+        + MarkAsRead(alertId: int): void
+    }
+
+    class AlertService {
+        - _alertRepo: IBaseRepository<Alert>
+        - _brevoClient: IBrevoClient
+        + GenerateAlert()
+        + GetActiveAlerts()
+        + MarkAsRead()
+    }
+
+    class Alert <<Entity>> {
+        + Id: int
+        + PlotId: int
+        + UserId: int
+        + Type: AlertTypeEnum
+        + Severity: SeverityEnum
+        + Message: string
+        + IsRead: bool
+        + TriggeredAt: DateTime
+    }
+
+    enum AlertTypeEnum {
+        Phenological
+        Epidemiological
+        Weather
+        Billing
+    }
+
+    IAlertService <|.. AlertService
+    AlertService --> IBaseRepository : uses
+}
+
+RiskAnalysisWorker ..> IAlertService : triggers
+Alert "*" -- "1" Plot : belongs to
+@enduml

@@ -9,6 +9,7 @@ A nivel general, para Viora se identificaron siete bounded contexts principales:
 La elección de estos tres contextos también se sustenta en los requisitos funcionales previamente definidos en el informe. Las épicas EP03 y EP04 describen el núcleo de monitoreo agrometeorológico, proyección y mitigación por nutrición dinámica; EP05 aborda la vigilancia epidemiológica y la prospección territorial; mientras que EP06 a EP11 cubren el flujo de vinculación, evaluación técnica, ejecución de la intervención y cierre del servicio dentro del marketplace especializado de Viora.
 
 \newpage
+
 ### Design-Level EventStorming
 
 La sesión de Design-Level EventStorming de Viora tuvo como propósito refinar los hallazgos del Big Picture Event Storming y llevar el modelado del dominio a un nivel de detalle suficiente para identificar decisiones estructurales clave. A partir de esta profundización, fue posible explicitar bounded contexts, eventos, comandos, actores, policies, read models, reglas de negocio, aggregates y queries.
