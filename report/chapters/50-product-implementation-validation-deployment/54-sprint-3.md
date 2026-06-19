@@ -528,8 +528,6 @@ US09 & Publicación de perfil profesional & TK01 & Formulario de perfil profesio
 
 &nbsp;
 
-#### Deployment Evidence for Sprint Review
-
 Durante la tercera iteración, hubieron avances en el Web Service, Web Application y Website. Para garantizar la centralización, trazabilidad y correcta auditoría del código fuente, todas las contribuciones técnicas de este incremento fueron registradas e integradas.
 
 A continuación, se presenta la matriz de control de versiones, la cual detalla el historial cronológico de commits realizados en el repositorio del proyecto.
@@ -914,13 +912,25 @@ A continuación, se presenta la matriz de control de versiones, la cual detalla 
 
 &nbsp;
 
+En esta sección se presenta la evidencia del incremento de software desarrollado durante el Sprint 3.
+
 #### Services Documentation Evidence for Sprint Review
 
 &nbsp;
 
+En esta sección se presenta el web service y su respectiva documentación.
+
+\textbf{Enlace del webservice:} \url{https://viora-platform-u202416274.onrender.com/swagger/index.html}
+
 #### Software Deployment Evidence for Sprint Review
 
 &nbsp;
+
+\textbf{Enlace del website:} \url{https://viora-website-flax.vercel.app/}
+
+\textbf{Enlace de la webapp:} \url{https://viora-release-001.web.app/dashboard}
+
+\textbf{Enlace del webservice:} \url{https://viora-platform-u202416274.onrender.com/swagger/index.html}
 
 #### Team Collaboration Insights for Sprint Review
 
@@ -951,4 +961,4 @@ Como se evidencia en los analíticos de GitHub, la participación activa de todo
 \caption*{\textit{Nota.} La gráfica muestra el incremento en la frecuencia de commits realizados por el equipo durante el desarrollo del núcleo operativo de la plataforma. Elaboración propia a través de GitHub Insights.}
 \end{figure}
 
-ewpage
+\newpage
