@@ -143,6 +143,24 @@ Para más detalles sobre el historial de versiones, consultar el archivo `report
 
 ---
 
+## Compilar el informe (generar PDF)
+
+Para generar el PDF del informe necesitas instalar algunas herramientas. El proceso está completamente automatizado:
+
+```powershell
+# 1. Instalar dependencias (solo la primera vez)
+powershell -ExecutionPolicy Bypass -File scripts\setup.ps1
+
+# 2. Generar el PDF
+make pdf
+# o con el wrapper:
+powershell -ExecutionPolicy Bypass -File scripts\build.ps1
+```
+
+> Consulta **[BUILDING.md](BUILDING.md)** para la guía completa con solución de problemas.
+
+---
+
 ## Contacto
 
 Para consultas sobre este informe, contactar al equipo de desarrollo o al docente del curso.

@@ -2,8 +2,18 @@ OUTPUT_DIR=build
 PDF_DEFAULTS=pandoc/report.yaml
 REFERENCE_DOC=pandoc/templates/reference.docx
 
-# PlantUML config — adjust JAVA_HOME if using a different Java installation
-JAVA_HOME ?= C:\Users\jahat\.jdks\openjdk-26.0.1
+# ---------------------------------------------------------------------------
+# Shell detection for Windows-native GNU Make (installed via Scoop)
+# Scoop sets the SCOOP env var automatically (e.g. C:\Users\<you>\scoop).
+# On Unix/macOS the default /bin/sh is used automatically.
+# ---------------------------------------------------------------------------
+ifeq ($(OS),Windows_NT)
+SCOOP ?= $(USERPROFILE)/scoop
+SHELL = $(subst \,/,$(SCOOP))/apps/git/current/usr/bin/sh.exe
+endif
+
+# PlantUML config — set JAVA_HOME to your local JDK path if needed
+JAVA_HOME ?= $(USERPROFILE)/.jdks/openjdk-26.0.1
 PLANTUML_JAR = lib/plantuml.jar
 PUML_SOURCES = $(wildcard report/assets/diagram-sources/class-diagrams/*.puml)
 DIAGRAM_OUT = report/assets/class-diagrams
