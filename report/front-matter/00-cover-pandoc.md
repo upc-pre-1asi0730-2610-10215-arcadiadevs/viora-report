@@ -12,82 +12,44 @@ nocite: '[@*]'
 
 \includegraphics[width=2.0cm]{report/assets/logos/upc.png}
 
-\vspace{0.40cm}
+\vspace{0.8cm}
 
-{\Large \textbf{UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS}\par}
-\vspace{0.10cm}
-{\large “Año de la Esperanza y el Fortalecimiento de la Democracia”\par}
+{\Large \textbf{UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS}\par} \vspace{0.2cm} {\large Carrera de Ingeniería de Software\par}
 
-\vspace{0.80cm}
+\vspace{1.5cm}
 
-{\LARGE \textbf{1ASI0730 - APLICACIONES WEB}\par}
-\vspace{0.22cm}
-{\large \textbf{10215}\par}
+{\Large \textbf{1ASI0730}\par} {\large \textbf{APLICACIONES WEB}\par}
 
-\vspace{0.60cm}
+\vspace{0.3cm}
 
-{\large \textbf{Docente:}\par}
-\vspace{0.08cm}
-{\normalsize Velasquez Nuñez, Angel Augusto\par}
+{\large NRC\par} \vspace{0.1cm} {\Large \textbf{10215}\par}
 
-\vspace{0.60cm}
+\vspace{0.5cm}
 
-{\LARGE \textbf{Informe de Trabajo Final}\par}
+{\LARGE \textbf{Informe del Trabajo Final}\par}
 
-\vspace{0.80cm}
+\vspace{0.5cm}
 
-\includegraphics[width=3.5cm]{report/assets/logos/arcadia.png}
+{\large Docente\par} \vspace{0.1cm} {\Large \textbf{Velásquez Núñez, Ángel Augusto}\par}
 
-\vspace{0.80cm}
+\vspace{0.5cm}
 
-\includegraphics[width=6.2cm]{report/assets/viora-brand/viora-isologotipo-green.png}
+{\large Equipo\par} \vspace{0.1cm} {\Large \textbf{ArcadiaDevs}\par}
 
-\vspace{0.80cm}
+\vspace{0.5cm}
 
-{\large \textbf{CARRERA:}\par}
-\vspace{0.08cm}
-{\normalsize Ingeniería de Software\par}
-
-\vspace{0.28cm}
-
-{\large \textbf{CICLO:}\par}
-\vspace{0.08cm}
-{\normalsize 202610\par}
-
-\vspace{0.32cm}
-
-{\large \textbf{INTEGRANTES:}\par}
-
-\vspace{0.18cm}
-
-{\small
-\renewcommand{\arraystretch}{1.08}
-\setlength{\tabcolsep}{6pt}
-\begin{tabular}{|p{7.2cm}|p{2.6cm}|}
-\hline
-\centering \textbf{Alumnos} & \centering \textbf{Código} \tabularnewline
-\hline
-Espada Lazo, Piero Anthony & U20241d924 \tabularnewline
-\hline
-Li Gayoso, Diana Carolina & U202415749 \tabularnewline
-\hline
-Paredes Maza, Victor Juan de Dios & U202416274 \tabularnewline
-\hline
-Santi Guerrero, Fabrizio Alonso & U202411774 \tabularnewline
-\hline
-Trinidad Leon, Jahat Jassiel & U202412248 \tabularnewline
-\hline
-\end{tabular}
-}
+{\large Proyecto\par} \vspace{0.1cm} {\Large \textbf{Viora}\par}
 
 \vspace{0.8cm}
 
-{\normalsize
-\begin{tabular}{cc}
-Mayo, 2026
-\end{tabular}
-\par
-}
+{\large \textbf{Integrantes}\par}
 
-\end{titlepage}
-\restoregeometry
+\vspace{0.2cm}
+
+{\small \renewcommand{\arraystretch}{1.2} \setlength{\tabcolsep}{10pt} \begin{tabular}{cl} \textbf{Código} & \textbf{Apellidos y Nombres} \tabularnewline U20241d924 & Espada Lazo, Piero Anthony \tabularnewline U202415749 & Li Gayoso, Diana Carolina \tabularnewline U202416274 & Paredes Maza, Víctor Juan de Dios \tabularnewline U202411774 & Santi Guerrero, Fabrizio Alonso \tabularnewline U202412248 & Trinidad León, Jahat Jassiel \tabularnewline \end{tabular} }
+
+\vspace{1.0cm}
+
+{\large \textbf{Periodo 202610}\par} \vspace{0.1cm} {\normalsize Julio, 2026\par}
+
+\end{titlepage} \restoregeometry \newpage
