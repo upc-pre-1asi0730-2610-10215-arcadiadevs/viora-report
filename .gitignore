@@ -1,4 +1,5 @@
-build/
 .mimocode/
-AGENTS.md
+.atl/
+build/
 lib/
+AGENTS.md
