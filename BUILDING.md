@@ -32,9 +32,9 @@ Este script instala y configura automáticamente:
 | Herramienta | Versión mínima | Para qué sirve |
 |-------------|---------------|----------------|
 | [Scoop](https://scoop.sh) | cualquiera | Gestor de paquetes (instala todo lo demás) |
-| Git for Windows | 2.x | Provee `sh.exe` que necesita GNU Make |
+| [Git for Windows](https://git-scm.com) | 2.x | Necesario para compilar el proyecto |
 | GNU Make | 4.x | Orquesta el proceso de compilación |
-| Pandoc | 3.x | Convierte Markdown → PDF/DOCX |
+| Pandoc | 3.x | Convierte Markdown → PDF |
 | MiKTeX | 25.x | Motor LaTeX (`xelatex`) para generar el PDF |
 | Java (OpenJDK) | 11+ | Necesario para ejecutar PlantUML |
 
@@ -59,18 +59,12 @@ java -version     # openjdk ...
 
 ---
 
-## 4. Generar el PDF
+## 4. Generar el informe
 
 ### Opción A — con `make` (directo)
 
 ```powershell
-make pdf
-```
-
-### Opción B — con el script wrapper (recomendado si tienes problemas con el PATH)
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts\build.ps1
+make report
 ```
 
 El PDF se genera en `build/upc-pre-202610-1asi0730-10215-ArcadiaDevs-report-avXtbX.pdf`.
@@ -81,19 +75,10 @@ El PDF se genera en `build/upc-pre-202610-1asi0730-10215-ArcadiaDevs-report-avXt
 
 | Comando | Descripción |
 |---------|-------------|
-| `make pdf` | Genera el PDF completo |
-| `make docx` | Genera el archivo Word (.docx) |
-| `make all` | Genera PDF y DOCX |
-| `make diagrams` | Solo regenera los diagramas PlantUML |
+| `make report` | Genera el informe completo (PDF) |
+| `make c4-diagrams` | Solo regenera los diagramas PlantUML |
 | `make clean` | Elimina el directorio `build/` |
-
-Con el wrapper:
-
-```powershell
-scripts\build.ps1 -Target docx
-scripts\build.ps1 -Target all
-scripts\build.ps1 -Clean
-```
+| `make help` | Muestra la lista de comandos disponibles |
 
 ---
 
@@ -109,13 +94,6 @@ scripts\build.ps1 -Clean
 ---
 
 ## Solución de problemas
-
-### `make: process_begin: CreateProcess failed`
-
-El `make` de Windows no encuentra `sh.exe`. Soluciones:
-
-1. Asegúrate de haber corrido `scripts\setup.ps1` y de haber **abierto una terminal nueva**.
-2. O usa el wrapper: `powershell -File scripts\build.ps1`
 
 ### `xelatex not found`
 
@@ -160,8 +138,7 @@ Los siguientes mensajes son **warnings inofensivos** — el PDF se genera correc
 viora-report/
 ├── Makefile                    # Orquestación del build
 ├── scripts/
-│   ├── setup.ps1               # Instala dependencias (ejecutar una vez)
-│   └── build.ps1               # Wrapper para generar el PDF
+│   └── setup.ps1               # Instala dependencias (ejecutar una vez)
 ├── pandoc/
 │   ├── report.yaml             # Configuración de pandoc
 │   ├── csl/apa-7.csl           # Estilo de citas APA 7
@@ -184,5 +161,5 @@ viora-report/
 Si tienes un JDK instalado en una ruta distinta a la predeterminada de Scoop, puedes sobrescribir:
 
 ```powershell
-make pdf JAVA_HOME="C:/ruta/a/tu/jdk"
+make report JAVA_HOME="C:/ruta/a/tu/jdk"
 ```
