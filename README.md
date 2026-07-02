@@ -152,9 +152,7 @@ Para generar el PDF del informe necesitas instalar algunas herramientas. El proc
 powershell -ExecutionPolicy Bypass -File scripts\setup.ps1
 
 # 2. Generar el PDF
-make pdf
-# o con el wrapper:
-powershell -ExecutionPolicy Bypass -File scripts\build.ps1
+make report
 ```
 
 > Consulta **[BUILDING.md](BUILDING.md)** para la guía completa con solución de problemas.

@@ -1,16 +1,5 @@
 OUTPUT_DIR=build
 PDF_DEFAULTS=pandoc/report.yaml
-REFERENCE_DOC=pandoc/templates/reference.docx
-
-# ---------------------------------------------------------------------------
-# Shell detection for Windows-native GNU Make (installed via Scoop)
-# Scoop sets the SCOOP env var automatically (e.g. C:\Users\<you>\scoop).
-# On Unix/macOS the default /bin/sh is used automatically.
-# ---------------------------------------------------------------------------
-ifeq ($(OS),Windows_NT)
-SCOOP ?= $(USERPROFILE)/scoop
-SHELL = $(subst \,/,$(SCOOP))/apps/git/current/usr/bin/sh.exe
-endif
 
 # PlantUML config — set JAVA_HOME to your local JDK path if needed
 JAVA_HOME ?= $(USERPROFILE)/.jdks/openjdk-26.0.1
@@ -33,8 +22,6 @@ PDF_FRONT = report/front-matter/00-cover-pandoc.md \
             report/front-matter/02-collaboration-insights.md \
 			report/front-matter/03-content.md \
             report/front-matter/04-student-outcome.md 
-            
-
 
 CHAPTERS = $(sort $(wildcard report/chapters/*/*.md))
 BACK = $(sort $(wildcard report/back-matter/*.md))
@@ -42,23 +29,45 @@ BACK = $(sort $(wildcard report/back-matter/*.md))
 PDF_FILES = $(PDF_FRONT) $(CHAPTERS) $(BACK)
 
 PDF=$(OUTPUT_DIR)/upc-pre-202610-1asi0730-10215-ArcadiaDevs-report-avXtbX.pdf
-DOCX=$(OUTPUT_DIR)/report.docx
 
-all: pdf docx
+# ─── Default target ──────────────────────────────────────────────────────────
+.DEFAULT_GOAL := help
 
-diagrams:
+# ─── Primary targets ─────────────────────────────────────────────────────────
+report: c4-diagrams
+	$(MKDIR_OUTPUT)
+	pandoc --defaults=$(PDF_DEFAULTS) $(PDF_FILES) -o $(PDF)
+
+c4-diagrams:
 	@echo Generating diagrams from PlantUML sources...
 	$(MKDIR_DIAGRAMS)
 	"$(JAVA_HOME)/bin/java" -jar "$(PLANTUML_JAR)" -tpng -o "$(abspath $(DIAGRAM_OUT))" $(PUML_SOURCES)
 	@echo Done. $(words $(PUML_SOURCES)) diagrams generated.
 
-pdf: diagrams
-	$(MKDIR_OUTPUT)
-	pandoc --defaults=$(PDF_DEFAULTS) $(PDF_FILES) -o $(PDF)
-
-docx:
-	$(MKDIR_OUTPUT)
-	pandoc --defaults=$(PDF_DEFAULTS) --reference-doc=$(REFERENCE_DOC) $(PDF_FILES) -o $(DOCX)
-
 clean:
 	$(RMDIR_OUTPUT)
+
+# ─── Help ────────────────────────────────────────────────────────────────────
+help:
+	@echo ""
+	@echo "Usage: make [target]"
+	@echo ""
+	@echo "Targets:"
+	@echo "  report       Generate the full PDF report"
+	@echo "  c4-diagrams  Regenerate PlantUML C4 diagrams only"
+	@echo "  clean        Remove the build/ directory"
+	@echo "  help         Show this help message"
+	@echo ""
+
+# ─── Legacy targets (redirect to help) ───────────────────────────────────────
+pdf:
+	@echo ""
+	@echo "[INFO] 'make pdf' has been replaced by 'make report'."
+	@echo "Run 'make help' to see all available targets."
+	@echo ""
+
+all:
+	@echo ""
+	@echo "[INFO] 'make all' has been replaced by 'make report'."
+	@echo "Run 'make help' to see all available targets."
+	@echo ""

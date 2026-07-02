@@ -104,31 +104,16 @@ foreach ($pkg in $latexPkgs) {
 }
 Write-Ok "Paquetes LaTeX instalados."
 
-# ─── 6. Agregar git usr/bin al PATH de usuario ───────────────────────────────
-Write-Step "Configurando PATH del sistema..."
-$scoopPath   = [System.Environment]::GetEnvironmentVariable("SCOOP", "User")
-if (-not $scoopPath) { $scoopPath = "$env:USERPROFILE\scoop" }
-$gitUsrBin   = "$scoopPath\apps\git\current\usr\bin"
-$currentPath = [System.Environment]::GetEnvironmentVariable("PATH", "User")
-
-if ($currentPath -notlike "*$gitUsrBin*") {
-    [System.Environment]::SetEnvironmentVariable("PATH", "$gitUsrBin;$currentPath", "User")
-    Write-Ok "Agregado a PATH: $gitUsrBin"
-} else {
-    Write-Ok "PATH ya contiene: $gitUsrBin"
-}
-
-# ─── 7. Verificación final ───────────────────────────────────────────────────
+# ─── 6. Verificación final ───────────────────────────────────────────────────
 Write-Step "Verificación final..."
-$env:PATH = "$gitUsrBin;" + [System.Environment]::GetEnvironmentVariable("PATH","User") + ";" +
+$env:PATH = [System.Environment]::GetEnvironmentVariable("PATH","User") + ";" +
             [System.Environment]::GetEnvironmentVariable("PATH","Machine")
 
 $checks = @(
     @{ cmd = "make";    args = "--version" },
     @{ cmd = "pandoc";  args = "--version" },
     @{ cmd = "xelatex"; args = "--version" },
-    @{ cmd = "java";    args = "-version"  },
-    @{ cmd = "sh";      args = "--version" }
+    @{ cmd = "java";    args = "-version"  }
 )
 
 $allOk = $true
@@ -152,8 +137,7 @@ if (Test-Path "lib/plantuml.jar") {
 
 Write-Host ""
 if ($allOk) {
-    Write-Host "  ✅ Todo listo. Ejecuta: make pdf" -ForegroundColor Green
-    Write-Host "     (o usa: scripts\build.ps1)`n" -ForegroundColor Green
+    Write-Host "  ✅ Todo listo. Ejecuta: make report`n" -ForegroundColor Green
 } else {
     Write-Host "  ⚠️  Hay herramientas faltantes. Revisa los avisos anteriores.`n" -ForegroundColor Yellow
 }
