@@ -117,7 +117,42 @@
 \begin{figure}[H]
 \caption{Wireframe de la aplicación.}
 \centering
-\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-12.png}
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-16.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Wireframe de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-17.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Wireframe de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-18.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Wireframe de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-19.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Wireframe de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-20.png}
+\caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
+\end{figure} 
+
+\begin{figure}[H]
+\caption{Wireframe de la aplicación.}
+\centering
+\includegraphics[width=0.4\textwidth]{report/assets/webapplication-ui/wireframes/wireframe-21.png}
 \caption*{\textit{Nota.} Diseño visual de una pantalla del wireframe de productor. Elaboración propia.}
 \end{figure} 
 
