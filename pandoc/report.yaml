@@ -15,6 +15,12 @@ resource-path:
 variables:
   graphics: true
   multirow: true
+  header-includes:
+    - \AtBeginEnvironment{longtable}{\scriptsize\setlength{\tabcolsep}{3pt}}
+    - \AtBeginEnvironment{tabular}{\scriptsize\setlength{\tabcolsep}{3pt}}
+    - \usepackage{seqsplit}
+    - \let\OldTexttt\texttt
+    - \renewcommand{\texttt}[1]{\OldTexttt{\seqsplit{#1}}}
 
 bibliography:
   - report/bibliography/references.bib
