@@ -25,7 +25,7 @@ A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el c
 
 &nbsp;
 
-En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX) correspondiente al Sprint 4, diseñada para fortalecer la coordinación estratégica y la especialización técnica dentro del ecosistema Viora. Para este incremento, el alcance se ha enfocado en consolidar el ciclo de asistencia técnica y expandir las capacidades operativas del sistema. En consecuencia, el equipo ha distribuido las responsabilidades entre los contextos Shared, Agronomic, Surveillance, Intervention, y PAM (Profile & Asset Management), incorporando además los nuevos contextos de IAM (Identity and Access Management) y Billing para soportar la gestión de autenticación y suscripciones. Esta distribución garantiza que las historias de usuario y técnicas planificadas —como la gestión de solicitudes, emisión de propuestas, certificación de recetas agronómicas y procesamiento de pagos— cuenten con un liderazgo claro para su integración exitosa.
+En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX) correspondiente al Sprint 4, diseñada para fortalecer la coordinación estratégica y la especialización técnica dentro del ecosistema Viora. Para este incremento, el alcance se ha enfocado en consolidar el ciclo de asistencia técnica y expandir las capacidades operativas del sistema. En consecuencia, el equipo ha distribuido las responsabilidades entre los contextos Shared, Agronomic, Surveillance, Intervention, y PAM (Profile & Asset Management), incorporando además los nuevos contextos de IAM (Identity and Access Management) y Billing para soportar la gestión de autenticación y suscripciones. Esta distribución garantiza que las historias de usuario y técnicas planificadas (como la gestión de solicitudes, emisión de propuestas, certificación de recetas agronómicas y procesamiento de pagos) cuenten con un liderazgo claro para su integración exitosa.
 
 | Team Member (Last Name, First Name) | GitHub Username | Shared Context Leader (L) / Collab (C) | Agronomic Context Leader (L) / Collab (C) | Surveillance Context Leader (L) / Collab (C) | Intervention Context Leader (L) / Collab (C) | PAM Context Leader (L) / Collab (C) | Brand & Communication Leader (L) / Collab (C) | IAM Context Leader (L) / Collab (C) | Billing Context Leader (L) / Collab (C) |
 |---|---|---|---|---|---|---|---|---|---|
@@ -34,7 +34,5 @@ En esta sección se presenta la matriz Leadership-and-Collaboration Matrix (LACX
 | Paredes, Victor | DaronCameloft                    | C | C | C | C | C | L | C | C |
 | Santi, Fabrizio | Santi2007939                     | C | L | C | C | L | C | C | C |
 | Trinidad, Jahat | trinity-bytes                    | L | C | C | C | C | C | C | C |
-
-
 
 \newpage
