@@ -57,7 +57,7 @@ Subsistema principal de datos geolocalizados para las parcelas y sincronización
 \begin{figure}[H]
     \caption{Diagrama de clases para Plot Management y Agrometeorological Monitoring.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/plot-management-and-agrometeorological-monitoring-components-diagram.png}
+    \includegraphics[height=0.45\textheight,keepaspectratio]{report/assets/class-diagrams/plot-management-and-agrometeorological-monitoring-components-diagram.png}
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Plot Management y Agrometeorological Monitoring. Elaboración propia.}
 \end{figure}
 
@@ -137,7 +137,7 @@ Lógica de pasarelas de pago y asignación de privilegios de suscripción.
 \begin{figure}[H]
     \caption{Diagrama de clases para Subscription y Billing Component.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/subscription-and-billing-component-diagram.png}
+    \includegraphics[height=0.45\textheight,keepaspectratio]{report/assets/class-diagrams/subscription-and-billing-component-diagram.png}
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Subscription y Billing Component. Elaboración propia.}
 \end{figure}
 
@@ -158,7 +158,7 @@ Administración de bloqueos y penalizaciones en la plataforma para mantener los 
 \begin{figure}[H]
     \caption{Diagrama de clases para Moderation y Strikes Component.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/moderation-and-strikes-component-diagram.png}
+    \includegraphics[height=0.45\textheight,keepaspectratio]{report/assets/class-diagrams/moderation-and-strikes-component-diagram.png}
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Moderation y Strikes Component. Elaboración propia.}
 \end{figure}
 
@@ -217,7 +217,7 @@ Maneja los flujos de inicio de sesión, registro y el estado de la sesión actua
 \begin{figure}[H]
     \caption{Diagrama de clases para Authentication UI Component.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/authentication-ui-component-diagram.png}
+    \includegraphics[height=0.45\textheight,keepaspectratio]{report/assets/class-diagrams/authentication-ui-component-diagram.png}
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Authentication UI Component. Elaboración propia.}
 \end{figure}
 
@@ -236,7 +236,7 @@ Permite actualizar la información personal, contraseñas y subir la evidencia n
 \begin{figure}[H]
     \caption{Diagrama de clases para Profile UI Component.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/profile-ui-component-diagram.png}
+    \includegraphics[height=0.45\textheight,keepaspectratio]{report/assets/class-diagrams/profile-ui-component-diagram.png}
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Profile UI Component. Elaboración propia.}
 \end{figure}
 
@@ -274,7 +274,7 @@ Módulo principal de productores de olivo para gestión de parcelas y visualizac
 \begin{figure}[H]
     \caption{Diagrama de clases para Plot Management UI Component.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/plot-management-ui-component-diagram.png}
+    \includegraphics[height=0.45\textheight,keepaspectratio]{report/assets/class-diagrams/plot-management-ui-component-diagram.png}
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Plot Management UI Component. Elaboración propia.}
 \end{figure}
 
@@ -293,7 +293,7 @@ Relaciona solicitudes y ofertas de servicios entre productores de olivo y especi
 \begin{figure}[H]
     \caption{Diagrama de clases para Marketplace y Intervention UI Component.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/marketplace-and-intervention-ui-component-diagram.png}
+    \includegraphics[height=0.45\textheight,keepaspectratio]{report/assets/class-diagrams/marketplace-and-intervention-ui-component-diagram.png}
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Marketplace y Intervention UI Component. Elaboración propia.}
 \end{figure}
 
@@ -312,7 +312,7 @@ Maneja los avisos urgentes (clima, pagos asíncronos y alertas sanitarias).
 \begin{figure}[H]
     \caption{Diagrama de clases para Notification Center Component.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/notification-center-component-diagram.png}
+    \includegraphics[height=0.45\textheight,keepaspectratio]{report/assets/class-diagrams/notification-center-component-diagram.png}
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Notification Center Component. Elaboración propia.}
 \end{figure}
 
@@ -331,7 +331,7 @@ Permite revisar contratos, suscripciones SAAS e historial de pagos.
 \begin{figure}[H]
     \caption{Diagrama de clases para Subscription y Billing UI Component.}
     \centering
-    \includegraphics[width=1\textwidth]{report/assets/class-diagrams/subscription-and-billing-ui-component-diagram.png}
+    \includegraphics[height=0.45\textheight,keepaspectratio]{report/assets/class-diagrams/subscription-and-billing-ui-component-diagram.png}
     \caption*{\textit{Nota.} Diagrama de clases correspondiente al componente Subscription y Billing UI Component. Elaboración propia.}
 \end{figure}
 

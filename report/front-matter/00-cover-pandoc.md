@@ -14,11 +14,11 @@ nocite: '[@*]'
 
 \vspace{0.8cm}
 
-{\Large \textbf{UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS}\par} \vspace{0.2cm} {\large Carrera de Ingeniería de Software\par}
+{\Large Universidad Peruana de Ciencias Aplicadas\par} \vspace{0.2cm} {\large Carrera de Ingeniería de Software\par}
 
 \vspace{1.5cm}
 
-{\Large \textbf{1ASI0730}\par} {\large \textbf{APLICACIONES WEB}\par}
+{\Large \textbf{1ASI0730}\par} {\large \textbf{Aplicaciones Web}\par}
 
 \vspace{0.3cm}
 
@@ -46,7 +46,7 @@ nocite: '[@*]'
 
 \vspace{0.2cm}
 
-{\small \renewcommand{\arraystretch}{1.2} \setlength{\tabcolsep}{10pt} \begin{tabular}{cl} \textbf{Código} & \textbf{Apellidos y Nombres} \tabularnewline U20241d924 & Espada Lazo, Piero Anthony \tabularnewline U202415749 & Li Gayoso, Diana Carolina \tabularnewline U202416274 & Paredes Maza, Víctor Juan de Dios \tabularnewline U202411774 & Santi Guerrero, Fabrizio Alonso \tabularnewline U202412248 & Trinidad León, Jahat Jassiel \tabularnewline \end{tabular} }
+{\small \renewcommand{\arraystretch}{1.2} \setlength{\tabcolsep}{10pt} \begin{tabular}{ll} \textbf{Código} & \textbf{Apellidos y Nombres} \tabularnewline U20241d924 & Espada Lazo, Piero Anthony \tabularnewline U202415749 & Li Gayoso, Diana Carolina \tabularnewline U202416274 & Paredes Maza, Víctor Juan de Dios \tabularnewline U202411774 & Santi Guerrero, Fabrizio Alonso \tabularnewline U202412248 & Trinidad León, Jahat Jassiel \tabularnewline \end{tabular} }
 
 \vspace{1.0cm}
 
