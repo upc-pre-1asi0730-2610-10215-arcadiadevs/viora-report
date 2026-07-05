@@ -26,3 +26,6 @@ bibliography:
   - report/bibliography/references.bib
 
 csl: pandoc/csl/apa-7.csl
+
+filters:
+  - pandoc/break-long-words.lua
