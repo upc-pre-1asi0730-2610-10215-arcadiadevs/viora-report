@@ -1,3 +1,6 @@
-\newpage
+# Contenido {-}
+
+\setcounter{tocdepth}{4}
 \tableofcontents
-\newpage
+
+\clearpage
