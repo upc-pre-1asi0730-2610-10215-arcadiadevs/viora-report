@@ -8,6 +8,13 @@ En esta sección se detallan los acuerdos fundamentales alcanzados por el equipo
 
 A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el cual integra la logística de la sesión, los responsables de la documentación y el Sprint Goal diseñado para garantizar que este primer incremento de software entregue valor real a los productores y especialistas del sector olivarero.
 
+\begin{figure}[H]
+\caption{Vista General del Sprint Backlog 1}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-1/sprint-1-trello.png}
+\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://trello.com/b/VkddMbZJ/1asi0730-viora-sb1}
+\end{figure}
+
 \begin{tabular}{p{0.30\textwidth} p{0.65\textwidth}}
 \hline
 \textbf{Sprint \#} & Sprint 1 \\ \hline
