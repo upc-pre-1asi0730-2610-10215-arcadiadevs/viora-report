@@ -57,23 +57,23 @@ El objetivo principal de este Sprint 2 es desarrollar el, mediante la integraci�
 \textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation} & \textbf{Assigned To} & \textbf{Status} \\ \hline 
 \endhead
 
-US11 & Análisis de Tendencia de Vigor Vegetal & TK01 & Chart.js Integration & Implementación de gráficos comparativos de NDVI vs Frío acumulado usando Chart.js y datos de la FakeAPI. & 2.5 & Santi, Fabrizio & Done \\ \cline{3-8}
+US09 & Análisis de Tendencia de Vigor Vegetal y Acumulación de Frío & TK01 & Chart.js Integration & Implementación de gráficos comparativos de NDVI vs Frío acumulado usando Chart.js y datos de la FakeAPI. & 2.5 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK02 & Trend Analytics Logic & Programación de filtros temporales (7d, 30d) y lógica de cálculo de promedios para la gráfica. & 1.5 & Santi, Fabrizio & Done \\ \hline
 
-US12 & Visualización Satelital de Parcelas & TK03 & Mapbox SDK Setup & Configuración del visor de mapas y renderizado de polígonos de parcelas mediante el SDK de Mapbox. & 3.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+US10 & Evaluación Espacial de Vigor y Riesgo por Parcela & TK03 & Mapbox SDK Setup & Configuración del visor de mapas y renderizado de polígonos de parcelas mediante el SDK de Mapbox. & 3.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK04 & Polygon Data Mapping & Vinculación de coordenadas geográficas desde la FakeAPI para la representación dinámica en el mapa. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
-US08 & Gestión de Dispositivos IoT & TK05 & IoT Telemetry View & Maquetación de la tabla de dispositivos y visualización de métricas de humedad y temperatura en Vue. & 1.5 & Li, Diana & Done \\ \cline{3-8}
+US06 & Monitoreo de telemetría IoT para decisiones hídricas & TK05 & IoT Telemetry View & Maquetación de la tabla de dispositivos y visualización de métricas de humedad y temperatura en Vue. & 1.5 & Li, Diana & Done \\ \cline{3-8}
 & & TK06 & CRUD \& FakeAPI Service & Implementación de servicios para la creación, edición y eliminación de sensores en MockAPI. & 1.5 & Li, Diana & Done \\ \cline{3-8}
 & & TK07 & Device Forms & Desarrollo de formularios reactivos para el registro y actualización de dispositivos con validaciones. & 1.0 & Li, Diana & Done \\ \hline
 
-US13 & Resumen General y Proyección de Cosecha & TK08 & KPI Cards Layout & Diseño y maquetación de las 4 tarjetas de resumen de medidas agregadas de todas las parcelas. & 1.5 & Paredes, Victor & Done \\ \cline{3-8}
+US11 & Resumen General y Proyección de Cosecha & TK08 & KPI Cards Layout & Diseño y maquetación de las 4 tarjetas de resumen de medidas agregadas de todas las parcelas. & 1.5 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK09 & KPI Data Binding & Consumo y formateo de datos de monitoreo-summaries para el despliegue de promedios generales. & 0.5 & Paredes, Victor & Done \\ \hline
 
-US14 & Resumen Meteorológico y Evaluación de Riesgo Climático & TK10 & Weather Widget & Implementación del componente de resumen climático y pronósticos. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
+US12 & Resumen Meteorológico y Evaluación de Riesgo Climático & TK10 & Weather Widget & Implementación del componente de resumen climático y pronósticos. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
 & & TK11 & Weather Service Integration & Conexión con el endpoint de weather-summaries para la actualización de temperatura en tiempo real. & 1.0 & Espada, Piero & Done \\ \hline
 
-US23 & Consulta de Alertas Recientes & TK12 & Alerts List Mapping & Mapeo de las 3 alertas más recientes del endpoint de alerts hacia el componente de visualización. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
+US21 & Consulta de Alertas Recientes & TK12 & Alerts List Mapping & Mapeo de las 3 alertas más recientes del endpoint de alerts hacia el componente de visualización. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK13 & Severity Status Logic & Programación de la lógica de colores y etiquetas basadas en el nivel de severidad y estado de la alerta. & 1.0 & Trinidad, Jahat & Done \\ \hline
 
 \end{longtable}
@@ -86,72 +86,81 @@ Durante la segunda iteración, el principal avance de implementación se centró
 
 A continuación, se presenta la matriz de control de versiones, la cual detalla el historial cronológico de commits realizados en el repositorio del proyecto.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/fake-api | 859c148 | feat(fake-api): add data for domain and routes. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/fake-api | 08016a0 | feat(fake-api): add environment variables for endpoints. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/base-infrastructure | 710835b | feat(infrastructure): add base api and base endpoint. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/plot-overview | 8c6b74f | feat(plot-overview): add plot and satellite imagery entities. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/plot-overview | 9ba63fa | feat(plot-overview): add plot and satellite imagery assemblers. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/plot-overview | 6f387b2 | feat(plot-overview): add adapters, environment variable and service for mapbox. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/plot-overview | 8ac99a1 | feat(plot-overview): add agronomic api for plot endpoints. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/plot-overview | 599bc87 | feat(infrastructure): add date time formatter. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/plot-overview | e544b9d | feat(plot-overview): add service for plot map and agronomic store. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/plot-overview | 4669e9a | feat(infrastructure): add plot overview component with sdk. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/iot-devices | 4630612 | feat(iot-devices): add iotdevice entity model. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/iot-devices | 56011dd | feat(iot-devices): add iot device store, assembler and ui. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/surveillance | 130fef8 | feat(alert): add alertAssembler for mapping api alert resources to domain entities. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/surveillance | d7b81d8 | feat(alert): introduce alert entity for modeling critical surveillance events. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/surveillance | 2764a58 | feat(surveillance): add surveillanceAssembler for assembling infrastructure resources. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/surveillance | b51e52f | feat(surveillance): implement surveillance-api for managing alerts. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/surveillance | 236721b | feat(surveillance): add surveillance store for managing alert state and operations. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/surveillance | bb712ba | feat(surveillance): add recentalertswidget component for displaying recent alerts in a tabular format. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/surveillance | cf66328 | feat(surveillance): implement surveillanceAssembler for mapping resources to domain entities. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/agronomic-analysis | d6476d1 | feat(agronomic-analysis): add agronomic analysis entity. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/iot-devices | b2bd2a5 | feat(iot-devices): add iot state and actions. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/surveillance | b66a53e | refactor(alert): deprecate alertAssembler in favor of surveillanceassembler. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/agronomic-analysis | aa84af3 | feat(agronomic-analysis): add assembler, formatter and endpoints for agronomic analysis. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-healthh | d4aa280 | feat(agronomic): add agronomic-record entity for telemetry data and yield calculations. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 85a8156 | feat(agronomic): add chill-hour-record entity for tracking thermal accumulation in olive dormancy. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/agronomic-analysis | 084fce7 | feat(agronomic-analysis): add analysis chart data, set analysis plot and fetch. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 4489b91 | feat(agronomic): add overall-plot-health entity for aggregating plot health status. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | e4eb226 | feat(agronomic): add yield-forecast entity for harvest estimations and risk assessments. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | d6cf393 | feat(agronomic): add monitoring-ummary entity for aggregating agronomic and surveillance kpis. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/agronomic-analysis | 6a74a20 | feat(agronomic-analysis): add component for agronomic analysis visualization. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 87c3db1 | feat(agronomic): add agronomic-record-assembler for mapping telemetry data to entities. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | dc9e2d6 | feat(agronomic): add chill-hour-record-assembler for mapping thermal accumulation data to entities. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 4c15f8b | feat(agronomic): add chill-hour-record-assembler for mapping thermal accumulation data to entities. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 0436d84 | feat(agronomic): add overall-health-assembler for translating health distribution data into overall-plot-health entities. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/weather-summary | 93a7aca | feat(weather-summary): add WeatherSummary entity. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 845069b | feat(agronomic): add yield-forecast-assembler for mapping harvest prediction resources to yield-forecast entities. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 7a50e61 | feat(agronomic): add chill-accumulation-card component for displaying thermal accumulation data. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/weather-summary | 2a55a89 | feat(weather-summary): add WeatherSummaryAssembler. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 2466cae | feat(agronomic): add ndvi-status-card component for displaying NDVI values and trends. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 57609c2 | feat(agronomic): add overall-plot-health-card component for displaying global plot health summary. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | 17a97e4 | feat(agronomic): add yield-forecast-card component for displaying harvest predictions and risk assessments. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/weather-summary | 425fe09 | feat(weather-summary): implement WeatherSummary component. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/overall-plot-health | a9741e7 | feat(agronomic): add agronomic.store getters. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/weather-summary | 9c57130 | feat(weather-summary): integrate weather summary fetching in agronomic store. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/general-routes | 486fbb7 | feat(general-routes): add agronomic routes and update router. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/general-routes | 911f092 | fix(iot-devices): move view components to presentation/views. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/layout | c010499 | feat(shared): add footer-content component with localization and styling. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/layout | 3d06ae1 | feat(shared): add language-switcher component with locale selection and styling. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/layout | 283854d | feat(shared): add main layout component with sidebar, breadcrumbs, and footer. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/layout | 4688834 | feat(shared): add navigation-sidebar component with collapsible functionality and route-based navigation. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/layout | 75130e8 | feat(shared): add global font styles and integrate main layout component. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/i18n | f3ef5e1 | feat(localization): add comprehensive snglish and spanish translations for dashboard and iot devices. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/producer-dashboard | f1f9177 | fix(agronomic): close analysis statistics flow in store. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | feature/producer-dashboard | db5057a | feat(producer): add producer-dashboard-view component for real-time agronomic monitoring. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | fix/gronomic-import | 4a074fa | feat(agronomic): add summarybasecard component and update navigation-sidebar icons. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | fix/dashboard-iot | 35d7f04 | fix: correct server, store, api and components for weather. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | release/v0.0.1 | 70da87d | chore: add .env.development to .gitignore. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | release/v0.0.1 | 25cacf3 | chore(env): add .env.production with api endpoint paths and mapbox access token. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | fix/dahsboard-iot | 1459249 | feat: add assets. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | fix/dashboard-iot | 5237633 | fix: update base api and endpoint. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | fix-dashboard-iot | d3742fd | feat: add bug outline svg. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | fix/dashboard-iot | 62fd59c | fix: update dashboard and navigation. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | release/v0.0.2 | 40f3ba4 | feat(config): add production environment variables for api endpoints and Mapbox access token. | | 12/05/2026 |
-| upc-pre-1asi0730-2610-10215-ArcadiaDevs/Viora-webapp | release/v0.0.2 | 9aea6f6 | chore(package): update version to 0.0.2. | | 12/05/2026 |
+\begin{longtable}{|p{0.14\textwidth}|p{0.18\textwidth}|p{0.10\textwidth}|p{0.38\textwidth}|p{0.12\textwidth}|}
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endhead
+
+viora-webapp & feature/fake-api & 859c148 & feat(fake-api): add data for domain and routes. & 12/05/2026 \\ \hline
+viora-webapp & feature/fake-api & 08016a0 & feat(fake-api): add environment variables for endpoints. & 12/05/2026 \\ \hline
+viora-webapp & feature/base-infrastructure & 710835b & feat(infrastructure): add base api and base endpoint. & 12/05/2026 \\ \hline
+viora-webapp & feature/plot-overview & 8c6b74f & feat(plot-overview): add plot and satellite imagery entities. & 12/05/2026 \\ \hline
+viora-webapp & feature/plot-overview & 9ba63fa & feat(plot-overview): add plot and satellite imagery assemblers. & 12/05/2026 \\ \hline
+viora-webapp & feature/plot-overview & 6f387b2 & feat(plot-overview): add adapters, environment variable and service for mapbox. & 12/05/2026 \\ \hline
+viora-webapp & feature/plot-overview & 8ac99a1 & feat(plot-overview): add agronomic api for plot endpoints. & 12/05/2026 \\ \hline
+viora-webapp & feature/plot-overview & 599bc87 & feat(infrastructure): add date time formatter. & 12/05/2026 \\ \hline
+viora-webapp & feature/plot-overview & e544b9d & feat(plot-overview): add service for plot map and agronomic store. & 12/05/2026 \\ \hline
+viora-webapp & feature/plot-overview & 4669e9a & feat(infrastructure): add plot overview component with sdk. & 12/05/2026 \\ \hline
+viora-webapp & feature/iot-devices & 4630612 & feat(iot-devices): add iotdevice entity model. & 12/05/2026 \\ \hline
+viora-webapp & feature/iot-devices & 56011dd & feat(iot-devices): add iot device store, assembler and ui. & 12/05/2026 \\ \hline
+viora-webapp & feature/surveillance & 130fef8 & feat(alert): add alertAssembler for mapping api alert resources to domain entities. & 12/05/2026 \\ \hline
+viora-webapp & feature/surveillance & d7b81d8 & feat(alert): introduce alert entity for modeling critical surveillance events. & 12/05/2026 \\ \hline
+viora-webapp & feature/surveillance & 2764a58 & feat(surveillance): add surveillanceAssembler for assembling infrastructure resources. & 12/05/2026 \\ \hline
+viora-webapp & feature/surveillance & b51e52f & feat(surveillance): implement surveillance-api for managing alerts. & 12/05/2026 \\ \hline
+viora-webapp & feature/surveillance & 236721b & feat(surveillance): add surveillance store for managing alert state and operations. & 12/05/2026 \\ \hline
+viora-webapp & feature/surveillance & bb712ba & feat(surveillance): add recentalertswidget component for displaying recent alerts in a tabular format. & 12/05/2026 \\ \hline
+viora-webapp & feature/surveillance & cf66328 & feat(surveillance): implement surveillanceAssembler for mapping resources to domain entities. & 12/05/2026 \\ \hline
+viora-webapp & feature/agronomic-analysis & d6476d1 & feat(agronomic-analysis): add agronomic analysis entity. & 12/05/2026 \\ \hline
+viora-webapp & feature/iot-devices & b2bd2a5 & feat(iot-devices): add iot state and actions. & 12/05/2026 \\ \hline
+viora-webapp & feature/surveillance & b66a53e & refactor(alert): deprecate alertAssembler in favor of surveillanceassembler. & 12/05/2026 \\ \hline
+viora-webapp & feature/agronomic-analysis & aa84af3 & feat(agronomic-analysis): add assembler, formatter and endpoints for agronomic analysis. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-healthh & d4aa280 & feat(agronomic): add agronomic-record entity for telemetry data and yield calculations. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 85a8156 & feat(agronomic): add chill-hour-record entity for tracking thermal accumulation in olive dormancy. & 12/05/2026 \\ \hline
+viora-webapp & feature/agronomic-analysis & 084fce7 & feat(agronomic-analysis): add analysis chart data, set analysis plot and fetch. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 4489b91 & feat(agronomic): add overall-plot-health entity for aggregating plot health status. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & e4eb226 & feat(agronomic): add yield-forecast entity for harvest estimations and risk assessments. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & d6cf393 & feat(agronomic): add monitoring-ummary entity for aggregating agronomic and surveillance kpis. & 12/05/2026 \\ \hline
+viora-webapp & feature/agronomic-analysis & 6a74a20 & feat(agronomic-analysis): add component for agronomic analysis visualization. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 87c3db1 & feat(agronomic): add agronomic-record-assembler for mapping telemetry data to entities. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & dc9e2d6 & feat(agronomic): add chill-hour-record-assembler for mapping thermal accumulation data to entities. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 4c15f8b & feat(agronomic): add chill-hour-record-assembler for mapping thermal accumulation data to entities. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 0436d84 & feat(agronomic): add overall-health-assembler for translating health distribution data into overall-plot-health entities. & 12/05/2026 \\ \hline
+viora-webapp & feature/weather-summary & 93a7aca & feat(weather-summary): add WeatherSummary entity. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 845069b & feat(agronomic): add yield-forecast-assembler for mapping harvest prediction resources to yield-forecast entities. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 7a50e61 & feat(agronomic): add chill-accumulation-card component for displaying thermal accumulation data. & 12/05/2026 \\ \hline
+viora-webapp & feature/weather-summary & 2a55a89 & feat(weather-summary): add WeatherSummaryAssembler. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 2466cae & feat(agronomic): add ndvi-status-card component for displaying NDVI values and trends. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 57609c2 & feat(agronomic): add overall-plot-health-card component for displaying global plot health summary. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & 17a97e4 & feat(agronomic): add yield-forecast-card component for displaying harvest predictions and risk assessments. & 12/05/2026 \\ \hline
+viora-webapp & feature/weather-summary & 425fe09 & feat(weather-summary): implement WeatherSummary component. & 12/05/2026 \\ \hline
+viora-webapp & feature/overall-plot-health & a9741e7 & feat(agronomic): add agronomic.store getters. & 12/05/2026 \\ \hline
+viora-webapp & feature/weather-summary & 9c57130 & feat(weather-summary): integrate weather summary fetching in agronomic store. & 12/05/2026 \\ \hline
+viora-webapp & feature/general-routes & 486fbb7 & feat(general-routes): add agronomic routes and update router. & 12/05/2026 \\ \hline
+viora-webapp & feature/general-routes & 911f092 & fix(iot-devices): move view components to presentation/views. & 12/05/2026 \\ \hline
+viora-webapp & feature/layout & c010499 & feat(shared): add footer-content component with localization and styling. & 12/05/2026 \\ \hline
+viora-webapp & feature/layout & 3d06ae1 & feat(shared): add language-switcher component with locale selection and styling. & 12/05/2026 \\ \hline
+viora-webapp & feature/layout & 283854d & feat(shared): add main layout component with sidebar, breadcrumbs, and footer. & 12/05/2026 \\ \hline
+viora-webapp & feature/layout & 4688834 & feat(shared): add navigation-sidebar component with collapsible functionality and route-based navigation. & 12/05/2026 \\ \hline
+viora-webapp & feature/layout & 75130e8 & feat(shared): add global font styles and integrate main layout component. & 12/05/2026 \\ \hline
+viora-webapp & feature/i18n & f3ef5e1 & feat(localization): add comprehensive english and spanish translations for dashboard and iot devices. & 12/05/2026 \\ \hline
+viora-webapp & feature/producer-dashboard & f1f9177 & fix(agronomic): close analysis statistics flow in store. & 12/05/2026 \\ \hline
+viora-webapp & feature/producer-dashboard & db5057a & feat(producer): add producer-dashboard-view component for real-time agronomic monitoring. & 12/05/2026 \\ \hline
+viora-webapp & fix/gronomic-import & 4a074fa & feat(agronomic): add summarybasecard component and update navigation-sidebar icons. & 12/05/2026 \\ \hline
+viora-webapp & fix/dashboard-iot & 35d7f04 & fix: correct server, store, api and components for weather. & 12/05/2026 \\ \hline
+viora-webapp & release/v0.0.1 & 70da87d & chore: add .env.development to .gitignore. & 12/05/2026 \\ \hline
+viora-webapp & release/v0.0.1 & 25cacf3 & chore(env): add .env.production with api endpoint paths and mapbox access token. & 12/05/2026 \\ \hline
+viora-webapp & fix/dahsboard-iot & 1459249 & feat: add assets. & 12/05/2026 \\ \hline
+viora-webapp & fix/dashboard-iot & 5237633 & fix: update base api and endpoint. & 12/05/2026 \\ \hline
+viora-webapp & fix-dashboard-iot & d3742fd & feat: add bug outline svg. & 12/05/2026 \\ \hline
+viora-webapp & fix/dashboard-iot & 62fd59c & fix: update dashboard and navigation. & 12/05/2026 \\ \hline
+viora-webapp & release/v0.0.2 & 40f3ba4 & feat(config): add production environment variables for api endpoints and Mapbox access token. & 12/05/2026 \\ \hline
+viora-webapp & release/v0.0.2 & 9aea6f6 & chore(package): update version to 0.0.2. & 12/05/2026 \\ \hline
+
+\end{longtable}
 
 
 &nbsp;
