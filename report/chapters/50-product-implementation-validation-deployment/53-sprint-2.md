@@ -45,6 +45,13 @@ Trinidad, Jahat & trinity-bytes & L & C & C \\ \hline
 
 El objetivo principal de este Sprint 2 es desarrollar el, mediante la integración de datos de telemetría IoT, análisis geoespacial de parcelas y visualización de indicadores agronómicos críticos, diseñado para centralizar la toma de decisiones y optimizar la gestión de riesgos biológicos e hídricos para el productor.
 
+\begin{figure}[H]
+\caption{Vista General del Sprint Backlog 2}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-2/sprint-2-trello.png}
+\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://trello.com/b/wjgGiHo9/1asi0730-viora-sb2}
+\end{figure}
+
 \begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.08\textwidth}|p{0.12\textwidth}|p{0.07\textwidth}|} 
 \hline 
 \multicolumn{2}{|l|}{\textbf{Sprint \#}} & \multicolumn{6}{l|}{Sprint 2} \\ \hline 
