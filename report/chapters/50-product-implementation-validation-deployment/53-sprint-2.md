@@ -57,24 +57,40 @@ El objetivo principal de este Sprint 2 es desarrollar el, mediante la integraci�
 \textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation} & \textbf{Assigned To} & \textbf{Status} \\ \hline 
 \endhead
 
-US09 & Análisis de Tendencia de Vigor Vegetal y Acumulación de Frío & TK01 & Chart.js Integration & Implementación de gráficos comparativos de NDVI vs Frío acumulado usando Chart.js y datos de la FakeAPI. & 2.5 & Santi, Fabrizio & Done \\ \cline{3-8}
-& & TK02 & Trend Analytics Logic & Programación de filtros temporales (7d, 30d) y lógica de cálculo de promedios para la gráfica. & 1.5 & Santi, Fabrizio & Done \\ \hline
+% Website US Stories
+US43 & Presentación de la propuesta de valor central & TK01 & Refactor Header Nav & Migración del encabezado principal de arquitectura DDD a una estructura estática y simplificada. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
-US10 & Evaluación Espacial de Vigor y Riesgo por Parcela & TK03 & Mapbox SDK Setup & Configuración del visor de mapas y renderizado de polígonos de parcelas mediante el SDK de Mapbox. & 3.0 & Santi, Fabrizio & Done \\ \cline{3-8}
-& & TK04 & Polygon Data Mapping & Vinculación de coordenadas geográficas desde la FakeAPI para la representación dinámica en el mapa. & 1.0 & Santi, Fabrizio & Done \\ \hline
+US44 & Redirección hacia el ecosistema transaccional & TK02 & Problem \& Solution Refactor & Refactorización de la sección de problema-solución hacia una estructura estática. & 0.5 & Li, Diana & Done \\ \hline
 
-US06 & Monitoreo de telemetría IoT para decisiones hídricas & TK05 & IoT Telemetry View & Maquetación de la tabla de dispositivos y visualización de métricas de humedad y temperatura en Vue. & 1.5 & Li, Diana & Done \\ \cline{3-8}
-& & TK06 & CRUD \& FakeAPI Service & Implementación de servicios para la creación, edición y eliminación de sensores en MockAPI. & 1.5 & Li, Diana & Done \\ \cline{3-8}
-& & TK07 & Device Forms & Desarrollo de formularios reactivos para el registro y actualización de dispositivos con validaciones. & 1.0 & Li, Diana & Done \\ \hline
+US45 & Exploración de beneficios para el Productor & TK03 & Producer Section Refactor & Refactorización de la vista de beneficios del productor a estructura estática. & 0.5 & Trinidad, Jahat & Done \\ \hline
 
-US11 & Resumen General y Proyección de Cosecha & TK08 & KPI Cards Layout & Diseño y maquetación de las 4 tarjetas de resumen de medidas agregadas de todas las parcelas. & 1.5 & Paredes, Victor & Done \\ \cline{3-8}
-& & TK09 & KPI Data Binding & Consumo y formateo de datos de monitoreo-summaries para el despliegue de promedios generales. & 0.5 & Paredes, Victor & Done \\ \hline
+US46 & Exploración de beneficios para el Especialista & TK04 & Specialist Section Refactor & Refactorización de la vista de beneficios del especialista a estructura estática. & 0.5 & Paredes, Victor & Done \\ \hline
 
-US12 & Resumen Meteorológico y Evaluación de Riesgo Climático & TK10 & Weather Widget & Implementación del componente de resumen climático y pronósticos. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
-& & TK11 & Weather Service Integration & Conexión con el endpoint de weather-summaries para la actualización de temperatura en tiempo real. & 1.0 & Espada, Piero & Done \\ \hline
+US47 & Presentación del programa de referidos & TK05 & Referrals Refactor & Refactorización de la sección de referidos y contacto a estructura estática. & 0.5 & Li, Diana & Done \\ \hline
 
-US21 & Consulta de Alertas Recientes & TK12 & Alerts List Mapping & Mapeo de las 3 alertas más recientes del endpoint de alerts hacia el componente de visualización. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
-& & TK13 & Severity Status Logic & Programación de la lógica de colores y etiquetas basadas en el nivel de severidad y estado de la alerta. & 1.0 & Trinidad, Jahat & Done \\ \hline
+US48 & Visualización de métricas y resultados esperados & TK06 & Metrics Section & Implementación de la sección de métricas y resultados esperados en la landing. & 0.75 & Espada, Piero & Done \\ \hline
+
+US49 & Exploración del equipo detrás de la plataforma & TK07 & Team Section Refactor & Refactorización de la sección del equipo a estructura estática. & 0.5 & Santi, Fabrizio & Done \\ \hline
+
+% Web Application US Stories
+US09 & Análisis de Tendencia de Vigor Vegetal y Acumulación de Frío & TK08 & Chart.js Integration & Implementación de gráficos comparativos de NDVI vs Frío acumulado usando Chart.js y datos de la FakeAPI. & 2.5 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK09 & Trend Analytics Logic & Programación de filtros temporales (7d, 30d) y lógica de cálculo de promedios para la gráfica. & 1.5 & Santi, Fabrizio & Done \\ \hline
+
+US10 & Evaluación Espacial de Vigor y Riesgo por Parcela & TK10 & Mapbox SDK Setup & Configuración del visor de mapas y renderizado de polígonos de parcelas mediante el SDK de Mapbox. & 3.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+& & TK11 & Polygon Data Mapping & Vinculación de coordenadas geográficas desde la FakeAPI para la representación dinámica en el mapa. & 1.0 & Santi, Fabrizio & Done \\ \hline
+
+US06 & Monitoreo de telemetría IoT para decisiones hídricas & TK12 & IoT Telemetry View & Maquetación de la tabla de dispositivos y visualización de métricas de humedad y temperatura en Vue. & 1.5 & Li, Diana & Done \\ \cline{3-8}
+& & TK13 & CRUD \& FakeAPI Service & Implementación de servicios para la creación, edición y eliminación de sensores en MockAPI. & 1.5 & Li, Diana & Done \\ \cline{3-8}
+& & TK14 & Device Forms & Desarrollo de formularios reactivos para el registro y actualización de dispositivos con validaciones. & 1.0 & Li, Diana & Done \\ \hline
+
+US11 & Resumen General y Proyección de Cosecha & TK15 & KPI Cards Layout & Diseño y maquetación de las 4 tarjetas de resumen de medidas agregadas de todas las parcelas. & 1.5 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK16 & KPI Data Binding & Consumo y formateo de datos de monitoreo-summaries para el despliegue de promedios generales. & 0.5 & Paredes, Victor & Done \\ \hline
+
+US12 & Resumen Meteorológico y Evaluación de Riesgo Climático & TK17 & Weather Widget & Implementación del componente de resumen climático y pronósticos. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
+& & TK18 & Weather Service Integration & Conexión con el endpoint de weather-summaries para la actualización de temperatura en tiempo real. & 1.0 & Espada, Piero & Done \\ \hline
+
+US21 & Consulta de Alertas Recientes & TK19 & Alerts List Mapping & Mapeo de las 3 alertas más recientes del endpoint de alerts hacia el componente de visualización. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
+& & TK20 & Severity Status Logic & Programación de la lógica de colores y etiquetas basadas en el nivel de severidad y estado de la alerta. & 1.0 & Trinidad, Jahat & Done \\ \hline
 
 \end{longtable}
 
@@ -161,9 +177,6 @@ viora-webapp & release/v0.0.2 & 40f3ba4 & feat(config): add production environme
 viora-webapp & release/v0.0.2 & 9aea6f6 & chore(package): update version to 0.0.2. & 12/05/2026 \\ \hline
 
 \end{longtable}
-
-
-&nbsp;
 
 
 #### Execution Evidence for Sprint Review
