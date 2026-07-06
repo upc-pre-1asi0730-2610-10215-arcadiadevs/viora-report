@@ -4,16 +4,11 @@
 
 #### Sprint Planning 1
 
+&nbsp;
+
 En esta sección se detallan los acuerdos fundamentales alcanzados por el equipo ArcadiaDevs durante la sesión de planificación del Sprint 1, llevada a cabo de manera virtual mediante la plataforma Discord. El propósito central de esta reunión fue alinear los esfuerzos técnicos con la estrategia de captación de la marca Viora, definiendo un compromiso de trabajo basado en una velocidad de 20 puntos para abordar un conjunto de historias de usuario que suman 18 puntos de esfuerzo.
 
 A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el cual integra la logística de la sesión, los responsables de la documentación y el Sprint Goal diseñado para garantizar que este primer incremento de software entregue valor real a los productores y especialistas del sector olivarero.
-
-\begin{figure}[H]
-\caption{Vista General del Sprint Backlog 1}
-\centering
-\includegraphics[width=0.8\textwidth]{report/assets/sprint-1/sprint-1-trello.png}
-\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://trello.com/b/VkddMbZJ/1asi0730-viora-sb1}
-\end{figure}
 
 \begin{tabular}{p{0.30\textwidth} p{0.65\textwidth}}
 \hline
@@ -51,6 +46,13 @@ Trinidad, Jahat & trinity-bytes & C & C & C & C \\ \hline
 &nbsp;
 
 El objetivo principal de este Sprint es establecer la presencia digital estratégica de Viora mediante la construcción de una Landing Page funcional y persuasiva, diseñada para comunicar la propuesta de valor y facilitar la conversión directa de productores y especialistas hacia el ecosistema.
+
+\begin{figure}[H]
+\caption{Vista General del Sprint Backlog 1}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-1/sprint-1-trello.png}
+\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://trello.com/b/VkddMbZJ/1asi0730-viora-sb1}
+\end{figure}
 
 \begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.08\textwidth}|p{0.12\textwidth}|p{0.07\textwidth}|} 
 \hline 
@@ -94,6 +96,7 @@ US47 & Presentación del programa de referidos & TK12 & Referrals Section & Impl
 \end{longtable}
 
 #### Deployment Evidence for Sprint Review
+&nbsp;
 
 Durante la primera iteración, el principal avance de implementación se centró en la construcción integral de la Landing Page oficial de Viora. Se logró codificar e integrar con éxito la interfaz de usuario, la lógica de navegación responsiva, la segmentación de la propuesta de valor y los módulos de conversión (CTAs).
 
@@ -145,6 +148,7 @@ viora-website & release/1.0.0 & 09416dd & docs: update readme. & 13/05/2026 \\ \
 \end{longtable}
 
 #### Execution Evidence for Sprint Review
+&nbsp;
 
 El Sprint 1 ha concluido con éxito, logrando establecer la base digital estratégica del ecosistema Viora. Durante este periodo, el equipo se centró en materializar una Landing Page que no solo sirve como carta de presentación institucional, sino como una herramienta de conversión diseñada específicamente para productores y especialistas del sector olivarero.
 
@@ -226,10 +230,12 @@ El Sprint 1 ha concluido con éxito, logrando establecer la base digital estrat�
 
 
 #### Services Documentation Evidence for Sprint Review
+&nbsp;
 
 Durante el Sprint 1, no se ha incluido documentación de Web Services debido a que el alcance del incremento se ha centrado exclusivamente en la construcción de la Landing Page oficial y la configuración de la presencia digital de Viora. La implementación de los servicios web y su correspondiente documentación bajo el estándar OpenAPI están programados para etapas posteriores del proyecto, por lo que el enfoque actual reside en la comunicación de la propuesta de valor y la captación de usuarios.
 
 #### Software Deployment Evidence for Sprint Review
+&nbsp;
 
 Durante el transcurso del Sprint 1, el equipo estableció la infraestructura base y los flujos de automatización necesarios para garantizar que la Landing Page, los Web Services y las Web Applications de Viora operen bajo un esquema de integración y despliegue continuo. El enfoque principal fue eliminar la fricción entre el desarrollo local y el entorno de producción, asegurando que cada incremento de software sea validado y desplegado de forma eficiente.
 
@@ -267,6 +273,7 @@ Finalmente, se accedió al panel de control para confirmar que la aplicación se
 \end{figure}
 
 #### Team Collaboration Insights for Sprint Review
+&nbsp;
 
 La participación de los miembros del equipo se refleja en el volumen y la frecuencia de las contribuciones realizadas al repositorio. Durante este primer incremento, el esfuerzo se concentró en establecer la estructura base, el diseño visual y la interactividad de la plataforma. Como se observa en los analíticos de GitHub, el equipo mantuvo una actividad constante para cumplir con las historias de usuario comprometidas.
 
