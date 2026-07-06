@@ -57,35 +57,32 @@ El objetivo principal de este Sprint es establecer la presencia digital estraté
 \textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation} & \textbf{Assigned To} & \textbf{Status} \\ \hline 
 \endhead
 
-% US54
-US54 & Presentación de la propuesta de valor central & TK01 & Header Navigation & Maquetación, estilos y programación del comportamiento responsivo del encabezado principal. & 0.75 & Santi, Fabrizio & Done \\ \cline{3-8} 
-& & TK02 & Hero Layout & Estructuración visual de la sección de inicio con soporte para efectos de parallax. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
-& & TK03 & Hero Ambient Sound & Implementación de la lógica de alternancia de sonido ambiental y Toggle UI. & 0.5 & Li, Diana & Done \\ \hline
+% US43
+US43 & Presentación de la propuesta de valor central & TK01 & Header UI \& Navigation & Maquetación, estilos y programación del comportamiento de navegación responsiva del encabezado principal. & 0.75 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK02 & Hero Section Layout & Estructuración semántica y diseño visual de la sección principal de inicio. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK03 & Hero Ambient Audio Logic & Implementación del comportamiento interactivo y control del reproductor de audio ambiental. & 0.5 & Li, Diana & Done \\ \hline
 
-% US55
-US55 & Redirección hacia el ecosistema transaccional & TK04 & Problem Context UI & Diseño de las tarjetas de contexto de problemas y secciones de introducción About. & 0.5 & Li, Diana & Done \\ \cline{3-8} 
-& & TK05 & Conversion Logic & Implementación de botones de aterrizaje. & 0.5 & Li, Diana & Done \\ \hline
+% US44
+US44 & Redirección hacia el ecosistema transaccional & TK04 & Problem \& Solution Layout & Diseño estructural visual de la sección persuasiva enfocada en los retos del rubro olivarero. & 0.5 & Li, Diana & Done \\ \cline{3-8} 
+& & TK05 & Persuasive CTAs Behavior & Programación de interacciones y animaciones para los botones de llamado a la acción (CTA). & 0.5 & Li, Diana & Done \\ \hline
 
-% US56
-US56 & Exploración de beneficios para el Productor & TK06 & Grower Insights UI & Maquetación de la sección de beneficios con detalles específicos sobre acciones preventivas y NDVI. & 0.75 & Trinidad, Jahat & Done \\ \hline
+% US45
+US45 & Exploración de beneficios para el Productor & TK06 & Producer Segment Interface & Maquetación y estilos de la vista de beneficios orientada exclusivamente a productores. & 0.75 & Trinidad, Jahat & Done \\ \hline
 
-% US57
-US57 & Exploración de beneficios para el Especialista & TK07 & Specialist Benefits & Implementación del apartado de beneficios técnicos y acciones específicas para asesores. & 0.5 & Paredes, Victor & Done \\ \hline
+% US46
+US46 & Exploración de beneficios para el Especialista & TK07 & Specialist Segment Interface & Maquetación y estilos de la vista de beneficios orientada a especialistas fitosanitarios. & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK08 & Segment Toggle Behavior & Programación del comportamiento dinámico para alternar la interfaz entre perfiles de usuario. & 0.5 & Paredes, Victor & Done \\ \hline
 
-% US58
-US58 & Presentación del programa de referidos & TK08 & Pricing Panel & Desarrollo del componente de paneles de precios y secciones de planes de suscripción. & 0.75 & Li, Diana & Done \\ \cline{3-8} 
-& & TK09 & Referrals Section & Implementación de la sección de referidos y stubs iniciales de integración. & 0.5 & Li, Diana & Done \\ \hline
+% US50
+US50 & Visualización de planes de precio & TK09 & Pricing Panel UI & Desarrollo del componente de paneles de precios y secciones de planes de suscripción. & 0.75 & Li, Diana & Done \\ \hline
 
-% US59
-US59 & Validación de impacto mediante resultados esperados & TK10 & General Performance Logic & Implementación de scripts base para el manejo de métricas y lógica operativa del landing. & 0.75 & Espada, Piero & Done \\ \hline
+% US49
+US49 & Exploración del equipo detrás de la plataforma & TK10 & Mission \& Vision Display & Desarrollo del panel informativo ``Learning from best'' y sección de misión corporativa. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK11 & Team Members UI & Maquetación de la grilla de perfiles del equipo y estilos visuales asociados. & 0.75 & Santi, Fabrizio & Done \\ \hline
 
-% US60
-US60 & Exploración del respaldo corporativo y humano & TK11 & Mission \& Vision Display & Desarrollo del panel informativo "Learning from best" y sección de misión corporativa. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
-& & TK12 & Team Members UI & Maquetación de la grilla de perfiles del equipo y estilos visuales asociados. & 0.75 & Santi, Fabrizio & Done \\ \hline
-
-% US61
-US61 & Políticas y contacto & TK13 & Contact System & Implementación de la plantilla, estilos y scripts para la sección de comunicación institucional. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
-& & TK14 & Footer \& i18n & Estructuración del pie de página e integración del servicio de internacionalización multi-idioma. & 0.75 & Santi, Fabrizio & Done \\ \hline
+% US47
+US47 & Presentación del programa de referidos & TK12 & Referrals Section & Implementación de la sección de referidos con información del programa e integración de stubs iniciales. & 0.5 & Li, Diana & Done \\ \cline{3-8}
+& & TK13 & Contact \& Footer & Implementación de la plantilla, estilos y scripts para contacto; estructuración del pie de página e i18n. & 0.75 & Santi, Fabrizio & Done \\ \hline
 
 \end{longtable}
 
@@ -97,39 +94,48 @@ Para garantizar la centralización, trazabilidad y correcta auditoría del códi
 
 A continuación, se presenta la matriz de control de versiones, la cual detalla el historial cronológico de commits realizados en el repositorio del proyecto.
 
-| Branch | Commit Id | Commit Message | Commited on (Date) |
-| :--- | :--- | :--- | :--- |
-|   feature/main-navigation       | cfcf95e     | feat(header): add template and styles for header, and responsive.                        | 13/05/2026            |
-|   feature/main-navigation         | 0973f67     | feat(header): add script for header.                                                     | 13/05/2026            |
-|  feature/main-navigation          | 165f92c     | feat(footer): add template, style and script for footer.                                 | 13/05/2026            |
-|  feature/hero-section          | bcb63a2     | feat(hero-section): add hero section with cta and sound toggle.                          | 13/05/2026            |
-|   feature/hero-section         | 594c1c1     | feat(llearning-from-best): add template for learning from best panel.                    | 13/05/2026            |
-|   feature/hero-section         | a45425e     | feat(hero-section): add hero section parallax and ambient sound.                         | 13/05/2026            |
-|   feature/about-the-team       | 2fc1e8f     | feat(team-members): add styles for team members section.                                 | 13/05/2026            |
-|    feature/about-the-team           | fe56f46     | feat(learning-from-best): add styles for learning from best section.                     | 13/05/2026            |
-|   feature/about-the-team            | 84c3efb     | feat(about-the-team): add scripts for learning from best and team members.               | 13/05/2026            |
-|  feature/hero-section        | 165b8c1     | feat(hero-section): add hero section styles and responsive layout.                       | 13/05/2026            |
-|  feature/i18n        | c8d2374     | feat(i18n): add json files for languages.                                                | 13/05/2026            |
-|  feature/i18n           | 3786274     | feat(i18n): add i18n service.                                                            | 13/05/2026            |
-|   feature/i18n          | 3fc40c2     | feat(i18n): add i18n logic and main.                                                     | 13/05/2026            |
-|   feature/contact       | ffb6299     | feat(contact): add template, styles and script for contact section.                      | 13/05/2026            |
-|   feature/pricing       | e5b6ba2     | feat(pricing): add pricing panel component.                                              | 13/05/2026            |
-|    feature/pricing         | 073b7d6     | feat(pricing): add pricing and referrals sections and init stub.                         | 13/05/2026            |
-|    feature/pricing         | 38a0879     | feat(pricing): add pricing sections css.                                                 | 13/05/2026            |
-| feature/problem-context | 8315770 | feat(problem-context): add styles for problem-cards and about-intro sections. | 13/05/2026 |
-| feature/problem-context | 1df3dcf | feat(problem-context): add problem-intro-section and about-intro-section components. | 13/05/2026 |
-|    feature/grower-benefits-section      | 2923b5e     | feat(growers-benefits): add growers benefits section with detailed insights and actions. | 13/05/2026            |
-| feature/grower-benefits-section          | bb2b681     | feat(growers-benefits): add role benefits section with segment switching functionality.  | 13/05/2026 |
-| feature/role-benefits-specialist | 8f58dcd | feat(role-benefits): add specialists section with benefits and actions. | 13/05/2026 |
-| feature/role-benefits-specialist  | fd2087b | refactor(role-benefits): standardize string quotes and improve code consistency. | 13/05/2026 |
-| feature/problem-solution | f5743bf | feat(problem-solution): add problem solution template. | 13/05/2026 |
-| feature/problem-solution | 93725eb | fix: correct sections styles. | 13/05/2026 |
-| feature/problem-solution | f4b2af4 | fix: identation and general styles. | 13/05/2026 |
-| feature/remain-logic | 0bdb25f | feat: add remain scripts. | 13/05/2026 |
-| feature/remain-logic | 985d67d | feat: add landing button and update main. | 13/05/2026 |
-| feature/remain-logic | b5f0e3e | fix: update general styles and landing button styles. | 13/05/2026 |
-| feature/remain-logic | ac3dedf | feat: add script module. | 13/05/2026 |
-| release/1.0.0 | 09416dd | docs: update readme. | 13/05/2026 |
+\begin{longtable}{|p{0.14\textwidth}|p{0.18\textwidth}|p{0.10\textwidth}|p{0.38\textwidth}|p{0.12\textwidth}|}
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endhead
+
+viora-website & feature/main-navigation & cfcf95e & feat(header): add template and styles for header, and responsive. & 13/05/2026 \\ \hline
+viora-website & feature/main-navigation & 0973f67 & feat(header): add script for header. & 13/05/2026 \\ \hline
+viora-website & feature/main-navigation & 165f92c & feat(footer): add template, style and script for footer. & 13/05/2026 \\ \hline
+viora-website & feature/hero-section & bcb63a2 & feat(hero-section): add hero section with cta and sound toggle. & 13/05/2026 \\ \hline
+viora-website & feature/hero-section & 594c1c1 & feat(llearning-from-best): add template for learning from best panel. & 13/05/2026 \\ \hline
+viora-website & feature/hero-section & a45425e & feat(hero-section): add hero section parallax and ambient sound. & 13/05/2026 \\ \hline
+viora-website & feature/about-the-team & 2fc1e8f & feat(team-members): add styles for team members section. & 13/05/2026 \\ \hline
+viora-website & feature/about-the-team & fe56f46 & feat(learning-from-best): add styles for learning from best section. & 13/05/2026 \\ \hline
+viora-website & feature/about-the-team & 84c3efb & feat(about-the-team): add scripts for learning from best and team members. & 13/05/2026 \\ \hline
+viora-website & feature/hero-section & 165b8c1 & feat(hero-section): add hero section styles and responsive layout. & 13/05/2026 \\ \hline
+viora-website & feature/i18n & c8d2374 & feat(i18n): add json files for languages. & 13/05/2026 \\ \hline
+viora-website & feature/i18n & 3786274 & feat(i18n): add i18n service. & 13/05/2026 \\ \hline
+viora-website & feature/i18n & 3fc40c2 & feat(i18n): add i18n logic and main. & 13/05/2026 \\ \hline
+viora-website & feature/contact & ffb6299 & feat(contact): add template, styles and script for contact section. & 13/05/2026 \\ \hline
+viora-website & feature/pricing & e5b6ba2 & feat(pricing): add pricing panel component. & 13/05/2026 \\ \hline
+viora-website & feature/pricing & 073b7d6 & feat(pricing): add pricing and referrals sections and init stub. & 13/05/2026 \\ \hline
+viora-website & feature/pricing & 38a0879 & feat(pricing): add pricing sections css. & 13/05/2026 \\ \hline
+viora-website & feature/problem-context & 8315770 & feat(problem-context): add styles for problem-cards and about-intro sections. & 13/05/2026 \\ \hline
+viora-website & feature/problem-context & 1df3dcf & feat(problem-context): add problem-intro-section and about-intro-section components. & 13/05/2026 \\ \hline
+viora-website & feature/grower-benefits-section & 2923b5e & feat(growers-benefits): add growers benefits section with detailed insights and actions. & 13/05/2026 \\ \hline
+viora-website & feature/grower-benefits-section & bb2b681 & feat(growers-benefits): add role benefits section with segment switching functionality. & 13/05/2026 \\ \hline
+viora-website & feature/role-benefits-specialist & 8f58dcd & feat(role-benefits): add specialists section with benefits and actions. & 13/05/2026 \\ \hline
+viora-website & feature/role-benefits-specialist & fd2087b & refactor(role-benefits): standardize string quotes and improve code consistency. & 13/05/2026 \\ \hline
+viora-website & feature/problem-solution & f5743bf & feat(problem-solution): add problem solution template. & 13/05/2026 \\ \hline
+viora-website & feature/problem-solution & 93725eb & fix: correct sections styles. & 13/05/2026 \\ \hline
+viora-website & feature/problem-solution & f4b2af4 & fix: identation and general styles. & 13/05/2026 \\ \hline
+viora-website & feature/remain-logic & 0bdb25f & feat: add remain scripts. & 13/05/2026 \\ \hline
+viora-website & feature/remain-logic & 985d67d & feat: add landing button and update main. & 13/05/2026 \\ \hline
+viora-website & feature/remain-logic & b5f0e3e & fix: update general styles and landing button styles. & 13/05/2026 \\ \hline
+viora-website & feature/remain-logic & ac3dedf & feat: add script module. & 13/05/2026 \\ \hline
+viora-website & release/1.0.0 & 09416dd & docs: update readme. & 13/05/2026 \\ \hline
+
+\end{longtable}
 
 #### Execution Evidence for Sprint Review
 
