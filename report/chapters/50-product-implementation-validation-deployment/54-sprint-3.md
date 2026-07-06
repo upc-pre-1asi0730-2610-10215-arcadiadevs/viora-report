@@ -524,15 +524,97 @@ US09 & Publicación de perfil profesional & TK01 & Formulario de perfil profesio
 
 \end{longtable}
 
-#### Deployment Evidence for Sprint Review
+#### Development Evidence for Sprint Review
 
 &nbsp;
+
+Durante el Sprint 3, el equipo de desarrollo desplegó de manera exitosa los incrementos correspondientes en los tres repositorios principales del proyecto.
+
+A continuación, se presenta la matriz de control de versiones correspondiente al Sprint 3, la cual detalla el historial de commits más importantes de los repositorios (cabe destacar que todos los repositorios mencionados se encuentran alojados bajo el prefijo de la organización upc-pre-1asi0730-2610-10215-arcadiadevs/):
+
+\begin{longtable}{|p{0.15\textwidth}|p{0.15\textwidth}|p{0.10\textwidth}|p{0.40\textwidth}|p{0.10\textwidth}|}
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endhead
+viora-website & refactor/\allowbreak i18n & 837e603 & refactor(i18n): remove hardcoded text in index.html. & 05/06/2026 \\ \hline
+viora-website & feature/\allowbreak add-video-about-the-product & 76c7545 & feat(video) add about the product section and team video playback controls. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & f37b2ec & feat(agronomic): align dashboard overview header and card layout. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 5a08c4c & feat(agronomic): map weather summary visuals from the condition. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 3566a22 & feat(shared): redesign the dashboard toolbar controls. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 7c0721d & feat(shared): add coming soon view and workspace placeholder routes. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & c22b4ac & feat(shared): add coming soon and dashboard overview translations. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 2e50e69 & feat(shared): remove the in-memory mock resources. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 8c1461d & feat(surveillance): route alerts to the mock api target. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & dca94a8 & feat(agronomic): consume platform endpoints directly via the api gateway. & 18/06/2026 \\ \hline
+viora-website & release/\allowbreak 2.0.3 & 9f20ecd & feat(links): update links for webapp. & 19/06/2026 \\ \hline
+viora-website & feature/\allowbreak image-team & 1186fee & fix(presentationslides): correct images. & 19/06/2026 \\ \hline
+viora-website & feature/\allowbreak members & 0949da0 & fix(members): change team members panel. & 19/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak my-plots-management & a119191 & feat(agronomic): add my plots management flow. & 19/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak dashboard-weather-plot-overview & 77b4d06 & feat(agronomic): add weather and plot overview views. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak plot-registration-contract-fix & 71db886 & feat(agronomic): enhance create-plotCommand with additional fields and area calculation. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak hot-fix-to-database & 677c218 & feat(database): update default schema handling and connection string for flexibility. & 19/06/2026 \\ \hline
+viora-platform & release/\allowbreak 0.20.0 & 305c69d & feat(database): set default schema to 'public' and update connection string for postgre sql. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak correct-environments & 8540281 & fix: update environment variables. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak setup-deploy & 6a7d290 & feat(database): update app setting and configurations. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & 27c88c4 & feat(agronomic): update db context and program for dynamic nutrition. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & 89edd5d & feat(agronomic): add controller, resources and assembler for dynamic nutrition. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & 79890bb & feat(agronomic): add repository for dynamic nutrition. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & 1eb2ad4 & feat(agronomic): add aggregate and value objects for dynamic nutrition. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & dcb1c95 & feat(agronomic): add query services and command for dynamic nutrition. & 19/06/2026 \\ \hline
+\end{longtable}
 
 #### Execution Evidence for Sprint Review
 
 &nbsp;
 
 #### Services Documentation Evidence for Sprint Review
+
+&nbsp;
+
+Durante el Sprint 3, se consolidó y documentó la primera versión operativa de los Web Services de Viora utilizando OpenAPI 3.0, lo que permitió generar dinámicamente la interfaz gráfica a través de Swagger UI. El logro principal en relación con la Documentación de Web Services para este Sprint radica en la exposición clara, interactiva y estructurada de los endpoints correspondientes a los contextos Agronomic, Surveillance y Shared, habilitando pruebas con datos reales y garantizando que las aplicaciones cliente puedan consumir los servicios de manera confiable.
+
+La documentación oficial y centralizada de todos estos endpoints se encuentra desplegada y accesible a través del siguiente enlace directo: \url{}
+
+A continuación, se presenta la tabla detallada de los endpoints documentados, indicando las acciones soportadas, la sintaxis de llamada, parámetros requeridos y ejemplos descriptivos del response esperado, considerando las particularidades del manejo de respuestas en ASP.NET Core (como el uso de ProblemDetails para errores).
+
+\begin{longtable}{|p{0.25\textwidth}|p{0.20\textwidth}|p{0.20\textwidth}|p{0.25\textwidth}|}
+\hline
+\textbf{Sintaxis de Llamada} & \textbf{Acción Implementada} & \textbf{Parámetros y Request Body} & \textbf{Ejemplo y Explicación del Response} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Sintaxis de Llamada} & \textbf{Acción Implementada} & \textbf{Parámetros y Request Body} & \textbf{Ejemplo y Explicación del Response} \\ \hline
+\endhead
+
+GET /api/\allowbreak v1/\allowbreak pest-sighting-reports & Consultar reportes manuales de plagas & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Retorna arreglo JSON de reportes. Ej: \texttt{[\{"id":1, "pest":"Aphids"\}]} \\ \hline
+POST /api/\allowbreak v1/\allowbreak pest-sighting-reports & Crear un reporte de avistamiento & Body: JSON con plotId, pest, severity. & \textbf{201 Created:} Confirma registro. Ej: \texttt{\{"id":2, "status":"ACTIVE"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak monitoring-summaries & Obtener resumen de KPIs & Parámetros query: userId, date. Body: N/A. & \textbf{200 OK:} JSON con NDVI y estado de salud. Ej: \texttt{\{"ndvi":0.75, "health":"GOOD"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak plots & Listar parcelas registradas & Parámetros query: view, includeCurrentImagery. Body: N/A. & \textbf{200 OK:} Arreglo JSON de parcelas. Ej: \texttt{[\{"name":"Parcela Norte"\}]} \\ \hline
+POST /api/\allowbreak v1/\allowbreak plots & Registrar nueva parcela productiva & Body: JSON con name, cropType, coordinates. & \textbf{201 Created:} Objeto de la parcela generada. Ej: \texttt{\{"id":5, "area": 12.5\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\} & Consultar detalle de parcela & Parámetros query: view. Path: plotId (Long). Body: N/A. & \textbf{200 OK:} Detalle completo. Ej: \texttt{\{"id":1, "name":"Fundo A"\}} \\ \hline
+DELETE /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\} & Eliminar parcela registrada & Parámetros query: view. Path: plotId (Long). Body: N/A. & \textbf{204 No Content:} Operación exitosa sin cuerpo de respuesta. \\ \hline
+PATCH /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\} & Editar parcialmente una parcela & Path: plotId. Body: Campos a modificar (e.g., name). & \textbf{200 OK:} Parcela actualizada. Ej: \texttt{\{"name":"Nuevo Nombre"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak alerts & Consultar alertas activas e históricas & Parámetros query: status, severity. Body: N/A. & \textbf{200 OK:} Arreglo JSON de alertas. Ej: \texttt{[\{"alert":"Helada", "severity":"HIGH"\}]} \\ \hline
+GET /api/\allowbreak v1/\allowbreak symptom-dictionary-items & Consultar el catálogo de síntomas & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Arreglo JSON del diccionario. Ej: \texttt{[\{"symptom":"Manchas Amarillas"\}]} \\ \hline
+GET /api/\allowbreak v1/\allowbreak dynamic-nutrition-plans & Consultar planes dinámicos & Parámetros query: plotId. Body: N/A. & \textbf{200 OK:} Arreglo JSON de planes. Ej: \texttt{[\{"planId":1, "fertilizer":"Nitrogen"\}]} \\ \hline
+GET /api/\allowbreak v1/\allowbreak community-risk & Consultar riesgo comunitario & Parámetros query: lat, lng, radius. Body: N/A. & \textbf{200 OK:} JSON con nivel de riesgo. Ej: \texttt{\{"riskLevel":"MODERATE"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\}/\allowbreak iot-devices & Listar dispositivos IoT & Path: plotId. Body: N/A. & \textbf{200 OK:} Arreglo JSON de dispositivos. Ej: \texttt{[\{"deviceId":"SN-1234"\}]} \\ \hline
+POST /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\}/\allowbreak iot-devices & Registrar nuevo dispositivo IoT & Path: plotId. Body: JSON con deviceName. & \textbf{201 Created:} Dispositivo registrado. Ej: \texttt{\{"id":3, "status":"ACTIVE"\}} \\ \hline
+\end{longtable}
+
+Para respaldar el trabajo realizado en la configuración de la documentación, a continuación se proporciona el URL oficial del repositorio backend y la relación de commits vinculados a este esfuerzo:
+
+\begin{itemize}
+    \item \textbf{Repositorio de Web Services:} \url{https://github.com/upc-pre-1asi0730-2610-10215-arcadiadevs/viora-platform}
+    \item \textbf{Commits relacionados con Documentación:}
+    \begin{itemize}
+        \item \texttt{92518e3}: \textit{feat(shared): configure swagger ui and openapi endpoints for .net platform.}
+    \end{itemize}
+\end{itemize}
 
 &nbsp;
 
