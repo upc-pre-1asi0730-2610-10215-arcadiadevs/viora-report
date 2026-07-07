@@ -226,8 +226,8 @@ El Sprint 1 ha concluido con éxito, logrando establecer la base digital estrat�
     \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
 \end{figure}
 
-\textbf{Website:} \url{https://viora-website-flax.vercel.app/}
-\textbf{Enlace al video:} \url{https://tinyurl.com/viora-sprint1}
+* \textbf{Website:} \url{https://viora-website-flax.vercel.app/}
+* \textbf{Enlace al video:} \url{https://tinyurl.com/viora-sprint1}
 
 
 #### Services Documentation Evidence for Sprint Review
