@@ -571,6 +571,41 @@ viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & dcb1
 
 &nbsp;
 
+\begin{figure}[H]
+\caption{Sección «Terms of Service» actualizada en la Landing Page.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-3/evidence/landing-terminos-condiciones.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{ Sección de beneficios para productores olivareros en el Landing Page.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-3/evidence/landing-productor.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Sección de beneficios para especialistas fitosanitarios en el Landing Page.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-3/evidence/landing-especialista.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Sección «Pricing Plans» para productores olivareros actualizada en la Landing Page.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-3/evidence/landing-precio-productor.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Sección «Pricing Plans» para especialistas fitosanitarios actualizada en la Landing Page.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-3/evidence/landing-precio-especialista.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
 \textbf{Website:} \url{https://viora-website-flax.vercel.app/}
 \textbf{Webapp:} \url{https://viora-release-001.web.app/dashboard}
 
