@@ -4,6 +4,8 @@
 
 #### Sprint Planning 1
 
+&nbsp;
+
 En esta sección se detallan los acuerdos fundamentales alcanzados por el equipo ArcadiaDevs durante la sesión de planificación del Sprint 1, llevada a cabo de manera virtual mediante la plataforma Discord. El propósito central de esta reunión fue alinear los esfuerzos técnicos con la estrategia de captación de la marca Viora, definiendo un compromiso de trabajo basado en una velocidad de 20 puntos para abordar un conjunto de historias de usuario que suman 18 puntos de esfuerzo.
 
 A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el cual integra la logística de la sesión, los responsables de la documentación y el Sprint Goal diseñado para garantizar que este primer incremento de software entregue valor real a los productores y especialistas del sector olivarero.
@@ -18,7 +20,7 @@ A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el c
 \textbf{Prepared By} & Paredes Maza, Victor Juan de Dios \\
 \textbf{Attendees} & Espada Lazo, Piero Anthony / Li Gayoso, Diana Carolina / Paredes Maza, Victor Juan de Dios / Santi Guerrero, Fabrizio Alonso / Trinidad Leon, Jahat Jassiel \\ \hline
 \multicolumn{2}{l}{\textbf{Sprint Goal \& User Stories}} \\ \hline
-\textbf{Sprint 1 Goal} & Nuestro enfoque está en proporcionar una experiencia informativa y persuasiva mediante la Landing Page oficial, destacando la conexión entre datos climáticos y acción en campo; creemos que entrega claridad inmediata sobre la propuesta de valor, confianza institucional y una ruta directa de conversión a los visitantes productores y especialistas fitosanitarios; esto se confirmará cuando los usuarios puedan navegar los beneficios segmentados, validar la eficacia mediante testimonios y completar la transición hacia el flujo sin fricciones. \\
+\textbf{Sprint 1 Goal} & **Nuestro enfoque** se orienta a ilustrar los elementos diferenciales de la solución y dar a conocer la propuesta de valor de Viora a los nuevos visitantes, abarcando las necesidades tanto de productores agrícolas como de especialistas fitosanitarios. **Creemos que esto proporciona** una decisión de registro más informada, confianza inicial en el ecosistema, y una comprensión inmediata de los beneficios y modelo de acceso a los futuros usuarios. **Esto se confirmará cuando** se registre un incremento medible en el tiempo de retención en la Landing Page, y una reducción en la tasa de rebote. \\
 \textbf{Sprint 1 Velocity} & 20 \\
 \textbf{Sum of Story Points} & 18 \\ \hline
 \end{tabular}
@@ -45,6 +47,13 @@ Trinidad, Jahat & trinity-bytes & C & C & C & C \\ \hline
 
 El objetivo principal de este Sprint es establecer la presencia digital estratégica de Viora mediante la construcción de una Landing Page funcional y persuasiva, diseñada para comunicar la propuesta de valor y facilitar la conversión directa de productores y especialistas hacia el ecosistema.
 
+\begin{figure}[H]
+\caption{Vista General del Sprint Backlog 1}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-1/sprint-1-trello.png}
+\caption*{\textit{Nota.} Elaboración propia a partir del tablero en Trello: https://trello.com/b/VkddMbZJ/1asi0730-viora-sb1}
+\end{figure}
+
 \begin{longtable}{|p{0.05\textwidth}|p{0.14\textwidth}|p{0.05\textwidth}|p{0.14\textwidth}|p{0.24\textwidth}|p{0.08\textwidth}|p{0.12\textwidth}|p{0.07\textwidth}|} 
 \hline 
 \multicolumn{2}{|l|}{\textbf{Sprint \#}} & \multicolumn{6}{l|}{Sprint 1} \\ \hline 
@@ -57,39 +66,37 @@ El objetivo principal de este Sprint es establecer la presencia digital estraté
 \textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation} & \textbf{Assigned To} & \textbf{Status} \\ \hline 
 \endhead
 
-% US54
-US54 & Presentación de la propuesta de valor central & TK01 & Header Navigation & Maquetación, estilos y programación del comportamiento responsivo del encabezado principal. & 0.75 & Santi, Fabrizio & Done \\ \cline{3-8} 
-& & TK02 & Hero Layout & Estructuración visual de la sección de inicio con soporte para efectos de parallax. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
-& & TK03 & Hero Ambient Sound & Implementación de la lógica de alternancia de sonido ambiental y Toggle UI. & 0.5 & Li, Diana & Done \\ \hline
+% US43
+US43 & Presentación de la propuesta de valor central & TK01 & Header UI \& Navigation & Maquetación, estilos y programación del comportamiento de navegación responsiva del encabezado principal. & 0.75 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK02 & Hero Section Layout & Estructuración semántica y diseño visual de la sección principal de inicio. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK03 & Hero Ambient Audio Logic & Implementación del comportamiento interactivo y control del reproductor de audio ambiental. & 0.5 & Li, Diana & Done \\ \hline
 
-% US55
-US55 & Redirección hacia el ecosistema transaccional & TK04 & Problem Context UI & Diseño de las tarjetas de contexto de problemas y secciones de introducción About. & 0.5 & Li, Diana & Done \\ \cline{3-8} 
-& & TK05 & Conversion Logic & Implementación de botones de aterrizaje. & 0.5 & Li, Diana & Done \\ \hline
+% US44
+US44 & Redirección hacia el ecosistema transaccional & TK04 & Problem \& Solution Layout & Diseño estructural visual de la sección persuasiva enfocada en los retos del rubro olivarero. & 0.5 & Li, Diana & Done \\ \cline{3-8} 
+& & TK05 & Persuasive CTAs Behavior & Programación de interacciones y animaciones para los botones de llamado a la acción (CTA). & 0.5 & Li, Diana & Done \\ \hline
 
-% US56
-US56 & Exploración de beneficios para el Productor & TK06 & Grower Insights UI & Maquetación de la sección de beneficios con detalles específicos sobre acciones preventivas y NDVI. & 0.75 & Trinidad, Jahat & Done \\ \hline
+% US45
+US45 & Exploración de beneficios para el Productor & TK06 & Producer Segment Interface & Maquetación y estilos de la vista de beneficios orientada exclusivamente a productores. & 0.75 & Trinidad, Jahat & Done \\ \hline
 
-% US57
-US57 & Exploración de beneficios para el Especialista & TK07 & Specialist Benefits & Implementación del apartado de beneficios técnicos y acciones específicas para asesores. & 0.5 & Paredes, Victor & Done \\ \hline
+% US46
+US46 & Exploración de beneficios para el Especialista & TK07 & Specialist Segment Interface & Maquetación y estilos de la vista de beneficios orientada a especialistas fitosanitarios. & 0.5 & Paredes, Victor & Done \\ \cline{3-8}
+& & TK08 & Segment Toggle Behavior & Programación del comportamiento dinámico para alternar la interfaz entre perfiles de usuario. & 0.5 & Paredes, Victor & Done \\ \hline
 
-% US58
-US58 & Presentación del programa de referidos & TK08 & Pricing Panel & Desarrollo del componente de paneles de precios y secciones de planes de suscripción. & 0.75 & Li, Diana & Done \\ \cline{3-8} 
-& & TK09 & Referrals Section & Implementación de la sección de referidos y stubs iniciales de integración. & 0.5 & Li, Diana & Done \\ \hline
+% US50
+US50 & Visualización de planes de precio & TK09 & Pricing Panel UI & Desarrollo del componente de paneles de precios y secciones de planes de suscripción. & 0.75 & Li, Diana & Done \\ \hline
 
-% US59
-US59 & Validación de impacto mediante resultados esperados & TK10 & General Performance Logic & Implementación de scripts base para el manejo de métricas y lógica operativa del landing. & 0.75 & Espada, Piero & Done \\ \hline
+% US49
+US49 & Exploración del equipo detrás de la plataforma & TK10 & Mission \& Vision Display & Desarrollo del panel informativo ``Learning from best'' y sección de misión corporativa. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
+& & TK11 & Team Members UI & Maquetación de la grilla de perfiles del equipo y estilos visuales asociados. & 0.75 & Santi, Fabrizio & Done \\ \hline
 
-% US60
-US60 & Exploración del respaldo corporativo y humano & TK11 & Mission \& Vision Display & Desarrollo del panel informativo "Learning from best" y sección de misión corporativa. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
-& & TK12 & Team Members UI & Maquetación de la grilla de perfiles del equipo y estilos visuales asociados. & 0.75 & Santi, Fabrizio & Done \\ \hline
-
-% US61
-US61 & Políticas y contacto & TK13 & Contact System & Implementación de la plantilla, estilos y scripts para la sección de comunicación institucional. & 0.5 & Santi, Fabrizio & Done \\ \cline{3-8} 
-& & TK14 & Footer \& i18n & Estructuración del pie de página e integración del servicio de internacionalización multi-idioma. & 0.75 & Santi, Fabrizio & Done \\ \hline
+% US47
+US47 & Presentación del programa de referidos & TK12 & Referrals Section & Implementación de la sección de referidos con información del programa e integración de stubs iniciales. & 0.5 & Li, Diana & Done \\ \cline{3-8}
+& & TK13 & Contact \& Footer & Implementación de la plantilla, estilos y scripts para contacto; estructuración del pie de página e i18n. & 0.75 & Santi, Fabrizio & Done \\ \hline
 
 \end{longtable}
 
 #### Deployment Evidence for Sprint Review
+&nbsp;
 
 Durante la primera iteración, el principal avance de implementación se centró en la construcción integral de la Landing Page oficial de Viora. Se logró codificar e integrar con éxito la interfaz de usuario, la lógica de navegación responsiva, la segmentación de la propuesta de valor y los módulos de conversión (CTAs).
 
@@ -97,41 +104,51 @@ Para garantizar la centralización, trazabilidad y correcta auditoría del códi
 
 A continuación, se presenta la matriz de control de versiones, la cual detalla el historial cronológico de commits realizados en el repositorio del proyecto.
 
-| Branch | Commit Id | Commit Message | Commited on (Date) |
-| :--- | :--- | :--- | :--- |
-|   feature/main-navigation       | cfcf95e     | feat(header): add template and styles for header, and responsive.                        | 13/05/2026            |
-|   feature/main-navigation         | 0973f67     | feat(header): add script for header.                                                     | 13/05/2026            |
-|  feature/main-navigation          | 165f92c     | feat(footer): add template, style and script for footer.                                 | 13/05/2026            |
-|  feature/hero-section          | bcb63a2     | feat(hero-section): add hero section with cta and sound toggle.                          | 13/05/2026            |
-|   feature/hero-section         | 594c1c1     | feat(llearning-from-best): add template for learning from best panel.                    | 13/05/2026            |
-|   feature/hero-section         | a45425e     | feat(hero-section): add hero section parallax and ambient sound.                         | 13/05/2026            |
-|   feature/about-the-team       | 2fc1e8f     | feat(team-members): add styles for team members section.                                 | 13/05/2026            |
-|    feature/about-the-team           | fe56f46     | feat(learning-from-best): add styles for learning from best section.                     | 13/05/2026            |
-|   feature/about-the-team            | 84c3efb     | feat(about-the-team): add scripts for learning from best and team members.               | 13/05/2026            |
-|  feature/hero-section        | 165b8c1     | feat(hero-section): add hero section styles and responsive layout.                       | 13/05/2026            |
-|  feature/i18n        | c8d2374     | feat(i18n): add json files for languages.                                                | 13/05/2026            |
-|  feature/i18n           | 3786274     | feat(i18n): add i18n service.                                                            | 13/05/2026            |
-|   feature/i18n          | 3fc40c2     | feat(i18n): add i18n logic and main.                                                     | 13/05/2026            |
-|   feature/contact       | ffb6299     | feat(contact): add template, styles and script for contact section.                      | 13/05/2026            |
-|   feature/pricing       | e5b6ba2     | feat(pricing): add pricing panel component.                                              | 13/05/2026            |
-|    feature/pricing         | 073b7d6     | feat(pricing): add pricing and referrals sections and init stub.                         | 13/05/2026            |
-|    feature/pricing         | 38a0879     | feat(pricing): add pricing sections css.                                                 | 13/05/2026            |
-| feature/problem-context | 8315770 | feat(problem-context): add styles for problem-cards and about-intro sections. | 13/05/2026 |
-| feature/problem-context | 1df3dcf | feat(problem-context): add problem-intro-section and about-intro-section components. | 13/05/2026 |
-|    feature/grower-benefits-section      | 2923b5e     | feat(growers-benefits): add growers benefits section with detailed insights and actions. | 13/05/2026            |
-| feature/grower-benefits-section          | bb2b681     | feat(growers-benefits): add role benefits section with segment switching functionality.  | 13/05/2026 |
-| feature/role-benefits-specialist | 8f58dcd | feat(role-benefits): add specialists section with benefits and actions. | 13/05/2026 |
-| feature/role-benefits-specialist  | fd2087b | refactor(role-benefits): standardize string quotes and improve code consistency. | 13/05/2026 |
-| feature/problem-solution | f5743bf | feat(problem-solution): add problem solution template. | 13/05/2026 |
-| feature/problem-solution | 93725eb | fix: correct sections styles. | 13/05/2026 |
-| feature/problem-solution | f4b2af4 | fix: identation and general styles. | 13/05/2026 |
-| feature/remain-logic | 0bdb25f | feat: add remain scripts. | 13/05/2026 |
-| feature/remain-logic | 985d67d | feat: add landing button and update main. | 13/05/2026 |
-| feature/remain-logic | b5f0e3e | fix: update general styles and landing button styles. | 13/05/2026 |
-| feature/remain-logic | ac3dedf | feat: add script module. | 13/05/2026 |
-| release/1.0.0 | 09416dd | docs: update readme. | 13/05/2026 |
+\begin{longtable}{|p{0.14\textwidth}|p{0.18\textwidth}|p{0.10\textwidth}|p{0.38\textwidth}|p{0.12\textwidth}|}
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endhead
+
+viora-website & feature/main-navigation & cfcf95e & feat(header): add template and styles for header, and responsive. & 13/05/2026 \\ \hline
+viora-website & feature/main-navigation & 0973f67 & feat(header): add script for header. & 13/05/2026 \\ \hline
+viora-website & feature/main-navigation & 165f92c & feat(footer): add template, style and script for footer. & 13/05/2026 \\ \hline
+viora-website & feature/hero-section & bcb63a2 & feat(hero-section): add hero section with cta and sound toggle. & 13/05/2026 \\ \hline
+viora-website & feature/hero-section & 594c1c1 & feat(llearning-from-best): add template for learning from best panel. & 13/05/2026 \\ \hline
+viora-website & feature/hero-section & a45425e & feat(hero-section): add hero section parallax and ambient sound. & 13/05/2026 \\ \hline
+viora-website & feature/about-the-team & 2fc1e8f & feat(team-members): add styles for team members section. & 13/05/2026 \\ \hline
+viora-website & feature/about-the-team & fe56f46 & feat(learning-from-best): add styles for learning from best section. & 13/05/2026 \\ \hline
+viora-website & feature/about-the-team & 84c3efb & feat(about-the-team): add scripts for learning from best and team members. & 13/05/2026 \\ \hline
+viora-website & feature/hero-section & 165b8c1 & feat(hero-section): add hero section styles and responsive layout. & 13/05/2026 \\ \hline
+viora-website & feature/i18n & c8d2374 & feat(i18n): add json files for languages. & 13/05/2026 \\ \hline
+viora-website & feature/i18n & 3786274 & feat(i18n): add i18n service. & 13/05/2026 \\ \hline
+viora-website & feature/i18n & 3fc40c2 & feat(i18n): add i18n logic and main. & 13/05/2026 \\ \hline
+viora-website & feature/contact & ffb6299 & feat(contact): add template, styles and script for contact section. & 13/05/2026 \\ \hline
+viora-website & feature/pricing & e5b6ba2 & feat(pricing): add pricing panel component. & 13/05/2026 \\ \hline
+viora-website & feature/pricing & 073b7d6 & feat(pricing): add pricing and referrals sections and init stub. & 13/05/2026 \\ \hline
+viora-website & feature/pricing & 38a0879 & feat(pricing): add pricing sections css. & 13/05/2026 \\ \hline
+viora-website & feature/problem-context & 8315770 & feat(problem-context): add styles for problem-cards and about-intro sections. & 13/05/2026 \\ \hline
+viora-website & feature/problem-context & 1df3dcf & feat(problem-context): add problem-intro-section and about-intro-section components. & 13/05/2026 \\ \hline
+viora-website & feature/grower-benefits-section & 2923b5e & feat(growers-benefits): add growers benefits section with detailed insights and actions. & 13/05/2026 \\ \hline
+viora-website & feature/grower-benefits-section & bb2b681 & feat(growers-benefits): add role benefits section with segment switching functionality. & 13/05/2026 \\ \hline
+viora-website & feature/role-benefits-specialist & 8f58dcd & feat(role-benefits): add specialists section with benefits and actions. & 13/05/2026 \\ \hline
+viora-website & feature/role-benefits-specialist & fd2087b & refactor(role-benefits): standardize string quotes and improve code consistency. & 13/05/2026 \\ \hline
+viora-website & feature/problem-solution & f5743bf & feat(problem-solution): add problem solution template. & 13/05/2026 \\ \hline
+viora-website & feature/problem-solution & 93725eb & fix: correct sections styles. & 13/05/2026 \\ \hline
+viora-website & feature/problem-solution & f4b2af4 & fix: identation and general styles. & 13/05/2026 \\ \hline
+viora-website & feature/remain-logic & 0bdb25f & feat: add remain scripts. & 13/05/2026 \\ \hline
+viora-website & feature/remain-logic & 985d67d & feat: add landing button and update main. & 13/05/2026 \\ \hline
+viora-website & feature/remain-logic & b5f0e3e & fix: update general styles and landing button styles. & 13/05/2026 \\ \hline
+viora-website & feature/remain-logic & ac3dedf & feat: add script module. & 13/05/2026 \\ \hline
+viora-website & release/1.0.0 & 09416dd & docs: update readme. & 13/05/2026 \\ \hline
+
+\end{longtable}
 
 #### Execution Evidence for Sprint Review
+&nbsp;
 
 El Sprint 1 ha concluido con éxito, logrando establecer la base digital estratégica del ecosistema Viora. Durante este periodo, el equipo se centró en materializar una Landing Page que no solo sirve como carta de presentación institucional, sino como una herramienta de conversión diseñada específicamente para productores y especialistas del sector olivarero.
 
@@ -209,14 +226,17 @@ El Sprint 1 ha concluido con éxito, logrando establecer la base digital estrat�
     \caption*{\textit{Nota.} Visualización correspondiente del sprint 1. Elaboración propia.}
 \end{figure}
 
+\textbf{Website:} \url{https://viora-website-flax.vercel.app/}
 \textbf{Enlace al video:} \url{https://tinyurl.com/viora-sprint1}
 
 
 #### Services Documentation Evidence for Sprint Review
+&nbsp;
 
 Durante el Sprint 1, no se ha incluido documentación de Web Services debido a que el alcance del incremento se ha centrado exclusivamente en la construcción de la Landing Page oficial y la configuración de la presencia digital de Viora. La implementación de los servicios web y su correspondiente documentación bajo el estándar OpenAPI están programados para etapas posteriores del proyecto, por lo que el enfoque actual reside en la comunicación de la propuesta de valor y la captación de usuarios.
 
 #### Software Deployment Evidence for Sprint Review
+&nbsp;
 
 Durante el transcurso del Sprint 1, el equipo estableció la infraestructura base y los flujos de automatización necesarios para garantizar que la Landing Page, los Web Services y las Web Applications de Viora operen bajo un esquema de integración y despliegue continuo. El enfoque principal fue eliminar la fricción entre el desarrollo local y el entorno de producción, asegurando que cada incremento de software sea validado y desplegado de forma eficiente.
 
@@ -254,6 +274,7 @@ Finalmente, se accedió al panel de control para confirmar que la aplicación se
 \end{figure}
 
 #### Team Collaboration Insights for Sprint Review
+&nbsp;
 
 La participación de los miembros del equipo se refleja en el volumen y la frecuencia de las contribuciones realizadas al repositorio. Durante este primer incremento, el esfuerzo se concentró en establecer la estructura base, el diseño visual y la interactividad de la plataforma. Como se observa en los analíticos de GitHub, el equipo mantuvo una actividad constante para cumplir con las historias de usuario comprometidas.
 

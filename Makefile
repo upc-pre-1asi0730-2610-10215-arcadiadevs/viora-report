@@ -30,19 +30,31 @@ PDF_FILES = $(PDF_FRONT) $(CHAPTERS) $(BACK)
 
 PDF=$(OUTPUT_DIR)/upc-pre-202610-1asi0730-10215-ArcadiaDevs-report-avXtbX.pdf
 
+DIAGRAM_PNGS = $(patsubst report/assets/diagram-sources/class-diagrams/%.puml,$(DIAGRAM_OUT)/%.png,$(PUML_SOURCES))
+
 # ─── Default target ──────────────────────────────────────────────────────────
 .DEFAULT_GOAL := help
+.PHONY: report c4-diagrams clean help pdf all
 
 # ─── Primary targets ─────────────────────────────────────────────────────────
-report: c4-diagrams
-	$(MKDIR_OUTPUT)
+report: $(PDF)
+
+$(PDF): $(PDF_FILES) $(DIAGRAM_PNGS) | $(OUTPUT_DIR)
 	pandoc --defaults=$(PDF_DEFAULTS) $(PDF_FILES) -o $(PDF)
 
-c4-diagrams:
-	@echo Generating diagrams from PlantUML sources...
+c4-diagrams: $(DIAGRAM_PNGS)
+	@echo Diagrams up to date: $(words $(DIAGRAM_PNGS)) total.
+
+# One PNG per .puml — only regenerates the ones whose source changed.
+$(DIAGRAM_OUT)/%.png: report/assets/diagram-sources/class-diagrams/%.puml | $(DIAGRAM_OUT)
+	@echo Generating diagram: $*...
+	"$(JAVA_HOME)/bin/java" -jar "$(PLANTUML_JAR)" -tpng -o "$(abspath $(DIAGRAM_OUT))" $<
+
+$(OUTPUT_DIR):
+	$(MKDIR_OUTPUT)
+
+$(DIAGRAM_OUT):
 	$(MKDIR_DIAGRAMS)
-	"$(JAVA_HOME)/bin/java" -jar "$(PLANTUML_JAR)" -tpng -o "$(abspath $(DIAGRAM_OUT))" $(PUML_SOURCES)
-	@echo Done. $(words $(PUML_SOURCES)) diagrams generated.
 
 clean:
 	$(RMDIR_OUTPUT)
