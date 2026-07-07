@@ -1,5 +1,5 @@
 @startuml VioraWebAppComponents
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4/master/C4_Component.puml
+!include <C4/C4_Component>
 
 title Component Diagram - Web Application
 
@@ -7,58 +7,67 @@ Person(oliveProducer, "Olive Producer", "Monitors plots, receives alerts, reques
 Person(agriSpecialist, "Agricultural Specialist", "Publishes professional portfolio, receives cases, evaluates plots and manages interventions.")
 
 Container_Boundary(webApp, "Web Application") {
-    Component(authUI, "Authentication UI Component", "Angular Standalone Components / Services", "Handles sign in, password recovery and session entry flows.")
-    Component(profileUI, "Profile UI Component", "Angular Standalone Components", "Allows producer and specialist profile visualization and update.")
-    Component(dashboardUI, "Dashboard UI Component", "Angular Standalone Components", "Displays crop health, climate, NDVI, risk status and alert summaries.")
-    Component(plotManagementUI, "Plot Management UI Component", "Angular Standalone Components", "Allows plot registration, polygon delimitation and agronomic traceability input.")
-    Component(subscriptionBillingUI, "Subscription & Billing UI Component", "Angular Standalone Components", "Allows users to manage trial, subscription, payments and renewals.")
-    Component(marketplaceInterventionUI, "Marketplace & Intervention UI Component", "Angular Standalone Components", "Shows specialists, critical cases and intervention workflows.")
-    Component(notificationCenterUI, "Notification Center Component", "Angular Standalone Components", "Displays alerts, warnings and notification summaries in the UI.")
-    Component(routingGuards, "Routing & Guards Component", "Angular Router / Route Guards", "Protects routes and redirects users according to authentication state and role.")
-    Component(sharedUI, "Shared UI Components", "Angular Shared Components", "Reusable layout, navbar, sidebar, cards, dialogs, tables and common widgets.")
-    Component(apiClientServices, "API Client Services", "Angular Services / HttpClient", "Encapsulates HTTP communication with the API Application.")
+    Component(iamModule, "IAM Module", "Vue.js Module", "Provides views and components for user login, signup, password recovery, and active session store (Pinia).")
+    Component(profileModule, "Profile Module", "Vue.js Module", "Allows producers and specialists to view and update their bios, avatar, and contact profiles.")
+    Component(agronomicModule, "Agronomic Module", "Vue.js Module", "Provides views for plot registration, crop type setting, satellite monitoring, IoT device settings, and agronomic statistics.")
+    Component(surveillanceModule, "Surveillance Module", "Vue.js Module", "Provides views for pest sighting report filing, symptom history tracking, and active preventive warnings.")
+    Component(interventionModule, "Intervention Module", "Vue.js Module", "Coordinates views for searching specialists, sending proposals, tracking intervention execution, and managing treatment prescriptions.")
+    Component(billingModule, "Billing Module", "Vue.js Module", "Manages pricing plan selectors, subscription details, payment records, checkout widgets, and referral program views.")
+    Component(supportModule, "Support Module", "Vue.js Module", "Displays client support dashboards, frequently asked questions (FAQs), and ticket management components.")
+    Component(router, "Router & Guards", "Vue Router", "Manages single-page app routes, transitions, and state-based navigation guards.")
+    Component(sharedPresentation, "Shared Presentation Components", "Vue.js Components", "Provides layouts, main workspace wrappers, navigation sidebars, common buttons, and layout primitives.")
+    Component(sharedInfrastructure, "Shared Infrastructure Components", "JavaScript / Axios", "Encapsulates Axios API base endpoint configurations, Mapbox services, interceptors, and active session context.")
 }
 
-Container(landingPage, "Landing Page", "HTML, CSS, TypeScript", "Static website that presents Viora's value proposition, plans, testimonials and calls to action.")
-Container(apiApp, "API Application", "Java, Spring Boot", "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions.")
+Container(landingPage, "Landing Page", "HTML5, CSS3, JavaScript", "Static website that presents Viora's value proposition, plans, testimonials and calls to action.")
+Container(apiApp, "API Application", "ASP.NET Core", "REST API that handles authentication, plot management, agronomic monitoring, surveillance, interventions and billing.")
 
-Rel(oliveProducer, authUI, "Signs in and recovers account access")
-Rel(agriSpecialist, authUI, "Signs in and recovers account access")
-Rel(oliveProducer, profileUI, "Updates producer profile")
-Rel(agriSpecialist, profileUI, "Updates specialist profile")
-Rel(oliveProducer, dashboardUI, "Views farm dashboard, monitoring and alerts")
-Rel(agriSpecialist, dashboardUI, "Views cases, monitoring insights and alerts")
-Rel(landingPage, webApp, "Redirects authenticated users to")
+Rel(oliveProducer, iamModule, "Signs in, registers and recovers account")
+Rel(agriSpecialist, iamModule, "Signs in, registers and recovers account")
 
-Rel(routingGuards, authUI, "Protects access to")
-Rel(routingGuards, dashboardUI, "Routes authenticated users to")
-Rel(routingGuards, profileUI, "Routes users to")
-Rel(routingGuards, plotManagementUI, "Routes users to")
-Rel(routingGuards, subscriptionBillingUI, "Routes users to")
-Rel(routingGuards, marketplaceInterventionUI, "Routes users to")
-Rel(routingGuards, notificationCenterUI, "Routes users to")
+Rel(oliveProducer, profileModule, "Updates producer profile")
+Rel(agriSpecialist, profileModule, "Updates specialist profile")
 
-Rel(authUI, apiClientServices, "Sends sign-in and recovery requests")
-Rel(profileUI, apiClientServices, "Requests and updates profile data")
-Rel(dashboardUI, apiClientServices, "Requests climate and alert data")
-Rel(plotManagementUI, apiClientServices, "Sends plot and agronomic traceability data")
-Rel(subscriptionBillingUI, apiClientServices, "Requests subscription and payment data")
-Rel(marketplaceInterventionUI, apiClientServices, "Requests specialist and intervention data")
-Rel(notificationCenterUI, apiClientServices, "Loads alert notifications")
+Rel(oliveProducer, agronomicModule, "Registers plots, monitors satellite data and sets crop properties")
+Rel(agriSpecialist, agronomicModule, "Monitors plot details and crop data for assigned cases")
 
-Rel(authUI, sharedUI, "Uses authentication forms and dialogs")
-Rel(profileUI, sharedUI, "Uses profile forms and reusable widgets")
-Rel(dashboardUI, sharedUI, "Uses charts, cards and layout")
-Rel(plotManagementUI, sharedUI, "Uses lists, dialogs and reusable widgets")
-Rel(subscriptionBillingUI, sharedUI, "Uses payment and plan widgets")
-Rel(marketplaceInterventionUI, sharedUI, "Uses lists, dialogs and reusable widgets")
-Rel(notificationCenterUI, sharedUI, "Uses reusable notification widgets")
+Rel(oliveProducer, surveillanceModule, "Files pest sighting reports and views risk warnings")
+Rel(agriSpecialist, surveillanceModule, "Monitors regional warnings and pest sightings")
 
-Rel(dashboardUI, plotManagementUI, "Registers plots and agronomic traceability")
-Rel(dashboardUI, marketplaceInterventionUI, "Manages interventions and technical cases")
-Rel(authUI, profileUI, "Manages subscription, trial and payments")
+Rel(oliveProducer, interventionModule, "Searches specialists, accepts proposals, and views prescriptions")
+Rel(agriSpecialist, interventionModule, "Submits proposals, tracks milestone progress, and writes prescriptions")
 
-Rel(apiClientServices, apiApp, "Makes API requests to", "JSON/HTTPS")
+Rel(oliveProducer, billingModule, "Chooses plans, manages trial/subscription, and views invoices")
+Rel(oliveProducer, supportModule, "Reads FAQs and requests customer support")
+Rel(agriSpecialist, supportModule, "Reads FAQs and requests customer support")
+
+Rel(landingPage, router, "Redirects authenticated users to")
+
+Rel(router, iamModule, "Routes and checks guard authorizations for")
+Rel(router, profileModule, "Routes and checks guard authorizations for")
+Rel(router, agronomicModule, "Routes and checks guard authorizations for")
+Rel(router, surveillanceModule, "Routes and checks guard authorizations for")
+Rel(router, interventionModule, "Routes and checks guard authorizations for")
+Rel(router, billingModule, "Routes and checks guard authorizations for")
+Rel(router, supportModule, "Routes and checks guard authorizations for")
+
+Rel(iamModule, sharedPresentation, "Uses layout and presentation primitives")
+Rel(profileModule, sharedPresentation, "Uses layout and presentation primitives")
+Rel(agronomicModule, sharedPresentation, "Uses layout and presentation primitives")
+Rel(surveillanceModule, sharedPresentation, "Uses layout and presentation primitives")
+Rel(interventionModule, sharedPresentation, "Uses layout and presentation primitives")
+Rel(billingModule, sharedPresentation, "Uses layout and presentation primitives")
+Rel(supportModule, sharedPresentation, "Uses layout and presentation primitives")
+
+Rel(iamModule, sharedInfrastructure, "Makes API requests through")
+Rel(profileModule, sharedInfrastructure, "Makes API requests through")
+Rel(agronomicModule, sharedInfrastructure, "Makes API requests through")
+Rel(surveillanceModule, sharedInfrastructure, "Makes API requests through")
+Rel(interventionModule, sharedInfrastructure, "Makes API requests through")
+Rel(billingModule, sharedInfrastructure, "Makes API requests through")
+Rel(supportModule, sharedInfrastructure, "Makes API requests through")
+
+Rel(sharedInfrastructure, apiApp, "Makes API requests to", "JSON/HTTPS")
 
 SHOW_LEGEND()
 @enduml

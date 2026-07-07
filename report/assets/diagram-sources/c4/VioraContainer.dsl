@@ -11,19 +11,19 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
         viora = softwareSystem "Viora Platform" "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management." {
             tags "CoreSystem"
 
-            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "Vue.js" {
+            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "HTML5, CSS3, JavaScript" {
                 tags "Browser"
             }
             webapp = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Vue.js" {
                 tags "Browser"
             }
-            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, surveillance, interventions and billing." "ASP.NET Core" {
                 tags "RoundedBox" "CodeSystem"
             }
-            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions." "MySQL" {
                 tags "Container" "Database"
             }
-            media = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-backed media storage" {
+            media = container "Media Storage" "Stores profile images and related media assets." "Cloudinary-backed media storage" {
                 tags "Bucket"
             }
         }
@@ -41,12 +41,10 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
         mapbox = softwareSystem "Mapbox" "Maps and geocoding service used for plot delimitation and location-based features." {
             tags "ExternalSystem"
         }
-        cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images and field evidence." {
+        cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images." {
             tags "ExternalSystem"
         }
-        senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "ExternalSystem"
-        }
+
 
         // Relaciones de personas
         visitor    -> viora.landing  "Explores content and calls to action"
@@ -64,8 +62,8 @@ workspace "Viora Platform" "Container diagram for the Viora Platform" {
         viora.api -> mercadopago    "Processes subscriptions, renewals and refunds" "HTTPS + Webhooks"
         viora.api -> brevo          "Sends password recovery and transactional emails" "HTTPS/API"
         viora.api -> mapbox         "Uses maps and geocoding services" "HTTPS/JSON"
-        viora.api -> cloudinary     "Uploads and delivers profile/evidence media" "HTTPS/API"
-        viora.api -> senasa         "Consults official phytosanitary information and reference data" "HTTPS/Open data"
+        viora.api -> cloudinary     "Uploads and delivers profile media" "HTTPS/API"
+
     }
 
     views {

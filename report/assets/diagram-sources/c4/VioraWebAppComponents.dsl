@@ -11,76 +11,67 @@ workspace "Viora - Software Architecture" "Web Application Component Diagrams fo
         viora = softwareSystem "Viora Platform" "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management." {
             tags "CoreSystem"
 
-            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "Vue.js" {
+            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "HTML5, CSS3, JavaScript" {
                 tags "Browser"
             }
 
             webapp = container "Web Application" "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions." "Vue.js" {
                 tags "Browser"
 
-                routing = component "Routing & Guards Component" "Protects routes and redirects users according to authentication state and role." "Vue Router / Navigation Guards" {
+                iamModule = component "IAM Module" "Provides views and components for user login, signup, password recovery, and active session store (Pinia)." "Vue.js Module" {
                     tags "Component"
                 }
-                profileui = component "Profile UI Component" "Allows producer and specialist profile visualization and update." "Vue.js Component" {
+                profileModule = component "Profile Module" "Allows producers and specialists to view and update their bios, avatar, and contact profiles." "Vue.js Module" {
                     tags "Component"
                 }
-                authui = component "Authentication UI Component" "Handles sign in, password recovery and session entry flows." "Vue.js Component / Services" {
+                agronomicModule = component "Agronomic Module" "Provides views for plot registration, crop type setting, satellite monitoring, IoT device settings, and agronomic statistics." "Vue.js Module" {
                     tags "Component"
                 }
-                dashboardui = component "Dashboard UI Component" "Displays crop health, climate, NDVI, risk status and alert summaries." "Vue.js Component" {
+                surveillanceModule = component "Surveillance Module" "Provides views for pest sighting report filing, symptom history tracking, and active preventive warnings." "Vue.js Module" {
                     tags "Component"
                 }
-                notificationsui = component "Notification Center Component" "Displays alerts, warnings and notification summaries in the UI." "Vue.js Component" {
+                interventionModule = component "Intervention Module" "Coordinates views for searching specialists, sending proposals, tracking intervention execution, and managing treatment prescriptions." "Vue.js Module" {
                     tags "Component"
                 }
-                billingui = component "Subscription & Billing UI Component" "Allows users to manage trial, subscription, payments and renewals." "Vue.js Component" {
+                billingModule = component "Billing Module" "Manages pricing plan selectors, subscription details, payment records, checkout widgets, and referral program views." "Vue.js Module" {
                     tags "Component"
                 }
-                plotsui = component "Plot Management UI Component" "Allows plot registration, polygon delimitation and agronomic traceability input." "Vue.js Component" {
+                supportModule = component "Support Module" "Displays client support dashboards, frequently asked questions (FAQs), and ticket management components." "Vue.js Module" {
                     tags "Component"
                 }
-                marketplaceui = component "Marketplace & Intervention UI Component" "Shows specialists, critical cases and intervention workflows." "Vue.js Component" {
+                router = component "Router & Guards" "Manages single-page app routes, transitions, and state-based navigation guards." "Vue Router" {
                     tags "Component"
                 }
-                sharedui = component "Shared UI Components" "Reusable layout, navbar, sidebar, cards, dialogs, tables and common widgets." "Vue.js Shared Components" {
+                sharedPresentation = component "Shared Presentation Components" "Provides layouts, main workspace wrappers, navigation sidebars, common buttons, and layout primitives." "Vue.js Components" {
                     tags "Component"
                 }
-                apiclient = component "API Client Services" "Encapsulates HTTP communication with the API Application." "Vue.js Services / Axios" {
+                sharedInfrastructure = component "Shared Infrastructure Components" "Encapsulates Axios API base endpoint configurations, Mapbox services, interceptors, and active session context." "JavaScript / Axios" {
                     tags "Component"
                 }
             }
 
-            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, surveillance, interventions and billing." "ASP.NET Core" {
                 tags "RoundedBox" "CodeSystem"
 
-                iam = component "IAM Component" "Handles authentication, authorization, JWT validation and password recovery." "ASP.NET Core / Identity" {
+                iamContext = component "IAM Bounded Context" "Handles user authentication, JWT sessions, role management, and access controls." "ASP.NET Core / Identity" {
                     tags "Component"
                 }
-                profile = component "Profile Component" "Manages producer and specialist profile information." "ASP.NET Core Service" {
+                profileContext = component "Profile Bounded Context" "Manages details of olive growers and agricultural specialists." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                plots = component "Plot Management Component" "Registers productive areas, validates polygons and manages plot traceability." "ASP.NET Core Service" {
+                agronomicContext = component "Agronomic Bounded Context" "Registers productive areas, processes IoT device streams, calculates dynamic nutrition plans, and compiles agronomic stats." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                monitoring = component "Agrometeorological Monitoring Component" "Synchronizes weather, satellite and vegetation index data for registered plots." "ASP.NET Core Service" {
+                surveillanceContext = component "Surveillance Bounded Context" "Handles pest sighting reports, symptom definitions, and publishes phytosanitary or community risk alerts." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                prediction = component "Prediction & Risk Engine" "Calculates chill portions, crop health, yield projections and phenological risk." "ASP.NET Core Service" {
+                interventionContext = component "Intervention Bounded Context" "Coordinates service proposals, matching producers with specialists, intervention tracking, and treatment prescriptions." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                alerts = component "Alert & Notification Component" "Generates phytosanitary, phenological and community preventive alerts." "ASP.NET Core Service" {
+                billingContext = component "Billing Bounded Context" "Manages subscription plans, Mercado Pago checkout flow, and the referral/affiliate coupon program." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                marketplace = component "Marketplace & Intervention Component" "Matches producers with specialists and manages technical intervention workflows." "ASP.NET Core Service" {
-                    tags "Component"
-                }
-                billing = component "Subscription & Billing Component" "Manages trials, subscriptions, payments, renewals and refunds." "ASP.NET Core Service" {
-                    tags "Component"
-                }
-                moderation = component "Moderation & Strikes Component" "Evaluates misconduct reports and applies strikes, suspensions or account blocking." "ASP.NET Core Service" {
-                    tags "Component"
-                }
-                integrations = component "External Integrations Component" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources." "ASP.NET Core Service" {
+                sharedKernel = component "Shared Kernel" "Provides shared base classes, transactional pipeline behaviors, and global filters." "C# Shared Module" {
                     tags "Component"
                 }
                 repositories = component "Repository Components" "Persist and retrieve domain data from the relational database." "Entity Framework Core" {
@@ -88,10 +79,10 @@ workspace "Viora - Software Architecture" "Web Application Component Diagrams fo
                 }
             }
 
-            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions." "MySQL" {
                 tags "Container" "Database"
             }
-            media = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-backed media storage" {
+            media = container "Media Storage" "Stores profile images and related media assets." "Cloudinary-backed media storage" {
                 tags "Bucket"
             }
         }
@@ -109,12 +100,10 @@ workspace "Viora - Software Architecture" "Web Application Component Diagrams fo
         mapbox = softwareSystem "Mapbox" "Maps and geocoding service used for plot delimitation and location-based features." {
             tags "ExternalSystem"
         }
-        cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images and field evidence." {
+        cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images." {
             tags "ExternalSystem"
         }
-        senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "ExternalSystem"
-        }
+
 
         // Relaciones de personas
         visitor    -> viora.landing  "Explores content and calls to action"
@@ -128,86 +117,97 @@ workspace "Viora - Software Architecture" "Web Application Component Diagrams fo
         viora.api     -> viora.media   "Stores and retrieves media assets" "HTTPS/API"
 
         // Web Application a componentes de API
-        viora.webapp -> viora.api.iam         "Authenticates users and validates sessions" "JSON/HTTPS"
-        viora.webapp -> viora.api.profile     "Manages profile data" "JSON/HTTPS"
-        viora.webapp -> viora.api.plots       "Registers plots and traceability records" "JSON/HTTPS"
-        viora.webapp -> viora.api.monitoring  "Requests dashboard climate and satellite data" "JSON/HTTPS"
-        viora.webapp -> viora.api.marketplace "Manages specialist search and interventions" "JSON/HTTPS"
-        viora.webapp -> viora.api.billing     "Manages subscriptions and payments" "JSON/HTTPS"
+        viora.webapp -> viora.api.iamContext          "Authenticates users and validates sessions" "JSON/HTTPS"
+        viora.webapp -> viora.api.profileContext      "Manages profile data" "JSON/HTTPS"
+        viora.webapp -> viora.api.agronomicContext    "Registers plots, IoT devices, and queries stats/nutrition" "JSON/HTTPS"
+        viora.webapp -> viora.api.surveillanceContext "Queries active alerts and reports pest sightings" "JSON/HTTPS"
+        viora.webapp -> viora.api.interventionContext "Coordinates specialist services and tracks interventions" "JSON/HTTPS"
+        viora.webapp -> viora.api.billingContext      "Subscribes, views invoices, and processes payments" "JSON/HTTPS"
 
         // Relaciones internas de componentes de API
-        viora.api.plots      -> viora.api.monitoring  "Provides plot coordinates and polygons"
-        viora.api.monitoring -> viora.api.prediction  "Provides climate, NDVI and historical agronomic data"
-        viora.api.prediction -> viora.api.alerts      "Triggers risk alerts"
-        viora.api.alerts     -> viora.api.marketplace "Publishes critical cases for specialist response"
-        viora.api.moderation -> viora.api.iam         "Requests account suspension or blocking"
+        viora.api.interventionContext -> viora.api.agronomicContext "Queries plot details and boundaries"
+        viora.api.surveillanceContext -> viora.api.agronomicContext "Reads plot locations for local risk mapping"
 
-        viora.api.iam         -> viora.api.repositories "Reads/writes identity data"
-        viora.api.profile     -> viora.api.repositories "Reads/writes profile data"
-        viora.api.plots       -> viora.api.repositories "Reads/writes plot data"
-        viora.api.monitoring  -> viora.api.repositories "Stores synchronized climate and satellite data"
-        viora.api.prediction  -> viora.api.repositories "Stores risk and yield projections"
-        viora.api.alerts      -> viora.api.repositories "Stores alert records"
-        viora.api.marketplace -> viora.api.repositories "Stores service and intervention records"
-        viora.api.billing     -> viora.api.repositories "Stores subscription data"
-        viora.api.moderation  -> viora.api.repositories "Stores reports and strikes"
+        viora.api.iamContext          -> viora.api.sharedKernel "Uses"
+        viora.api.profileContext      -> viora.api.sharedKernel "Uses"
+        viora.api.agronomicContext    -> viora.api.sharedKernel "Uses"
+        viora.api.surveillanceContext -> viora.api.sharedKernel "Uses"
+        viora.api.interventionContext -> viora.api.sharedKernel "Uses"
+        viora.api.billingContext      -> viora.api.sharedKernel "Uses"
+
+        viora.api.iamContext          -> viora.api.repositories "Reads/writes identity data"
+        viora.api.profileContext      -> viora.api.repositories "Reads/writes profile data"
+        viora.api.agronomicContext    -> viora.api.repositories "Reads/writes plot, IoT, and stats data"
+        viora.api.surveillanceContext -> viora.api.repositories "Reads/writes reports and alert records"
+        viora.api.interventionContext -> viora.api.repositories "Reads/writes intervention and prescription records"
+        viora.api.billingContext      -> viora.api.repositories "Reads/writes subscription and transaction data"
 
         // Componentes de API a servicios externos
-        viora.api.monitoring   -> agromonitoring "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
-        viora.api.plots        -> mapbox         "Uses maps and geocoding for plot location" "HTTPS/JSON"
-        viora.api.billing      -> mercadopago    "Processes payments and receives payment webhooks" "HTTPS/JSON"
-        viora.api.alerts       -> brevo          "Sends transactional email notifications" "HTTPS/API"
-        viora.api.integrations -> cloudinary     "Uploads and retrieves media assets" "HTTPS/API"
-        viora.api.alerts       -> senasa         "Consults official phytosanitary reference data" "HTTPS/Open data"
+        viora.api.agronomicContext -> agromonitoring "Retrieves weather forecast, climate history, and satellite imagery tiles" "HTTPS/JSON"
+        viora.api.agronomicContext -> mapbox         "Geocodes boundaries and displays plot mapping UI" "HTTPS/JSON"
+        viora.api.billingContext   -> mercadopago    "Processes subscriptions, renewals and processes payment webhooks" "HTTPS/JSON"
+        viora.api.surveillanceContext -> brevo      "Sends transactional email alerts" "HTTPS/API"
 
         // Repositorios a almacenamiento
         viora.api.repositories -> viora.db    "Persists and retrieves relational domain data" "ADO.NET"
         viora.api.repositories -> viora.media "Stores media references and asset metadata" "HTTPS/API"
-        viora.api.integrations -> viora.media "Stores and retrieves field evidence and profile media" "HTTPS/API"
-        viora.media             -> cloudinary "Delegates media storage and delivery" "HTTPS/API"
+        viora.media             -> cloudinary "Delegates profile media storage and delivery" "HTTPS/API"
 
         // Relaciones de Web Application Components
-        producer   -> viora.webapp.authui        "Signs in and recovers account access"
-        specialist -> viora.webapp.authui        "Signs in and recovers account access"
+        producer   -> viora.webapp.iamModule          "Signs in, registers and recovers account"
+        specialist -> viora.webapp.iamModule          "Signs in, registers and recovers account"
 
-        producer   -> viora.webapp.dashboardui   "Views farm dashboard, monitoring and alerts"
-        specialist -> viora.webapp.dashboardui   "Views cases, monitoring insights and alerts"
+        producer   -> viora.webapp.profileModule      "Updates producer profile"
+        specialist -> viora.webapp.profileModule      "Updates specialist profile"
 
-        producer   -> viora.webapp.plotsui       "Registers plots and agronomic traceability"
-        specialist -> viora.webapp.marketplaceui "Manages interventions and technical cases"
+        producer   -> viora.webapp.agronomicModule    "Registers plots, monitors satellite data and sets crop properties"
+        specialist -> viora.webapp.agronomicModule    "Monitors plot details and crop data for assigned cases"
 
-        producer   -> viora.webapp.billingui     "Manages subscription, trial and payments"
-        producer   -> viora.webapp.profileui     "Updates producer profile"
-        specialist -> viora.webapp.profileui     "Updates specialist profile"
+        producer   -> viora.webapp.surveillanceModule "Files pest sighting reports and views risk warnings"
+        specialist -> viora.webapp.surveillanceModule "Monitors regional warnings and pest sightings"
 
-        viora.landing -> viora.webapp.routing "Redirects authenticated users to"
+        producer   -> viora.webapp.interventionModule "Searches specialists, accepts proposals, and views prescriptions"
+        specialist -> viora.webapp.interventionModule "Submits proposals, tracks milestone progress, and writes prescriptions"
 
-        viora.webapp.routing       -> viora.webapp.authui         "Protects access to"
-        viora.webapp.routing       -> viora.webapp.dashboardui    "Routes authenticated users to"
-        viora.webapp.routing       -> viora.webapp.plotsui        "Routes users to"
-        viora.webapp.routing       -> viora.webapp.marketplaceui  "Routes users to"
-        viora.webapp.routing       -> viora.webapp.billingui      "Routes users to"
-        viora.webapp.routing       -> viora.webapp.profileui      "Routes users to"
+        producer   -> viora.webapp.billingModule      "Chooses plans, manages trial/subscription, and views invoices"
+        producer   -> viora.webapp.supportModule      "Reads FAQs and requests customer support"
+        specialist -> viora.webapp.supportModule      "Reads FAQs and requests customer support"
 
-        viora.webapp.authui         -> viora.webapp.apiclient "Sends sign-in and recovery requests"
-        viora.webapp.dashboardui    -> viora.webapp.apiclient "Requests dashboard, climate and alert data"
-        viora.webapp.plotsui        -> viora.webapp.apiclient "Sends plot and traceability data"
-        viora.webapp.marketplaceui  -> viora.webapp.apiclient "Requests specialist and intervention data"
-        viora.webapp.billingui      -> viora.webapp.apiclient "Requests subscription and payment data"
-        viora.webapp.profileui      -> viora.webapp.apiclient "Requests and updates profile data"
-        viora.webapp.notificationsui -> viora.webapp.apiclient "Loads alert notifications"
+        viora.landing -> viora.webapp.router          "Redirects authenticated users to"
 
-        viora.webapp.dashboardui    -> viora.webapp.notificationsui "Displays alert summaries from"
+        viora.webapp.router -> viora.webapp.iamModule          "Routes and checks guard authorizations for"
+        viora.webapp.router -> viora.webapp.profileModule      "Routes and checks guard authorizations for"
+        viora.webapp.router -> viora.webapp.agronomicModule    "Routes and checks guard authorizations for"
+        viora.webapp.router -> viora.webapp.surveillanceModule "Routes and checks guard authorizations for"
+        viora.webapp.router -> viora.webapp.interventionModule "Routes and checks guard authorizations for"
+        viora.webapp.router -> viora.webapp.billingModule      "Routes and checks guard authorizations for"
+        viora.webapp.router -> viora.webapp.supportModule      "Routes and checks guard authorizations for"
 
-        viora.webapp.authui         -> viora.webapp.sharedui "Uses authentication forms and dialogs"
-        viora.webapp.dashboardui    -> viora.webapp.sharedui "Uses charts, cards and layout"
-        viora.webapp.plotsui        -> viora.webapp.sharedui "Uses forms, dialogs and reusable widgets"
-        viora.webapp.marketplaceui  -> viora.webapp.sharedui "Uses lists, dialogs and reusable widgets"
-        viora.webapp.billingui      -> viora.webapp.sharedui "Uses payment and plan widgets"
-        viora.webapp.profileui      -> viora.webapp.sharedui "Uses profile forms and reusable widgets"
-        viora.webapp.notificationsui -> viora.webapp.sharedui "Uses reusable notification widgets"
+        // Dependencias de presentación e infraestructura compartida
+        viora.webapp.iamModule          -> viora.webapp.sharedPresentation "Uses layout and presentation primitives"
+        viora.webapp.profileModule      -> viora.webapp.sharedPresentation "Uses layout and presentation primitives"
+        viora.webapp.agronomicModule    -> viora.webapp.sharedPresentation "Uses layout and presentation primitives"
+        viora.webapp.surveillanceModule -> viora.webapp.sharedPresentation "Uses layout and presentation primitives"
+        viora.webapp.interventionModule -> viora.webapp.sharedPresentation "Uses layout and presentation primitives"
+        viora.webapp.billingModule      -> viora.webapp.sharedPresentation "Uses layout and presentation primitives"
+        viora.webapp.supportModule      -> viora.webapp.sharedPresentation "Uses layout and presentation primitives"
 
-        viora.webapp.apiclient -> viora.api "Makes API requests to" "JSON/HTTPS"
+        viora.webapp.iamModule          -> viora.webapp.sharedInfrastructure "Makes API requests through"
+        viora.webapp.profileModule      -> viora.webapp.sharedInfrastructure "Makes API requests through"
+        viora.webapp.agronomicModule    -> viora.webapp.sharedInfrastructure "Makes API requests through"
+        viora.webapp.surveillanceModule -> viora.webapp.sharedInfrastructure "Makes API requests through"
+        viora.webapp.interventionModule -> viora.webapp.sharedInfrastructure "Makes API requests through"
+        viora.webapp.billingModule      -> viora.webapp.sharedInfrastructure "Makes API requests through"
+        viora.webapp.supportModule      -> viora.webapp.sharedInfrastructure "Makes API requests through"
+
+        viora.webapp.sharedInfrastructure -> viora.api.iamContext          "Makes API calls to" "JSON/HTTPS"
+        viora.webapp.sharedInfrastructure -> viora.api.profileContext      "Makes API calls to" "JSON/HTTPS"
+        viora.webapp.sharedInfrastructure -> viora.api.agronomicContext    "Makes API calls to" "JSON/HTTPS"
+        viora.webapp.sharedInfrastructure -> viora.api.surveillanceContext "Makes API calls to" "JSON/HTTPS"
+        viora.webapp.sharedInfrastructure -> viora.api.interventionContext "Makes API calls to" "JSON/HTTPS"
+        viora.webapp.sharedInfrastructure -> viora.api.billingContext      "Makes API calls to" "JSON/HTTPS"
+
+        viora.webapp.sharedInfrastructure -> mapbox "Consumes mapping and geocoding services from" "HTTPS/JSON"
     }
 
     views {

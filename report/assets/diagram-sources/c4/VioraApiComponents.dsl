@@ -4,7 +4,7 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
 
     model {
         // Servicios externos
-        cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images and field evidence." {
+        cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images." {
             tags "ExternalSystem"
         }
         mapbox = softwareSystem "Mapbox" "Maps and geocoding service used for plot delimitation and location-based features." {
@@ -16,9 +16,7 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
         brevo = softwareSystem "Brevo" "Transactional email service for password recovery and account notifications." {
             tags "ExternalSystem"
         }
-        senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "ExternalSystem"
-        }
+
         mercadoPago = softwareSystem "Mercado Pago" "External payment gateway for subscriptions, renewals, refunds and payment status updates." {
             tags "ExternalSystem"
         }
@@ -31,88 +29,82 @@ workspace "Viora - Software Architecture" "API Application Component Diagrams fo
                 tags "Browser"
             }
 
-            database = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+            database = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions." "MySQL" {
                 tags "Container" "Database"
             }
 
-            mediaStorage = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-based media storage" {
+            mediaStorage = container "Media Storage" "Stores profile images and related media assets." "Cloudinary-based media storage" {
                 tags "Bucket"
             }
 
-            apiApplication = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+            apiApplication = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, surveillance, interventions and billing." "ASP.NET Core" {
                 tags "RoundedBox" "CodeSystem"
 
-                externalIntegrations = component "External Integrations Component" "Provides adapters for AgroMonitoring, Mapbox, Mercado Pago, Brevo, Cloudinary and SENASA data sources." "ASP.NET Core Service" {
+                iamContext = component "IAM Bounded Context" "Handles user authentication, JWT sessions, role management, and access controls." "ASP.NET Core / Identity" {
                     tags "Component"
                 }
-                plotManagement = component "Plot Management Component" "Registers productive areas, validates polygons and manages plot traceability." "ASP.NET Core Service" {
+                profileContext = component "Profile Bounded Context" "Manages details of olive growers and agricultural specialists." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                agroMonitoringComp = component "Agrometeorological Monitoring Component" "Synchronizes weather, satellite and vegetation index data for registered plots." "ASP.NET Core Service" {
+                agronomicContext = component "Agronomic Bounded Context" "Registers productive areas, processes IoT device streams, calculates dynamic nutrition plans, and compiles agronomic stats." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                moderationStrikes = component "Moderation & Strikes Component" "Evaluates misconduct reports and applies strikes, suspensions or account blocking." "ASP.NET Core Service" {
+                surveillanceContext = component "Surveillance Bounded Context" "Handles pest sighting reports, symptom definitions, and publishes phytosanitary or community risk alerts." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                predictionRisk = component "Prediction & Risk Engine" "Calculates chill portions, crop health, yield projections and phenological risk." "ASP.NET Core Service" {
+                interventionContext = component "Intervention Bounded Context" "Coordinates service proposals, matching producers with specialists, intervention tracking, and treatment prescriptions." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                marketplaceIntervention = component "Marketplace & Intervention Component" "Matches producers with specialists and manages technical intervention workflows." "ASP.NET Core Service" {
+                billingContext = component "Billing Bounded Context" "Manages subscription plans, Mercado Pago checkout flow, and the referral/affiliate coupon program." "ASP.NET Core Service" {
                     tags "Component"
                 }
-                iam = component "IAM Component" "Handles authentication, authorization, JWT validation and password recovery." "ASP.NET Core / Identity" {
+                sharedKernel = component "Shared Kernel" "Provides shared base classes, transactional pipeline behaviors, and global filters." "C# Shared Module" {
                     tags "Component"
                 }
-                alertNotification = component "Alert & Notification Component" "Generates phytosanitary, phenological and community preventive alerts." "ASP.NET Core Service" {
-                    tags "Component"
-                }
-                subscriptionBilling = component "Subscription & Billing Component" "Manages trials, subscriptions, payments, renewals and refunds." "ASP.NET Core Service" {
-                    tags "Component"
-                }
-                profile = component "Profile Component" "Manages producer and specialist profile information." "ASP.NET Core Service" {
-                    tags "Component"
-                }
-                repository = component "Repository Components" "Persist and retrieve domain data from the relational database." "Entity Framework Core" {
+                relationalRepository = component "Relational Repository" "Maps domain entities to database tables using Entity Framework Core." "EF Core Repository" {
                     tags "Component"
                 }
             }
         }
 
         // Web Application a componentes de API
-        vioraPlatform.webApplication -> vioraPlatform.apiApplication.plotManagement "Registers plots and traceability records" "JSON/HTTPS"
-        vioraPlatform.webApplication -> vioraPlatform.apiApplication.agroMonitoringComp "Requests dashboard climate and satellite data" "JSON/HTTPS"
-        vioraPlatform.webApplication -> vioraPlatform.apiApplication.iam "Authenticates user, validates token" "JSON/HTTPS"
-        vioraPlatform.webApplication -> vioraPlatform.apiApplication.profile "Manages profile data" "JSON/HTTPS"
+        vioraPlatform.webApplication -> vioraPlatform.apiApplication.iamContext "Authenticates user and requests session tokens" "JSON/HTTPS"
+        vioraPlatform.webApplication -> vioraPlatform.apiApplication.profileContext "Manages profile information" "JSON/HTTPS"
+        vioraPlatform.webApplication -> vioraPlatform.apiApplication.agronomicContext "Registers plots, IoT devices, and queries stats/nutrition" "JSON/HTTPS"
+        vioraPlatform.webApplication -> vioraPlatform.apiApplication.surveillanceContext "Queries active alerts and reports pest sightings" "JSON/HTTPS"
+        vioraPlatform.webApplication -> vioraPlatform.apiApplication.interventionContext "Coordinates specialist services and tracks interventions" "JSON/HTTPS"
+        vioraPlatform.webApplication -> vioraPlatform.apiApplication.billingContext "Subscribes, views invoices, and redeems coupon codes" "JSON/HTTPS"
 
         // Relaciones internas de componentes de API
-        vioraPlatform.apiApplication.iam -> vioraPlatform.apiApplication.moderationStrikes "Requests account suspension or blocking"
-        vioraPlatform.apiApplication.predictionRisk -> vioraPlatform.apiApplication.alertNotification "Triggers risk alerts"
-        vioraPlatform.apiApplication.plotManagement -> vioraPlatform.apiApplication.marketplaceIntervention "Provides plot coordinates and polygons"
-        vioraPlatform.apiApplication.agroMonitoringComp -> vioraPlatform.apiApplication.predictionRisk "Provides climate, NDVI and historical agronomic data"
-        vioraPlatform.apiApplication.marketplaceIntervention -> vioraPlatform.apiApplication.alertNotification "Publishes critical cases for specialist response"
+        vioraPlatform.apiApplication.interventionContext -> vioraPlatform.apiApplication.agronomicContext "Queries plot details and boundaries"
+        vioraPlatform.apiApplication.surveillanceContext -> vioraPlatform.apiApplication.agronomicContext "Reads plot locations for local risk mapping"
 
-        vioraPlatform.apiApplication.plotManagement -> vioraPlatform.apiApplication.repository "Reads/writes plot data"
-        vioraPlatform.apiApplication.agroMonitoringComp -> vioraPlatform.apiApplication.repository "Stores synchronized climate and satellite data"
-        vioraPlatform.apiApplication.moderationStrikes -> vioraPlatform.apiApplication.repository "Stores reports and strikes"
-        vioraPlatform.apiApplication.predictionRisk -> vioraPlatform.apiApplication.repository "Stores risk and yield projections"
-        vioraPlatform.apiApplication.marketplaceIntervention -> vioraPlatform.apiApplication.repository "Stores service and intervention records"
-        vioraPlatform.apiApplication.iam -> vioraPlatform.apiApplication.repository "Reads/writes identity data"
-        vioraPlatform.apiApplication.alertNotification -> vioraPlatform.apiApplication.repository "Stores alert records"
-        vioraPlatform.apiApplication.subscriptionBilling -> vioraPlatform.apiApplication.repository "Stores subscription data"
-        vioraPlatform.apiApplication.profile -> vioraPlatform.apiApplication.repository "Reads/writes profile data"
+        // Uso de Shared Kernel por todos los contextos
+        vioraPlatform.apiApplication.iamContext          -> vioraPlatform.apiApplication.sharedKernel "Uses"
+        vioraPlatform.apiApplication.profileContext      -> vioraPlatform.apiApplication.sharedKernel "Uses"
+        vioraPlatform.apiApplication.agronomicContext    -> vioraPlatform.apiApplication.sharedKernel "Uses"
+        vioraPlatform.apiApplication.surveillanceContext -> vioraPlatform.apiApplication.sharedKernel "Uses"
+        vioraPlatform.apiApplication.interventionContext -> vioraPlatform.apiApplication.sharedKernel "Uses"
+        vioraPlatform.apiApplication.billingContext      -> vioraPlatform.apiApplication.sharedKernel "Uses"
+
+        // Persistencia
+        vioraPlatform.apiApplication.iamContext          -> vioraPlatform.apiApplication.relationalRepository "Reads/writes identity data"
+        vioraPlatform.apiApplication.profileContext      -> vioraPlatform.apiApplication.relationalRepository "Reads/writes profile data"
+        vioraPlatform.apiApplication.agronomicContext    -> vioraPlatform.apiApplication.relationalRepository "Reads/writes plot, IoT, and stats data"
+        vioraPlatform.apiApplication.surveillanceContext -> vioraPlatform.apiApplication.relationalRepository "Reads/writes reports and alert records"
+        vioraPlatform.apiApplication.interventionContext -> vioraPlatform.apiApplication.relationalRepository "Reads/writes intervention and prescription records"
+        vioraPlatform.apiApplication.billingContext      -> vioraPlatform.apiApplication.relationalRepository "Reads/writes subscription and transaction data"
 
         // Repositorios a almacenamiento
-        vioraPlatform.apiApplication.repository -> vioraPlatform.database "Persists and retrieves relational domain data" "ADO.NET"
-        vioraPlatform.apiApplication.repository -> vioraPlatform.mediaStorage "Stores media references and asset metadata" "HTTPS/API"
-        vioraPlatform.apiApplication.plotManagement -> vioraPlatform.mediaStorage "Uploads and retrieves media assets" "HTTPS/API"
+        vioraPlatform.apiApplication.relationalRepository -> vioraPlatform.database "Persists and retrieves relational domain data" "ADO.NET"
+        vioraPlatform.apiApplication.relationalRepository -> vioraPlatform.mediaStorage "Stores and retrieves media asset metadata" "HTTPS/API"
 
         // Componentes de API a servicios externos
-        vioraPlatform.apiApplication.agroMonitoringComp -> agroMonitoringApi "Retrieves weather, forecast, historical climate, satellite and NDVI data" "HTTPS/JSON"
-        vioraPlatform.apiApplication.marketplaceIntervention -> mapbox "Uses maps and geocoding for plot location" "HTTPS/JSON"
-        vioraPlatform.apiApplication.subscriptionBilling -> mercadoPago "Processes payments and receives payment webhooks" "HTTPS/JSON"
-        vioraPlatform.apiApplication.subscriptionBilling -> brevo "Sends transactional email notifications" "HTTPS/API"
-        vioraPlatform.apiApplication.alertNotification -> senasa "Consults official phytosanitary reference data" "HTTPS/Open data"
-        vioraPlatform.apiApplication.externalIntegrations -> cloudinary "Delegates media storage and delivery" "HTTPS/API"
+        vioraPlatform.apiApplication.agronomicContext    -> agroMonitoringApi "Retrieves weather forecast, climate history, and satellite imagery tiles" "HTTPS/JSON"
+        vioraPlatform.apiApplication.agronomicContext    -> mapbox "Geocodes boundaries and displays plot mapping UI" "HTTPS/JSON"
+        vioraPlatform.apiApplication.billingContext      -> mercadoPago "Processes subscriptions, renewals and processes payment webhooks" "HTTPS/JSON"
+        vioraPlatform.apiApplication.billingContext      -> brevo "Sends password recovery, welcome and transactional emails" "HTTPS/API"
+        vioraPlatform.apiApplication.relationalRepository -> cloudinary "Delegates profile images upload" "HTTPS/API"
     }
 
     views {
