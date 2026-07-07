@@ -205,9 +205,9 @@ El objetivo principal de esta ejecución fue consolidar una interfaz centralizad
 
 \begin{figure}[H] \caption{Landing page - Parte 1.} \centering \includegraphics[width=0.8\textwidth]{report/assets/sprint-2/sprint-2-4.png} \caption*{\textit{Nota.} Visualización correspondiente del sprint 2. Elaboración propia.} \end{figure}
 
-\textbf{Website:} \url{https://viora-website-flax.vercel.app/}
-\textbf{Webapp:} \url{https://viora-release-001.web.app/dashboard}
-\textbf{Enlace al video:} \url{https://tinyurl.com/viora-sprint2}
+* \textbf{Website:} \url{https://viora-website-flax.vercel.app/}
+* \textbf{Webapp:} \url{https://viora-release-001.web.app/dashboard}
+* \textbf{Enlace al video:} \url{https://tinyurl.com/viora-sprint2}
 
 #### Services Documentation Evidence for Sprint Review
 

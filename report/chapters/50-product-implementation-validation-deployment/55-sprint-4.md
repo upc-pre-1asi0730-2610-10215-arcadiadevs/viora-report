@@ -266,6 +266,23 @@ viora-platform & feature/\allowbreak agronomic/\allowbreak current-user-id-wirin
 
 &nbsp;
 
+\begin{figure}[H]
+\caption{Sección audiovisual «About the Product» implementada en la Landing Page.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/landing-spint-4-product.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Sección «About the Team» actualizada en la Landing Page.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/landing-spint-4-team.png}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+* \textbf{Website:} \url{https://viora-website-flax.vercel.app/}
+* \textbf{Webapp:} \url{https://viora-release-001.web.app/dashboard}
+
 #### Services Documentation Evidence for Sprint Review
 
 &nbsp;
