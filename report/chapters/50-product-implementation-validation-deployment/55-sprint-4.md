@@ -281,7 +281,7 @@ viora-platform & feature/\allowbreak agronomic/\allowbreak current-user-id-wirin
 \end{figure}
 
 * \textbf{Website:} \url{https://viora-website-flax.vercel.app/}
-* \textbf{Webapp:} \url{https://viora-release-001.web.app/dashboard}
+* \textbf{Webapp:} \url{https://viora-website-wa.web.app/}
 
 #### Services Documentation Evidence for Sprint Review
 
@@ -331,6 +331,48 @@ Para respaldar el trabajo realizado en la configuración de la documentación, a
 #### Software Deployment Evidence for Sprint Review
 
 &nbsp;
+
+\begin{figure}[H]
+\caption{Comprobación de estado de la base de datos en Filess.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidence-1.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista de ambientes.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidence-2.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Creación.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidence-3.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista del proyecto en Vercel.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidence-4.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Overview del proyecto en Firebase.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidence-6.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista del proyecto en Render.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidence-5.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
 
 #### Team Collaboration Insights for Sprint Review
 
