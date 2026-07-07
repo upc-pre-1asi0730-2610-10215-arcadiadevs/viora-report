@@ -1,51 +1,74 @@
 @startuml VioraLandingComponents
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4/master/C4_Component.puml
+!include <C4/C4_Component>
 
 title Component Diagram - Landing Page
 
 Person(visitor, "Visitor", "Explores Viora's landing page, plans, testimonials and calls to action.")
 
+
 Container_Boundary(landingPage, "Landing Page") {
-    Component(heroSection, "Hero Section Component", "Angular Standalone Component", "Presents the core value proposition, segmented CTA and primary conversion actions.")
-    Component(problemSolution, "Problem & Solution Section Component", "Angular Standalone Component", "Explains the climatic and phytosanitary problem and Viora's proposed solution.")
-    Component(roleBenefits, "Role Benefits Section Component", "Angular Standalone Component", "Shows segmented benefits for olive producers and agricultural specialists.")
-    Component(testimonials, "Testimonials & About Section Component", "Angular Standalone Component", "Presents testimonials, team information and trust-building content.")
-    Component(plansAffiliates, "Plans, Trial & Affiliates Section Component", "Angular Standalone Component", "Presents pricing plans, free trial and affiliate/referral program.")
-    Component(contactFooter, "Contact & Footer Section Component", "Angular Standalone Component", "Presents contact data, legal links, navigation links and footer content.")
-    Component(ctaRouting, "CTA Routing Component", "Angular Router / Navigation Service", "Handles navigation from landing CTAs toward sign in, sign up and trial flows in the Web Application.")
-    Component(landingViewModel, "Landing ViewModel Assembler", "TypeScript Assembler", "Builds section view models from static content/models for presentation components.")
-    Component(landingContentModels, "Landing Content Models", "TypeScript Models / Interfaces", "Defines models for hero content, benefits, plans, testimonials, FAQ and CTA content.")
-    Component(sharedLandingUI, "Shared Landing UI Components", "Angular Shared Components", "Reusable buttons, cards, badges, section headers and layout primitives for the landing page.")
+    Component(landingHeader, "Landing Header Component", "JavaScript ES Module", "Manages the Liquid Glass navigation bar, language selector, and audio toggle.")
+    Component(heroSection, "Hero Section Component", "JavaScript ES Module", "Presents the core value proposition and magnetic call-to-action buttons.")
+    Component(problemPanel, "Problem Panel Component", "JavaScript ES Module", "Displays the main agronomic and climatic challenges of olive production using interactive cards.")
+    Component(problemSolution, "Problem & Solution Section Component", "JavaScript ES Module", "Orchestrates the transition from problem awareness to solutions via video panels and draggable carousels.")
+    Component(roleBenefits, "Role Benefits Section Component", "JavaScript ES Module", "Manages the role switcher and segment benefits for producers and agricultural specialists.")
+    Component(pricingPlans, "Pricing & Affiliates Component", "JavaScript ES Module", "Presents subscription plans, billing interval switcher, and referral program carousel.")
+    Component(aboutTeam, "About & Team Component", "JavaScript ES Module", "Displays the ArcadiaDevs team mission statement, card stack, and floating inspiration bubbles.")
+    Component(footerSection, "Footer Section Component", "JavaScript ES Module", "Handles footer navigation, newsletter registration, and Matter.js physics-based badges.")
+    Component(landingButton, "Landing Button Component", "JavaScript ES Module", "Shared UI primitive that provides magnetic and audio hover feedback on landing buttons.")
+    Component(soundManager, "Sound Manager Service", "JavaScript ES Module", "Coordinates background ambient audio, hover sound triggers, and sound toggles.")
+    Component(i18nService, "Internationalization Service", "JavaScript ES Module / JSON", "Loads JSON translations and dynamically swaps text content between English and Spanish.")
+    Component(interactionEffects, "Interaction Effects Module", "JavaScript ES Module / GSAP / Lenis", "Provides scroll smoothing (Lenis), magnetic animations, parallax, and infinite marquees.")
 }
 
-Container(webApp, "Web Application", "Angular", "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions.")
+Container(webApp, "Web Application", "Vue.js", "Single-page application used by olive producers and agricultural specialists to manage plots, alerts, interventions and subscriptions.")
 
-Rel(visitor, heroSection, "Views the primary value proposition and CTA")
-Rel(visitor, testimonials, "Reviews testimonials and team information")
-Rel(visitor, contactFooter, "Reviews contact, footer and legal links")
-Rel(visitor, roleBenefits, "Explores role-specific benefits")
-Rel(visitor, plansAffiliates, "Reviews plans, free trial and affiliate program")
+Rel(visitor, landingHeader, "Interacts with navigation, language selector, and audio toggle")
+Rel(visitor, heroSection, "Views primary value proposition and clicks CTAs")
+Rel(visitor, problemPanel, "Explores agricultural challenges")
+Rel(visitor, problemSolution, "Explores solutions and outcomes")
+Rel(visitor, roleBenefits, "Explores benefits by role")
+Rel(visitor, pricingPlans, "Reviews pricing options and referral benefits")
+Rel(visitor, aboutTeam, "Reviews team and mission")
+Rel(visitor, footerSection, "Subscribes to newsletter and plays with badges")
 
-Rel(heroSection, ctaRouting, "Uses CTA navigation from")
-Rel(roleBenefits, ctaRouting, "Uses CTA navigation from")
-Rel(plansAffiliates, ctaRouting, "Uses CTA navigation from")
-Rel(ctaRouting, webApp, "Redirects visitors to")
+Rel(landingHeader, soundManager, "Toggles ambient audio")
+Rel(landingHeader, i18nService, "Swaps language key")
 
-Rel(heroSection, landingViewModel, "Consumes hero view model from")
-Rel(roleBenefits, landingViewModel, "Consumes benefits view model from")
-Rel(plansAffiliates, landingViewModel, "Consumes plans and affiliate view model from")
-Rel(contactFooter, landingViewModel, "Consumes contact/footer view model from")
-Rel(testimonials, landingViewModel, "Consumes testimonial/about view model from")
-Rel(problemSolution, landingViewModel, "Consumes problem/solution view model from")
+Rel(landingHeader, landingButton, "Uses button widgets")
+Rel(heroSection, landingButton, "Uses button widgets")
+Rel(problemPanel, landingButton, "Uses button widgets")
+Rel(problemSolution, landingButton, "Uses button widgets")
+Rel(roleBenefits, landingButton, "Uses button widgets")
+Rel(pricingPlans, landingButton, "Uses button widgets")
+Rel(aboutTeam, landingButton, "Uses button widgets")
+Rel(footerSection, landingButton, "Uses button widgets")
 
-Rel(landingViewModel, landingContentModels, "Builds section view models from")
+Rel(landingButton, soundManager, "Triggers hover sound effect")
+Rel(landingButton, interactionEffects, "Uses magnetic effect")
 
-Rel(heroSection, sharedLandingUI, "Uses reusable hero and CTA widgets")
-Rel(roleBenefits, sharedLandingUI, "Uses reusable cards and section blocks")
-Rel(plansAffiliates, sharedLandingUI, "Uses reusable pricing and CTA widgets")
-Rel(contactFooter, sharedLandingUI, "Uses reusable footer and link widgets")
-Rel(testimonials, sharedLandingUI, "Uses reusable cards and section blocks")
-Rel(problemSolution, sharedLandingUI, "Uses reusable layout and content blocks")
+Rel(landingHeader, interactionEffects, "Uses scroll effects")
+Rel(heroSection, interactionEffects, "Uses parallax and slide effects")
+Rel(problemPanel, interactionEffects, "Uses accordion scroll effects")
+Rel(problemSolution, interactionEffects, "Uses carousel drag and video scale effects")
+Rel(roleBenefits, interactionEffects, "Uses switcher slide effects")
+Rel(pricingPlans, interactionEffects, "Uses toggle slide and carousel effects")
+Rel(aboutTeam, interactionEffects, "Uses bubble float and parallax effects")
+Rel(footerSection, interactionEffects, "Uses Matter.js physics engine")
+
+Rel(landingHeader, i18nService, "Translates text")
+Rel(heroSection, i18nService, "Translates text")
+Rel(problemPanel, i18nService, "Translates text")
+Rel(problemSolution, i18nService, "Translates text")
+Rel(roleBenefits, i18nService, "Translates text")
+Rel(pricingPlans, i18nService, "Translates text")
+Rel(aboutTeam, i18nService, "Translates text")
+Rel(footerSection, i18nService, "Translates text")
+
+Rel(landingHeader, webApp, "Redirects to sign in/up")
+Rel(heroSection, webApp, "Redirects to sign in/up/trial")
+Rel(pricingPlans, webApp, "Redirects to signup with plan select")
+Rel(footerSection, webApp, "Redirects to sign in/up")
 
 SHOW_LEGEND()
 @enduml

@@ -11,37 +11,43 @@ workspace "Viora - Software Architecture" "Landing Page Component Diagrams for V
         viora = softwareSystem "Viora Platform" "Web platform for olive crop monitoring, phytosanitary risk management, technical service coordination and subscription management." {
             tags "CoreSystem"
 
-            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "Vue.js" {
+            landing = container "Landing Page" "Static website that presents Viora's value proposition, plans, testimonials and calls to action." "HTML5, CSS3, JavaScript" {
                 tags "Browser"
-
-                hero = component "Hero Section Component" "Presents the core value proposition, segmented CTA and primary conversion actions." "Vue.js Component" {
+            
+                header = component "Landing Header Component" "Manages the Liquid Glass navigation bar, language selector, and audio toggle." "JavaScript ES Module" {
                     tags "Component"
                 }
-                problem = component "Problem & Solution Section Component" "Explains the climatic and phytosanitary problem and Viora's proposed solution." "Vue.js Component" {
+                hero = component "Hero Section Component" "Presents the core value proposition and magnetic call-to-action buttons." "JavaScript ES Module" {
                     tags "Component"
                 }
-                roles = component "Role Benefits Section Component" "Shows segmented benefits for olive producers and agricultural specialists." "Vue.js Component" {
+                problem = component "Problem Panel Component" "Displays the main agronomic and climatic challenges of olive production using interactive cards." "JavaScript ES Module" {
                     tags "Component"
                 }
-                plans = component "Plans, Trial & Affiliates Section Component" "Presents pricing plans, free trial and affiliate/referral program." "Vue.js Component" {
+                solution = component "Problem & Solution Section Component" "Orchestrates the transition from problem awareness to solutions via video panels and draggable carousels." "JavaScript ES Module" {
                     tags "Component"
                 }
-                trust = component "Testimonials & About Section Component" "Presents testimonials, team information and trust-building content." "Vue.js Component" {
+                benefits = component "Role Benefits Section Component" "Manages the role switcher and segment benefits for producers and agricultural specialists." "JavaScript ES Module" {
                     tags "Component"
                 }
-                contact = component "Contact & Footer Section Component" "Presents contact data, legal links, navigation links and footer content." "Vue.js Component" {
+                pricing = component "Pricing & Affiliates Component" "Presents subscription plans, billing interval switcher, and referral program carousel." "JavaScript ES Module" {
                     tags "Component"
                 }
-                cta = component "CTA Routing Component" "Handles navigation from landing CTAs toward sign in, sign up and trial flows in the Web Application." "Vue Router / Navigation Service" {
+                team = component "About & Team Component" "Displays the ArcadiaDevs team mission statement, card stack, and floating inspiration bubbles." "JavaScript ES Module" {
                     tags "Component"
                 }
-                landingshared = component "Shared Landing UI Components" "Reusable buttons, cards, badges, section headers and layout primitives for the landing page." "Vue.js Shared Components" {
+                footer = component "Footer Section Component" "Handles footer navigation, newsletter registration, and Matter.js physics-based badges." "JavaScript ES Module" {
                     tags "Component"
                 }
-                contentmodels = component "Landing Content Models" "Defines models for hero content, benefits, plans, testimonials, FAQ and CTA content." "TypeScript Models / Interfaces" {
+                button = component "Landing Button Component" "Shared UI primitive that provides magnetic and audio hover feedback on landing buttons." "JavaScript ES Module" {
                     tags "Component"
                 }
-                assembler = component "Landing ViewModel Assembler" "Builds section view models from static content/models for presentation components." "TypeScript Assembler" {
+                sound = component "Sound Manager Service" "Coordinates background ambient audio, hover sound triggers, and sound toggles." "JavaScript ES Module" {
+                    tags "Component"
+                }
+                i18n = component "Internationalization Service" "Loads JSON translations and dynamically swaps text content between English and Spanish." "JavaScript ES Module / JSON" {
+                    tags "Component"
+                }
+                effects = component "Interaction Effects Module" "Provides scroll smoothing (Lenis), magnetic animations, parallax, and infinite marquees." "JavaScript ES Module / GSAP / Lenis" {
                     tags "Component"
                 }
             }
@@ -50,14 +56,14 @@ workspace "Viora - Software Architecture" "Landing Page Component Diagrams for V
                 tags "Browser"
             }
 
-            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, alerts, marketplace workflows, moderation and subscriptions." "ASP.NET Core" {
+            api = container "API Application" "REST API that handles authentication, plot management, agronomic monitoring, surveillance, interventions and billing." "ASP.NET Core" {
                 tags "RoundedBox" "CodeSystem"
             }
 
-            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions and moderation data." "MySQL" {
+            db = container "Database" "Stores users, plots, agronomic records, alerts, interventions, subscriptions." "MySQL" {
                 tags "Container" "Database"
             }
-            media = container "Media Storage" "Stores field evidence images, profile images and related media assets." "Cloudinary-backed media storage" {
+            media = container "Media Storage" "Stores profile images and related media assets." "Cloudinary-backed media storage" {
                 tags "Bucket"
             }
         }
@@ -75,12 +81,10 @@ workspace "Viora - Software Architecture" "Landing Page Component Diagrams for V
         mapbox = softwareSystem "Mapbox" "Maps and geocoding service used for plot delimitation and location-based features." {
             tags "ExternalSystem"
         }
-        cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images and field evidence." {
+        cloudinary = softwareSystem "Cloudinary" "Cloud media storage and delivery service for profile images." {
             tags "ExternalSystem"
         }
-        senasa = softwareSystem "SENASA Official/Open Data Source" "Official phytosanitary information source used as institutional reference for alerts, regulations and sanitary context." {
-            tags "ExternalSystem"
-        }
+
 
         // Relaciones de personas
         visitor    -> viora.landing  "Explores content and calls to action"
@@ -94,32 +98,54 @@ workspace "Viora - Software Architecture" "Landing Page Component Diagrams for V
         viora.api     -> viora.media   "Stores and retrieves media assets" "HTTPS/API"
 
         // Relaciones de Landing Page Components
-        visitor -> viora.landing.hero    "Views the primary value proposition and CTA"
-        visitor -> viora.landing.roles   "Explores role-specific benefits"
-        visitor -> viora.landing.plans   "Reviews plans, free trial and affiliate program"
-        visitor -> viora.landing.trust   "Reviews testimonials and team information"
-        visitor -> viora.landing.contact "Reviews contact, footer and legal links"
+        visitor -> viora.landing.header  "Interacts with navigation, language selector, and audio toggle"
+        visitor -> viora.landing.hero    "Views primary value proposition and clicks CTAs"
+        visitor -> viora.landing.problem "Explores agricultural challenges"
+        visitor -> viora.landing.solution "Explores solutions and outcomes"
+        visitor -> viora.landing.benefits "Explores benefits by role"
+        visitor -> viora.landing.pricing "Reviews pricing options and referral benefits"
+        visitor -> viora.landing.team    "Reviews team and mission"
+        visitor -> viora.landing.footer  "Subscribes to newsletter and plays with badges"
 
-        viora.landing.hero    -> viora.landing.landingshared "Uses reusable hero and CTA UI"
-        viora.landing.problem -> viora.landing.landingshared "Uses reusable layout and content blocks"
-        viora.landing.roles   -> viora.landing.landingshared "Uses reusable cards and section blocks"
-        viora.landing.plans   -> viora.landing.landingshared "Uses reusable pricing and CTA widgets"
-        viora.landing.trust   -> viora.landing.landingshared "Uses reusable testimonial and team widgets"
-        viora.landing.contact -> viora.landing.landingshared "Uses reusable footer and link widgets"
+        // Relaciones internas de componentes de Landing
+        viora.landing.header -> viora.landing.sound "Toggles ambient audio"
+        viora.landing.header -> viora.landing.i18n  "Swaps language key"
 
-        viora.landing.hero    -> viora.landing.assembler "Consumes hero view model from"
-        viora.landing.problem -> viora.landing.assembler "Consumes problem/solution view model from"
-        viora.landing.roles   -> viora.landing.assembler "Consumes benefits view model from"
-        viora.landing.plans   -> viora.landing.assembler "Consumes plans and affiliate view model from"
-        viora.landing.trust   -> viora.landing.assembler "Consumes testimonial/about view model from"
-        viora.landing.contact -> viora.landing.assembler "Consumes contact/footer view model from"
+        viora.landing.header   -> viora.landing.button "Uses button widgets"
+        viora.landing.hero     -> viora.landing.button "Uses button widgets"
+        viora.landing.problem  -> viora.landing.button "Uses button widgets"
+        viora.landing.solution -> viora.landing.button "Uses button widgets"
+        viora.landing.benefits -> viora.landing.button "Uses button widgets"
+        viora.landing.pricing  -> viora.landing.button "Uses button widgets"
+        viora.landing.team     -> viora.landing.button "Uses button widgets"
+        viora.landing.footer   -> viora.landing.button "Uses button widgets"
 
-        viora.landing.assembler -> viora.landing.contentmodels "Builds section view models from"
+        viora.landing.button -> viora.landing.sound "Triggers hover sound effect"
+        viora.landing.button -> viora.landing.effects "Uses magnetic effect"
 
-        viora.landing.hero  -> viora.landing.cta "Uses CTA navigation from"
-        viora.landing.roles -> viora.landing.cta "Uses CTA navigation from"
-        viora.landing.plans -> viora.landing.cta "Uses CTA navigation from"
-        viora.landing.cta   -> viora.webapp      "Redirects visitors to"
+        viora.landing.header   -> viora.landing.effects "Uses scroll effects"
+        viora.landing.hero     -> viora.landing.effects "Uses parallax and slide effects"
+        viora.landing.problem  -> viora.landing.effects "Uses accordion scroll effects"
+        viora.landing.solution -> viora.landing.effects "Uses carousel drag and video scale effects"
+        viora.landing.benefits -> viora.landing.effects "Uses switcher slide effects"
+        viora.landing.pricing  -> viora.landing.effects "Uses toggle slide and carousel effects"
+        viora.landing.team     -> viora.landing.effects "Uses bubble float and parallax effects"
+        viora.landing.footer   -> viora.landing.effects "Uses Matter.js physics engine"
+
+        viora.landing.header   -> viora.landing.i18n "Translates text"
+        viora.landing.hero     -> viora.landing.i18n "Translates text"
+        viora.landing.problem  -> viora.landing.i18n "Translates text"
+        viora.landing.solution -> viora.landing.i18n "Translates text"
+        viora.landing.benefits -> viora.landing.i18n "Translates text"
+        viora.landing.pricing  -> viora.landing.i18n "Translates text"
+        viora.landing.team     -> viora.landing.i18n "Translates text"
+        viora.landing.footer   -> viora.landing.i18n "Translates text"
+
+        // Redirecciones a la aplicación web
+        viora.landing.header   -> viora.webapp "Redirects to sign in/up"
+        viora.landing.hero     -> viora.webapp "Redirects to sign in/up/trial"
+        viora.landing.pricing  -> viora.webapp "Redirects to signup with plan select"
+        viora.landing.footer   -> viora.webapp "Redirects to sign in/up"
     }
 
     views {
