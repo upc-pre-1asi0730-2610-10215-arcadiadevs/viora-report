@@ -606,8 +606,8 @@ viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & dcb1
 \caption*{\textit{Nota.} Elaboración propia.}
 \end{figure}
 
-\textbf{Website:} \url{https://viora-website-flax.vercel.app/}
-\textbf{Webapp:} \url{https://viora-release-001.web.app/dashboard}
+* \textbf{Website:} \url{https://viora-website-flax.vercel.app/}
+* \textbf{Webapp:} \url{https://viora-release-001.web.app/dashboard}
 
 #### Services Documentation Evidence for Sprint Review
 
