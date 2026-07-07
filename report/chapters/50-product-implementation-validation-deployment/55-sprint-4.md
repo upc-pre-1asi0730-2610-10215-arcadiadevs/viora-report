@@ -280,6 +280,9 @@ viora-platform & feature/\allowbreak agronomic/\allowbreak current-user-id-wirin
 \caption*{\textit{Nota.} Elaboración propia.}
 \end{figure}
 
+\textbf{Website:} \url{https://viora-website-flax.vercel.app/}
+\textbf{Webapp:} \url{https://viora-release-001.web.app/dashboard}
+
 #### Services Documentation Evidence for Sprint Review
 
 &nbsp;
