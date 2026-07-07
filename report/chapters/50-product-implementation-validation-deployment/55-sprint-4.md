@@ -327,6 +327,8 @@ Para respaldar el trabajo realizado en la configuración de la documentación, a
     \end{itemize}
 \end{itemize}
 
+\textbf{Despliegue:} \url{https://viora-platform-u202412248.onrender.com/swagger/index.html}
+
 
 #### Software Deployment Evidence for Sprint Review
 
@@ -363,14 +365,21 @@ Para respaldar el trabajo realizado en la configuración de la documentación, a
 \begin{figure}[H]
 \caption{Overview del proyecto en Firebase.}
 \centering
-\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidence-6.jpeg}
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidencia-6.jpeg}
 \caption*{\textit{Nota.} Elaboración propia.}
 \end{figure}
 
 \begin{figure}[H]
 \caption{Vista del proyecto en Render.}
 \centering
-\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidence-5.jpeg}
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidencia-5.jpeg}
+\caption*{\textit{Nota.} Elaboración propia.}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Vista del proyecto en Vercel.}
+\centering
+\includegraphics[width=0.8\textwidth]{report/assets/sprint-4/evidence-7.jpeg}
 \caption*{\textit{Nota.} Elaboración propia.}
 \end{figure}
 
