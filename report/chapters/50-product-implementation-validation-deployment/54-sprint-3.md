@@ -62,44 +62,44 @@ El objetivo principal de este Sprint 3 es desarrollar la segunda versión de la 
 \textbf{Id} & \textbf{Title} & \textbf{Id} & \textbf{Title} & \textbf{Description} & \textbf{Estimation} & \textbf{Assigned To} & \textbf{Status} \\ \hline
 \endhead
 
-% US56
-US56 & Exploración de beneficios para el Productor & TK01 & Presentación de todos los beneficios del segmento de productores & Implementación de cards con todos los beneficios ofrecidos para el segmento de productores & 1.0 & Paredes, Victor & Done \\ \hline
+% US45
+US45 & Exploración de beneficios para el Productor & TK01 & Presentación de todos los beneficios del segmento de productores & Implementación de cards con todos los beneficios ofrecidos para el segmento de productores & 1.0 & Paredes, Victor & Done \\ \hline
 
-% US57
-US57 & Exploración de beneficios para el Especialista & TK01 & Presentación de todos los beneficios del segmento de especialistas & Implementación de cards con todos los beneficios ofrecidos para el segmento de especialistas fitosanitarios & 1.0 & Paredes, Victor & Done \\ \hline
+% US46
+US46 & Exploración de beneficios para el Especialista & TK01 & Presentación de todos los beneficios del segmento de especialistas & Implementación de cards con todos los beneficios ofrecidos para el segmento de especialistas fitosanitarios & 1.0 & Paredes, Victor & Done \\ \hline
 
-% US60
-US60 & Exploración del equipo detrás de la plataforma & TK01 & Sección de video e imágenes del equipo & Implementación de placeholder para imágenes del equipo trabajo y el video About the team & 1.0 & Paredes, Victor & Done \\ \hline
+% US49
+US49 & Exploración del equipo detrás de la plataforma & TK01 & Sección de video e imágenes del equipo & Implementación de placeholder para imágenes del equipo trabajo y el video About the team & 1.0 & Paredes, Victor & Done \\ \hline
 
-% US08
-US08 & Monitoreo de telemetría IoT para decisiones hídricas & TK01 & Datos inválidos mostrados & Corregir que aparezcan elementos no existenten en la lista de dispositivos IoT & 1.0 & Paredes, Victor & Done \\ \hline
+% US06
+US06 & Monitoreo de telemetría IoT para decisiones hídricas & TK01 & Datos inválidos mostrados & Corregir que aparezcan elementos no existenten en la lista de dispositivos IoT & 1.0 & Paredes, Victor & Done \\ \hline
 
-% US19
-US19 & Reporte de sintomatología y evaluación automática & TK01 & Creación manual de alerta & Implementación de formulario con selector de Parcela y multiselección de síntomas vistos & 1.0 & Paredes, Victor & To-Do \\ \cline{3-8}
+% US17
+US17 & Reporte de sintomatología y evaluación automática & TK01 & Creación manual de alerta & Implementación de formulario con selector de Parcela y multiselección de síntomas vistos & 1.0 & Paredes, Victor & To-Do \\ \cline{3-8}
 & & TK02 & Visualización de alertas por parcela & Implementación de filtro de alerta de acuerdo según parcela & 1.0 & Paredes, Victor & To-Do \\ \hline
 
-% US07
-US07 & Delimitación de área productiva & TK01 & Configuración de Mapbox SDK & Implementación de mapa interactivo para delimitación de parcelas. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
+% US05
+US05 & Delimitación de área productiva & TK01 & Configuración de Mapbox SDK & Implementación de mapa interactivo para delimitación de parcelas. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK02 & Herramienta de dibujo de polígonos & Implementación de selección de puntos y cierre de área geográfica. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK03 & Validación de polígono incompleto & Implementación de validación para impedir parcelas sin cierre correcto. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK04 & Visualización de parcela registrada & Implementación de componente de visualización de límites geográficos registrados. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK05 & Vinculación climática automática & Implementación de asociación automática entre parcela y datos climáticos zonales. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK06 & Lista de parcelas & Implementación de lista de parcelas, con selección para ver el detalle de cada una y botón para la creación de una nueva. & 1.0 & Paredes, Victor & Done \\ \hline
 
-% US16
-US16 & Plan de fertilización ajustado al clima & TK01 & Generación de recomendación agronómica & Implementación de estrategia compensatoria según riesgo climático o fenológico. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
+% US14
+US14 & Plan de fertilización ajustado al clima & TK01 & Generación de recomendación agronómica & Implementación de estrategia compensatoria según riesgo climático o fenológico. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK02 & Resumen de tratamiento recomendado & Implementación de visualización de insumos y dosis sugeridas para mitigación. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK03 & Ajuste de ventana de aplicación & Implementación de actualización de recomendación según cambios climáticos. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK04 & Alerta de modificación climática & Implementación de notificación sobre cambio de ventana óptima de aplicación. & 1.0 & Paredes, Victor & Done \\ \hline
 
-% TS38
-TS38 & Implementar Manejo Global de Excepciones y Problem Details Localizado & TK01 & Implementar GlobalExceptionHandlerMiddleware & Crear `Shared/Infrastructure/Pipeline/Middleware/Components/GlobalExceptionHandlerMiddleware.cs` para capturar excepciones no controladas durante el pipeline HTTP y generar respuestas seguras sin exponer stack trace. & 1.0 & Li, Diana & Done \\ \cline{3-8}
+% TS33
+TS33 & Implementar Manejo Global de Excepciones y Problem Details Localizado & TK01 & Implementar GlobalExceptionHandlerMiddleware & Crear `Shared/Infrastructure/Pipeline/Middleware/Components/GlobalExceptionHandlerMiddleware.cs` para capturar excepciones no controladas durante el pipeline HTTP y generar respuestas seguras sin exponer stack trace. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK02 & Implementar mapeo de excepciones a ProblemDetails & Implementar el mapeo de `Exception` a `500 Internal Server Error` y `OperationCanceledException` a `409 Conflict`, retornando `ProblemDetails` con `status`, `title`, `detail` e `instance`. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK03 & Implementar ProblemDetailsFactory localizado & Crear `ProblemDetailsFactory` compartido para construir respuestas de error usando `IStringLocalizer`, resolviendo títulos y detalles desde recursos `.resx` de acuerdo con la cultura de la petición. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK04 & Registrar middleware global de excepciones & Crear `MiddlewareExtensions` con `UseGlobalExceptionHandler()` y registrar el middleware en `Program.cs`, asegurando que todas las excepciones no controladas pasen por el mismo formato de respuesta. & 1.0 & Li, Diana & Done \\ \hline
 
-% TS08
-TS08 & Registrar nueva parcela & TK01 & Exponer endpoint REST de creación de parcela & Crear POST /api/v1/plots en PlotsController, implementando CreatePlotResource, PlotResource, CreatePlotCommandFromResourceAssembler y PlotResourceFromPlotAssembler. El endpoint debe transformar el cuerpo REST en Command, retornar 201 Created con PlotResource cuando se registre correctamente o 400 Bad Request cuando el polígono o los datos sean inválidos. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
+% TS05
+TS05 & Registrar nueva parcela & TK01 & Exponer endpoint REST de creación de parcela & Crear POST /api/v1/plots en PlotsController, implementando CreatePlotResource, PlotResource, CreatePlotCommandFromResourceAssembler y PlotResourceFromPlotAssembler. El endpoint debe transformar el cuerpo REST en Command, retornar 201 Created con PlotResource cuando se registre correctamente o 400 Bad Request cuando el polígono o los datos sean inválidos. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK02 & Implementar PlotRepository con EF Core y PostgreSQL & Implementar PlotRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<Plot> en AppDbContext, crear configuración con IEntityTypeConfiguration<Plot>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK03 & Definir PlotRepository & Crear PlotRepository en la capa de dominio con métodos save(Plot), findById(PlotId), findByIdAndOwnerUserId(PlotId, UserId), findAllByOwnerUserId(UserId), existsByIdAndOwnerUserId(PlotId, UserId) y delete(Plot). & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK04 & Definir Plot Aggregate Root & Definir Plot como aggregate root en la capa de dominio con PlotId, OwnerUserId, PlotName, PolygonCoordinates y AreaSize, aplicando invariantes de propietario obligatorio, nombre no vacío, área positiva y delimitación geográfica válida. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
@@ -107,25 +107,25 @@ TS08 & Registrar nueva parcela & TK01 & Exponer endpoint REST de creación de pa
 & & TK06 & Implementar PlotCommandService para creación & Implementar PlotCommandService con handle(CreatePlotCommand), creando Plot, validando invariantes del dominio, persistiendo con PlotRepository y retornando Result con INVALID\_POLYGON cuando la delimitación sea inconsistente. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK07 & Definir Value Objects espaciales & Definir GeoPoint y PolygonCoordinates como value objects en la capa de dominio. GeoPoint debe validar latitud y longitud dentro de rangos geográficos válidos. PolygonCoordinates debe validar lista no vacía, cantidad mínima de puntos, ausencia de puntos nulos y cierre del polígono comparando el primer y último punto. & 1.0 & Trinidad, Jahat & Done \\ \hline
 
-% TS12
-TS12 & Listar dispositivos IoT por parcela & TK01 & Implementar IoTDeviceRepository con EF Core & Implementar IoTDeviceRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<IoTDevice> en AppDbContext, crear configuración con IEntityTypeConfiguration<IoTDevice>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Li, Diana & Done \\ \cline{3-8}
+% TS09
+TS09 & Listar dispositivos IoT por parcela & TK01 & Implementar IoTDeviceRepository con EF Core & Implementar IoTDeviceRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<IoTDevice> en AppDbContext, crear configuración con IEntityTypeConfiguration<IoTDevice>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK02 & Definir IoTDeviceRepository & Crear IoTDeviceRepository en la capa de dominio con métodos save(IoTDevice), findById(IoTDeviceId), findAllByPlotId(PlotId), findByIdAndPlotId(IoTDeviceId, PlotId) y existsByIdAndPlotId(IoTDeviceId, PlotId). & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK03 & Crear GetIoTDevicesByPlotIdQuery & Crear GetIoTDevicesByPlotIdQuery en la capa de aplicación con PlotId y AuthenticatedUserId, validando que el usuario autenticado sea propietario de la parcela antes de listar sensores. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK04 & Implementar IoTDeviceQueryService para listado & Implementar IoTDeviceQueryService con handle(GetIoTDevicesByPlotIdQuery), validando propiedad mediante PlotRepository y retornando IoTDeviceRepository.findAllByPlotId(PlotId). & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK05 & Exponer endpoint REST para listar dispositivos IoT & Añadir GET /api/v1/plots/{plotId}/iot-devices, usando IoTDeviceResource e IoTDeviceResourceFromIoTDeviceAssembler para retornar 200 OK o 403 Forbidden. & 1.0 & Li, Diana & Done \\ \hline
 
-% TS39
-TS39 & Implementar Eventos de Dominio y Pipeline de Mediación Compartido & TK01 & Registrar behaviors y handlers compartidos & Configurar el registro de Cortex Mediator en `Program.cs` para descubrir event handlers y aplicar `LoggingCommandBehavior` al pipeline de comandos de aplicación. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
+% TS34
+TS34 & Implementar Eventos de Dominio y Pipeline de Mediación Compartido & TK01 & Registrar behaviors y handlers compartidos & Configurar el registro de Cortex Mediator en `Program.cs` para descubrir event handlers y aplicar `LoggingCommandBehavior` al pipeline de comandos de aplicación. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
 & & TK02 & Implementar contrato IEventHandler & Crear `Shared/Application/Internal/EventHandlers/IEventHandler.cs` como abstracción genérica alineada con `INotificationHandler<TEvent>`, permitiendo implementar handlers tipados para eventos de dominio. & 1.0 & Espada, Piero  & Done \\ \cline{3-8}
 & & TK03 & Implementar contrato IEvent & Crear `Shared/Domain/Events/IEvent.cs` extendiendo `INotification` de Cortex Mediator para representar eventos de dominio publicables desde cualquier bounded context. & 1.0 & Espada, Piero & Done \\ \hline
 
-% TS35
-TS35 & Implementar Patrón Result para Control de Flujo Funcional & TK01 & Implementar Fold para composición de respuestas & Agregar `Fold<TResult>(Func<T,TResult> onSuccess, Func<Enum,string,TResult> onFailure)` en `Result<T>` y su equivalente en `Result`, permitiendo que Controllers o assemblers conviertan resultados de aplicación en respuestas HTTP de manera determinística. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
+% TS30
+TS30 & Implementar Patrón Result para Control de Flujo Funcional & TK01 & Implementar Fold para composición de respuestas & Agregar `Fold<TResult>(Func<T,TResult> onSuccess, Func<Enum,string,TResult> onFailure)` en `Result<T>` y su equivalente en `Result`, permitiendo que Controllers o assemblers conviertan resultados de aplicación en respuestas HTTP de manera determinística. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK02 & Implementar Result sin valor para comandos & Crear el contenedor no genérico `Result` con `Success()` y `Failure(Enum error, string message)` para comandos que no necesitan retornar un objeto de dominio, manteniendo compatibilidad con flujos de escritura. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 & & TK03 & Implementar factories de éxito y fallo con valor & Agregar los métodos estáticos `Result<T>.Success(T value)` y `Result<T>.Failure(Enum error, string message)` para construir resultados con valor exitoso o error tipado, asegurando que los servicios de aplicación puedan retornar errores de negocio de forma explícita. & 1.0 & Paredes, Victor & Done \\ \cline{3-8}
 
-% TS34
-TS34 & Implementar Motor Global de Rutas Kebab-Case & TK01 & Registrar convención global de rutas & Registrar `KebabCaseRouteNamingConvention` en `Program.cs` mediante `builder.Services.AddControllers(options => options.Conventions.Add(new KebabCaseRouteNamingConvention()))`, garantizando que todos los controladores expongan URLs en kebab-case. & 1.0 & Victor, Paredes & Done \\ \cline{3-8}
+% TS29
+TS29 & Implementar Motor Global de Rutas Kebab-Case & TK01 & Registrar convención global de rutas & Registrar `KebabCaseRouteNamingConvention` en `Program.cs` mediante `builder.Services.AddControllers(options => options.Conventions.Add(new KebabCaseRouteNamingConvention()))`, garantizando que todos los controladores expongan URLs en kebab-case. & 1.0 & Victor, Paredes & Done \\ \cline{3-8}
 & & TK02 & Implementar reemplazo de rutas en controladores y acciones & Implementar en `Apply(ControllerModel controller)` el recorrido de `controller.Selectors` y `controller.Actions.SelectMany(a => a.Selectors)` para reemplazar las plantillas de ruta basadas en `[controller]` mediante `ReplaceControllerTemplate`. & 1.0 & Victor, Paredes & Done \\ \cline{3-8}
 & & TK03 & Implementar KebabCaseRouteNamingConvention & Crear `Shared/Infrastructure/Interfaces/ASP/Configuration/KebabCaseRouteNamingConvention.cs` implementando `IControllerModelConvention`, obteniendo el nombre del controlador sin el sufijo `Controller` y convirtiéndolo a kebab-case para reemplazar el token `[controller]`. & 1.0 & Victor, Paredes & Done \\ \cline{3-8}
 
@@ -135,38 +135,38 @@ TS33 & Implementar Automatización de Esquemas Snake\_Case en EF Core & TK01 & R
 & & TK03 & Implementar pluralización de nombres de tabla & Agregar el método `ToPlural()` en `StringExtensions.cs` usando Humanizer para pluralizar nombres de entidades antes de aplicar `ToSnakeCase()`, permitiendo transformar clases como `FavoriteSource` en tablas físicas como `favorite\_sources`. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK04 & Implementar extensiones de conversión snake\_case & Crear `Shared/Infrastructure/Persistence/EFC/Configuration/Extensions/StringExtensions.cs` con el método `ToSnakeCase()` usando expresiones regulares para convertir nombres PascalCase o camelCase a snake\_case, incluyendo nombres compuestos de propiedades, índices, claves y restricciones. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
-% TS37
-TS37 & Implementar Repositorio Base y Unit of Work Compartidos & TK01 & Implementar contrato IBaseRepository & Crear `Shared/Domain/Repositories/IBaseRepository.cs` con operaciones base como `AddAsync(TEntity entity)`, `FindByIdAsync(int id)`, `ListAsync()`, `Update(TEntity entity)` y `Remove(TEntity entity)`, para que los repositorios específicos puedan reutilizar un contrato común. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+% TS32
+TS32 & Implementar Repositorio Base y Unit of Work Compartidos & TK01 & Implementar contrato IBaseRepository & Crear `Shared/Domain/Repositories/IBaseRepository.cs` con operaciones base como `AddAsync(TEntity entity)`, `FindByIdAsync(int id)`, `ListAsync()`, `Update(TEntity entity)` y `Remove(TEntity entity)`, para que los repositorios específicos puedan reutilizar un contrato común. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK02 & Implementar BaseRepository con EF Core & Crear `Shared/Infrastructure/Persistence/EFC/Repositories/BaseRepository.cs` implementando `IBaseRepository<TEntity>`, usando `AppDbContext.Set<TEntity>()` para agregar, buscar, listar, actualizar y eliminar registros mediante EF Core. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK03 & Implementar contrato IUnitOfWork & Crear `Shared/Domain/Repositories/IUnitOfWork.cs` con el método `CompleteAsync()` para representar la confirmación transaccional de cambios realizados por uno o más repositorios. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK04 & Implementar UnitOfWork con AppDbContext & Crear `Shared/Infrastructure/Persistence/EFC/Repositories/UnitOfWork.cs` implementando `IUnitOfWork`, delegando `CompleteAsync()` a `AppDbContext.SaveChangesAsync()` para confirmar las operaciones pendientes en PostgreSQL. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
-% TS36
-TS36 & Implementar Auditoría Automática de Entidades & TK01 & Implementar IAuditableEntity & Crear `Shared/Domain/Model/Entities/IAuditableEntity.cs` con las propiedades `DateTimeOffset? CreatedAt` y `DateTimeOffset? UpdatedAt` para marcar entidades auditables en cualquier bounded context. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
+% TS31
+TS31 & Implementar Auditoría Automática de Entidades & TK01 & Implementar IAuditableEntity & Crear `Shared/Domain/Model/Entities/IAuditableEntity.cs` con las propiedades `DateTimeOffset? CreatedAt` y `DateTimeOffset? UpdatedAt` para marcar entidades auditables en cualquier bounded context. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
 & & TK02 & Implementar AuditableEntityInterceptor & Crear `Shared/Infrastructure/Persistence/EFC/Interceptors/AuditableEntityInterceptor.cs` heredando de `SaveChangesInterceptor`, sobrescribiendo `SavingChanges` y `SavingChangesAsync` para ejecutar la auditoría antes de persistir cambios. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
 & & TK03 & Implementar asignación automática de timestamps & Implementar `ApplyAuditTimestamps(DbContext? context)` para recorrer `context.ChangeTracker.Entries<IAuditableEntity>()`, asignar `UpdatedAt = DateTimeOffset.UtcNow` cuando el estado sea `Added` o `Modified`, y asignar `CreatedAt` solo cuando el estado sea `Added` y el valor todavía sea nulo. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
 & & TK04 & Registrar interceptor de auditoría en AppDbContext & Configurar `AppDbContext.OnConfiguring(DbContextOptionsBuilder builder)` para registrar `new AuditableEntityInterceptor()` mediante `builder.AddInterceptors(...)`, garantizando que la auditoría se aplique automáticamente sobre entidades auditables. & 1.0 & Espada, Piero & Done \\ \hline
 
-% TS13
-TS13 & Crear registro de dispositivo IoT & TK01 & Definir IoTDevice Aggregate Root & Definir IoTDevice como aggregate root en la capa de dominio con IoTDeviceId, PlotId, DeviceName y IoTDeviceStatus, aplicando invariantes de parcela obligatoria, nombre no vacío y estado permitido. & 1.0 & Li, Diana & Done \\ \cline{3-8}
+% TS10
+TS10 & Crear registro de dispositivo IoT & TK01 & Definir IoTDevice Aggregate Root & Definir IoTDevice como aggregate root en la capa de dominio con IoTDeviceId, PlotId, DeviceName y IoTDeviceStatus, aplicando invariantes de parcela obligatoria, nombre no vacío y estado permitido. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK02 & Crear CreateIoTDeviceCommand & Crear CreateIoTDeviceCommand en la capa de aplicación con PlotId, AuthenticatedUserId, DeviceName e IoTDeviceStatus, asignando estado activo por defecto cuando no se indique uno explícito. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK03 & Implementar IoTDeviceCommandService para creación & Implementar IoTDeviceCommandService con handle(CreateIoTDeviceCommand), validando propiedad de parcela con PlotRepository, creando IoTDevice y persistiendo con IoTDeviceRepository.save(IoTDevice). & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK04 & Crear Resources y assemblers de creación de dispositivo IoT & Crear CreateIoTDeviceResource, IoTDeviceResource, CreateIoTDeviceCommandFromResourceAssembler y IoTDeviceResourceFromIoTDeviceAssembler. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK05 & Exponer endpoint REST de creación de dispositivo IoT & Añadir POST /api/v1/plots/{plotId}/iot-devices, retornando 201 Created con IoTDeviceResource, 400 Bad Request por datos inválidos o 403 Forbidden por propiedad fallida. & 1.0 & Li, Diana & Done \\ \hline
 
-% TS14
-TS14 & Editar dispositivo IoT & TK01 & Crear UpdateIoTDeviceCommand & Crear UpdateIoTDeviceCommand en la capa de aplicación con PlotId, IoTDeviceId, AuthenticatedUserId, DeviceName e IoTDeviceStatus, permitiendo edición parcial de configuración del sensor. & 1.0 & Li, Diana & Done \\ \cline{3-8}
+% TS11
+TS11 & Editar dispositivo IoT & TK01 & Crear UpdateIoTDeviceCommand & Crear UpdateIoTDeviceCommand en la capa de aplicación con PlotId, IoTDeviceId, AuthenticatedUserId, DeviceName e IoTDeviceStatus, permitiendo edición parcial de configuración del sensor. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK02 & Implementar actualización en IoTDeviceCommandService & Implementar handle(UpdateIoTDeviceCommand), validando propiedad de parcela, buscando el dispositivo con IoTDeviceRepository.findByIdAndPlotId(IoTDeviceId, PlotId), aplicando cambios y persistiendo. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK03 & Crear Resource y assembler de edición IoT & Crear UpdateIoTDeviceResource y UpdateIoTDeviceCommandFromResourceAssembler para transformar PATCH REST en Command sin exponer detalles internos de persistencia. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK04 & Exponer endpoint REST de edición de dispositivo IoT & Añadir PATCH /api/v1/plots/{plotId}/iot-devices/{deviceId}, retornando 200 OK con IoTDeviceResource, 400 Bad Request, 403 Forbidden o 404 Not Found. & 1.0 & Li, Diana & Done \\ \hline
 
-% TS15
-TS15 & Eliminar dispositivo IoT & TK01 & Crear DeleteIoTDeviceCommand & Crear DeleteIoTDeviceCommand en la capa de aplicación con PlotId, IoTDeviceId y AuthenticatedUserId para asegurar que toda eliminación tenga contexto de propiedad. & 1.0 & Li, Diana & Done \\ \cline{3-8}
+% TS12
+TS12 & Eliminar dispositivo IoT & TK01 & Crear DeleteIoTDeviceCommand & Crear DeleteIoTDeviceCommand en la capa de aplicación con PlotId, IoTDeviceId y AuthenticatedUserId para asegurar que toda eliminación tenga contexto de propiedad. & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK02 & Implementar eliminación en IoTDeviceCommandService & Implementar handle(DeleteIoTDeviceCommand), validando propiedad de parcela, recuperando IoTDevice con IoTDeviceRepository.findByIdAndPlotId(IoTDeviceId, PlotId) y eliminando mediante IoTDeviceRepository.delete(IoTDevice). & 1.0 & Li, Diana & Done \\ \cline{3-8}
 & & TK03 & Exponer endpoint REST de eliminación de dispositivo IoT & Añadir DELETE /api/v1/plots/{plotId}/iot-devices/{deviceId}, retornando 204 No Content, 403 Forbidden o 404 Not Found. & 1.0 & Li, Diana & Done \\ \hline
 
-% TS16
-TS16 & Obtener resumen general de monitoreo y KPIs por usuario & TK01 & Definir MonitoringSummary Aggregate Root & Definir MonitoringSummary como aggregate root en la capa de dominio con MonitoringSummaryId, UserId, GeneralHealthStatus, AverageNdvi, AccumulatedChillHours, YieldProjection y LastSynchronizationAt, aplicando invariantes de métricas no negativas y estado válido. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+% TS13
+TS13 & Obtener resumen general de monitoreo y KPIs por usuario & TK01 & Definir MonitoringSummary Aggregate Root & Definir MonitoringSummary como aggregate root en la capa de dominio con MonitoringSummaryId, UserId, GeneralHealthStatus, AverageNdvi, AccumulatedChillHours, YieldProjection y LastSynchronizationAt, aplicando invariantes de métricas no negativas y estado válido. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK02 & Crear GetCurrentMonitoringSummaryQuery & Crear GetCurrentMonitoringSummaryQuery en la capa de aplicación con UserId y AuthenticatedUserId, validando que el resumen solicitado pertenezca al usuario autenticado. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK03 & Implementar MonitoringSummaryQueryService & Implementar MonitoringSummaryQueryService con handle(GetCurrentMonitoringSummaryQuery), obteniendo parcelas del usuario, calculando salud general, promedio NDVI, horas de frío y proyección consolidada. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK04 & Implementar consultas de soporte para MonitoringSummary & Crear servicios o repositorios de infraestructura para recuperar desde PostgreSQL las métricas necesarias del resumen: parcelas del usuario, últimas estadísticas agronómicas por parcela, acumulación de frío, proyección de rendimiento y lecturas IoT recientes. Implementar consultas con EF Core usando filtros por user\_id, plot\_id y fechas, evitando que MonitoringSummaryQueryService dependa de detalles SQL. Implementar las consultas mediante LINQ sobre DbSet, usar Include/ThenInclude solo cuando sea necesario, aplicar AsNoTracking en lecturas y mantener la lógica SQL fuera de los Application Services. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
@@ -178,8 +178,8 @@ TS16 & Obtener resumen general de monitoreo y KPIs por usuario & TK01 & Definir 
 & & TK10 & Extender MonitoringSummaryQueryService con clima y recomendaciones & Extend MonitoringSummaryQueryService para consolidar WeatherSnapshot, ClimateRiskEvaluator y MitigationRecommendation dentro de MonitoringSummary cuando la consulta GET /api/v1/monitoring-summaries/current sea procesada. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK11 & Ampliar MonitoringSummaryResource & Update MonitoringSummaryResource y MonitoringSummaryResourceFromMonitoringSummaryAssembler para incluir CurrentTemperature, WeatherStatus, LastValidatedReadingAt, ClimateRiskLevel, RiskReason y MitigationRecommendation. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
-% TS17
-TS17 & Obtener tendencias agrometeorológicas & TK01 & Definir AgronomicStatistic Aggregate Root & Definir AgronomicStatistic como aggregate root en la capa de dominio con AgronomicStatisticId, UserId, PlotId, MeasurementDate, NdviValue, ChillPortions y ChillHours, validando rango NDVI y métricas climáticas no negativas. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
+% TS14
+TS14 & Obtener tendencias agrometeorológicas & TK01 & Definir AgronomicStatistic Aggregate Root & Definir AgronomicStatistic como aggregate root en la capa de dominio con AgronomicStatisticId, UserId, PlotId, MeasurementDate, NdviValue, ChillPortions y ChillHours, validando rango NDVI y métricas climáticas no negativas. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK02 & Definir TimeRange Value Object & Definir TimeRange como value object en la capa de dominio con valores permitidos LAST\_7\_DAYS, LAST\_30\_DAYS y CURRENT\_CAMPAIGN, rechazando rangos no soportados mediante reglas de dominio. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK03 & Definir AgronomicStatisticRepository & Crear AgronomicStatisticRepository en la capa de dominio con métodos findAllByUserIdAndMeasurementDateBetween(UserId, DateRange), findAllByUserIdAndPlotIdAndMeasurementDateBetween(UserId, PlotId, DateRange) y save(AgronomicStatistic). & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK04 & Implementar AgronomicStatisticRepository con EF Core & Implementar AgronomicStatisticRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<AgronomicStatistic> en AppDbContext, crear configuración con IEntityTypeConfiguration<AgronomicStatistic>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
@@ -188,8 +188,8 @@ TS17 & Obtener tendencias agrometeorológicas & TK01 & Definir AgronomicStatisti
 & & TK07 & Crear GetAgronomicStatisticsQuery & Crear GetAgronomicStatisticsQuery en la capa de aplicación con UserId, AuthenticatedUserId, PlotId opcional y TimeRange, permitiendo consulta consolidada o filtrada por parcela. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK08 & Crear AgronomicStatisticResource y assembler & Crear AgronomicStatisticResource y AgronomicStatisticResourceFromAgronomicStatisticAssembler con MeasurementDate, NdviValue, ChillPortions y ChillHours para graficar tendencias en la UI. & 1.0 & Trinidad, Jahat & Done \\ \hline
 
-% TS09
-TS09 & Listar parcelas por usuario & TK01 & Crear GetPlotsByUserIdQuery & Crear GetPlotsByUserIdQuery en la capa de aplicación con UserId, AuthenticatedUserId e IncludeCurrentImagery, validando que el listado se solicite para el usuario autenticado y permitiendo solicitar enriquecimiento satelital para las parcelas retornadas. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
+% TS06
+TS06 & Listar parcelas por usuario & TK01 & Crear GetPlotsByUserIdQuery & Crear GetPlotsByUserIdQuery en la capa de aplicación con UserId, AuthenticatedUserId e IncludeCurrentImagery, validando que el listado se solicite para el usuario autenticado y permitiendo solicitar enriquecimiento satelital para las parcelas retornadas. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK02 & Crear AgroMonitoringImageryClient & Crear AgroMonitoringImageryClient en infraestructura usando HttpClientFactory o Refit en ASP.NET Core. Leer baseUrl y appid/API key desde appsettings.json o variables de entorno mediante Options Pattern, construir la solicitud a AgroMonitoring a partir de PolygonCoordinates, ejecutar la llamada con timeout configurado, capturar errores 4xx/5xx y convertir la respuesta externa a un objeto interno con tileUrl, captureDate, ndviMean y cloudPercentage sin exponer la credencial al frontend. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK03 & Definir AgroMonitoringImageryService & Crear AgroMonitoringImageryService con métodos GetCurrentImageryAsync(Plot) y GetCurrentImageryForPlotsAsync(IEnumerable<Plot>). El servicio debe consumir AgroMonitoringImageryClient, aplicar fallback cuando no exista imagen vigente, calcular isReliable y recommendedOpacity desde cloudPercentage, y retornar Result para que un error externo no rompa el listado de parcelas. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK04 & Enriquecer listado en PlotQueryService & Implementar PlotQueryService con handle(GetPlotsByUserIdQuery), validando propiedad de la consulta, usando PlotRepository.findAllByOwnerUserId(UserId) y enriqueciendo cada respuesta con currentImagery mediante AgroMonitoringImageryService cuando IncludeCurrentImagery sea verdadero. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
@@ -197,8 +197,8 @@ TS09 & Listar parcelas por usuario & TK01 & Crear GetPlotsByUserIdQuery & Crear 
 & & TK06 & Ampliar PlotResource para currentImagery & Actualizar PlotResource y PlotResourceFromPlotAssembler para incluir currentImagery como SatelliteImageryResource, además de name, polygonCoordinates, areaSize, lastUpdate, healthStatus y phenologicalRisk, manteniendo currentImagery como información de lectura no editable. & 1.0 & Trinidad, Jahat & Done \\ \cline{3-8}
 & & TK07 & Exponer endpoint REST para listar parcelas con imagen NDVI & Añadir GET /api/v1/plots?userId={userId}\&includeCurrentImagery=true en PlotsController, retornando 200 OK con arreglo de PlotResource enriquecidos, 200 OK con currentImagery nulo cuando AgroMonitoring no tenga imagen disponible y 403 Forbidden cuando falle la validación de propiedad. & 1.0 & Trinidad, Jahat & Done \\ \hline
 
-% TS10
-TS10 & Consultar y editar parcela & TK01 & Crear GetPlotByIdQuery & Crear GetPlotByIdQuery en la capa de aplicación con PlotId y AuthenticatedUserId, validando que el detalle de parcela solo se consulte por el propietario correspondiente. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+% TS07
+TS07 & Consultar y editar parcela & TK01 & Crear GetPlotByIdQuery & Crear GetPlotByIdQuery en la capa de aplicación con PlotId y AuthenticatedUserId, validando que el detalle de parcela solo se consulte por el propietario correspondiente. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK02 & Crear UpdatePlotCommand & Crear UpdatePlotCommand en la capa de aplicación con PlotId, AuthenticatedUserId, PlotName, PolygonCoordinates y AreaSize, permitiendo actualización parcial y delegando reglas de consistencia al aggregate root. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK03 & Implementar consultas y validaciones de Plot para detalle & Extender PlotRepositoryImpl y SpringDataPlotRepository para soportar findById(PlotId), findByIdAndOwnerUserId(PlotId, UserId) y validación de dependencias activas antes de eliminar. Implementar consultas existsByPlotId en los repositorios relacionados o consultas LINQ o FromSqlInterpolated en PostgreSQL para detectar dispositivos IoT, alertas, intervenciones, certificaciones o gastos vinculados. Implementar las consultas mediante LINQ sobre DbSet, usar Include/ThenInclude solo cuando sea necesario, aplicar AsNoTracking en lecturas y mantener la lógica SQL fuera de los Application Services. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK04 & Extender PlotQueryService para detalle & Implementar handle(GetPlotByIdQuery) en PlotQueryService, buscando la parcela con PlotRepository.findById(PlotId), retornando NOT\_FOUND si no existe y FORBIDDEN si no pertenece al usuario autenticado. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
@@ -209,15 +209,15 @@ TS10 & Consultar y editar parcela & TK01 & Crear GetPlotByIdQuery & Crear GetPlo
 & & TK09 & Extender PlotCommandService para eliminación desde detalle & Implementar handle(DeletePlotFromDetailCommand) en PlotCommandService, validando existencia de Plot, propiedad del usuario autenticado y ausencia de alertas, intervenciones, certificaciones o dispositivos activos antes de eliminar. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK10 & Agregar DELETE al flujo de detalle de parcela & Añadir DELETE /api/v1/plots/{plotId} en PlotsController como acción disponible desde la vista de detalle, retornando 204 No Content, 403 Forbidden, 404 Not Found o 409 Conflict según el Result. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
-% TS11
-TS11 & Eliminar parcela & TK01 & Crear DeletePlotCommand & Crear DeletePlotCommand en la capa de aplicación con PlotId y AuthenticatedUserId, validando que la eliminación siempre tenga contexto de parcela y usuario autenticado. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+% TS08
+TS08 & Eliminar parcela & TK01 & Crear DeletePlotCommand & Crear DeletePlotCommand en la capa de aplicación con PlotId y AuthenticatedUserId, validando que la eliminación siempre tenga contexto de parcela y usuario autenticado. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK02 & Implementar eliminación en PlotCommandService & Implementar handle(DeletePlotCommand) en PlotCommandService, recuperando Plot, verificando propiedad, validando que no existan dependencias activas y eliminando mediante PlotRepository.delete(Plot). & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK03 & Agregar regla de eliminación de parcela & Añadir domain logic en Plot para determinar si puede eliminarse según estado operativo, evitando eliminar parcelas con trazabilidad activa o relaciones que deban conservarse. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK04 & Implementar consultas de dependencias de parcela & Implementar en infraestructura las consultas necesarias para validar dependencias activas antes de eliminar una parcela usando EF Core y PostgreSQL. Crear métodos existsByPlotId en repositorios de IoTDevice, Alert, InterventionRequest, Certification y Expense, o consultas LINQ o FromSqlInterpolated específicas cuando la relación no sea directa. Implementar las consultas mediante LINQ sobre DbSet, usar Include/ThenInclude solo cuando sea necesario, aplicar AsNoTracking en lecturas y mantener la lógica SQL fuera de los Application Services. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK05 & Exponer endpoint REST de eliminación de parcela & Añadir DELETE /api/v1/plots/{plotId} en PlotsController, retornando 204 No Content, 403 Forbidden, 404 Not Found o 409 Conflict cuando existan dependencias activas. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
-% TS18
-TS18 & Crear alerta preventiva (Reporte de síntomas) & TK01 & Definir Alert Aggregate Root & Definir Alert como aggregate root en la capa de dominio con AlertId, PlotId, ReporterUserId, Symptoms, Description, Severity y AlertStatus, aplicando invariantes de síntomas obligatorios y severidad válida. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+% TS15
+TS15 & Crear alerta preventiva (Reporte de síntomas) & TK01 & Definir Alert Aggregate Root & Definir Alert como aggregate root en la capa de dominio con AlertId, PlotId, ReporterUserId, Symptoms, Description, Severity y AlertStatus, aplicando invariantes de síntomas obligatorios y severidad válida. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK02 & Definir AlertRepository & Crear AlertRepository en la capa de dominio con métodos save(Alert), findById(AlertId), findAllBySeverityAndStatus(AlertSeverity, AlertStatus), findAllByStatus(AlertStatus) y existsByPlotIdAndStatus(PlotId, AlertStatus). & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK03 & Implementar AlertRepository con EF Core & Implementar AlertRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<Alert> en AppDbContext, crear configuración con IEntityTypeConfiguration<Alert>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK04 & Crear AlertRiskEvaluator & Crear AlertRiskEvaluator como domain service para calcular AlertSeverity a partir de Symptoms y contexto de parcela, usando reglas determinísticas iniciales y dejando el contrato listo para integrar métricas agronómicas. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
@@ -225,26 +225,26 @@ TS18 & Crear alerta preventiva (Reporte de síntomas) & TK01 & Definir Alert Agg
 & & TK06 & Implementar AlertCommandService & Implementar AlertCommandService con handle(CreateAlertCommand), validando propiedad de parcela, calculando severidad con AlertRiskEvaluator y persistiendo Alert mediante AlertRepository. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK07 & Exponer endpoint REST de creación de alerta & Crear AlertsController con POST /api/v1/alerts, usando CreateAlertResource, AlertResource y assemblers, retornando 201 Created o 400 Bad Request. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
-% TS19
-TS19 & Listar alertas epidemiológicas zonales & TK01 & Crear AlertResource y assembler & Crear AlertResource y AlertResourceFromAlertAssembler con AlertId, PlotId, Severity, Status, Symptoms y CreatedAt para exponer alertas epidemiológicas zonales. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
+% TS16
+TS16 & Listar alertas epidemiológicas zonales & TK01 & Crear AlertResource y assembler & Crear AlertResource y AlertResourceFromAlertAssembler con AlertId, PlotId, Severity, Status, Symptoms y CreatedAt para exponer alertas epidemiológicas zonales. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK02 & Crear GetRecentAlertsByUserIdQuery & Crear GetRecentAlertsByUserIdQuery en la capa de aplicación con UserId, AuthenticatedUserId y Limit, validando propiedad del usuario y usando un límite por defecto de tres alertas recientes. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK03 & Extender AlertRepository para alertas recientes & Extender SpringDataAlertRepository con consultas findAllBySeverityAndStatus, findAllByStatus, findTopByUserIdOrderByCreatedAtDesc y findTopByPlotIdsOrderByCreatedAtDesc. Implementar ordenamiento descendente por created\_at, límite parametrizable con Pageable o Limit y joins controlados con parcelas del productor para PostgreSQL. Implementar las consultas mediante LINQ sobre DbSet, usar Include/ThenInclude solo cuando sea necesario, aplicar AsNoTracking en lecturas y mantener la lógica SQL fuera de los Application Services. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK04 & Extender AlertQueryService con alertas recientes & Implementar handle(GetRecentAlertsByUserIdQuery) en AlertQueryService, validando propiedad, resolviendo parcelas del usuario y retornando una colección vacía cuando no existan alertas. & 1.0 & Santi, Fabrizio & Done \\ \cline{3-8}
 & & TK05 & Exponer endpoint REST de alertas recientes & Añadir GET /api/v1/alerts/recent?userId={userId}\&limit=3 en AlertsController, retornando 200 OK con lista de AlertResource, 200 OK con arreglo vacío o 403 Forbidden cuando falle la propiedad. & 1.0 & Santi, Fabrizio & Done \\ \hline
 
-% TS24
-TS24 & Registrar hallazgos de inspección física & TK01 & Definir Intervetion Aggregate & Definir Inspection como aggregate root en la capa de dominio con InspectionId, InterventionRequestId, SpecialistId, Findings y EvidenceImageUrls, aplicando invariantes de hallazgos no vacíos y URLs HTTPS para evidencia. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
+% TS21
+TS21 & Registrar hallazgos de inspección física & TK01 & Definir Intervetion Aggregate & Definir Inspection como aggregate root en la capa de dominio con InspectionId, InterventionRequestId, SpecialistId, Findings y EvidenceImageUrls, aplicando invariantes de hallazgos no vacíos y URLs HTTPS para evidencia. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
 & & TK02 & Definir InterventionRepository & Crear InspectionRepository en la capa de dominio con métodos save(Inspection), findAllByInterventionRequestId(InterventionRequestId) y existsByInterventionRequestId(InterventionRequestId). & 1.0 & Espada, Piero & Done \\ \cline{3-8}
 & & TK03 & Crear CreateInterventionCommand & Crear CreateInterventionCommand en la capa de aplicación. & 1.0 & Espada, Piero & Done \\ \cline{3-8}
 & & TK04 & Exponer endpoint REST de inspección física & Crear InspectionsController con POST /api/v1/interventions/{interventionId}/inspections, aceptando JSON o multipart/form-data, y retornando 201 Created con InspectionResource o 400 Bad Request. & 1.0 & Espada, Piero & Done \\ \hline
 
-% US19
-US19 & Reporte de sintomatología y evaluación automática & TK01 & Creación manual de alerta & Implementación de formulario con selector de Parcela y multiselección de síntomas vistos & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US17
+US17 & Reporte de sintomatología y evaluación automática & TK01 & Creación manual de alerta & Implementación de formulario con selector de Parcela y multiselección de síntomas vistos & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Visualización de alertas por parcela & Implementación de filtro de alerta de acuerdo según parcela & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Mensaje de confirmación de alerta & Implementación de pop-up de alerta validada o archivada & 1.0 & Asignado & To-Do \\ \hline
 
-% TS06
-TS06 & Consultar y modificar perfil de usuario & TK01 & Definir Profile Aggregate Root & Definir la clase Profile como aggregate root en la capa de dominio con ProfileId, UserId, FullName, PhoneNumber, Role, AvailabilityStatus y ProfileImageUrl, aplicando invariantes de datos obligatorios, formato de teléfono, estado de disponibilidad permitido y actualización parcial controlada por lógica de dominio. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS03
+TS03 & Consultar y modificar perfil de usuario & TK01 & Definir Profile Aggregate Root & Definir la clase Profile como aggregate root en la capa de dominio con ProfileId, UserId, FullName, PhoneNumber, Role, AvailabilityStatus y ProfileImageUrl, aplicando invariantes de datos obligatorios, formato de teléfono, estado de disponibilidad permitido y actualización parcial controlada por lógica de dominio. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Definir ProfileRepository & Crear ProfileRepository en la capa de dominio con métodos save(Profile), findByUserId(UserId), existsByUserId(UserId) y findByUserIdAndRole(UserId, Role), para consultar y actualizar perfiles respetando propiedad del usuario. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Implementar ProfileRepository con EF Core & Implementar ProfileRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<Profile> en AppDbContext, crear configuración con IEntityTypeConfiguration<Profile>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Crear GetProfileByUserIdQuery & Crear GetProfileByUserIdQuery en la capa de aplicación con UserId y AuthenticatedUserId, validando que la consulta solo pueda ejecutarse para el usuario autenticado o un perfil permitido por reglas de acceso. & 1.0 & Asignado & To-Do \\ \cline{3-8}
@@ -254,16 +254,16 @@ TS06 & Consultar y modificar perfil de usuario & TK01 & Definir Profile Aggregat
 & & TK08 & Implementar almacenamiento de imagen de perfil con Cloudflare Images & Implementar el servicio de infraestructura correspondiente usando HttpClientFactory, accountId, apiToken y deliveryBaseUrl configurados con Options Pattern. Validar content type permitido, tamaño máximo, archivos vacíos, respuesta del API de Cloudflare Images y devolver únicamente las URLs públicas necesarias para el dominio o Resource. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK09 & Exponer endpoints REST de perfil & Crear ProfilesController con GET /api/v1/users/{userId}/profile y PATCH /api/v1/users/{userId}/profile, usando ProfileResource, UpdateProfileResource y assemblers para transformar Resources a Query/Command y Profile a Resource. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS18
-TS18 & Crear alerta preventiva (Reporte de síntomas) & TK01 & Integrar difusión comunitaria en AlertCommandService & Extend AlertCommandService con la propagación de PreventiveNotice luego de crear una Alert crítica o alta, retornando Result success con Alert y conservando la alerta original como fuente de la difusión. & 1.0 & Asignado & To-Do \\ \hline
+% TS15
+TS15 & Crear alerta preventiva (Reporte de síntomas) & TK01 & Integrar difusión comunitaria en AlertCommandService & Extend AlertCommandService con la propagación de PreventiveNotice luego de crear una Alert crítica o alta, retornando Result success con Alert y conservando la alerta original como fuente de la difusión. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS19
-TS19 & Listar alertas epidemiológicas zonales & TK01 & Crear GetAlertsBySeverityQuery & Crear GetAlertsBySeverityQuery en la capa de aplicación con AlertSeverity opcional, permitiendo listar alertas activas filtradas o sin filtro de severidad. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS16
+TS16 & Listar alertas epidemiológicas zonales & TK01 & Crear GetAlertsBySeverityQuery & Crear GetAlertsBySeverityQuery en la capa de aplicación con AlertSeverity opcional, permitiendo listar alertas activas filtradas o sin filtro de severidad. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Implementar AlertQueryService & Implementar AlertQueryService con handle(GetAlertsBySeverityQuery), consultando AlertRepository.findAllBySeverityAndStatus(AlertSeverity, ACTIVE) cuando exista filtro o findAllByStatus(ACTIVE) cuando no exista. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Exponer endpoint REST de alertas por severidad & Añadir GET /api/v1/alerts?severity={severity} en AlertsController, retornando 200 OK con lista de AlertResource o 400 Bad Request cuando severity no sea válido. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS20
-TS20 & Crear solicitud de intervención técnica & TK01 & Definir InterventionRequest Aggregate Root & Definir InterventionRequest como aggregate root en la capa de dominio con InterventionRequestId, AlertId, ProducerUserId, SpecialistId y InterventionRequestStatus, inicializando estado en PENDING\_SPECIALIST\_REVIEW. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS17
+TS17 & Crear solicitud de intervención técnica & TK01 & Definir InterventionRequest Aggregate Root & Definir InterventionRequest como aggregate root en la capa de dominio con InterventionRequestId, AlertId, ProducerUserId, SpecialistId y InterventionRequestStatus, inicializando estado en PENDING\_SPECIALIST\_REVIEW. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Definir InterventionRequestRepository & Crear InterventionRequestRepository en la capa de dominio con métodos save(InterventionRequest), findById(InterventionRequestId), existsByAlertIdAndStatusIn(AlertId, StatusCollection) y findByIdAndParticipant(InterventionRequestId, UserId). & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Implementar InterventionRequestRepository con EF Core & Implementar InterventionRequestRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<InterventionRequest> en AppDbContext, crear configuración con IEntityTypeConfiguration<InterventionRequest>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Crear CreateInterventionRequestCommand & Crear CreateInterventionRequestCommand en la capa de aplicación con AlertId, ProducerUserId y SpecialistId, validando identificadores obligatorios para abrir el caso de atención. & 1.0 & Asignado & To-Do \\ \cline{3-8}
@@ -274,8 +274,8 @@ TS20 & Crear solicitud de intervención técnica & TK01 & Definir InterventionRe
 & & TK09 & Implementar SpecialistCandidateQueryService & Implementar SpecialistCandidateQueryService con handle(GetSpecialistCandidatesByAlertIdQuery), recuperando especialistas disponibles por zona de atención, disponibilidad operativa y relación con la alerta, retornando Result con lista vacía cuando no existan candidatos. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK10 & Exponer endpoint REST de especialistas candidatos & Añadir GET /api/v1/interventions/candidates?alertId={alertId} en InterventionRequestsController, retornando 200 OK con SpecialistCandidateResource, 200 OK con arreglo vacío, 403 Forbidden o 404 Not Found. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS21
-TS21 & Consultar y actualizar estado de intervención & TK01 & Definir InterventionRequestStatusPolicy & Crear InterventionRequestStatusPolicy en la capa de dominio con canTransition(CurrentStatus, NextStatus), permitiendo solo transiciones válidas como PENDING\_SPECIALIST\_REVIEW a ACCEPTED o DECLINED. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS18
+TS18 & Consultar y actualizar estado de intervención & TK01 & Definir InterventionRequestStatusPolicy & Crear InterventionRequestStatusPolicy en la capa de dominio con canTransition(CurrentStatus, NextStatus), permitiendo solo transiciones válidas como PENDING\_SPECIALIST\_REVIEW a ACCEPTED o DECLINED. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Crear GetInterventionRequestByIdQuery & Crear GetInterventionRequestByIdQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId para consultar una solicitud solo si el usuario participa en ella. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Crear UpdateInterventionRequestStatusCommand & Crear UpdateInterventionRequestStatusCommand en la capa de aplicación con InterventionRequestId, AuthenticatedUserId y NextStatus para aceptar o declinar una intervención. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Implementar consultas para solicitudes y contexto técnico & Extender SpringDataInterventionRequestRepository con consultas por requestId, specialistId, status y participante. Para el contexto técnico, implementar consultas de soporte que recuperen Alert, Plot, AgronomicStatistic y eventos relevantes mediante repositorios existentes, evitando N+1 con Include/ThenInclude o proyecciones LINQ o consultas específicas cuando se necesite información agregada. Implementar las consultas mediante LINQ sobre DbSet, usar Include/ThenInclude solo cuando sea necesario, aplicar AsNoTracking en lecturas y mantener la lógica SQL fuera de los Application Services. & 1.0 & Asignado & To-Do \\ \cline{3-8}
@@ -290,8 +290,8 @@ TS21 & Consultar y actualizar estado de intervención & TK01 & Definir Intervent
 & & TK13 & Implementar contexto técnico en InterventionRequestQueryService & Implementar handle(GetInterventionTechnicalContextQuery), consultando alerta activa, historial agronómico relevante, severidad y datos de parcela; retornar NOT\_FOUND si la solicitud no existe y FORBIDDEN si el usuario no participa. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK14 & Exponer endpoint REST de contexto técnico & Añadir GET /api/v1/interventions/requests/{requestId}/technical-context, retornando 200 OK con InterventionTechnicalContextResource, 403 Forbidden o 404 Not Found. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS22
-TS22 & Formalizar propuesta de servicio & TK01 & Definir Proposal Aggregate Root & Definir Proposal como aggregate root en la capa de dominio con ProposalId, InterventionRequestId, SpecialistId, Budget, OperationalPlan y ProposalStatus, validando presupuesto positivo y plan operativo no vacío. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS19
+TS19 & Formalizar propuesta de servicio & TK01 & Definir Proposal Aggregate Root & Definir Proposal como aggregate root en la capa de dominio con ProposalId, InterventionRequestId, SpecialistId, Budget, OperationalPlan y ProposalStatus, validando presupuesto positivo y plan operativo no vacío. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Definir ProposalRepository & Crear ProposalRepository en la capa de dominio con métodos save(Proposal), findByInterventionRequestId(InterventionRequestId) y existsByInterventionRequestId(InterventionRequestId). & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Implementar ProposalRepository con EF Core & Implementar ProposalRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<Proposal> en AppDbContext, crear configuración con IEntityTypeConfiguration<Proposal>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Crear CreateProposalCommand & Crear CreateProposalCommand en la capa de aplicación con InterventionRequestId, SpecialistId, Budget y OperationalPlan, validando datos requeridos antes de formalizar la propuesta. & 1.0 & Asignado & To-Do \\ \cline{3-8}
@@ -302,22 +302,22 @@ TS22 & Formalizar propuesta de servicio & TK01 & Definir Proposal Aggregate Root
 & & TK09 & Extender ProposalCommandService para resolución & Implementar handle(ResolveProposalStatusCommand) en ProposalCommandService, validando productor participante, propuesta existente, estado pendiente y persistiendo el nuevo estado mediante ProposalRepository. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK10 & Exponer endpoint REST de resolución de propuesta & Añadir PATCH /api/v1/interventions/{interventionId}/proposals/{proposalId}/status, usando UpdateProposalStatusResource y retornando 200 OK con ProposalResource, 400 Bad Request, 403 Forbidden o 404 Not Found. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS23
-TS23 & Obtener datos de contacto directo protegidos & TK01 & Crear GetContactByInterventionIdQuery & Crear GetContactByInterventionIdQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId, validando que el usuario participe en la intervención. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS20
+TS20 & Obtener datos de contacto directo protegidos & TK01 & Crear GetContactByInterventionIdQuery & Crear GetContactByInterventionIdQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId, validando que el usuario participe en la intervención. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Implementar ContactQueryService & Implementar ContactQueryService con handle(GetContactByInterventionIdQuery), validando intervención existente, propuesta aceptada y participación del usuario antes de retornar datos de contacto. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Implementar consultas protegidas de contacto & Crear un componente de infraestructura para recuperar datos de contacto desde ProfileRepository y ProposalRepository solo cuando la propuesta esté ACCEPTED. La consulta debe validar intervention\_request\_id, participante autenticado y estado confirmado antes de construir ContactResource, evitando exponer teléfonos o correos desde endpoints generales. Implementar las consultas mediante LINQ sobre DbSet, usar Include/ThenInclude solo cuando sea necesario, aplicar AsNoTracking en lecturas y mantener la lógica SQL fuera de los Application Services. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Definir ContactResource & Crear ContactResource en interfaces/rest con datos de contacto permitidos para productor y especialista, evitando exponer información cuando el acuerdo no esté confirmado. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK05 & Exponer endpoint REST de datos de contacto & Añadir GET /api/v1/interventions/{interventionId}/contacts, retornando 200 OK con ContactResource, 403 Forbidden cuando no exista acuerdo confirmado y 404 Not Found si la intervención no existe. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS24
-TS24 & Registrar hallazgos de inspección física & TK01 & Implementar InspectionRepository con EF Core & Implementar InspectionRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<Inspection> en AppDbContext, crear configuración con IEntityTypeConfiguration<Inspection>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS21
+TS21 & Registrar hallazgos de inspección física & TK01 & Implementar InspectionRepository con EF Core & Implementar InspectionRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<Inspection> en AppDbContext, crear configuración con IEntityTypeConfiguration<Inspection>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Definir PlotTraceabilityResource & Crear PlotTraceabilityResource en interfaces/rest con Certifications, Prescriptions, Expenses, Alerts y AgronomicEvents para mostrar la trazabilidad histórica durante la inspección. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Crear GetInterventionTraceabilityQuery & Crear GetInterventionTraceabilityQuery en la capa de aplicación con InterventionRequestId y AuthenticatedUserId, validando participación del especialista o productor antes de recuperar trazabilidad. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Implementar TraceabilityQueryService & Implementar TraceabilityQueryService con handle(GetInterventionTraceabilityQuery), recuperando eventos agronómicos, alertas, recetas, certificaciones y gastos vinculados a la parcela de la intervención. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK05 & Exponer endpoint REST de trazabilidad histórica & Añadir GET /api/v1/interventions/{interventionId}/traceability, retornando 200 OK con PlotTraceabilityResource, 403 Forbidden o 404 Not Found. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS25
-TS25 & Emitir receta técnica fitosanitaria & TK01 & Definir Prescription Aggregate Root & Definir Prescription como aggregate root en la capa de dominio con PrescriptionId, InterventionRequestId, SpecialistId, Inputs, Dosage, ApplicationDate y WeatherWarning, validando insumos, dosis y fecha de aplicación obligatorios. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS22
+TS22 & Emitir receta técnica fitosanitaria & TK01 & Definir Prescription Aggregate Root & Definir Prescription como aggregate root en la capa de dominio con PrescriptionId, InterventionRequestId, SpecialistId, Inputs, Dosage, ApplicationDate y WeatherWarning, validando insumos, dosis y fecha de aplicación obligatorios. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Definir PrescriptionRepository & Crear PrescriptionRepository en la capa de dominio con métodos save(Prescription), findByInterventionRequestId(InterventionRequestId) y existsByInterventionRequestId(InterventionRequestId). & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Implementar PrescriptionRepository con EF Core & Implementar PrescriptionRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<Prescription> en AppDbContext, crear configuración con IEntityTypeConfiguration<Prescription>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Crear WeatherApplicationWindowValidator & Crear WeatherApplicationWindowValidator como domain service para evaluar ApplicationDate contra condiciones climáticas y retornar advertencias sin bloquear la generación de la receta. & 1.0 & Asignado & To-Do \\ \cline{3-8}
@@ -325,24 +325,24 @@ TS25 & Emitir receta técnica fitosanitaria & TK01 & Definir Prescription Aggreg
 & & TK06 & Implementar PrescriptionCommandService & Implementar PrescriptionCommandService con handle(CreatePrescriptionCommand), validando especialista asignado, ejecutando WeatherApplicationWindowValidator y persistiendo Prescription con PrescriptionRepository. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK07 & Exponer endpoint REST de receta técnica & Crear PrescriptionsController con POST /api/v1/interventions/{interventionId}/prescriptions, usando CreatePrescriptionResource y PrescriptionResource, retornando 201 Created o 400 Bad Request. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS26
-TS26 & Certificar ejecución de tratamientos en campo & TK01 & Definir Certification Aggregate Root & Definir Certification como aggregate root en la capa de dominio con CertificationId, PlotId, PrescriptionId, ProducerUserId y ExecutionDate, validando fecha de ejecución no futura y prescripción obligatoria. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS23
+TS23 & Certificar ejecución de tratamientos en campo & TK01 & Definir Certification Aggregate Root & Definir Certification como aggregate root en la capa de dominio con CertificationId, PlotId, PrescriptionId, ProducerUserId y ExecutionDate, validando fecha de ejecución no futura y prescripción obligatoria. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Definir CertificationRepository & Crear CertificationRepository en la capa de dominio con métodos save(Certification), findByPrescriptionId(PrescriptionId), findAllByPlotId(PlotId) y existsByPrescriptionId(PrescriptionId). & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Implementar CertificationRepository con EF Core & Implementar CertificationRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<Certification> en AppDbContext, crear configuración con IEntityTypeConfiguration<Certification>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Crear CreateCertificationCommand & Crear CreateCertificationCommand en la capa de aplicación con PlotId, PrescriptionId, ProducerUserId y ExecutionDate, validando datos necesarios para certificar ejecución. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK05 & Implementar CertificationCommandService & Implementar CertificationCommandService con handle(CreateCertificationCommand), validando propiedad de parcela, existencia de prescripción, ausencia de certificación previa y persistencia con CertificationRepository. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK06 & Exponer endpoint REST de certificación & Crear CertificationsController con POST /api/v1/plots/{plotId}/certifications, usando CreateCertificationResource y CertificationResource, retornando 201 Created, 400 Bad Request o 403 Forbidden. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS27
-TS27 & Consolidar gastos operativos de mitigación & TK01 & Definir Expense Aggregate Root & Definir Expense como aggregate root en la capa de dominio con ExpenseId, PlotId, ProducerUserId, LaborCosts, InputCosts y TotalCost, calculando TotalCost desde reglas de dominio y rechazando costos negativos. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS24
+TS24 & Consolidar gastos operativos de mitigación & TK01 & Definir Expense Aggregate Root & Definir Expense como aggregate root en la capa de dominio con ExpenseId, PlotId, ProducerUserId, LaborCosts, InputCosts y TotalCost, calculando TotalCost desde reglas de dominio y rechazando costos negativos. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Definir ExpenseRepository & Crear ExpenseRepository en la capa de dominio con métodos save(Expense), findAllByPlotId(PlotId) y sumTotalCostByPlotId(PlotId) para consolidar gastos por parcela. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Implementar ExpenseRepository con EF Core & Implementar ExpenseRepository en la capa de infraestructura con EF Core y PostgreSQL. Declarar DbSet<Expense> en AppDbContext, crear configuración con IEntityTypeConfiguration<Expense>, mapear la tabla en snake\_case, configurar claves primarias, claves foráneas, índices y conversiones de Value Objects mediante ValueConverter u Owned Entity según corresponda. Implementar los métodos definidos por el contrato del dominio usando LINQ, AsNoTracking para consultas de lectura y SaveChangesAsync para persistencia. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Crear CreateExpenseCommand & Crear CreateExpenseCommand en la capa de aplicación con PlotId, ProducerUserId, LaborCosts e InputCosts, validando costos obligatorios y no negativos. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK05 & Implementar ExpenseCommandService & Implementar ExpenseCommandService con handle(CreateExpenseCommand), validando propiedad de parcela, creando Expense, persistiendo el gasto y actualizando métricas financieras asociadas. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK06 & Exponer endpoint REST de gastos operativos & Crear ExpensesController con POST /api/v1/plots/{plotId}/expenses, usando CreateExpenseResource y ExpenseResource, retornando 201 Created, 400 Bad Request o 403 Forbidden. & 1.0 & Asignado & To-Do \\ \hline
 
-% TS28
-TS28 & Cerrar intervención y evaluar servicio público & TK01 & Crear CloseInterventionCommand & Crear CloseInterventionCommand en la capa de aplicación con InterventionRequestId, ProducerUserId, Score, Comment y RehirePreference, validando calificación permitida y preferencia obligatoria. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% TS25
+TS25 & Cerrar intervención y evaluar servicio público & TK01 & Crear CloseInterventionCommand & Crear CloseInterventionCommand en la capa de aplicación con InterventionRequestId, ProducerUserId, Score, Comment y RehirePreference, validando calificación permitida y preferencia obligatoria. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Agregar comportamiento de cierre en InterventionRequest & Añadir close(Score, Comment, RehirePreference) en InterventionRequest, cambiando estado a CLOSED y evitando cierres duplicados mediante regla de dominio. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Implementar InterventionClosureCommandService & Implementar InterventionClosureCommandService con handle(CloseInterventionCommand), validando productor participante, intervención ejecutada y persistencia del cierre. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK04 & Implementar actualización de reputación & Crear SpecialistReputationUpdater con updateAfterClosure(SpecialistId, Score), recalculando reputación pública del especialista a partir de intervenciones cerradas. & 1.0 & Asignado & To-Do \\ \cline{3-8}
@@ -385,58 +385,58 @@ TS30 & Consultar estado disciplinario del perfil & TK01 & Definir DisciplineStat
 & & TK05 & Implementar DisciplineStatusQueryService & Implementar DisciplineStatusQueryService con handle(GetDisciplineStatusByUserIdQuery), retornando CLEAR cuando no exista historial y FORBIDDEN cuando el solicitante no tenga permisos. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK06 & Exponer endpoint REST de estado disciplinario & Crear DisciplineController con GET /api/v1/users/{userId}/discipline, retornando DisciplineResource con strikes, status y suspendedUntil. & 1.0 & Asignado & To-Do \\ \hline
 
-% US15
-US15 & Alerta por frío insuficiente & TK01 & Componente de alerta de frío & Implementación de tipo de alerta fenológica de frío y filtro & 1.0 & Asignado & To-Do \\ \hline
+% US13
+US13 & Alerta por frío insuficiente & TK01 & Componente de alerta de frío & Implementación de tipo de alerta fenológica de frío y filtro & 1.0 & Asignado & To-Do \\ \hline
+
+% US18
+US18 & Difusión de alerta preventiva comunitaria & TK01 & Componente de alerta comunitaria & Implementación de tipo de alerta comunitaria y filtro & 1.0 & Asignado & To-Do \\ \hline
+
+% US19
+US19 & Consulta de zonas con alerta & TK01 & Radar fitosanitario con Mapbox & Implementación de mapa interactivo con marcadores georreferenciados de alertas epidemiológicas. & 1.0 & Asignado & To-Do \\ \hline
 
 % US20
-US20 & Difusión de alerta preventiva comunitaria & TK01 & Componente de alerta comunitaria & Implementación de tipo de alerta comunitaria y filtro & 1.0 & Asignado & To-Do \\ \hline
-
-% US21
-US21 & Consulta de zonas con alerta & TK01 & Radar fitosanitario con Mapbox & Implementación de mapa interactivo con marcadores georreferenciados de alertas epidemiológicas. & 1.0 & Asignado & To-Do \\ \hline
-
-% US22
-US22 & Filtrado de alertas por gravedad & TK01 & Filtro de severidad y tipo de plaga & Implementación de filtros dinámicos para alertas de plagas. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+US20 & Filtrado de alertas por gravedad & TK01 & Filtro de severidad y tipo de plaga & Implementación de filtros dinámicos para alertas de plagas. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Panel de alertas filtradas & Implementación de listado sincronizado con las alertas visibles en el mapa. & 1.0 & Asignado & To-Do \\ \hline
 
-% US24
-US24 & Identificación de especialistas cercanos & TK01 & Lista de especialistas disponibles & Implementación de lista de técnicos con datos de disponibilidad. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US22
+US22 & Identificación de especialistas cercanos & TK01 & Lista de especialistas disponibles & Implementación de lista de técnicos con datos de disponibilidad. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Indisposición de especialistas & Implementación de componente de especialistas no disponibles & 1.0 & Asignado & To-Do \\ \hline
 
-% US25
-US25 & Solicitud formal de intervención & TK01 & Solicitud de invervención & Implementación de creación de solicitud con estado en espera. & 1.0 & Asignado & To-Do \\ \hline
+% US23
+US23 & Solicitud formal de intervención & TK01 & Solicitud de invervención & Implementación de creación de solicitud con estado en espera. & 1.0 & Asignado & To-Do \\ \hline
 
-% US26
-US26 & Evaluación de disponibilidad operativa & TK01 & Lista de solicitudes en espera & Implementación de lista de solicitudes sin respuesta. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US24
+US24 & Evaluación de disponibilidad operativa & TK01 & Lista de solicitudes en espera & Implementación de lista de solicitudes sin respuesta. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Información de solicitud & Implementación de popup con datos de la unidad productiva y alerta. & 1.0 & Asignado & To-Do \\ \hline
 
-% US27
-US27 & Resolución de la solicitud de intervención & TK01 & Aceptación de solicitud & Implementación de aceptación del especialista y visualización del productor. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US25
+US25 & Resolución de la solicitud de intervención & TK01 & Aceptación de solicitud & Implementación de aceptación del especialista y visualización del productor. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Lista de solicitudes rechazadas & Implementación de lista de solicitudes rechazadas. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Lista de solicitudes en proceso & Implementación de lista de solicitudes recientemente aceptadas preeliminarmente. & 1.0 & Asignado & To-Do \\ \hline
 
-% US28
-US28 & Evaluación preliminar de la unidad productiva & TK01 & Información consolidada de la parcela & Implementación de resumen de últimos datos de trazabilidad de la parcela y últimas alertas recibidas & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US26
+US26 & Evaluación preliminar de la unidad productiva & TK01 & Información consolidada de la parcela & Implementación de resumen de últimos datos de trazabilidad de la parcela y últimas alertas recibidas & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Visualización del mapa de la parcela & Configurar Mapbox SDK para mostrar la parcela. & 1.0 & Asignado & To-Do \\ \hline
 
-% US29
-US29 & Emisión de propuesta de servicio & TK01 & Creación de presupuesto & Implementación de formulario relacionado con la parcela asignada. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US27
+US27 & Emisión de propuesta de servicio & TK01 & Creación de presupuesto & Implementación de formulario relacionado con la parcela asignada. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Muestra de presupuesto & Implementación de cambio de estado de solicitud en aceptada & 1.0 & Asignado & To-Do \\ \hline
 
-% US30
-US30 & Resolución de la propuesta de servicio & TK01 & Resolución de propuesta & Implementación de visualización del formulario para solo leer con opciones de aceptar o rechazar. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US28
+US28 & Resolución de la propuesta de servicio & TK01 & Resolución de propuesta & Implementación de visualización del formulario para solo leer con opciones de aceptar o rechazar. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Repetición del ciclo de búsqueda & Implementación de cambio de estado y retomar actividad de búsqueda de especialistas & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Lista de propuestas rechazadas & Implementación de lista de propuestas rechazadas del especialista & 1.0 & Asignado & To-Do \\ \hline
 
-% US31
-US31 & Habilitación de canal de comunicación directo & TK01 & Botón de contacto habilitado & Implementación de popup con datos de correo y whatsapp. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US29
+US29 & Habilitación de canal de comunicación directo & TK01 & Botón de contacto habilitado & Implementación de popup con datos de correo y whatsapp. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Botón de contacto deshabilitado & Implementación de tooltip para comunicar que se habilirá al aceptar una propuesta. & 1.0 & Asignado & To-Do \\ \hline
 
-% US36
-US36 & Revisión de antecedentes agronómicos en campo & TK01 & Información de trazabilidad de la parcela & Implementación de resumen de últimos datos de trazabilidad de la parcela & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US30
+US30 & Revisión de antecedentes agronómicos en campo & TK01 & Información de trazabilidad de la parcela & Implementación de resumen de últimos datos de trazabilidad de la parcela & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Información de últimas alertas similares & Implementación de lista de alertas similares & 1.0 & Asignado & To-Do \\ \hline
 
-% US37
-US37 & Registro de datos de inspección física & TK01 & Formulario de inspección física & Implementación de formulario para registrar observaciones biológicas y daños detectados. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US31
+US31 & Registro de datos de inspección física & TK01 & Formulario de inspección física & Implementación de formulario para registrar observaciones biológicas y daños detectados. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Registro de evidencias de inspección & Implementación de carga de imágenes y notas técnicas relacionadas a la parcela. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Resumen de hallazgos de campo & Implementación de componente con resumen de observaciones registradas. & 1.0 & Asignado & To-Do \\ \hline
 
@@ -445,27 +445,27 @@ US38 & Validación de ventana de aplicación & TK01 & Validación climática de 
 & & TK02 & Alerta de condiciones adversas & Implementación de mensaje de advertencia por lluvias o vientos fuertes. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Recomendación de nueva ventana & Implementación de sugerencia de reprogramación de aplicación fitosanitaria. & 1.0 & Asignado & To-Do \\ \hline
 
-% US39
-US39 & Emisión de prescripción de agrofármacos & TK01 & Formulario de receta técnica & Implementación de formulario para registrar agrofármacos, dosis y método de aplicación. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US32
+US32 & Emisión de prescripción de agrofármacos & TK01 & Formulario de receta técnica & Implementación de formulario para registrar agrofármacos, dosis y método de aplicación. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Resumen de prescripción emitida & Implementación de componente de visualización de receta técnica generada. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Notificación de nueva receta & Implementación de mensaje de disponibilidad de plan de tratamiento para el productor. & 1.0 & Asignado & To-Do \\ \hline
 
-% US40
-US40 & Certificación de aplicación de receta técnica & TK01 & Formulario de certificación de aplicación & Implementación de registro de fecha y dosificación aplicada en campo. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US33
+US33 & Certificación de aplicación de receta técnica & TK01 & Formulario de certificación de aplicación & Implementación de registro de fecha y dosificación aplicada en campo. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Actualización de historial de parcela & Implementación de consolidación de trazabilidad posterior a intervención. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Advertencia de aplicación fuera de ventana & Implementación de mensaje de posible reducción de eficacia climática. & 1.0 & Asignado & To-Do \\ \hline
 
-% US17
-US17 & Certificación de aplicación del plan de mitigación & TK01 & Formulario de certificación de intervención & Implementación de registro de fecha e insumos aplicados en campo. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US15
+US15 & Certificación de aplicación del plan de mitigación & TK01 & Formulario de certificación de intervención & Implementación de registro de fecha e insumos aplicados en campo. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Validación de datos obligatorios & Implementación de validación de insumos utilizados y fecha de intervención. & 1.0 & Asignado & To-Do \\ \hline
 
-% US41
-US41 & Consolidación del gasto de intervención & TK01 & Formulario de registro de gastos & Implementación de ingreso de costos operativos y agrofármacos utilizados. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US34
+US34 & Consolidación del gasto de intervención & TK01 & Formulario de registro de gastos & Implementación de ingreso de costos operativos y agrofármacos utilizados. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Actualización de métricas financieras & Implementación de recálculo de rentabilidad asociado a la parcela. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Resumen económico de intervención & Implementación de visualización consolidada de gastos registrados. & 1.0 & Asignado & To-Do \\ \hline
 
-% US18
-US18 & Consolidación del gasto de mitigación climática & TK01 & Formulario de gasto de mitigación climática & Implementación de ingreso de costos asociados al plan nutricional. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US16
+US16 & Consolidación del gasto de mitigación climática & TK01 & Formulario de gasto de mitigación climática & Implementación de ingreso de costos asociados al plan nutricional. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Validación de declaración financiera & Implementación de bloqueo de cierre sin registro de costos. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Actualización de rentabilidad productiva & Implementación de recálculo financiero posterior a la mitigación climática. & 1.0 & Asignado & To-Do \\ \hline
 
@@ -484,12 +484,12 @@ US42 & Cierre formal del servicio y evaluación de calidad & TK01 & Formulario d
 & & TK02 & Calificación de especialista & Implementación de componente de evaluación cualitativa del Asesor Técnico mediante puntuación y comentario. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Visualización de reputación actualizada & Implementación de actualización del puntaje y estado reputacional del especialista en el perfil público. & 1.0 & Asignado & To-Do \\ \hline
 
-% US45
-US45 & Registro de disposición de recontratación & TK01 & Selector de preferencia de recontratación & Implementación de opción favorable o desfavorable sobre futuras colaboraciones. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US35
+US35 & Registro de disposición de recontratación & TK01 & Selector de preferencia de recontratación & Implementación de opción favorable o desfavorable sobre futuras colaboraciones. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Historial privado de especialistas & Implementación de sección privada con preferencias registradas para futuras búsquedas. & 1.0 & Asignado & To-Do \\ \hline
 
-% US46
-US46 & Publicación de caso de éxito profesional & TK01 & Botón de publicación de caso exitoso & Implementación de acción para agregar intervenciones validadas al portafolio público. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US36
+US36 & Publicación de caso de éxito profesional & TK01 & Botón de publicación de caso exitoso & Implementación de acción para agregar intervenciones validadas al portafolio público. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Mensaje de restricción de publicación & Implementación de alerta para intervenciones con evaluación desfavorable. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Sección pública de casos de éxito & Implementación de galería de intervenciones destacadas dentro del perfil del especialista. & 1.0 & Asignado & To-Do \\ \hline
 
@@ -513,20 +513,59 @@ US35 & Expulsión definitiva de usuarios reincidentes & TK01 & Pantalla de expul
 & & TK02 & Ocultamiento de perfil sancionado & Implementación de invisibilización de perfil dentro de búsquedas y marketplace. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Mensaje de revocación permanente & Implementación de notificación de expulsión definitiva del ecosistema. & 1.0 & Asignado & To-Do \\ \hline
 
-% US10
-US10 & Gestión de estado de disponibilidad & TK01 & Selector de disponibilidad operativa & Implementación de interruptor visual para activar o pausar recepción de solicitudes. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US08
+US08 & Gestión de estado de disponibilidad & TK01 & Selector de disponibilidad operativa & Implementación de interruptor visual para activar o pausar recepción de solicitudes. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Estado visible de disponibilidad & Implementación de badge de estado operativo mostrado en el perfil profesional. & 1.0 & Asignado & To-Do \\ \hline
 
-% US09
-US09 & Publicación de perfil profesional & TK01 & Formulario de perfil profesional & Implementación de vista para registrar experiencia y datos de contacto. & 1.0 & Asignado & To-Do \\ \cline{3-8}
+% US07
+US07 & Publicación de perfil profesional & TK01 & Formulario de perfil profesional & Implementación de vista para registrar experiencia y datos de contacto. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK02 & Ubicación geográfica del especialista & Implementación de selección y visualización de zona operativa mediante mapa interactivo. & 1.0 & Asignado & To-Do \\ \cline{3-8}
 & & TK03 & Visualización pública del portafolio & Implementación de perfil público mostrado en terna de especialistas. & 1.0 & Asignado & To-Do \\ \hline
 
 \end{longtable}
 
-#### Deployment Evidence for Sprint Review
+#### Development Evidence for Sprint Review
 
 &nbsp;
+
+Durante el Sprint 3, el equipo de desarrollo desplegó de manera exitosa los incrementos correspondientes en los tres repositorios principales del proyecto.
+
+A continuación, se presenta la matriz de control de versiones correspondiente al Sprint 3, la cual detalla el historial de commits más importantes de los repositorios (cabe destacar que todos los repositorios mencionados se encuentran alojados bajo el prefijo de la organización upc-pre-1asi0730-2610-10215-arcadiadevs/):
+
+\begin{longtable}{|p{0.15\textwidth}|p{0.15\textwidth}|p{0.10\textwidth}|p{0.40\textwidth}|p{0.10\textwidth}|}
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Repository} & \textbf{Branch} & \textbf{Commit Id} & \textbf{Commit Message} & \textbf{Date} \\ \hline
+\endhead
+viora-website & refactor/\allowbreak i18n & 837e603 & refactor(i18n): remove hardcoded text in index.html. & 05/06/2026 \\ \hline
+viora-website & feature/\allowbreak add-video-about-the-product & 76c7545 & feat(video) add about the product section and team video playback controls. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & f37b2ec & feat(agronomic): align dashboard overview header and card layout. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 5a08c4c & feat(agronomic): map weather summary visuals from the condition. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 3566a22 & feat(shared): redesign the dashboard toolbar controls. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 7c0721d & feat(shared): add coming soon view and workspace placeholder routes. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & c22b4ac & feat(shared): add coming soon and dashboard overview translations. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 2e50e69 & feat(shared): remove the in-memory mock resources. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & 8c1461d & feat(surveillance): route alerts to the mock api target. & 18/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak ui-foundation & dca94a8 & feat(agronomic): consume platform endpoints directly via the api gateway. & 18/06/2026 \\ \hline
+viora-website & release/\allowbreak 2.0.3 & 9f20ecd & feat(links): update links for webapp. & 19/06/2026 \\ \hline
+viora-website & feature/\allowbreak image-team & 1186fee & fix(presentationslides): correct images. & 19/06/2026 \\ \hline
+viora-website & feature/\allowbreak members & 0949da0 & fix(members): change team members panel. & 19/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak my-plots-management & a119191 & feat(agronomic): add my plots management flow. & 19/06/2026 \\ \hline
+viora-webapp & feature/\allowbreak agronomic/\allowbreak dashboard-weather-plot-overview & 77b4d06 & feat(agronomic): add weather and plot overview views. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak plot-registration-contract-fix & 71db886 & feat(agronomic): enhance create-plotCommand with additional fields and area calculation. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak hot-fix-to-database & 677c218 & feat(database): update default schema handling and connection string for flexibility. & 19/06/2026 \\ \hline
+viora-platform & release/\allowbreak 0.20.0 & 305c69d & feat(database): set default schema to 'public' and update connection string for postgre sql. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak correct-environments & 8540281 & fix: update environment variables. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak setup-deploy & 6a7d290 & feat(database): update app setting and configurations. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & 27c88c4 & feat(agronomic): update db context and program for dynamic nutrition. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & 89edd5d & feat(agronomic): add controller, resources and assembler for dynamic nutrition. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & 79890bb & feat(agronomic): add repository for dynamic nutrition. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & 1eb2ad4 & feat(agronomic): add aggregate and value objects for dynamic nutrition. & 19/06/2026 \\ \hline
+viora-platform & feature/\allowbreak agronomic/\allowbreak dynamic-health & dcb1c95 & feat(agronomic): add query services and command for dynamic nutrition. & 19/06/2026 \\ \hline
+\end{longtable}
 
 #### Execution Evidence for Sprint Review
 
@@ -536,6 +575,49 @@ US09 & Publicación de perfil profesional & TK01 & Formulario de perfil profesio
 \textbf{Webapp:} \url{https://viora-release-001.web.app/dashboard}
 
 #### Services Documentation Evidence for Sprint Review
+
+&nbsp;
+
+Durante el Sprint 3, se consolidó y documentó la primera versión operativa de los Web Services de Viora utilizando OpenAPI 3.0, lo que permitió generar dinámicamente la interfaz gráfica a través de Swagger UI. El logro principal en relación con la Documentación de Web Services para este Sprint radica en la exposición clara, interactiva y estructurada de los endpoints correspondientes a los contextos Agronomic, Surveillance y Shared, habilitando pruebas con datos reales y garantizando que las aplicaciones cliente puedan consumir los servicios de manera confiable.
+
+La documentación oficial y centralizada de todos estos endpoints se encuentra desplegada y accesible a través del siguiente enlace directo: \url{}
+
+A continuación, se presenta la tabla detallada de los endpoints documentados, indicando las acciones soportadas, la sintaxis de llamada, parámetros requeridos y ejemplos descriptivos del response esperado, considerando las particularidades del manejo de respuestas en ASP.NET Core (como el uso de ProblemDetails para errores).
+
+\begin{longtable}{|p{0.25\textwidth}|p{0.20\textwidth}|p{0.20\textwidth}|p{0.25\textwidth}|}
+\hline
+\textbf{Sintaxis de Llamada} & \textbf{Acción Implementada} & \textbf{Parámetros y Request Body} & \textbf{Ejemplo y Explicación del Response} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Sintaxis de Llamada} & \textbf{Acción Implementada} & \textbf{Parámetros y Request Body} & \textbf{Ejemplo y Explicación del Response} \\ \hline
+\endhead
+
+GET /api/\allowbreak v1/\allowbreak pest-sighting-reports & Consultar reportes manuales de plagas & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Retorna arreglo JSON de reportes. Ej: \texttt{[\{"id":1, "pest":"Aphids"\}]} \\ \hline
+POST /api/\allowbreak v1/\allowbreak pest-sighting-reports & Crear un reporte de avistamiento & Body: JSON con plotId, pest, severity. & \textbf{201 Created:} Confirma registro. Ej: \texttt{\{"id":2, "status":"ACTIVE"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak monitoring-summaries & Obtener resumen de KPIs & Parámetros query: userId, date. Body: N/A. & \textbf{200 OK:} JSON con NDVI y estado de salud. Ej: \texttt{\{"ndvi":0.75, "health":"GOOD"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak plots & Listar parcelas registradas & Parámetros query: view, includeCurrentImagery. Body: N/A. & \textbf{200 OK:} Arreglo JSON de parcelas. Ej: \texttt{[\{"name":"Parcela Norte"\}]} \\ \hline
+POST /api/\allowbreak v1/\allowbreak plots & Registrar nueva parcela productiva & Body: JSON con name, cropType, coordinates. & \textbf{201 Created:} Objeto de la parcela generada. Ej: \texttt{\{"id":5, "area": 12.5\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\} & Consultar detalle de parcela & Parámetros query: view. Path: plotId (Long). Body: N/A. & \textbf{200 OK:} Detalle completo. Ej: \texttt{\{"id":1, "name":"Fundo A"\}} \\ \hline
+DELETE /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\} & Eliminar parcela registrada & Parámetros query: view. Path: plotId (Long). Body: N/A. & \textbf{204 No Content:} Operación exitosa sin cuerpo de respuesta. \\ \hline
+PATCH /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\} & Editar parcialmente una parcela & Path: plotId. Body: Campos a modificar (e.g., name). & \textbf{200 OK:} Parcela actualizada. Ej: \texttt{\{"name":"Nuevo Nombre"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak alerts & Consultar alertas activas e históricas & Parámetros query: status, severity. Body: N/A. & \textbf{200 OK:} Arreglo JSON de alertas. Ej: \texttt{[\{"alert":"Helada", "severity":"HIGH"\}]} \\ \hline
+GET /api/\allowbreak v1/\allowbreak symptom-dictionary-items & Consultar el catálogo de síntomas & Parámetros query: Ninguno. Body: N/A. & \textbf{200 OK:} Arreglo JSON del diccionario. Ej: \texttt{[\{"symptom":"Manchas Amarillas"\}]} \\ \hline
+GET /api/\allowbreak v1/\allowbreak dynamic-nutrition-plans & Consultar planes dinámicos & Parámetros query: plotId. Body: N/A. & \textbf{200 OK:} Arreglo JSON de planes. Ej: \texttt{[\{"planId":1, "fertilizer":"Nitrogen"\}]} \\ \hline
+GET /api/\allowbreak v1/\allowbreak community-risk & Consultar riesgo comunitario & Parámetros query: lat, lng, radius. Body: N/A. & \textbf{200 OK:} JSON con nivel de riesgo. Ej: \texttt{\{"riskLevel":"MODERATE"\}} \\ \hline
+GET /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\}/\allowbreak iot-devices & Listar dispositivos IoT & Path: plotId. Body: N/A. & \textbf{200 OK:} Arreglo JSON de dispositivos. Ej: \texttt{[\{"deviceId":"SN-1234"\}]} \\ \hline
+POST /api/\allowbreak v1/\allowbreak plots/\allowbreak \{plotId\}/\allowbreak iot-devices & Registrar nuevo dispositivo IoT & Path: plotId. Body: JSON con deviceName. & \textbf{201 Created:} Dispositivo registrado. Ej: \texttt{\{"id":3, "status":"ACTIVE"\}} \\ \hline
+\end{longtable}
+
+Para respaldar el trabajo realizado en la configuración de la documentación, a continuación se proporciona el URL oficial del repositorio backend y la relación de commits vinculados a este esfuerzo:
+
+\begin{itemize}
+    \item \textbf{Repositorio de Web Services:} \url{https://github.com/upc-pre-1asi0730-2610-10215-arcadiadevs/viora-platform}
+    \item \textbf{Commits relacionados con Documentación:}
+    \begin{itemize}
+        \item \texttt{92518e3}: \textit{feat(shared): configure swagger ui and openapi endpoints for .net platform.}
+    \end{itemize}
+\end{itemize}
 
 &nbsp;
 

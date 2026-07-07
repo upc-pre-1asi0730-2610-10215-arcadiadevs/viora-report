@@ -1,4 +1,4 @@
-# Project Report Collaboration Insights
+# Project Report Collaboration Insights {-}
 
 **Enlaces a la organización de github y sus repositorios:**
 

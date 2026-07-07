@@ -45,13 +45,17 @@ El entorno de desarrollo para la solución web distribuida se basará en un stac
     - Visual Studio Code: Entorno de desarrollo integrado (IDE) principal para el desarrollo de la Landing Page. Se utilizará para la maquetación semántica en HTML5, el diseño visual y responsivo mediante CSS3, y la interactividad con JavaScript bajo el estándar de documentación JSDoc, asegurando un código limpio, organizado y fácil de escalar. (https://code.visualstudio.com/Download)
 
 - Software Deployment
-Para cumplir con el ciclo de desarrollo y despliegue de una solución distribuida en la nube, se ha implementará una estrategia híbrida que separa la captación comercial de la lógica transaccional:
+Para cumplir con el ciclo de desarrollo y despliegue de una solución distribuida en la nube, se implementará una estrategia híbrida que separa la captación comercial de la lógica transaccional:
+
+    - Render: Hosteo del Web Service (Backend) de ASP.NET Core. Permite el despliegue continuo de los servicios de la plataforma. (https://render.com/)
+
+    - Firebase: Se utilizará para el despliegue de la aplicación web desarrollada en Vue.js. (https://firebase.google.com/)
+
+    - filess.io: Servicio gestionado para la persistencia de datos. Se utilizará para el almacenamiento de información, aprovechando las capacidades de PostgreSQL para el proyecto. (https://filess.io/)
 
     - Vercel: Se utilizará para el despliegue del Landing Page. (https://vercel.com/)
 
-    - Firebase: Se utilizará para el despliegue del frontend y backend de la plataforma. Para la capa de presentación, Firebase Hosting permitirá la distribución rápida y segura del contenido estático de la aplicación. Asimismo, se utilizará Cloud Functions for Firebase para la implementación de servicios backend serverless, permitiendo la exposición de APIs REST, ejecución de lógica de negocio y procesamiento de cálculos requeridos por la aplicación, sin necesidad de administrar infraestructura dedicada. (https://firebase.google.com/)
-
-    - Azure Database for PostgreSQL: Servicio gestionado para la persistencia de datos. Se utilizará para el almacenamiento de polígonos de parcelas y datos agronómicos, aprovechando la extensión PostGIS para el procesamiento geográfico necesario en el proyecto. (https://azure.microsoft.com/es-es/products/postgresql/)
+    - GitHub Actions: Motor de CI/CD que automatiza la compilación y despliegue continuo en cada push a las ramas principales.
 
 - Software Documentation
 Para la documentación de la solución se considerará lo siguiente:
@@ -191,12 +195,12 @@ Se sigue la Vue Style Guide oficial (s.f.):
 
 ### Software Deployment Configuration
 
-Para garantizar un proceso de despliegue automatizado, escalable y alineado con la arquitectura distribuida de la solución, se implementará un pipeline de Integración y Despliegue Continuo (CI/CD) utilizando GitHub Actions como herramienta de automatización. Este pipeline permitirá detectar cambios integrados en las ramas principales de los repositorios, ejecutar procesos de validación, compilación y despliegue continuo, y asegurar la trazabilidad de cada versión liberada bajo el esquema GitFlow y Semantic Versioning adoptado por el equipo.
+Para garantizar un pase a producción seguro y automatizado, se implementará un pipeline de Integración y Despliegue Continuo (CI/CD) orquestado por GitHub Actions. Este motor detecta cualquier integración de código en las ramas principales de los repositorios fuente, ejecutando los siguientes pasos de publicación según el producto digital:
 
-- Landing Page: A partir del repositorio fuente, el sitio informativo será compilado y desplegado automáticamente en Vercel, optimizando la distribución del contenido estático y permitiendo una entrega continua orientada a alta disponibilidad.
+- Landing Page: A partir del repositorio fuente, el código es compilado y desplegado automáticamente hacia la plataforma Vercel, optimizando la entrega del sitio comercial.
 
-- Frontend Web Applications: La aplicación desarrollada en Vue.js será construida y publicada mediante Firebase Hosting, permitiendo una distribución rápida y segura de los recursos estáticos de la plataforma utilizando infraestructura administrada y escalable.
+- Frontend Web Applications: El código fuente desarrollado en Vue.js es empaquetado por GitHub Actions y publicado en Firebase Hosting.
 
-- Web Services (Backend): Los servicios backend desarrollados en ASP.NET Core serán desplegados utilizando Cloud Functions for Firebase, permitiendo la ejecución serverless de APIs REST, lógica de negocio y procesamiento de cálculos requeridos por la plataforma. Estas funciones se integrarán con Azure Database for PostgreSQL para la persistencia de información agronómica y el procesamiento geoespacial mediante PostGIS.
+- Web Services (Backend): El repositorio de ASP.NET Core es compilado y desplegado de forma continua en Render, el cual se encontrará enlazado a la base de datos gestionada por filess.io.
 
 \newpage

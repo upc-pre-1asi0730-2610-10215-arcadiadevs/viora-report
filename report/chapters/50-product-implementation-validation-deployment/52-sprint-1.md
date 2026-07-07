@@ -20,7 +20,7 @@ A continuación, se presenta el cuadro resumen del Sprint Planning Meeting, el c
 \textbf{Prepared By} & Paredes Maza, Victor Juan de Dios \\
 \textbf{Attendees} & Espada Lazo, Piero Anthony / Li Gayoso, Diana Carolina / Paredes Maza, Victor Juan de Dios / Santi Guerrero, Fabrizio Alonso / Trinidad Leon, Jahat Jassiel \\ \hline
 \multicolumn{2}{l}{\textbf{Sprint Goal \& User Stories}} \\ \hline
-\textbf{Sprint 1 Goal} & Nuestro enfoque está en proporcionar una experiencia informativa y persuasiva mediante la Landing Page oficial, destacando la conexión entre datos climáticos y acción en campo; creemos que entrega claridad inmediata sobre la propuesta de valor, confianza institucional y una ruta directa de conversión a los visitantes productores y especialistas fitosanitarios; esto se confirmará cuando los usuarios puedan navegar los beneficios segmentados, validar la eficacia mediante testimonios y completar la transición hacia el flujo sin fricciones. \\
+\textbf{Sprint 1 Goal} & **Nuestro enfoque** se orienta a ilustrar los elementos diferenciales de la solución y dar a conocer la propuesta de valor de Viora a los nuevos visitantes, abarcando las necesidades tanto de productores agrícolas como de especialistas fitosanitarios. **Creemos que esto proporciona** una decisión de registro más informada, confianza inicial en el ecosistema, y una comprensión inmediata de los beneficios y modelo de acceso a los futuros usuarios. **Esto se confirmará cuando** se registre un incremento medible en el tiempo de retención en la Landing Page, y una reducción en la tasa de rebote. \\
 \textbf{Sprint 1 Velocity} & 20 \\
 \textbf{Sum of Story Points} & 18 \\ \hline
 \end{tabular}

@@ -1,4 +1,4 @@
-# Registro de Versiones del Informe {#registro-de-versiones}
+# Registro de Versiones del Informe {-}
 
 \vspace{0.3cm}
 
